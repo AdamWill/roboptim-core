@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::Parameter Struct Reference</title>
+<title>roboptim::visualization::Matplotlib Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,83 +63,313 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-attribs">Public Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::Parameter Struct Reference<div class="ingroups"><a class="el" href="a00264.html">Optimization problems</a></div></div>  </div>
+<div class="title">roboptim::visualization::Matplotlib Class Reference<div class="ingroups"><a class="el" href="a00273.html">Visualization</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::Parameter" -->
-<p>Parameters type.  
+<!-- doxytag: class="roboptim::visualization::Matplotlib" -->
+<p>matplotlib script  
  <a href="a00088.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/solver.hh&gt;</code></p>
+<p><code>#include &lt;roboptim/core/visualization/matplotlib.hh&gt;</code></p>
 
-<p><a href="a00329.html">List of all members.</a></p>
+<p><a href="a00371.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::variant<br class="typebreak"/>
-&lt; <a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a>, int, <br class="typebreak"/>
-std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a20a7c0403832ff03174d093943f98f77">parameterValues_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allowed types for parameters.  <a href="#a20a7c0403832ff03174d093943f98f77"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a8758825ae290c6722354c7e2b4a40453">description</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00088.html" title="Parameters type.">Parameter</a> description (for humans).  <a href="#a8758825ae290c6722354c7e2b4a40453"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00088.html#a20a7c0403832ff03174d093943f98f77">parameterValues_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a6a9253ce0d03f844c642a1a41dcd60b1">value</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Value.  <a href="#a6a9253ce0d03f844c642a1a41dcd60b1"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#ad30ddac4c701f3857324dc1723bd431b">~Matplotlib</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#aa2dde9d00c39af15e221bc2e4545a514">push_command</a> (const <a class="el" href="a00035.html">matplotlib::Command</a> &amp;cmd)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new matplotlib command to the script.  <a href="#aa2dde9d00c39af15e221bc2e4545a514"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#af77130e3b6b8f68dd95adc5e09daa51d">push_import</a> (const <a class="el" href="a00081.html">matplotlib::Import</a> &amp;import)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new Python import to the script.  <a href="#af77130e3b6b8f68dd95adc5e09daa51d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a565123c4086afdec4934dfd78aa5e6dc">print</a> (std::ostream &amp;) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the matplotlib script on the specified output stream.  <a href="#a565123c4086afdec4934dfd78aa5e6dc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00088.html">Matplotlib</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a64f59a4876bebeaebfa909fa087d881c">operator&lt;&lt;</a> (<a class="el" href="a00035.html">matplotlib::Command</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00088.html">Matplotlib</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#add7be32075c5232ef70ac302c6483ee7">operator&lt;&lt;</a> (<a class="el" href="a00081.html">matplotlib::Import</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#ab74d871b72839dedd30f30877d05f960">clear</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the vectors of imports and commands.  <a href="#ab74d871b72839dedd30f30877d05f960"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a02fc7712b24296ca6da6f5c7b15a4a5c">withHeader</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to print the header (imports).  <a href="#a02fc7712b24296ca6da6f5c7b15a4a5c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a59afeebf5cc92b39b8dd53a05ad05c9f">withHeader</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to print the header (imports).  <a href="#a59afeebf5cc92b39b8dd53a05ad05c9f"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00088.html">Matplotlib</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a05c08fa46fa302274df29d1a680c92a9">make_matplotlib</a> (bool with_header=true)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instanciate a matplotlib without setting a term.  <a href="#a05c08fa46fa302274df29d1a680c92a9"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#a1d2873b927c952d8d71934c9507c1001">Matplotlib</a> (bool with_header=true)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor can not be called directly.  <a href="#a1d2873b927c952d8d71934c9507c1001"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html#ab6d4daa910500975a1805b340fa82c33">resetImports</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset imports to initial values.  <a href="#ab6d4daa910500975a1805b340fa82c33"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Parameters type. </p>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a20a7c0403832ff03174d093943f98f77"></a><!-- doxytag: member="roboptim::Parameter::parameterValues_t" ref="a20a7c0403832ff03174d093943f98f77" args="" -->
+<div class="textblock"><p>matplotlib script </p>
+<p>This class gathers matplotlib commands to build a complete matplotlib script. matplotlib commands can be inserted through this object through the <code>&lt;&lt;</code> operator and this object can be put into an output stream using the <code>&lt;&lt;</code> operator. </p>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00014.html#_a2">visualization-matplotlib-function.cc</a>, and <a class="el" href="a00013.html#_a0">visualization-matplotlib-simple.cc</a>.</dd>
+</dl></div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ad30ddac4c701f3857324dc1723bd431b"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::~Matplotlib" ref="ad30ddac4c701f3857324dc1723bd431b" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::variant&lt;<a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a>, int, std::string&gt; <a class="el" href="a00088.html#a20a7c0403832ff03174d093943f98f77">roboptim::Parameter::parameterValues_t</a></td>
+          <td class="memname"><a class="el" href="a00088.html#ad30ddac4c701f3857324dc1723bd431b">roboptim::visualization::Matplotlib::~Matplotlib</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Allowed types for parameters. </p>
-
 </div>
 </div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a8758825ae290c6722354c7e2b4a40453"></a><!-- doxytag: member="roboptim::Parameter::description" ref="a8758825ae290c6722354c7e2b4a40453" args="" -->
+<a class="anchor" id="a1d2873b927c952d8d71934c9507c1001"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::Matplotlib" ref="a1d2873b927c952d8d71934c9507c1001" args="(bool with_header=true)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string <a class="el" href="a00088.html#a8758825ae290c6722354c7e2b4a40453">roboptim::Parameter::description</a></td>
+          <td class="memname"><a class="el" href="a00088.html#a1d2873b927c952d8d71934c9507c1001">roboptim::visualization::Matplotlib::Matplotlib</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>with_header</em> = <code>true</code></td><td>)</td>
+          <td><code> [explicit, protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p><a class="el" href="a00088.html" title="Parameters type.">Parameter</a> description (for humans). </p>
+<p>Default constructor can not be called directly. </p>
+<p>Use of the named constructor (see static methods) to instantiate this class. </p>
 
-<p>Referenced by <a class="el" href="a00264.html#gaec29bb03838e3b8e4fd86b85db5fe19a">roboptim::operator&lt;&lt;()</a>.</p>
+<p>References <a class="el" href="a00088.html#ab6d4daa910500975a1805b340fa82c33">resetImports()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6a9253ce0d03f844c642a1a41dcd60b1"></a><!-- doxytag: member="roboptim::Parameter::value" ref="a6a9253ce0d03f844c642a1a41dcd60b1" args="" -->
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ab74d871b72839dedd30f30877d05f960"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::clear" ref="ab74d871b72839dedd30f30877d05f960" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00088.html#a20a7c0403832ff03174d093943f98f77">parameterValues_t</a> <a class="el" href="a00088.html#a6a9253ce0d03f844c642a1a41dcd60b1">roboptim::Parameter::value</a></td>
+          <td class="memname">void <a class="el" href="a00088.html#ab74d871b72839dedd30f30877d05f960">roboptim::visualization::Matplotlib::clear</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Value. </p>
+<p>Clear the vectors of imports and commands. </p>
 
-<p>Referenced by <a class="el" href="a00264.html#gaec29bb03838e3b8e4fd86b85db5fe19a">roboptim::operator&lt;&lt;()</a>.</p>
+<p>References <a class="el" href="a00088.html#ab6d4daa910500975a1805b340fa82c33">resetImports()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a05c08fa46fa302274df29d1a680c92a9"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::make_matplotlib" ref="a05c08fa46fa302274df29d1a680c92a9" args="(bool with_header=true)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00088.html">Matplotlib</a> <a class="el" href="a00088.html#a05c08fa46fa302274df29d1a680c92a9">roboptim::visualization::Matplotlib::make_matplotlib</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>with_header</em> = <code>true</code></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Instanciate a matplotlib without setting a term. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">with_header</td><td>whether to print the header or not </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>matplotlib instance </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a64f59a4876bebeaebfa909fa087d881c"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::operator&lt;&lt;" ref="a64f59a4876bebeaebfa909fa087d881c" args="(matplotlib::Command)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00088.html">Matplotlib</a> &amp; roboptim::visualization::Matplotlib::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00035.html">matplotlib::Command</a>&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00088.html#aa2dde9d00c39af15e221bc2e4545a514">push_command()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="add7be32075c5232ef70ac302c6483ee7"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::operator&lt;&lt;" ref="add7be32075c5232ef70ac302c6483ee7" args="(matplotlib::Import)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00088.html">Matplotlib</a> &amp; roboptim::visualization::Matplotlib::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00081.html">matplotlib::Import</a>&#160;</td>
+          <td class="paramname"><em>import</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00088.html#af77130e3b6b8f68dd95adc5e09daa51d">push_import()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a565123c4086afdec4934dfd78aa5e6dc"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::print" ref="a565123c4086afdec4934dfd78aa5e6dc" args="(std::ostream &amp;) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; <a class="el" href="a00088.html#a565123c4086afdec4934dfd78aa5e6dc">roboptim::visualization::Matplotlib::print</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Display the matplotlib script on the specified output stream. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
+
+<p>Referenced by <a class="el" href="a00263.html#aa5714b11301afc8bc1ee4d544eafac2f">roboptim::visualization::operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2dde9d00c39af15e221bc2e4545a514"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::push_command" ref="aa2dde9d00c39af15e221bc2e4545a514" args="(const matplotlib::Command &amp;cmd)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00088.html#aa2dde9d00c39af15e221bc2e4545a514">roboptim::visualization::Matplotlib::push_command</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00035.html">matplotlib::Command</a> &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Add a new matplotlib command to the script. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>command that will be pushed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Referenced by <a class="el" href="a00088.html#a64f59a4876bebeaebfa909fa087d881c">operator&lt;&lt;()</a>, and <a class="el" href="a00273.html#ga754766ba098561274be740474369e1ba">roboptim::visualization::operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af77130e3b6b8f68dd95adc5e09daa51d"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::push_import" ref="af77130e3b6b8f68dd95adc5e09daa51d" args="(const matplotlib::Import &amp;import)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00088.html#af77130e3b6b8f68dd95adc5e09daa51d">roboptim::visualization::Matplotlib::push_import</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00081.html">matplotlib::Import</a> &amp;&#160;</td>
+          <td class="paramname"><em>import</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Add a new Python import to the script. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">import</td><td>package to import </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Referenced by <a class="el" href="a00088.html#add7be32075c5232ef70ac302c6483ee7">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6d4daa910500975a1805b340fa82c33"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::resetImports" ref="ab6d4daa910500975a1805b340fa82c33" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00088.html#ab6d4daa910500975a1805b340fa82c33">roboptim::visualization::Matplotlib::resetImports</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reset imports to initial values. </p>
+
+<p>Referenced by <a class="el" href="a00088.html#ab74d871b72839dedd30f30877d05f960">clear()</a>, and <a class="el" href="a00088.html#a1d2873b927c952d8d71934c9507c1001">Matplotlib()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02fc7712b24296ca6da6f5c7b15a4a5c"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::withHeader" ref="a02fc7712b24296ca6da6f5c7b15a4a5c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool &amp; <a class="el" href="a00088.html#a02fc7712b24296ca6da6f5c7b15a4a5c">roboptim::visualization::Matplotlib::withHeader</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Whether to print the header (imports). </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Reference to withHeader_. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a59afeebf5cc92b39b8dd53a05ad05c9f"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::withHeader" ref="a59afeebf5cc92b39b8dd53a05ad05c9f" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00088.html#a02fc7712b24296ca6da6f5c7b15a4a5c">roboptim::visualization::Matplotlib::withHeader</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Whether to print the header (imports). </p>
 
 </div>
 </div>
@@ -161,7 +391,8 @@ Public Attributes</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00088.html">Parameter</a>      </li>
+      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00263.html">visualization</a>      </li>
+      <li class="navelem"><a class="el" href="a00088.html">Matplotlib</a>      </li>
 </body>
 </html>

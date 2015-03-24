@@ -1,10 +1,11 @@
 var a00070 =
 [
-    [ "GenericSumOfC1Squares", "a00070.html#a06492c620c9395b3ce8b27811db24155", null ],
-    [ "GenericSumOfC1Squares", "a00070.html#ac9eb8d225c89b2fb482be9367a271e0c", null ],
-    [ "~GenericSumOfC1Squares", "a00070.html#a1a3eb8bc23a2fdf87b06f38f6c1fad25", null ],
-    [ "baseFunction", "a00070.html#adb62136d2d933844f7310a19c930f98d", null ],
-    [ "impl_compute", "a00070.html#a4b37c218f8b2fde9c7d2ae79be8b834d", null ],
-    [ "impl_gradient", "a00070.html#aec074223b39a3d5241a99b98acf588ca", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00070.html#a832f4f791cc7e6e99d204aeee84861df", null ]
+    [ "GenericIdentityFunction", "a00070.html#aa0050802ccd19c2cc3a6000cb7ede7c8", null ],
+    [ "~GenericIdentityFunction", "a00070.html#ae60050ae16bed7e7d13dcfbdcf15ca65", null ],
+    [ "impl_compute", "a00070.html#a44daded3fd164f9eeafcc2da5d858fc5", null ],
+    [ "impl_gradient", "a00269.html#ga1d058b086530ec6170fa87fc1e16f821", null ],
+    [ "impl_gradient", "a00070.html#a5c70da9fa4718dcf3a90d0b68a40ad5e", null ],
+    [ "impl_jacobian", "a00070.html#a5dbc03d6fef05ed28a88bb50e87eed99", null ],
+    [ "print", "a00070.html#adc5eff6387532970e7b1e14daeb2d8af", null ],
+    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00070.html#a96bed4fb0ae0a69ca8c0ba546b161aaa", null ]
 ];

@@ -73,15 +73,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Exception thrown when a gradient check fails.  
  <a href="a00026.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/finite-difference-gradient.hh&gt;</code></p>
+<p><code>#include &lt;roboptim/core/decorator/finite-difference-gradient.hh&gt;</code></p>
 
 <p>Inherits std::runtime_error.</p>
 
-<p><a href="a00296.html">List of all members.</a></p>
+<p><a href="a00286.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#ae2b00592d29b72cf5d2f2d46a5152780">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#ae2b00592d29b72cf5d2f2d46a5152780">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00063.html">GenericDifferentiableFunction</a>&lt; T &gt;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#a8caa3f938d9daf11c678cc67f660b8b9">BadGradient</a> (const_argument_ref x, const_gradient_ref analyticalGradient, const_gradient_ref finiteDifferenceGradient, const value_type &amp;threshold)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a8caa3f938d9daf11c678cc67f660b8b9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#a816e99a4b100be1b2d20a4fc78348bcd">~BadGradient</a> ()  throw ()</td></tr>
@@ -109,8 +109,7 @@ Public Attributes</h2></td></tr>
 class roboptim::BadGradient&lt; T &gt;</h3>
 
 <p>Exception thrown when a gradient check fails. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00001.html#_a11">finite-difference-gradient.cc</a>.</dd>
-</dl></div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8caa3f938d9daf11c678cc67f660b8b9"></a><!-- doxytag: member="roboptim::BadGradient::BadGradient" ref="a8caa3f938d9daf11c678cc67f660b8b9" args="(const_argument_ref x, const_gradient_ref analyticalGradient, const_gradient_ref finiteDifferenceGradient, const value_type &amp;threshold)" -->
 <div class="memitem">
 <div class="memproto">
@@ -181,7 +180,7 @@ template&lt;typename T &gt; </div>
 template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00026.html">roboptim::BadGradient</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00026.html">BadGradient</a> </td>
+          <td class="memname"><a class="el" href="a00026.html">roboptim::BadGradient</a>&lt; <a class="el" href="a00057.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00026.html">BadGradient</a> </td>
           <td>(</td>
           <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -242,7 +241,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
 
-<p>References <a class="el" href="a00247.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00247.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, <a class="el" href="a00247.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>, and <a class="el" href="a00154.html#a7ee55860e481e4ad3b4d61b056ed7d2b">x_</a>.</p>
+<p>References <a class="el" href="a00254.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00254.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, <a class="el" href="a00254.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>, and <a class="el" href="a00163.html#a7ee55860e481e4ad3b4d61b056ed7d2b">x_</a>.</p>
 
 </div>
 </div>
@@ -255,7 +254,7 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="a00026.html">roboptim::BadGradient</a>&lt; T &gt;::<a class="el" href="a00026.html#ae2b00592d29b72cf5d2f2d46a5152780">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00057.html">GenericDifferentiableFunction</a>&lt; T &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00063.html">GenericDifferentiableFunction</a>&lt; T &gt;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -390,7 +389,7 @@ template&lt;typename T&gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
       <li class="navelem"><a class="el" href="a00026.html">BadGradient</a>      </li>
 </body>
 </html>

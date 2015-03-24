@@ -1,17 +1,17 @@
-\form#0:$C^1$
-\form#1:\[ f : x \rightarrow f(x) \]
-\form#2:$x \in \mathbb{R}^n$
-\form#3:$f(x) \in \mathbb{R}^m$
-\form#4:$n$
-\form#5:$m$
-\form#6:$\mathbb{R}^n \rightarrow \mathbb{R}^m$
-\form#7:$n > 1$
-\form#8:$m > 1$
-\form#9:$\mathbb{R}^n \rightarrow \mathbb{R}$
-\form#10:$m = 1$
-\form#11:\[f'(x)\approx {f(x+\epsilon)-f(x)\over \epsilon}\]
-\form#12:$\epsilon$
-\form#13:$\{x-2h, x-h, x, x+h, x+2h\}$
+\form#0:\[f'(x)\approx {f(x+\epsilon)-f(x)\over \epsilon}\]
+\form#1:$\epsilon$
+\form#2:$\{x-2h, x-h, x, x+h, x+2h\}$
+\form#3:$C^1$
+\form#4:\[ f : x \rightarrow f(x) \]
+\form#5:$x \in \mathbb{R}^n$
+\form#6:$f(x) \in \mathbb{R}^m$
+\form#7:$n$
+\form#8:$m$
+\form#9:$\mathbb{R}^n \rightarrow \mathbb{R}^m$
+\form#10:$n > 1$
+\form#11:$m > 1$
+\form#12:$\mathbb{R}^n \rightarrow \mathbb{R}$
+\form#13:$m = 1$
 \form#14:\[f(x) = offset\]
 \form#15:$offset$
 \form#16:\[f(x) = x + offset\]

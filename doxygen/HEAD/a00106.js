@@ -1,13 +1,7 @@
 var a00106 =
 [
-    [ "parentType_t", "a00106.html#a10ceafe26463a6befaf1a83bae6f2ba3", null ],
-    [ "SelectionByIdShPtr_t", "a00106.html#a2f296e76debe6a7e703f0a769f5f9129", null ],
-    [ "SelectionById", "a00106.html#afed4a5f3312bb43c36cd89e1b24da60e", null ],
-    [ "~SelectionById", "a00106.html#a647ad16eec9c7afb716a748c42c1fd1f", null ],
-    [ "impl_compute", "a00106.html#a9e64ceaf5be532b1d08b43fd48fc1802", null ],
-    [ "impl_gradient", "a00106.html#a670b69ecefa042ad5e6e2f14300c3482", null ],
-    [ "impl_jacobian", "a00106.html#a27306334779e090f25bbd7d630418aa8", null ],
-    [ "origin", "a00106.html#a96d0c5400637449ba56f14e7c25ec69d", null ],
-    [ "origin", "a00106.html#a3fe469f5a1b03ea25527636b326d85ab", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00106.html#a4238e53c744c850cde075fda814a2f26", null ]
+    [ "gradient", "a00106.html#a810eb3bd58a6eb145ded059dfa0f2175", null ],
+    [ "gradient", "a00106.html#a3510f93f1915ec5bf88582ee6df2842f", null ],
+    [ "jacobian", "a00106.html#af666d36d962b31244b2838aea7df7951", null ],
+    [ "jacobian", "a00106.html#a9a55ee9762560feebe5f2c950e5b340c", null ]
 ];

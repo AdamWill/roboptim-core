@@ -1,9 +1,8 @@
 var a00154 =
 [
-    [ "idx_", "a00154.html#afdccb8f3b68e95f66f35b3aee65c664d", null ],
-    [ "jacobian_", "a00154.html#ac8e4d7d6f9f9af11c249371537ef67fb", null ],
-    [ "m_", "a00154.html#a0fe0ca13a0cac3b98611f1c3101c4577", null ],
-    [ "o_", "a00154.html#ab0b7f49e37f9f6dccb8ae27d880aa79b", null ],
-    [ "result_", "a00154.html#a2ca868887cc5e83d7426dd4e84d046d9", null ],
-    [ "x_", "a00154.html#a7ee55860e481e4ad3b4d61b056ed7d2b", null ]
+    [ "solver_t", "a00154.html#a9a7157c7f730c89881de1b6122cc2337", null ],
+    [ "create", "a00154.html#ae278fcaa02a1ccd24801edf5e6a4bd23", null ],
+    [ "destroy", "a00154.html#af992438f02837bfe836ba0a937747829", null ],
+    [ "getSizeOfProblem", "a00154.html#a60635b065e290b461a1e7be6b54f9cbc", null ],
+    [ "getTypeIdOfConstraintsList", "a00154.html#a25ff9384fbf0c8e416a686a67c7d1fdd", null ]
 ];

@@ -1,14 +1,6 @@
 var a00058 =
 [
-    [ "callback_t", "a00058.html#acff89ad608c772f445edb654d4c234c2", null ],
-    [ "parent_t", "a00058.html#a63f3a8b1ebcc44f3655882d84ad9bc76", null ],
-    [ "problem_t", "a00058.html#a6c145f7f2b71a1e7d6c09b7578d03c6a", null ],
-    [ "solverState_t", "a00058.html#a35e2684e79e9e563323ad1ab2e729e82", null ],
-    [ "GenericDummySolverLastState", "a00058.html#a6048ac28ab501a9457b41aba611b2565", null ],
-    [ "~GenericDummySolverLastState", "a00058.html#a4f6039d2238b8461c6b5a94acd62e6ac", null ],
-    [ "callback", "a00058.html#a6a0c6a45d831bb9c967becf970330407", null ],
-    [ "setIterationCallback", "a00058.html#a5ce028c7aae7bbec2264162a79c93619", null ],
-    [ "solve", "a00058.html#a9c572e37e56f4f5e9bf43f57b1803e09", null ],
-    [ "callback_", "a00058.html#ae8a13793b24ec9f3e772b939b2cd695a", null ],
-    [ "solverState_", "a00058.html#a1697fef1f95edda99bc4420e1143350e", null ]
+    [ "const_argument_ref", "a00058.html#a8b7fa18a063bf015a0f4e44df463020a", null ],
+    [ "EvaluateConstraint", "a00058.html#abe31b756146a4668dd2aad83d28a28d2", null ],
+    [ "operator()", "a00058.html#aa45ddbb04b897f2e4961d62af5cf028f", null ]
 ];

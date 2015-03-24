@@ -1,14 +1,7 @@
 var a00109 =
 [
-    [ "Sin", "a00109.html#a4732d5e0a1e37379c5b0275effe7e67c", null ],
-    [ "~Sin", "a00109.html#ac23f4e74782bcb9aaa1b5b2453d67d7d", null ],
-    [ "impl_compute", "a00109.html#ae29b31cbfed8b87a6852ce0861bb2696", null ],
-    [ "impl_gradient", "a00262.html#ga41ce1d89a5562b7d36e69606cf166e1b", null ],
-    [ "impl_gradient", "a00109.html#a80554051f4f47797d355874ce956c136", null ],
-    [ "impl_hessian", "a00262.html#gaec6e904bd4d1be042d5ae9692c5b45a9", null ],
-    [ "impl_hessian", "a00109.html#a2d17659d3d99ef9aef862369da8547c5", null ],
-    [ "impl_jacobian", "a00262.html#ga967172085eebe8ca14010a3dee324477", null ],
-    [ "impl_jacobian", "a00109.html#a14f62ccaccebdcc852691a1bdd31fdab", null ],
-    [ "print", "a00109.html#ad1127d5c57e79dd7c1a4dc20398e1086", null ],
-    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00109.html#a0859e9a410b3c1bf41fd7f2cf8636f5a", null ]
+    [ "T1", "a00109.html#ab5acc3d14344b28f8011ccc060d15494", null ],
+    [ "T2", "a00109.html#ac39c39ae33adbfa77d5202b8bdb7539e", null ],
+    [ "T_promote", "a00109.html#afff7587eb16f8d5708a406f08a413463", null ],
+    [ "BOOST_MPL_ASSERT", "a00109.html#a6e4a50c4e55255b57f664c321151579c", null ]
 ];

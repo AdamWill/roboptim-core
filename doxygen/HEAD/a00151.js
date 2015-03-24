@@ -1,11 +1,8 @@
 var a00151 =
 [
-    [ "checkGradient", "a00262.html#ga243acdc164ebcb9129d073149f02e7ec", null ],
-    [ "checkGradientAndThrow", "a00262.html#ga8844d92b51c9518ec394ad7b6b6bcd7a", null ],
-    [ "checkJacobian", "a00262.html#gaa79713104bed214820abec2b998d3dba", null ],
-    [ "checkJacobianAndThrow", "a00262.html#ga44f24c28a17ec94e68bded5d92a9d40a", null ],
-    [ "operator<<", "a00247.html#ae6e53e4f7183cc2816db6aa8ea7cab6e", null ],
-    [ "operator<<", "a00247.html#a67f53906aa3085cb9d1bf44f5515349e", null ],
-    [ "finiteDifferenceEpsilon", "a00247.html#a2b8aa11a97dbc8229249db7357581d83", null ],
-    [ "finiteDifferenceThreshold", "a00247.html#aabca7f7ba16e95c606d1bc22b0de8d6b", null ]
+    [ "solver_t", "a00151.html#a5aafe251d5465495fdbaff79da9e5a7d", null ],
+    [ "create", "a00151.html#a019471c853f89a3106d090582809e846", null ],
+    [ "destroy", "a00151.html#af992438f02837bfe836ba0a937747829", null ],
+    [ "getSizeOfProblem", "a00151.html#a60635b065e290b461a1e7be6b54f9cbc", null ],
+    [ "getTypeIdOfConstraintsList", "a00151.html#a25ff9384fbf0c8e416a686a67c7d1fdd", null ]
 ];

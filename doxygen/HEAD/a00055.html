@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::FunctionPool&lt; F, FLIST &gt; Class Template Reference</title>
+<title>roboptim::DummySolverTd Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -66,197 +66,97 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::FunctionPool&lt; F, FLIST &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00261.html">Mathematical abstract functions</a></div></div>  </div>
+<div class="title">roboptim::DummySolverTd Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::FunctionPool" -->
-<p>A pool of functions that will be processed together.  
+<!-- doxytag: class="roboptim::DummySolverTd" --><!-- doxytag: inherits="Solver&lt; TwiceDifferentiableFunction, boost::mpl::vector&lt; TwiceDifferentiableFunction &gt; &gt;" -->
+<p>Dummy solver which always fails.  
  <a href="a00055.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/function-pool.hh&gt;</code></p>
+<p><code>#include &lt;roboptim/core/plugin/dummy-td.hh&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for roboptim::DummySolverTd:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00055.png" usemap="#roboptim::DummySolverTd_map" alt=""/>
+  <map id="roboptim::DummySolverTd_map" name="roboptim::DummySolverTd_map">
+<area href="a00118.html" alt="roboptim::Solver&lt; TwiceDifferentiableFunction, boost::mpl::vector&lt; TwiceDifferentiableFunction &gt; &gt;" shape="rect" coords="0,112,573,136"/>
+<area href="a00075.html" title="Abstract interface satisfied by all solvers." alt="roboptim::GenericSolver" shape="rect" coords="0,56,573,80"/>
+<area href="a00091.html" alt="noncopyable" shape="rect" coords="0,0,573,24"/>
+</map>
+ </div></div>
 
-<p><a href="a00304.html">List of all members.</a></p>
+<p><a href="a00325.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef F&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a05d47d0df6ccbcdac5628a4a4795dbb0">pool_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type of the pool.  <a href="#a05d47d0df6ccbcdac5628a4a4795dbb0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00075.html">detail::list_converter</a><br class="typebreak"/>
-&lt; FLIST &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a417c5745a8a1270bf755887643a5ed6a">functionTypeList_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="a00107.html">detail::shared_ptr_variant</a><br class="typebreak"/>
-&lt; <a class="el" href="a00055.html#a417c5745a8a1270bf755887643a5ed6a">functionTypeList_t</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ae1ff53cc9a921842e0deb55a7d4a572e">function_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the functions in the pool.  <a href="#ae1ff53cc9a921842e0deb55a7d4a572e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00055.html#ae1ff53cc9a921842e0deb55a7d4a572e">function_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#adb1137ff70b2bd5716cd822d17b8709f">functionList_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">List of functions that will populate the pool.  <a href="#adb1137ff70b2bd5716cd822d17b8709f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; F &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a596d9aeff97f202e6dd69bfffccffbdc">callback_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the callback function (where the computation happens).  <a href="#a596d9aeff97f202e6dd69bfffccffbdc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00118.html">Solver</a><br class="typebreak"/>
+&lt; <a class="el" href="a00254.html#a664a3377f606592dfc57f9525c9afa37">TwiceDifferentiableFunction</a>, <br class="typebreak"/>
+boost::mpl::vector<br class="typebreak"/>
+&lt; <a class="el" href="a00254.html#a664a3377f606592dfc57f9525c9afa37">TwiceDifferentiableFunction</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a111982763cc612288cf9eafdb422ff6e">parent_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define parent's type.  <a href="#a111982763cc612288cf9eafdb422ff6e"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a873aca96f047860dd26324aa61b3816b">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00055.html#a05d47d0df6ccbcdac5628a4a4795dbb0">pool_t</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ad74746a49723e6f2a0ea5ddf8f4adad8">FunctionPool</a> (const <a class="el" href="a00055.html#a596d9aeff97f202e6dd69bfffccffbdc">callback_t</a> callback, const <a class="el" href="a00055.html#adb1137ff70b2bd5716cd822d17b8709f">functionList_t</a> &amp;functions, const std::string &amp;name=&quot;&quot;)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00055.html" title="A pool of functions that will be processed together.">FunctionPool</a> constructor.  <a href="#ad74746a49723e6f2a0ea5ddf8f4adad8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ad528238170b3b3a31da3a0c77c4691bf">~FunctionPool</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#ad528238170b3b3a31da3a0c77c4691bf"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a2abfedba18b10cf2d99b4c571349ff14">impl_compute</a> (result_ref result, const_argument_ref x) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a71800c1d9a3e3dc67e577fe97f44f12d">impl_gradient</a> (gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a2aba032ac229b88c508a59e7f2aa1928">impl_jacobian</a> (jacobian_ref jacobian, const_argument_ref arg) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a9f349b1f442566e1f7321bc2a41470ad">print</a> (std::ostream &amp;) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Overriden print function for pools.  <a href="#a9f349b1f442566e1f7321bc2a41470ad"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a1696fdbfb1da4d482427e2365afc221a">DummySolverTd</a> (const <a class="el" href="a00118.html#a5b5c016b1da3aadc3d619023124b2197">problem_t</a> &amp;<a class="el" href="a00118.html#a7920ef2fd1c7068111df0496c4f742ce">problem</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a solver from a problem.  <a href="#a1696fdbfb1da4d482427e2365afc221a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ae44fff1bdc0d38145c979d13f2d3f0c8">~DummySolverTd</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#ae5600583ae3db32dde947167a3bab131">solve</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement the solve algorithm.  <a href="#ae5600583ae3db32dde947167a3bab131"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename F, typename FLIST&gt;<br/>
-class roboptim::FunctionPool&lt; F, FLIST &gt;</h3>
-
-<p>A pool of functions that will be processed together. </p>
-<p>This class provides a way to regroup functions that depend on the same "computation engine", for instance a simulator that generates some data, then each function of the pool can simply read the computed data (which could be done in parallel).</p>
-<p>TODO: the actual type of the <a class="el" href="a00055.html" title="A pool of functions that will be processed together.">FunctionPool</a> should depend on the list of constraints that are supported. We could imagine using a metaprogramming version of LCA (lowest common ancestor) to find the Function type that will best match the list. In hybrid scenarios where we have both differentiable and non-differentiable functions, two pools sharing the same callback should probably be used. For now, we will rely on a user-provided function type.</p>
-<dl class=""><dt><b>Template Parameters:</b></dt><dd>
-  <table class="">
-    <tr><td class="paramname">F</td><td>type of the pool. </td></tr>
-    <tr><td class="paramname">FLIST</td><td>list of valid function types. </td></tr>
-  </table>
-  </dd>
-</dl>
+<div class="textblock"><p>Dummy solver which always fails. </p>
+<p>This solver always fails but is always available as it does not rely on the plug-in mechanism.</p>
+<p>It is also a good starting point for users that want to develop their own solver. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a596d9aeff97f202e6dd69bfffccffbdc"></a><!-- doxytag: member="roboptim::FunctionPool::callback_t" ref="a596d9aeff97f202e6dd69bfffccffbdc" args="" -->
+<a class="anchor" id="a111982763cc612288cf9eafdb422ff6e"></a><!-- doxytag: member="roboptim::DummySolverTd::parent_t" ref="a111982763cc612288cf9eafdb422ff6e" args="" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;F&gt; <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a596d9aeff97f202e6dd69bfffccffbdc">callback_t</a></td>
+          <td class="memname">typedef <a class="el" href="a00118.html">Solver</a>&lt;<a class="el" href="a00254.html#a664a3377f606592dfc57f9525c9afa37">TwiceDifferentiableFunction</a>, boost::mpl::vector&lt;<a class="el" href="a00254.html#a664a3377f606592dfc57f9525c9afa37">TwiceDifferentiableFunction</a>&gt; &gt; <a class="el" href="a00055.html#a111982763cc612288cf9eafdb422ff6e">roboptim::DummySolverTd::parent_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Type of the callback function (where the computation happens). </p>
-
-</div>
-</div>
-<a class="anchor" id="ae1ff53cc9a921842e0deb55a7d4a572e"></a><!-- doxytag: member="roboptim::FunctionPool::function_t" ref="ae1ff53cc9a921842e0deb55a7d4a572e" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F , typename FLIST &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00107.html">detail::shared_ptr_variant</a>&lt;<a class="el" href="a00055.html#a417c5745a8a1270bf755887643a5ed6a">functionTypeList_t</a>&gt;::type <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#ae1ff53cc9a921842e0deb55a7d4a572e">function_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Type of the functions in the pool. </p>
-
-</div>
-</div>
-<a class="anchor" id="adb1137ff70b2bd5716cd822d17b8709f"></a><!-- doxytag: member="roboptim::FunctionPool::functionList_t" ref="adb1137ff70b2bd5716cd822d17b8709f" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F , typename FLIST &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="a00055.html#ae1ff53cc9a921842e0deb55a7d4a572e">function_t</a>&gt; <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#adb1137ff70b2bd5716cd822d17b8709f">functionList_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>List of functions that will populate the pool. </p>
-
-</div>
-</div>
-<a class="anchor" id="a417c5745a8a1270bf755887643a5ed6a"></a><!-- doxytag: member="roboptim::FunctionPool::functionTypeList_t" ref="a417c5745a8a1270bf755887643a5ed6a" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F , typename FLIST &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00075.html">detail::list_converter</a>&lt;FLIST&gt;::type <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a417c5745a8a1270bf755887643a5ed6a">functionTypeList_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a05d47d0df6ccbcdac5628a4a4795dbb0"></a><!-- doxytag: member="roboptim::FunctionPool::pool_t" ref="a05d47d0df6ccbcdac5628a4a4795dbb0" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F , typename FLIST &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef F <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a05d47d0df6ccbcdac5628a4a4795dbb0">pool_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Function type of the pool. </p>
-<p>Note: this will be set by LCA called on the function type list. </p>
+<p>Define parent's type. </p>
 
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ad74746a49723e6f2a0ea5ddf8f4adad8"></a><!-- doxytag: member="roboptim::FunctionPool::FunctionPool" ref="ad74746a49723e6f2a0ea5ddf8f4adad8" args="(const callback_t callback, const functionList_t &amp;functions, const std::string &amp;name=&quot;&quot;)" -->
+<a class="anchor" id="a1696fdbfb1da4d482427e2365afc221a"></a><!-- doxytag: member="roboptim::DummySolverTd::DummySolverTd" ref="a1696fdbfb1da4d482427e2365afc221a" args="(const problem_t &amp;problem)" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html">FunctionPool</a> </td>
+          <td class="memname"><a class="el" href="a00055.html#a1696fdbfb1da4d482427e2365afc221a">roboptim::DummySolverTd::DummySolverTd</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00055.html#a596d9aeff97f202e6dd69bfffccffbdc">callback_t</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00055.html#adb1137ff70b2bd5716cd822d17b8709f">functionList_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>functions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em> = <code>&quot;&quot;</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [explicit]</code></td>
+          <td class="paramtype">const <a class="el" href="a00118.html#a5b5c016b1da3aadc3d619023124b2197">problem_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>problem</em></td><td>)</td>
+          <td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p><a class="el" href="a00055.html" title="A pool of functions that will be processed together.">FunctionPool</a> constructor. </p>
+<p>Build a solver from a problem. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">callback</td><td>callback function for the engine. </td></tr>
-    <tr><td class="paramname">functions</td><td>functions of the pool. </td></tr>
-    <tr><td class="paramname">name</td><td>name of the pool. </td></tr>
+    <tr><td class="paramname">problem</td><td>problem that will be solved </td></tr>
   </table>
   </dd>
 </dl>
 
+<p>References <a class="el" href="a00118.html#a700a223a138d95f57ba7e198c7fdbe3e">roboptim::Solver&lt; TwiceDifferentiableFunction, boost::mpl::vector&lt; TwiceDifferentiableFunction &gt; &gt;::parameters_</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="ad528238170b3b3a31da3a0c77c4691bf"></a><!-- doxytag: member="roboptim::FunctionPool::~FunctionPool" ref="ad528238170b3b3a31da3a0c77c4691bf" args="()" -->
+<a class="anchor" id="ae44fff1bdc0d38145c979d13f2d3f0c8"></a><!-- doxytag: member="roboptim::DummySolverTd::~DummySolverTd" ref="ae44fff1bdc0d38145c979d13f2d3f0c8" args="()" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::~<a class="el" href="a00055.html">FunctionPool</a> </td>
+          <td class="memname"><a class="el" href="a00055.html#ae44fff1bdc0d38145c979d13f2d3f0c8">roboptim::DummySolverTd::~DummySolverTd</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [virtual]</code></td>
@@ -265,143 +165,29 @@ template&lt;typename F , typename FLIST &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Virtual destructor. </p>
-
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a2abfedba18b10cf2d99b4c571349ff14"></a><!-- doxytag: member="roboptim::FunctionPool::impl_compute" ref="a2abfedba18b10cf2d99b4c571349ff14" args="(result_ref result, const_argument_ref x) const " -->
+<a class="anchor" id="ae5600583ae3db32dde947167a3bab131"></a><!-- doxytag: member="roboptim::DummySolverTd::solve" ref="ae5600583ae3db32dde947167a3bab131" args="()" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename F , typename FLIST &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a2abfedba18b10cf2d99b4c571349ff14">impl_compute</a> </td>
+          <td class="memname">void <a class="el" href="a00055.html#ae5600583ae3db32dde947167a3bab131">roboptim::DummySolverTd::solve</a> </td>
           <td>(</td>
-          <td class="paramtype">result_ref&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a71800c1d9a3e3dc67e577fe97f44f12d"></a><!-- doxytag: member="roboptim::FunctionPool::impl_gradient" ref="a71800c1d9a3e3dc67e577fe97f44f12d" args="(gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F , typename FLIST &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a71800c1d9a3e3dc67e577fe97f44f12d">impl_gradient</a> </td>
-          <td>(</td>
-          <td class="paramtype">gradient_ref&#160;</td>
-          <td class="paramname"><em>gradient</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_type&#160;</td>
-          <td class="paramname"><em>functionId</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2aba032ac229b88c508a59e7f2aa1928"></a><!-- doxytag: member="roboptim::FunctionPool::impl_jacobian" ref="a2aba032ac229b88c508a59e7f2aa1928" args="(jacobian_ref jacobian, const_argument_ref arg) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F , typename FLIST &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a2aba032ac229b88c508a59e7f2aa1928">impl_jacobian</a> </td>
-          <td>(</td>
-          <td class="paramtype">jacobian_ref&#160;</td>
-          <td class="paramname"><em>jacobian</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9f349b1f442566e1f7321bc2a41470ad"></a><!-- doxytag: member="roboptim::FunctionPool::print" ref="a9f349b1f442566e1f7321bc2a41470ad" args="(std::ostream &amp;) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F , typename FLIST &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; <a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a9f349b1f442566e1f7321bc2a41470ad">print</a> </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const<code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Overriden print function for pools. </p>
-
-<p>References <a class="el" href="a00247.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, and <a class="el" href="a00247.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a873aca96f047860dd26324aa61b3816b"></a><!-- doxytag: member="roboptim::FunctionPool::ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="a873aca96f047860dd26324aa61b3816b" args="(pool_t)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F , typename FLIST &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00055.html">roboptim::FunctionPool</a>&lt; F, FLIST &gt;::<a class="el" href="a00055.html#a873aca96f047860dd26324aa61b3816b">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00055.html#a05d47d0df6ccbcdac5628a4a4795dbb0">pool_t</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Implement the solve algorithm. </p>
+<p>Implement the solve method as required by the <a class="el" href="a00075.html#ac73eb90d375eebe2580be8ad275bbf39">GenericSolver</a> class. </p>
+
+<p>Implements <a class="el" href="a00075.html#a4573db8138895e5dc5eee8880e02e928">roboptim::GenericSolver</a>.</p>
+
+<p>References <a class="el" href="a00075.html#ab36ece190971122f7111d7e92c4e66cf">roboptim::GenericSolver::result_</a>.</p>
 
 </div>
 </div>
@@ -423,7 +209,7 @@ template&lt;typename F , typename FLIST &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00055.html">FunctionPool</a>      </li>
+      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00055.html">DummySolverTd</a>      </li>
 </body>
 </html>

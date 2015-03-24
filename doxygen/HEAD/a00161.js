@@ -1,9 +1,9 @@
 var a00161 =
 [
-    [ "GNUPLOT_STR_COMMAND", "a00161.html#a44cffa7dc6979331d7660d604e7c8f48", null ],
-    [ "GNUPLOT_UNARY_COMMAND", "a00161.html#abdaa2512aec3201d566ccbfc73fafc46", null ],
-    [ "comment", "a00266.html#ga108c0cb6161fb8813817a7b7a1ac980d", null ],
-    [ "set", "a00266.html#gad77630a233193748534b41d069d4e180", null ],
-    [ "show", "a00266.html#gaf90f5364d8c3597b8909ba99083fc23f", null ],
-    [ "unset", "a00266.html#ga2c2a188b2e89955eee09aa10b5426e43", null ]
+    [ "checkGradient", "a00269.html#ga243acdc164ebcb9129d073149f02e7ec", null ],
+    [ "checkGradientAndThrow", "a00269.html#ga8844d92b51c9518ec394ad7b6b6bcd7a", null ],
+    [ "checkJacobian", "a00269.html#gaa79713104bed214820abec2b998d3dba", null ],
+    [ "checkJacobianAndThrow", "a00269.html#ga44f24c28a17ec94e68bded5d92a9d40a", null ],
+    [ "operator<<", "a00254.html#ae6e53e4f7183cc2816db6aa8ea7cab6e", null ],
+    [ "operator<<", "a00254.html#a67f53906aa3085cb9d1bf44f5515349e", null ]
 ];

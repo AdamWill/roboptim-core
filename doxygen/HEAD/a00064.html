@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::GenericIdentityFunction&lt; T &gt; Class Template Reference</title>
+<title>roboptim::GenericDummySolverLastState&lt; F &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,102 +63,182 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-attribs">Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::GenericIdentityFunction&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00262.html">Mathematical functions</a></div></div>  </div>
+<div class="title">roboptim::GenericDummySolverLastState&lt; F &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::GenericIdentityFunction" --><!-- doxytag: inherits="roboptim::GenericLinearFunction" -->
-<p>Identity function.  
+<!-- doxytag: class="roboptim::GenericDummySolverLastState" --><!-- doxytag: inherits="Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;" -->
+<p>Dummy solver which always fails, but returns the last state of the solver.  
  <a href="a00064.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/function/identity.hh&gt;</code></p>
+<p><code>#include &lt;roboptim/core/plugin/dummy-laststate.hh&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for roboptim::GenericIdentityFunction&lt; T &gt;:</div>
+Inheritance diagram for roboptim::GenericDummySolverLastState&lt; F &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="a00064.png" usemap="#roboptim::GenericIdentityFunction&lt; T &gt;_map" alt=""/>
-  <map id="roboptim::GenericIdentityFunction&lt; T &gt;_map" name="roboptim::GenericIdentityFunction&lt; T &gt;_map">
-<area href="a00065.html" title="Define an abstract linear function." alt="roboptim::GenericLinearFunction&lt; T &gt;" shape="rect" coords="0,224,300,248"/>
-<area href="a00068.html" title="Define an abstract quadratic function." alt="roboptim::GenericQuadraticFunction&lt; T &gt;" shape="rect" coords="0,168,300,192"/>
-<area href="a00071.html" title="Define an abstract function which is twice-derivable ( )." alt="roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;" shape="rect" coords="0,112,300,136"/>
-<area href="a00057.html" title="Define an abstract derivable function ( )." alt="roboptim::GenericDifferentiableFunction&lt; T &gt;" shape="rect" coords="0,56,300,80"/>
-<area href="a00060.html" title="Define an abstract mathematical function ( )." alt="roboptim::GenericFunction&lt; T &gt;" shape="rect" coords="0,0,300,24"/>
+  <img src="a00064.png" usemap="#roboptim::GenericDummySolverLastState&lt; F &gt;_map" alt=""/>
+  <map id="roboptim::GenericDummySolverLastState&lt; F &gt;_map" name="roboptim::GenericDummySolverLastState&lt; F &gt;_map">
+<area href="a00118.html" alt="roboptim::Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;" shape="rect" coords="0,112,273,136"/>
+<area href="a00075.html" title="Abstract interface satisfied by all solvers." alt="roboptim::GenericSolver" shape="rect" coords="0,56,273,80"/>
+<area href="a00091.html" alt="noncopyable" shape="rect" coords="0,0,273,24"/>
 </map>
  </div></div>
 
-<p><a href="a00301.html">List of all members.</a></p>
+<p><a href="a00324.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00118.html">Solver</a>&lt; F, <br class="typebreak"/>
+boost::mpl::vector&lt; F &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a63f3a8b1ebcc44f3655882d84ad9bc76">parent_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define parent's type.  <a href="#a63f3a8b1ebcc44f3655882d84ad9bc76"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00118.html#a5b5c016b1da3aadc3d619023124b2197">parent_t::problem_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">problem_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00103.html">Problem</a> type.  <a href="#a6c145f7f2b71a1e7d6c09b7578d03c6a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00118.html#a8cb27cc8f35c120bf91513297156de88">parent_t::callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#acff89ad608c772f445edb654d4c234c2">callback_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function type.  <a href="#acff89ad608c772f445edb654d4c234c2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00121.html">SolverState</a>&lt; <a class="el" href="a00064.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">problem_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a35e2684e79e9e563323ad1ab2e729e82">solverState_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the state of the solver.  <a href="#a35e2684e79e9e563323ad1ab2e729e82"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a96bed4fb0ae0a69ca8c0ba546b161aaa">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00065.html">GenericLinearFunction</a>&lt; T &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#ab54d82769bc4a7bf83aad7a6ca7b26d5">GenericIdentityFunction</a> (const vector_t &amp;offset)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build an identity function.  <a href="#ab54d82769bc4a7bf83aad7a6ca7b26d5"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#ae60050ae16bed7e7d13dcfbdcf15ca65">~GenericIdentityFunction</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#adc5eff6387532970e7b1e14daeb2d8af">print</a> (std::ostream &amp;o) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#adc5eff6387532970e7b1e14daeb2d8af"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a44daded3fd164f9eeafcc2da5d858fc5">impl_compute</a> (result_ref result, const_argument_ref argument) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluation.  <a href="#a44daded3fd164f9eeafcc2da5d858fc5"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a5dbc03d6fef05ed28a88bb50e87eed99">impl_jacobian</a> (jacobian_ref <a class="el" href="a00057.html#a77c47b7abb1a80b79afe4aa3ef058f4c">jacobian</a>, const_argument_ref) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jacobian evaluation.  <a href="#a5dbc03d6fef05ed28a88bb50e87eed99"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00262.html#ga1d058b086530ec6170fa87fc1e16f821">impl_gradient</a> (gradient_ref <a class="el" href="a00057.html#a03a9c0c4bee28944a49cd508252a9049">gradient</a>, const_argument_ref, <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> idFunction) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradient evaluation.  <a href="a00262.html#ga1d058b086530ec6170fa87fc1e16f821"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00064.html#a5c70da9fa4718dcf3a90d0b68a40ad5e">impl_gradient</a> (gradient_ref <a class="el" href="a00057.html#a03a9c0c4bee28944a49cd508252a9049">gradient</a>, const_argument_ref, <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> idFunction) const</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradient evaluation.  <a href="#a5c70da9fa4718dcf3a90d0b68a40ad5e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a6048ac28ab501a9457b41aba611b2565">GenericDummySolverLastState</a> (const <a class="el" href="a00064.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">problem_t</a> &amp;<a class="el" href="a00118.html#a7920ef2fd1c7068111df0496c4f742ce">problem</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a solver from a problem.  <a href="#a6048ac28ab501a9457b41aba611b2565"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a4f6039d2238b8461c6b5a94acd62e6ac">~GenericDummySolverLastState</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a9c572e37e56f4f5e9bf43f57b1803e09">solve</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement the solve algorithm.  <a href="#a9c572e37e56f4f5e9bf43f57b1803e09"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a5ce028c7aae7bbec2264162a79c93619">setIterationCallback</a> (<a class="el" href="a00064.html#acff89ad608c772f445edb654d4c234c2">callback_t</a> <a class="el" href="a00064.html#a6a0c6a45d831bb9c967becf970330407">callback</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the per-iteration callback.  <a href="#a5ce028c7aae7bbec2264162a79c93619"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00064.html#acff89ad608c772f445edb654d4c234c2">callback_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a6a0c6a45d831bb9c967becf970330407">callback</a> () const </td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00064.html#acff89ad608c772f445edb654d4c234c2">callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#ae8a13793b24ec9f3e772b939b2cd695a">callback_</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Intermediate callback (called at each end of iteration).  <a href="#ae8a13793b24ec9f3e772b939b2cd695a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00064.html#a35e2684e79e9e563323ad1ab2e729e82">solverState_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html#a1697fef1f95edda99bc4420e1143350e">solverState_</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state of the solver (used by the callback function).  <a href="#a1697fef1f95edda99bc4420e1143350e"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br/>
-class roboptim::GenericIdentityFunction&lt; T &gt;</h3>
+<div class="textblock"><h3>template&lt;typename F&gt;<br/>
+class roboptim::GenericDummySolverLastState&lt; F &gt;</h3>
 
-<p>Identity function. </p>
-<p>Implement a linear function using the formula: </p>
-<p class="formulaDsp">
-<img class="formulaDsp" alt="\[f(x) = x + offset\]" src="form_16.png"/>
-</p>
-<p> where <img class="formulaInl" alt="$A$" src="form_17.png"/> and <img class="formulaInl" alt="$b$" src="form_18.png"/> are set when the class is instantiated. </p>
-</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ab54d82769bc4a7bf83aad7a6ca7b26d5"></a><!-- doxytag: member="roboptim::GenericIdentityFunction::GenericIdentityFunction" ref="ab54d82769bc4a7bf83aad7a6ca7b26d5" args="(const vector_t &amp;offset)" -->
+<p>Dummy solver which always fails, but returns the last state of the solver. </p>
+<p>The <a class="el" href="a00119.html" title="Base exception class for solving errors.">SolverError</a> generated contains a dummy state of the solver (x, constraints etc.). These values can be obtained thanks to <a class="el" href="a00119.html#a902e79a13337accd1abe8a9acd0bbacd" title="Retrieve the (optional) last state of the solver.">SolverError::lastState</a>.</p>
+<p>This solver always fails but is always available as it does not rely on the plug-in mechanism.</p>
+<p>It is also a good starting point for users that want to develop their own solver. </p>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="acff89ad608c772f445edb654d4c234c2"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::callback_t" ref="acff89ad608c772f445edb654d4c234c2" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename F &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00064.html">roboptim::GenericIdentityFunction</a>&lt; T &gt;::<a class="el" href="a00064.html">GenericIdentityFunction</a> </td>
-          <td>(</td>
-          <td class="paramtype">const vector_t &amp;&#160;</td>
-          <td class="paramname"><em>offset</em></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td class="memname">typedef <a class="el" href="a00118.html#a8cb27cc8f35c120bf91513297156de88">parent_t::callback_t</a> <a class="el" href="a00064.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00064.html#acff89ad608c772f445edb654d4c234c2">callback_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Build an identity function. </p>
+<p>Callback function type. </p>
+
+<p>Reimplemented from <a class="el" href="a00118.html#a8cb27cc8f35c120bf91513297156de88">roboptim::Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a63f3a8b1ebcc44f3655882d84ad9bc76"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::parent_t" ref="a63f3a8b1ebcc44f3655882d84ad9bc76" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00118.html">Solver</a>&lt;F, boost::mpl::vector&lt;F&gt; &gt; <a class="el" href="a00064.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00064.html#a63f3a8b1ebcc44f3655882d84ad9bc76">parent_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Define parent's type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6c145f7f2b71a1e7d6c09b7578d03c6a"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::problem_t" ref="a6c145f7f2b71a1e7d6c09b7578d03c6a" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00118.html#a5b5c016b1da3aadc3d619023124b2197">parent_t::problem_t</a> <a class="el" href="a00064.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00064.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">problem_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="a00103.html">Problem</a> type. </p>
+
+<p>Reimplemented from <a class="el" href="a00118.html#a5b5c016b1da3aadc3d619023124b2197">roboptim::Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a35e2684e79e9e563323ad1ab2e729e82"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::solverState_t" ref="a35e2684e79e9e563323ad1ab2e729e82" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00121.html">SolverState</a>&lt;<a class="el" href="a00064.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">problem_t</a>&gt; <a class="el" href="a00064.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00064.html#a35e2684e79e9e563323ad1ab2e729e82">solverState_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type of the state of the solver. </p>
+
+<p>Reimplemented from <a class="el" href="a00118.html#ae785fae316ee3993a6e7da0f53b24b5a">roboptim::Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a6048ac28ab501a9457b41aba611b2565"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::GenericDummySolverLastState" ref="a6048ac28ab501a9457b41aba611b2565" args="(const problem_t &amp;problem)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00064.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00064.html">GenericDummySolverLastState</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00064.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">problem_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>problem</em></td><td>)</td>
+          <td><code> [explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Build a solver from a problem. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">offset</td><td>identity function offset </td></tr>
+    <tr><td class="paramname">problem</td><td>problem that will be solved </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="ae60050ae16bed7e7d13dcfbdcf15ca65"></a><!-- doxytag: member="roboptim::GenericIdentityFunction::~GenericIdentityFunction" ref="ae60050ae16bed7e7d13dcfbdcf15ca65" args="()" -->
+<a class="anchor" id="a4f6039d2238b8461c6b5a94acd62e6ac"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::~GenericDummySolverLastState" ref="a4f6039d2238b8461c6b5a94acd62e6ac" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename F &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00064.html">roboptim::GenericIdentityFunction</a>&lt; T &gt;::~<a class="el" href="a00064.html">GenericIdentityFunction</a> </td>
+          <td class="memname"><a class="el" href="a00064.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::~<a class="el" href="a00064.html">GenericDummySolverLastState</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -167,188 +247,120 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a44daded3fd164f9eeafcc2da5d858fc5"></a><!-- doxytag: member="roboptim::GenericIdentityFunction::impl_compute" ref="a44daded3fd164f9eeafcc2da5d858fc5" args="(result_ref result, const_argument_ref argument) const " -->
+<a class="anchor" id="a6a0c6a45d831bb9c967becf970330407"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::callback" ref="a6a0c6a45d831bb9c967becf970330407" args="() const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename F &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00064.html">roboptim::GenericIdentityFunction</a>&lt; T &gt;::<a class="el" href="a00064.html#a44daded3fd164f9eeafcc2da5d858fc5">impl_compute</a> </td>
+          <td class="memname">const <a class="el" href="a00064.html#acff89ad608c772f445edb654d4c234c2">callback_t</a>&amp; <a class="el" href="a00064.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00064.html#a6a0c6a45d831bb9c967becf970330407">callback</a> </td>
           <td>(</td>
-          <td class="paramtype">result_ref&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>argument</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [inline, protected, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Function evaluation. </p>
-<p>Evaluate the function, has to be implemented in concrete classes. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00060.html#a4a8297b3ba77ee0e291a31c4049a2acd" title="Evaluate the function at a specified point.">operator()(result_ref, const_argument_ref) const</a> instead. </dd></dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">result</td><td>result will be stored in this vector </td></tr>
-    <tr><td class="paramname">argument</td><td>point at which the function will be evaluated </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00060.html#a6c50a900a98c913158bac04419bb79a3">roboptim::GenericFunction&lt; T &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5c70da9fa4718dcf3a90d0b68a40ad5e"></a><!-- doxytag: member="roboptim::GenericIdentityFunction::impl_gradient" ref="a5c70da9fa4718dcf3a90d0b68a40ad5e" args="(gradient_ref gradient, const_argument_ref, size_type idFunction) const" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00064.html">roboptim::GenericIdentityFunction</a>&lt; <a class="el" href="a00051.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00262.html#ga1d058b086530ec6170fa87fc1e16f821">impl_gradient</a> </td>
-          <td>(</td>
-          <td class="paramtype">gradient_ref&#160;</td>
-          <td class="paramname"><em>gradient</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
-          <td class="paramname"><em>functionId</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [inline, protected, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Gradient evaluation. </p>
-<p>Compute the gradient, has to be implemented in concrete classes. The gradient is computed for a specific sub-function which id is passed through the functionId argument. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00057.html#a03a9c0c4bee28944a49cd508252a9049" title="Computes the gradient.">gradient</a> instead. </dd></dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">gradient</td><td>gradient will be store in this argument </td></tr>
-    <tr><td class="paramname">argument</td><td>point where the gradient will be computed </td></tr>
-    <tr><td class="paramname">functionId</td><td>evaluated function id in the split representation </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00057.html#af392bd6266e56fbf8e38c0df16d22224">roboptim::GenericDifferentiableFunction&lt; T &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5dbc03d6fef05ed28a88bb50e87eed99"></a><!-- doxytag: member="roboptim::GenericIdentityFunction::impl_jacobian" ref="a5dbc03d6fef05ed28a88bb50e87eed99" args="(jacobian_ref jacobian, const_argument_ref) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00064.html">roboptim::GenericIdentityFunction</a>&lt; T &gt;::<a class="el" href="a00064.html#a5dbc03d6fef05ed28a88bb50e87eed99">impl_jacobian</a> </td>
-          <td>(</td>
-          <td class="paramtype">jacobian_ref&#160;</td>
-          <td class="paramname"><em>jacobian</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [inline, protected, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Jacobian evaluation. </p>
-<p>Computes the jacobian, can be overridden by concrete classes. The default behavior is to compute the jacobian from the gradient. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00057.html#a77c47b7abb1a80b79afe4aa3ef058f4c" title="Computes the jacobian.">jacobian</a> instead. </dd></dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">jacobian</td><td>jacobian will be store in this argument </td></tr>
-    <tr><td class="paramname">arg</td><td>point where the jacobian will be computed </td></tr>
-  </table>
-  </dd>
-</dl>
-<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
-
-<p>Reimplemented from <a class="el" href="a00057.html#a69908de96e02e56b0f3332307ed03d94">roboptim::GenericDifferentiableFunction&lt; T &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="adc5eff6387532970e7b1e14daeb2d8af"></a><!-- doxytag: member="roboptim::GenericIdentityFunction::print" ref="adc5eff6387532970e7b1e14daeb2d8af" args="(std::ostream &amp;o) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::ostream&amp; <a class="el" href="a00064.html">roboptim::GenericIdentityFunction</a>&lt; T &gt;::<a class="el" href="a00064.html#adc5eff6387532970e7b1e14daeb2d8af">print</a> </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const<code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Display the function on the specified output stream. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
-
-<p>Reimplemented from <a class="el" href="a00065.html#a00e124bc18548130332a1f5ceacf70c5">roboptim::GenericLinearFunction&lt; T &gt;</a>.</p>
-
-<p>References <a class="el" href="a00247.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00247.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, and <a class="el" href="a00247.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a96bed4fb0ae0a69ca8c0ba546b161aaa"></a><!-- doxytag: member="roboptim::GenericIdentityFunction::ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="a96bed4fb0ae0a69ca8c0ba546b161aaa" args="(GenericLinearFunction&lt; T &gt;)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00064.html">roboptim::GenericIdentityFunction</a>&lt; T &gt;::<a class="el" href="a00064.html#a96bed4fb0ae0a69ca8c0ba546b161aaa">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00065.html">GenericLinearFunction</a>&lt; T &gt;&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>References <a class="el" href="a00064.html#ae8a13793b24ec9f3e772b939b2cd695a">roboptim::GenericDummySolverLastState&lt; F &gt;::callback_</a>.</p>
+
+<p>Referenced by <a class="el" href="a00064.html#a5ce028c7aae7bbec2264162a79c93619">roboptim::GenericDummySolverLastState&lt; F &gt;::setIterationCallback()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ce028c7aae7bbec2264162a79c93619"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::setIterationCallback" ref="a5ce028c7aae7bbec2264162a79c93619" args="(callback_t callback)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="a00064.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00064.html#a5ce028c7aae7bbec2264162a79c93619">setIterationCallback</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00064.html#acff89ad608c772f445edb654d4c234c2">callback_t</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set the per-iteration callback. </p>
+<p>The per-iteration callback is a callback called each time one iteration of the optimization process is finished.</p>
+<p>Not all the solvers support such a callback so this method may throw a std::runtime_error to let you know this feature is unsupported. </p>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="a00118.html#aca06f8826cb1ffcad60a6d1f99938ab2">roboptim::Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;</a>.</p>
+
+<p>References <a class="el" href="a00064.html#a6a0c6a45d831bb9c967becf970330407">roboptim::GenericDummySolverLastState&lt; F &gt;::callback()</a>, and <a class="el" href="a00064.html#ae8a13793b24ec9f3e772b939b2cd695a">roboptim::GenericDummySolverLastState&lt; F &gt;::callback_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c572e37e56f4f5e9bf43f57b1803e09"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::solve" ref="a9c572e37e56f4f5e9bf43f57b1803e09" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00064.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00064.html#a9c572e37e56f4f5e9bf43f57b1803e09">solve</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Implement the solve algorithm. </p>
+<p>Implement the solve method as required by the <a class="el" href="a00075.html#ac73eb90d375eebe2580be8ad275bbf39">GenericSolver</a> class. </p>
+
+<p>Implements <a class="el" href="a00075.html#a4573db8138895e5dc5eee8880e02e928">roboptim::GenericSolver</a>.</p>
+
+<p>References <a class="el" href="a00110.html#ac35af0a7460b2f266b74af35c8d89f3b">roboptim::Result::constraints</a>, <a class="el" href="a00110.html#a4a3c615497bd8c83d21a35430f9b204c">roboptim::Result::lambda</a>, <a class="el" href="a00163.html#a2ca868887cc5e83d7426dd4e84d046d9">result_</a>, <a class="el" href="a00110.html#a3164fe63a285d7c4739f2606b8cf6b9e">roboptim::Result::value</a>, and <a class="el" href="a00110.html#a31284faee67e87284026280767720008">roboptim::Result::x</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="ae8a13793b24ec9f3e772b939b2cd695a"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::callback_" ref="ae8a13793b24ec9f3e772b939b2cd695a" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00064.html#acff89ad608c772f445edb654d4c234c2">callback_t</a> <a class="el" href="a00064.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00064.html#ae8a13793b24ec9f3e772b939b2cd695a">callback_</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Intermediate callback (called at each end of iteration). </p>
+
+<p>Referenced by <a class="el" href="a00064.html#a6a0c6a45d831bb9c967becf970330407">roboptim::GenericDummySolverLastState&lt; F &gt;::callback()</a>, and <a class="el" href="a00064.html#a5ce028c7aae7bbec2264162a79c93619">roboptim::GenericDummySolverLastState&lt; F &gt;::setIterationCallback()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1697fef1f95edda99bc4420e1143350e"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::solverState_" ref="a1697fef1f95edda99bc4420e1143350e" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00064.html#a35e2684e79e9e563323ad1ab2e729e82">solverState_t</a> <a class="el" href="a00064.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00064.html#a1697fef1f95edda99bc4420e1143350e">solverState_</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Current state of the solver (used by the callback function). </p>
 
 </div>
 </div>
@@ -370,7 +382,7 @@ template&lt;typename T &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00064.html">GenericIdentityFunction</a>      </li>
+      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00064.html">GenericDummySolverLastState</a>      </li>
 </body>
 </html>

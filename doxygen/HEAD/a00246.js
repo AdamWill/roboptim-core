@@ -1,4 +1,5 @@
 var a00246 =
 [
-    [ "hash_value", "a00246.html#a8bfc97eecda942cab62110845cfb8a2e", null ]
+    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS", "a00246.html#a2def6adcd8c6b13fe8be72ba4a6b41bf", null ],
+    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00246.html#a4e569ff9277e3bd7fc49eadf52fcc2f3", null ]
 ];

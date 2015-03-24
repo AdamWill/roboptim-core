@@ -1,13 +1,8 @@
 var a00156 =
 [
-    [ "EIGEN_RUNTIME_NO_MALLOC", "a00156.html#a90bf84d3e5deeec00de77460ca485842", null ],
-    [ "EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET", "a00156.html#aa93624b0b2836d2510e8c92ae951d817", null ],
-    [ "ROBOPTIM_FUNCTION_FWD_TYPEDEFS", "a00156.html#aff4b9961233370447282cd20d9c77860", null ],
-    [ "ROBOPTIM_FUNCTION_FWD_TYPEDEFS_", "a00156.html#a934385dbb178b478182aaf71b426e20b", null ],
-    [ "ROBOPTIM_GENERATE_FWD_REFS", "a00156.html#ae011806b2b385981e61ca4eac95c7214", null ],
-    [ "ROBOPTIM_GENERATE_FWD_REFS_", "a00156.html#ad01677e106bfdcccbc444381d584dcd9", null ],
-    [ "ROBOPTIM_GENERATE_TRAITS_REFS_", "a00156.html#a794c23ac0db0a1b936309e3bda6b9d5f", null ],
-    [ "ROBOPTIM_GENERATE_TYPEDEFS_EIGEN_REF", "a00156.html#a0bacc1580bb552c860fc50c8eea7e919", null ],
-    [ "ROBOPTIM_GENERATE_TYPEDEFS_REF", "a00156.html#ada2ae6a941857678bb864be9523e7eaf", null ],
-    [ "operator<<", "a00261.html#gac1811528dd1c9cc4c233c14bf5ed6e81", null ]
+    [ "solver_t", "a00156.html#a926347d1adaf0ea2a6a2a50bc50a209e", null ],
+    [ "create", "a00156.html#a0a575b89f014bf2e20cb9ab341d88393", null ],
+    [ "destroy", "a00156.html#af992438f02837bfe836ba0a937747829", null ],
+    [ "getSizeOfProblem", "a00156.html#a60635b065e290b461a1e7be6b54f9cbc", null ],
+    [ "getTypeIdOfConstraintsList", "a00156.html#a25ff9384fbf0c8e416a686a67c7d1fdd", null ]
 ];

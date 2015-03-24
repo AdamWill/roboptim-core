@@ -1,5 +1,4 @@
 var a00223 =
 [
-    [ "operator<<", "a00264.html#ga5370a1e1cec76aec9419f4f5403945f7", null ],
-    [ "operator<<", "a00264.html#gaca8c6ea372c71de9eb3ab27dd09ae90c", null ]
+    [ "selectionById", "a00270.html#ga9b4a2fa027f79ee2d559bd8704d376c6", null ]
 ];

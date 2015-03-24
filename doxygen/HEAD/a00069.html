@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::GenericSolver Class Reference</title>
+<title>roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -65,149 +65,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a>  </div>
+<a href="#pub-static-attribs">Static Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::GenericSolver Class Reference<div class="ingroups"><a class="el" href="a00265.html">Optimization solvers</a></div></div>  </div>
+<div class="title">roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt; Struct Template Reference<div class="ingroups"><a class="el" href="a00268.html">Mathematical abstract functions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::GenericSolver" --><!-- doxytag: inherits="boost::noncopyable" -->
-<p>Abstract interface satisfied by all solvers.  
+<!-- doxytag: class="roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;" -->
+<p>Trait specializing <a class="el" href="a00066.html" title="Define an abstract mathematical function ( ).">GenericFunction</a> for Eigen sparse matrices.  
  <a href="a00069.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/generic-solver.hh&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for roboptim::GenericSolver:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00069.png" usemap="#roboptim::GenericSolver_map" alt=""/>
-  <map id="roboptim::GenericSolver_map" name="roboptim::GenericSolver_map">
-<area href="a00083.html" alt="noncopyable" shape="rect" coords="874,0,1447,24"/>
-<area href="a00110.html" title="Solver for a specific problem class." alt="roboptim::Solver&lt; F, C &gt;" shape="rect" coords="0,112,573,136"/>
-<area href="a00110.html" alt="roboptim::Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;" shape="rect" coords="583,112,1156,136"/>
-<area href="a00110.html" alt="roboptim::Solver&lt; Function, boost::mpl::vector&lt; Function &gt; &gt;" shape="rect" coords="1166,112,1739,136"/>
-<area href="a00110.html" alt="roboptim::Solver&lt; TwiceDifferentiableFunction, boost::mpl::vector&lt; TwiceDifferentiableFunction &gt; &gt;" shape="rect" coords="1749,112,2322,136"/>
-<area href="a00058.html" title="Dummy solver which always fails, but returns the last state of the solver." alt="roboptim::GenericDummySolverLastState&lt; F &gt;" shape="rect" coords="583,168,1156,192"/>
-<area href="a00048.html" title="Dummy solver which always fails." alt="roboptim::DummySolver" shape="rect" coords="1166,168,1739,192"/>
-<area href="a00049.html" title="Dummy solver which always fails." alt="roboptim::DummySolverTd" shape="rect" coords="1749,168,2322,192"/>
-</map>
- </div></div>
+<p><code>#include &lt;roboptim/core/function.hh&gt;</code></p>
 
-<p><a href="a00308.html">List of all members.</a></p>
+<p><a href="a00303.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a12c31c6bd2e018b05a71d51dd5b34846">solutions</a> { <br/>
-&#160;&#160;<a class="el" href="a00069.html#a12c31c6bd2e018b05a71d51dd5b34846ad1b2209e4a7e20a2c8baa1481106b374">SOLVER_NO_SOLUTION</a>, 
-<br/>
-&#160;&#160;<a class="el" href="a00069.html#a12c31c6bd2e018b05a71d51dd5b34846a863bfbf9be9ec0e42ac65add3ea37dda">SOLVER_VALUE</a>, 
-<br/>
-&#160;&#160;<a class="el" href="a00069.html#a12c31c6bd2e018b05a71d51dd5b34846a9d7660b10a44d0e05461a63e24182db5">SOLVER_VALUE_WARNINGS</a>, 
-<br/>
-&#160;&#160;<a class="el" href="a00069.html#a12c31c6bd2e018b05a71d51dd5b34846a6b549430cbdf64b5dfeb36e006b3e15f">SOLVER_ERROR</a>
-<br/>
- }</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the kind of solution which has been found.  <a href="a00069.html#a12c31c6bd2e018b05a71d51dd5b34846">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::variant<br class="typebreak"/>
-&lt; <a class="el" href="a00084.html">NoSolution</a>, <a class="el" href="a00102.html">Result</a>, <br class="typebreak"/>
-<a class="el" href="a00103.html">ResultWithWarnings</a>, <br class="typebreak"/>
-<a class="el" href="a00111.html">SolverError</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#acd6988bec0b7bda9b8565232d32d1bae">result_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00102.html" title="Represents the solution of an optimization problem.">Result</a> type.  <a href="#acd6988bec0b7bda9b8565232d32d1bae"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef matrix_t::Index&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#ae382b9a557d9e2f5e54a54ef60acb10c">size_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef matrix_t::Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#af0e69c7fd4c248106029270aef16c58e">value_type</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a16884b058070f8fb6759c6c194665cb7">reset</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Force to restart the optimization.  <a href="#a16884b058070f8fb6759c6c194665cb7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a4573db8138895e5dc5eee8880e02e928">solve</a> ()=0</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve the problem.  <a href="#a4573db8138895e5dc5eee8880e02e928"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00069.html#acd6988bec0b7bda9b8565232d32d1bae">result_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#aef2460331a80efc404356e9b68269b8c">minimum</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the function minimum This solves the problem automatically, if it has not yet been solved.  <a href="#aef2460331a80efc404356e9b68269b8c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a06ac6c38696f931bc1333d974ef25d03">print</a> (std::ostream &amp;) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the solver on the specified output stream.  <a href="#a06ac6c38696f931bc1333d974ef25d03"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00069.html#a12c31c6bd2e018b05a71d51dd5b34846">solutions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a2426a7c827ce0c46c77ac29ad1d7f846">minimumType</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine real minimum type.  <a href="#a2426a7c827ce0c46c77ac29ad1d7f846"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00069.html#a3f01ea84c377efc66cd55bc38f8676ad">getMinimum</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get real result.  <a href="#a3f01ea84c377efc66cd55bc38f8676ad"></a><br/></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Constructors and destructors.</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#ac73eb90d375eebe2580be8ad275bbf39">GenericSolver</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a73789e83216bf0ef32a3f123088f04b4">GenericSolver</a> (const <a class="el" href="a00069.html">GenericSolver</a> &amp;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a86170d03b3066285f5c47bfc78819571">~GenericSolver</a> ()</td></tr>
-<tr><td colspan="2"><h2><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00069.html#acd6988bec0b7bda9b8565232d32d1bae">result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#ab36ece190971122f7111d7e92c4e66cf">result_</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimization result.  <a href="#ab36ece190971122f7111d7e92c4e66cf"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static log4cxx::LoggerPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a7fbfdfbf962a90aace9fd42e92e0a428">logger</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to function logger (see log4cxx documentation).  <a href="#a7fbfdfbf962a90aace9fd42e92e0a428"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#aa5b8e636856f9f0c2607841f89366f0c">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> (matrix, Eigen::SparseMatrix&lt; double BOOST_PP_COMMA() <a class="el" href="a00069.html#ac589de0ba331e2f4963b3a1de6441815">StorageOrder</a> &gt;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#adc4e8ebe74893432259687429e7bf122">ROBOPTIM_GENERATE_TYPEDEFS_EIGEN_REF</a> (vector, Eigen::Matrix&lt; double BOOST_PP_COMMA() Eigen::Dynamic BOOST_PP_COMMA() 1 &gt;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#af9e1b20e8a236a7b67c109f8f9b5c934">ROBOPTIM_GENERATE_TYPEDEFS_EIGEN_REF</a> (result, vector_t)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#ab8e5dc91c3827ec92cb0741019570f9f">ROBOPTIM_GENERATE_TYPEDEFS_EIGEN_REF</a> (argument, vector_t)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a42e3d89e7934125e2d85223d40cbef90">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> (gradient, Eigen::SparseVector&lt; double &gt;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#aed5e8ac8cc2ff9b0844f14de973b29e1">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> (jacobian, matrix_t)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a470dbcc845cdd0d3f2e0a73be5f80417">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> (hessian, matrix_t)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#ac589de0ba331e2f4963b3a1de6441815">StorageOrder</a> = Eigen::RowMajor</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix storage order.  <a href="#ac589de0ba331e2f4963b3a1de6441815"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Abstract interface satisfied by all solvers. </p>
+<div class="textblock"><h3>template&lt;&gt;<br/>
+struct roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;</h3>
+
+<p>Trait specializing <a class="el" href="a00066.html" title="Define an abstract mathematical function ( ).">GenericFunction</a> for Eigen sparse matrices. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="acd6988bec0b7bda9b8565232d32d1bae"></a><!-- doxytag: member="roboptim::GenericSolver::result_t" ref="acd6988bec0b7bda9b8565232d32d1bae" args="" -->
+<a class="anchor" id="ae382b9a557d9e2f5e54a54ef60acb10c"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::size_type" ref="ae382b9a557d9e2f5e54a54ef60acb10c" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::variant&lt;<a class="el" href="a00084.html">NoSolution</a>, <a class="el" href="a00102.html">Result</a>, <a class="el" href="a00103.html">ResultWithWarnings</a>, <a class="el" href="a00111.html">SolverError</a>&gt; <a class="el" href="a00069.html#acd6988bec0b7bda9b8565232d32d1bae">roboptim::GenericSolver::result_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p><a class="el" href="a00102.html" title="Represents the solution of an optimization problem.">Result</a> type. </p>
-<p>Uses a Boost.Variant to represent the different possible results:</p>
-<ul>
-<li>no solution (problem not yet solved),</li>
-<li>result (problem has been solved successfully),</li>
-<li>result and warnings (problem solved but some errors happened),</li>
-<li>solver error (optimization has failed). </li>
-</ul>
-
-</div>
-</div>
-<hr/><h2>Member Enumeration Documentation</h2>
-<a class="anchor" id="a12c31c6bd2e018b05a71d51dd5b34846"></a><!-- doxytag: member="roboptim::GenericSolver::solutions" ref="a12c31c6bd2e018b05a71d51dd5b34846" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="a00069.html#a12c31c6bd2e018b05a71d51dd5b34846">roboptim::GenericSolver::solutions</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Define the kind of solution which has been found. </p>
-<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="a12c31c6bd2e018b05a71d51dd5b34846ad1b2209e4a7e20a2c8baa1481106b374"></a><!-- doxytag: member="SOLVER_NO_SOLUTION" ref="a12c31c6bd2e018b05a71d51dd5b34846ad1b2209e4a7e20a2c8baa1481106b374" args="" -->SOLVER_NO_SOLUTION</em>&nbsp;</td><td>
-<p>Solution has yet to be found. </p>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a12c31c6bd2e018b05a71d51dd5b34846a863bfbf9be9ec0e42ac65add3ea37dda"></a><!-- doxytag: member="SOLVER_VALUE" ref="a12c31c6bd2e018b05a71d51dd5b34846a863bfbf9be9ec0e42ac65add3ea37dda" args="" -->SOLVER_VALUE</em>&nbsp;</td><td>
-<p>Solution has been found. </p>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a12c31c6bd2e018b05a71d51dd5b34846a9d7660b10a44d0e05461a63e24182db5"></a><!-- doxytag: member="SOLVER_VALUE_WARNINGS" ref="a12c31c6bd2e018b05a71d51dd5b34846a9d7660b10a44d0e05461a63e24182db5" args="" -->SOLVER_VALUE_WARNINGS</em>&nbsp;</td><td>
-<p>Solution has been found but some problems happened. </p>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a12c31c6bd2e018b05a71d51dd5b34846a6b549430cbdf64b5dfeb36e006b3e15f"></a><!-- doxytag: member="SOLVER_ERROR" ref="a12c31c6bd2e018b05a71d51dd5b34846a6b549430cbdf64b5dfeb36e006b3e15f" args="" -->SOLVER_ERROR</em>&nbsp;</td><td>
-<p>The solver failed to found a solution. </p>
-</td></tr>
-</table>
-</dd>
-</dl>
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac73eb90d375eebe2580be8ad275bbf39"></a><!-- doxytag: member="roboptim::GenericSolver::GenericSolver" ref="ac73eb90d375eebe2580be8ad275bbf39" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00069.html#ac73eb90d375eebe2580be8ad275bbf39">roboptim::GenericSolver::GenericSolver</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [explicit]</code></td>
+          <td class="memname">typedef matrix_t::Index <a class="el" href="a00067.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00057.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00069.html#ae382b9a557d9e2f5e54a54ef60acb10c">size_type</a></td>
         </tr>
       </table>
 </div>
@@ -215,32 +115,12 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a73789e83216bf0ef32a3f123088f04b4"></a><!-- doxytag: member="roboptim::GenericSolver::GenericSolver" ref="a73789e83216bf0ef32a3f123088f04b4" args="(const GenericSolver &amp;)" -->
+<a class="anchor" id="af0e69c7fd4c248106029270aef16c58e"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::value_type" ref="af0e69c7fd4c248106029270aef16c58e" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00069.html#ac73eb90d375eebe2580be8ad275bbf39">roboptim::GenericSolver::GenericSolver</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00069.html">GenericSolver</a> &amp;&#160;</td>
-          <td class="paramname"><em>solver</em></td><td>)</td>
-          <td><code> [explicit]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a86170d03b3066285f5c47bfc78819571"></a><!-- doxytag: member="roboptim::GenericSolver::~GenericSolver" ref="a86170d03b3066285f5c47bfc78819571" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00069.html#a86170d03b3066285f5c47bfc78819571">roboptim::GenericSolver::~GenericSolver</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td class="memname">typedef matrix_t::Scalar <a class="el" href="a00067.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00057.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00069.html#af0e69c7fd4c248106029270aef16c58e">value_type</a></td>
         </tr>
       </table>
 </div>
@@ -249,184 +129,208 @@ Static Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a3f01ea84c377efc66cd55bc38f8676ad"></a><!-- doxytag: member="roboptim::GenericSolver::getMinimum" ref="a3f01ea84c377efc66cd55bc38f8676ad" args="()" -->
+<a class="anchor" id="adc4e8ebe74893432259687429e7bf122"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::ROBOPTIM_GENERATE_TYPEDEFS_EIGEN_REF" ref="adc4e8ebe74893432259687429e7bf122" args="(vector, Eigen::Matrix&lt; double BOOST_PP_COMMA() Eigen::Dynamic BOOST_PP_COMMA() 1 &gt;)" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const T&amp; <a class="el" href="a00069.html#a3f01ea84c377efc66cd55bc38f8676ad">roboptim::GenericSolver::getMinimum</a> </td>
+          <td class="memname"><a class="el" href="a00067.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00057.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00069.html#adc4e8ebe74893432259687429e7bf122">ROBOPTIM_GENERATE_TYPEDEFS_EIGEN_REF</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td class="paramtype">vector&#160;</td>
+          <td class="paramname">, </td>
         </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Get real result. </p>
-<p>Optimization results is wrapped in a Boost.Variant class, this method has to be used to retrieve the real result type. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>real result </dd></dl>
-<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">boost::bad_get</td><td>if a wrong type is used. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aef2460331a80efc404356e9b68269b8c"></a><!-- doxytag: member="roboptim::GenericSolver::minimum" ref="aef2460331a80efc404356e9b68269b8c" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00069.html#acd6988bec0b7bda9b8565232d32d1bae">GenericSolver::result_t</a> &amp; <a class="el" href="a00069.html#aef2460331a80efc404356e9b68269b8c">roboptim::GenericSolver::minimum</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Eigen::Matrix&lt; double BOOST_PP_COMMA() Eigen::Dynamic BOOST_PP_COMMA() 1 &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Returns the function minimum This solves the problem automatically, if it has not yet been solved. </p>
-<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="a00069.html#a2426a7c827ce0c46c77ac29ad1d7f846" title="Determine real minimum type.">minimumType()</a> </dd>
-<dd>
-<a class="el" href="a00069.html#a3f01ea84c377efc66cd55bc38f8676ad" title="Get real result.">getMinimum()</a> </dd></dl>
-
-<p>References <a class="el" href="a00069.html#ab36ece190971122f7111d7e92c4e66cf">result_</a>, <a class="el" href="a00069.html#a4573db8138895e5dc5eee8880e02e928">solve()</a>, and <a class="el" href="a00069.html#a12c31c6bd2e018b05a71d51dd5b34846ad1b2209e4a7e20a2c8baa1481106b374">SOLVER_NO_SOLUTION</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2426a7c827ce0c46c77ac29ad1d7f846"></a><!-- doxytag: member="roboptim::GenericSolver::minimumType" ref="a2426a7c827ce0c46c77ac29ad1d7f846" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00069.html#a12c31c6bd2e018b05a71d51dd5b34846">solutions</a> <a class="el" href="a00069.html#a2426a7c827ce0c46c77ac29ad1d7f846">roboptim::GenericSolver::minimumType</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Determine real minimum type. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>value representing result type </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a06ac6c38696f931bc1333d974ef25d03"></a><!-- doxytag: member="roboptim::GenericSolver::print" ref="a06ac6c38696f931bc1333d974ef25d03" args="(std::ostream &amp;) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; <a class="el" href="a00069.html#a06ac6c38696f931bc1333d974ef25d03">roboptim::GenericSolver::print</a> </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const<code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Display the solver on the specified output stream. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
-
-<p>Reimplemented in <a class="el" href="a00110.html#afc073c4023a0146bef3e67bbb1a2b4f9">roboptim::Solver&lt; F, C &gt;</a>, <a class="el" href="a00110.html#afc073c4023a0146bef3e67bbb1a2b4f9">roboptim::Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;</a>, <a class="el" href="a00110.html#afc073c4023a0146bef3e67bbb1a2b4f9">roboptim::Solver&lt; Function, boost::mpl::vector&lt; Function &gt; &gt;</a>, and <a class="el" href="a00110.html#afc073c4023a0146bef3e67bbb1a2b4f9">roboptim::Solver&lt; TwiceDifferentiableFunction, boost::mpl::vector&lt; TwiceDifferentiableFunction &gt; &gt;</a>.</p>
-
-<p>Referenced by <a class="el" href="a00247.html#af9168236068ddff8b8df413c430212e8">roboptim::operator&lt;&lt;()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a16884b058070f8fb6759c6c194665cb7"></a><!-- doxytag: member="roboptim::GenericSolver::reset" ref="a16884b058070f8fb6759c6c194665cb7" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00069.html#a16884b058070f8fb6759c6c194665cb7">roboptim::GenericSolver::reset</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Force to restart the optimization. </p>
-<p>Reset the internal mechanism to force the solution to be re-computed next time getMinimum is called. </p>
-
-<p>References <a class="el" href="a00069.html#a7fbfdfbf962a90aace9fd42e92e0a428">logger</a>, and <a class="el" href="a00069.html#ab36ece190971122f7111d7e92c4e66cf">result_</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a4573db8138895e5dc5eee8880e02e928"></a><!-- doxytag: member="roboptim::GenericSolver::solve" ref="a4573db8138895e5dc5eee8880e02e928" args="()=0" -->
+<a class="anchor" id="af9e1b20e8a236a7b67c109f8f9b5c934"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::ROBOPTIM_GENERATE_TYPEDEFS_EIGEN_REF" ref="af9e1b20e8a236a7b67c109f8f9b5c934" args="(result, vector_t)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="a00069.html#a4573db8138895e5dc5eee8880e02e928">roboptim::GenericSolver::solve</a> </td>
+          <td class="memname"><a class="el" href="a00067.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00057.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00069.html#adc4e8ebe74893432259687429e7bf122">ROBOPTIM_GENERATE_TYPEDEFS_EIGEN_REF</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [pure virtual]</code></td>
+          <td class="paramtype">result&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Solve the problem. </p>
-<p>Called automatically by getMinimum if required. </p>
+</div>
+</div>
+<a class="anchor" id="ab8e5dc91c3827ec92cb0741019570f9f"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::ROBOPTIM_GENERATE_TYPEDEFS_EIGEN_REF" ref="ab8e5dc91c3827ec92cb0741019570f9f" args="(argument, vector_t)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00067.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00057.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00069.html#adc4e8ebe74893432259687429e7bf122">ROBOPTIM_GENERATE_TYPEDEFS_EIGEN_REF</a> </td>
+          <td>(</td>
+          <td class="paramtype">argument&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
-<p>Implemented in <a class="el" href="a00058.html#a9c572e37e56f4f5e9bf43f57b1803e09">roboptim::GenericDummySolverLastState&lt; F &gt;</a>, <a class="el" href="a00049.html#ae5600583ae3db32dde947167a3bab131">roboptim::DummySolverTd</a>, and <a class="el" href="a00048.html#a3d67feee267c21554172ba5153b6d10a">roboptim::DummySolver</a>.</p>
+</div>
+</div>
+<a class="anchor" id="aa5b8e636856f9f0c2607841f89366f0c"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::ROBOPTIM_GENERATE_TYPEDEFS_REF" ref="aa5b8e636856f9f0c2607841f89366f0c" args="(matrix, Eigen::SparseMatrix&lt; double BOOST_PP_COMMA() StorageOrder &gt;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00067.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00057.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00069.html#aa5b8e636856f9f0c2607841f89366f0c">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
+          <td>(</td>
+          <td class="paramtype">matrix&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::SparseMatrix&lt; double BOOST_PP_COMMA() <a class="el" href="a00069.html#ac589de0ba331e2f4963b3a1de6441815">StorageOrder</a> &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
-<p>Referenced by <a class="el" href="a00069.html#aef2460331a80efc404356e9b68269b8c">minimum()</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a42e3d89e7934125e2d85223d40cbef90"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::ROBOPTIM_GENERATE_TYPEDEFS_REF" ref="a42e3d89e7934125e2d85223d40cbef90" args="(gradient, Eigen::SparseVector&lt; double &gt;)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00067.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00057.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00069.html#aa5b8e636856f9f0c2607841f89366f0c">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
+          <td>(</td>
+          <td class="paramtype">gradient&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::SparseVector&lt; double &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aed5e8ac8cc2ff9b0844f14de973b29e1"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::ROBOPTIM_GENERATE_TYPEDEFS_REF" ref="aed5e8ac8cc2ff9b0844f14de973b29e1" args="(jacobian, matrix_t)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00067.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00057.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00069.html#aa5b8e636856f9f0c2607841f89366f0c">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
+          <td>(</td>
+          <td class="paramtype">jacobian&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">matrix_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a470dbcc845cdd0d3f2e0a73be5f80417"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::ROBOPTIM_GENERATE_TYPEDEFS_REF" ref="a470dbcc845cdd0d3f2e0a73be5f80417" args="(hessian, matrix_t)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00067.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00057.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00069.html#aa5b8e636856f9f0c2607841f89366f0c">ROBOPTIM_GENERATE_TYPEDEFS_REF</a> </td>
+          <td>(</td>
+          <td class="paramtype">hessian&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">matrix_t&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
 <hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a7fbfdfbf962a90aace9fd42e92e0a428"></a><!-- doxytag: member="roboptim::GenericSolver::logger" ref="a7fbfdfbf962a90aace9fd42e92e0a428" args="" -->
+<a class="anchor" id="ac589de0ba331e2f4963b3a1de6441815"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::StorageOrder" ref="ac589de0ba331e2f4963b3a1de6441815" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">log4cxx::LoggerPtr <a class="el" href="a00069.html#a7fbfdfbf962a90aace9fd42e92e0a428">roboptim::GenericSolver::logger</a><code> [static, protected]</code></td>
+          <td class="memname">const int <a class="el" href="a00067.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00057.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00069.html#ac589de0ba331e2f4963b3a1de6441815">StorageOrder</a> = Eigen::RowMajor<code> [static]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Pointer to function logger (see log4cxx documentation). </p>
-
-<p>Reimplemented in <a class="el" href="a00110.html#a8963aaae43fc6df3f2faa38e94df8c47">roboptim::Solver&lt; F, C &gt;</a>, <a class="el" href="a00110.html#a8963aaae43fc6df3f2faa38e94df8c47">roboptim::Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;</a>, <a class="el" href="a00110.html#a8963aaae43fc6df3f2faa38e94df8c47">roboptim::Solver&lt; Function, boost::mpl::vector&lt; Function &gt; &gt;</a>, and <a class="el" href="a00110.html#a8963aaae43fc6df3f2faa38e94df8c47">roboptim::Solver&lt; TwiceDifferentiableFunction, boost::mpl::vector&lt; TwiceDifferentiableFunction &gt; &gt;</a>.</p>
-
-<p>Referenced by <a class="el" href="a00069.html#a16884b058070f8fb6759c6c194665cb7">reset()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab36ece190971122f7111d7e92c4e66cf"></a><!-- doxytag: member="roboptim::GenericSolver::result_" ref="ab36ece190971122f7111d7e92c4e66cf" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00069.html#acd6988bec0b7bda9b8565232d32d1bae">result_t</a> <a class="el" href="a00069.html#ab36ece190971122f7111d7e92c4e66cf">roboptim::GenericSolver::result_</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Optimization result. </p>
-
-<p>Referenced by <a class="el" href="a00069.html#aef2460331a80efc404356e9b68269b8c">minimum()</a>, <a class="el" href="a00069.html#a16884b058070f8fb6759c6c194665cb7">reset()</a>, <a class="el" href="a00048.html#a3d67feee267c21554172ba5153b6d10a">roboptim::DummySolver::solve()</a>, and <a class="el" href="a00049.html#ae5600583ae3db32dde947167a3bab131">roboptim::DummySolverTd::solve()</a>.</p>
+<p>Matrix storage order. </p>
 
 </div>
 </div>
@@ -448,7 +352,7 @@ template&lt;typename T &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00069.html">GenericSolver</a>      </li>
+      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00069.html">GenericFunctionTraits&lt; EigenMatrixSparse &gt;</a>      </li>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::detail::shared_ptr_variant&lt; CLIST &gt; Struct Template Reference</title>
+<title>roboptim::detail::promote2&lt; T1, T2, promoteToT1 &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -62,32 +62,41 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::detail::shared_ptr_variant&lt; CLIST &gt; Struct Template Reference</div>  </div>
+<div class="title">roboptim::detail::promote2&lt; T1, T2, promoteToT1 &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::detail::shared_ptr_variant" -->
-<p>Generate a Boost.Variant of shared pointers from the static constraints types list.  
- <a href="a00107.html#details">More...</a></p>
+<!-- doxytag: class="roboptim::detail::promote2" -->
+<p><code>#include &lt;roboptim/core/detail/autopromote.hh&gt;</code></p>
 
-<p><code>#include &lt;roboptim/core/detail/utility.hh&gt;</code></p>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename CLIST&gt;<br/>
-struct roboptim::detail::shared_ptr_variant&lt; CLIST &gt;</h3>
+<p><a href="a00349.html">List of all members.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef T1&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#a87e24763a96f6a5ecd8cfedde7abaab9">T_promote</a></td></tr>
+</table>
+<h3>template&lt;class T1, class T2, int promoteToT1&gt;<br/>
+ struct roboptim::detail::promote2&lt; T1, T2, promoteToT1 &gt;</h3>
 
-<p>Generate a Boost.Variant of shared pointers from the static constraints types list. </p>
-<p>For instance, if one instantiates </p>
-<div class="fragment"><pre class="fragment">  Problem&lt;QuadraticFunction, vector&lt;LinearFunction, QuadraticFunction&gt; &gt;
-</pre></div><p> then this type will be set to: </p>
-<div class="fragment"><pre class="fragment"> boost::variant&lt;boost::shared_ptr&lt;LinearFunction&gt;,
-                boost::shared_ptr&lt;QuadraticFunction&gt; &gt;
-</pre></div><dl class=""><dt><b>Template Parameters:</b></dt><dd>
-  <table class="">
-    <tr><td class="paramname">CLIST</td><td>vector of types </td></tr>
-  </table>
-  </dd>
-</dl>
-</div></div><!-- contents -->
+<hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a87e24763a96f6a5ecd8cfedde7abaab9"></a><!-- doxytag: member="roboptim::detail::promote2::T_promote" ref="a87e24763a96f6a5ecd8cfedde7abaab9" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T1, class T2, int promoteToT1&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef T1 <a class="el" href="a00107.html">roboptim::detail::promote2</a>&lt; T1, T2, promoteToT1 &gt;::<a class="el" href="a00107.html#a87e24763a96f6a5ecd8cfedde7abaab9">T_promote</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -105,8 +114,8 @@ struct roboptim::detail::shared_ptr_variant&lt; CLIST &gt;</h3>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00253.html">detail</a>      </li>
-      <li class="navelem"><a class="el" href="a00107.html">shared_ptr_variant</a>      </li>
+      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00260.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00107.html">promote2</a>      </li>
 </body>
 </html>

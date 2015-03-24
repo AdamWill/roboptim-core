@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::Scalar&lt; U &gt; Class Template Reference</title>
+<title>roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -64,285 +64,77 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::Scalar&lt; U &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00263.html">Function filters</a></div></div>  </div>
+<div class="title">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00271.html">Optimization problems</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::Scalar" -->
-<p>Multiply by a constant scalar value.  
- <a href="a00104.html#details">More...</a></p>
+<!-- doxytag: class="roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;" -->
+<p><code>#include &lt;roboptim/core/problem.hh&gt;</code></p>
 
-<p><code>#include &lt;roboptim/core/filter/scalar.hh&gt;</code></p>
-
-<p><a href="a00292.html">List of all members.</a></p>
+<p><a href="a00327.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="a00021.html">detail::AutopromoteTrait</a>&lt; U &gt;<br class="typebreak"/>
-::T_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a7953a20600361495460caa1f213e9011">parentType_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="a00104.html">Scalar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a20f63dc977977915cfc81b1743bd2416">ScalarShPtr_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::mpl::vector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga9bcfdbfb54421341ac458447f29dded0">constraintsList_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef F&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga7aea22d30d62c71d6e97078a45cfcb79">function_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type.  <a href="a00271.html#ga7aea22d30d62c71d6e97078a45cfcb79"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga39720e9fd5bb9e9e9978625388a87203">value_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga2a21cd94c35336aa100e6c2aaa007c36">vector_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector type.  <a href="a00271.html#ga2a21cd94c35336aa100e6c2aaa007c36"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::argument_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gacb605f5f66cb80239ccfcc3d73d2fc8e">argument_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument type.  <a href="a00271.html#gacb605f5f66cb80239ccfcc3d73d2fc8e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga800dda9345ba312198769ad066cfb4d3">size_type</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Size type.  <a href="a00271.html#ga800dda9345ba312198769ad066cfb4d3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::optional<br class="typebreak"/>
+&lt; <a class="el" href="a00271.html#gacb605f5f66cb80239ccfcc3d73d2fc8e">argument_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga6867ebdef2c7569a9b99e5000dbe049f">startingPoint_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional vector defines a starting point.  <a href="a00271.html#ga6867ebdef2c7569a9b99e5000dbe049f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::interval_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga448280ebf68055294e2e402202e9af8a">interval_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::intervals_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gae655b225fa5efccdd2a2eb4c8e8462e6">intervals_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00271.html#ga39720e9fd5bb9e9e9978625388a87203">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gae99cdf43b9e6e469068890e150f2af81">scales_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale vector.  <a href="a00271.html#gae99cdf43b9e6e469068890e150f2af81"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::names_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga5f47ddde952ed583da686357d23083e4">names_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of names (e.g. for arguments).  <a href="a00271.html#ga5f47ddde952ed583da686357d23083e4"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#aefa2eb6460580af5ce6ecc78bf0319de">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00104.html#a7953a20600361495460caa1f213e9011">parentType_t</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#ac79b4a6aef381f457296bfdc7f2a3701">Scalar</a> (boost::shared_ptr&lt; U &gt; fct, value_type <a class="el" href="a00263.html#ga6354c8c5e1101410ab5a74b2f6f11cfb">scalar</a>)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a scalar filter.  <a href="#ac79b4a6aef381f457296bfdc7f2a3701"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a50fe6bb5f735657401bafce30044056c">~Scalar</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#ad17cc3b06c7818946a6b94254ffcb1c1">origin</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a4e8961237859adaa361aa9fec0d5057d">origin</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a5b51703743a37256cac90680f2b2360f">impl_compute</a> (result_ref result, const_argument_ref x) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#ae035b79d51ac9930f7c1f8fc44cdc1bd">impl_gradient</a> (gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a2c0c26a9bea4b5a08455521e568f3068">impl_jacobian</a> (jacobian_ref jacobian, const_argument_ref arg) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gab8e4c8c63039bd83b2537cd4a139a0cc">print</a> (std::ostream &amp;o) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the problem on the specified output stream.  <a href="a00271.html#gab8e4c8c63039bd83b2537cd4a139a0cc"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Constructors and destructors.</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gadcca92e64b652ed01d3b277105e9a503">Problem</a> (const <a class="el" href="a00271.html#ga7aea22d30d62c71d6e97078a45cfcb79">function_t</a> &amp;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga58de36c497db8306e8648cd7f23b401f">Problem</a> (const <a class="el" href="a00103.html">Problem</a>&lt; F, boost::mpl::vector&lt;&gt; &gt; &amp;)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="a00271.html#ga58de36c497db8306e8648cd7f23b401f"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename F_ &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00271.html#gafc8876f9b6f551a7f410c7839768cee9">Problem</a> (const <a class="el" href="a00103.html">Problem</a>&lt; F_, boost::mpl::vector&lt;&gt; &gt; &amp;)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor (convert from another class of problem).  <a href="a00271.html#gafc8876f9b6f551a7f410c7839768cee9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga18c4d0e5a905e7154a5109aa03e47561">~Problem</a> ()</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Cost function.</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00271.html#ga7aea22d30d62c71d6e97078a45cfcb79">function_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga228e69db29968ff3fd6721672be5193e">function</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve cost function.  <a href="a00271.html#ga228e69db29968ff3fd6721672be5193e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00271.html#gae655b225fa5efccdd2a2eb4c8e8462e6">intervals_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga7c0c46e2510ad60fb66212e6b568318b">argumentBounds</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments bounds.  <a href="a00271.html#ga7c0c46e2510ad60fb66212e6b568318b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00271.html#gae655b225fa5efccdd2a2eb4c8e8462e6">intervals_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga5fa1e1daba19616a2a5026104e036ca9">argumentBounds</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments bounds.  <a href="a00271.html#ga5fa1e1daba19616a2a5026104e036ca9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00271.html#gae99cdf43b9e6e469068890e150f2af81">scales_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga0613681457a770b22dea21d02a17600d">argumentScales</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments scales.  <a href="a00271.html#ga0613681457a770b22dea21d02a17600d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00271.html#gae99cdf43b9e6e469068890e150f2af81">scales_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gac4e8cb9b614553863159bce28b41a7c0">argumentScales</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments scales.  <a href="a00271.html#gac4e8cb9b614553863159bce28b41a7c0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00271.html#ga5f47ddde952ed583da686357d23083e4">names_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga3b875120e0321b6dc05c9be432701c94">argumentNames</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments names.  <a href="a00271.html#ga3b875120e0321b6dc05c9be432701c94"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00271.html#ga5f47ddde952ed583da686357d23083e4">names_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gabca88d1db63230d0cd787e80088cd51d">argumentNames</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments names.  <a href="a00271.html#gabca88d1db63230d0cd787e80088cd51d"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Starting point (initial guess).</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00271.html#ga6867ebdef2c7569a9b99e5000dbe049f">startingPoint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga8f6ac3f234d690a1a51760665b13ec6b">startingPoint</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the initial guess.  <a href="a00271.html#ga8f6ac3f234d690a1a51760665b13ec6b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00271.html#ga6867ebdef2c7569a9b99e5000dbe049f">startingPoint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga266d759261ed5ecfe1525b7faeeafd2d">startingPoint</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the initial guess.  <a href="a00271.html#ga266d759261ed5ecfe1525b7faeeafd2d"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="friends"></a>
+Friends</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gacc081cc87e465ee811f25f9676550d09">Problem</a></td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename U&gt;<br/>
-class roboptim::Scalar&lt; U &gt;</h3>
+<h3>template&lt;typename F&gt;<br/>
+ class roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;</h3>
 
-<p>Multiply by a constant scalar value. </p>
-<dl class=""><dt><b>Template Parameters:</b></dt><dd>
-  <table class="">
-    <tr><td class="paramname">U</td><td>input function type. </td></tr>
-  </table>
-  </dd>
-</dl>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a7953a20600361495460caa1f213e9011"></a><!-- doxytag: member="roboptim::Scalar::parentType_t" ref="a7953a20600361495460caa1f213e9011" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00021.html">detail::AutopromoteTrait</a>&lt;U&gt;::T_type <a class="el" href="a00104.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00104.html#a7953a20600361495460caa1f213e9011">parentType_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a20f63dc977977915cfc81b1743bd2416"></a><!-- doxytag: member="roboptim::Scalar::ScalarShPtr_t" ref="a20f63dc977977915cfc81b1743bd2416" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="a00104.html">Scalar</a>&gt; <a class="el" href="a00104.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00104.html#a20f63dc977977915cfc81b1743bd2416">ScalarShPtr_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ac79b4a6aef381f457296bfdc7f2a3701"></a><!-- doxytag: member="roboptim::Scalar::Scalar" ref="ac79b4a6aef381f457296bfdc7f2a3701" args="(boost::shared_ptr&lt; U &gt; fct, value_type scalar)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00104.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00104.html">Scalar</a> </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>fct</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">value_type&#160;</td>
-          <td class="paramname"><em>scalar</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [explicit]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Create a scalar filter. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fct</td><td>input function. </td></tr>
-    <tr><td class="paramname">scalar</td><td>scalar value. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a50fe6bb5f735657401bafce30044056c"></a><!-- doxytag: member="roboptim::Scalar::~Scalar" ref="a50fe6bb5f735657401bafce30044056c" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00104.html">roboptim::Scalar</a>&lt; U &gt;::~<a class="el" href="a00104.html">Scalar</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a5b51703743a37256cac90680f2b2360f"></a><!-- doxytag: member="roboptim::Scalar::impl_compute" ref="a5b51703743a37256cac90680f2b2360f" args="(result_ref result, const_argument_ref x) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00104.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00104.html#a5b51703743a37256cac90680f2b2360f">impl_compute</a> </td>
-          <td>(</td>
-          <td class="paramtype">result_ref&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae035b79d51ac9930f7c1f8fc44cdc1bd"></a><!-- doxytag: member="roboptim::Scalar::impl_gradient" ref="ae035b79d51ac9930f7c1f8fc44cdc1bd" args="(gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00104.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00104.html#ae035b79d51ac9930f7c1f8fc44cdc1bd">impl_gradient</a> </td>
-          <td>(</td>
-          <td class="paramtype">gradient_ref&#160;</td>
-          <td class="paramname"><em>gradient</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_type&#160;</td>
-          <td class="paramname"><em>functionId</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2c0c26a9bea4b5a08455521e568f3068"></a><!-- doxytag: member="roboptim::Scalar::impl_jacobian" ref="a2c0c26a9bea4b5a08455521e568f3068" args="(jacobian_ref jacobian, const_argument_ref arg) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00104.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00104.html#a2c0c26a9bea4b5a08455521e568f3068">impl_jacobian</a> </td>
-          <td>(</td>
-          <td class="paramtype">jacobian_ref&#160;</td>
-          <td class="paramname"><em>jacobian</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ad17cc3b06c7818946a6b94254ffcb1c1"></a><!-- doxytag: member="roboptim::Scalar::origin" ref="ad17cc3b06c7818946a6b94254ffcb1c1" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00104.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00104.html#ad17cc3b06c7818946a6b94254ffcb1c1">origin</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4e8961237859adaa361aa9fec0d5057d"></a><!-- doxytag: member="roboptim::Scalar::origin" ref="a4e8961237859adaa361aa9fec0d5057d" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00104.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00104.html#ad17cc3b06c7818946a6b94254ffcb1c1">origin</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aefa2eb6460580af5ce6ecc78bf0319de"></a><!-- doxytag: member="roboptim::Scalar::ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="aefa2eb6460580af5ce6ecc78bf0319de" args="(parentType_t)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00104.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00104.html#aefa2eb6460580af5ce6ecc78bf0319de">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00104.html#a7953a20600361495460caa1f213e9011">parentType_t</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -361,7 +153,7 @@ template&lt;typename U&gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00104.html">Scalar</a>      </li>
+      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00104.html">Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;</a>      </li>
 </body>
 </html>

@@ -1,4 +1,4 @@
 var a00128 =
 [
-    [ "concatenate", "a00263.html#gab96495c02bce2fe1e2ad1e08770f4dcc", null ]
+    [ "bind", "a00270.html#gac398776c05160b474382281f0501fa7b", null ]
 ];

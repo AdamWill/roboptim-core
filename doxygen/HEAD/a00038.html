@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::detail::ConvertConstraint&lt; CLIST &gt; Struct Template Reference</title>
+<title>roboptim::detail::const_ref&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,52 +63,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-types">Public Types</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::detail::ConvertConstraint&lt; CLIST &gt; Struct Template Reference</div>  </div>
+<div class="title">roboptim::detail::const_ref&lt; T &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::detail::ConvertConstraint" -->
-<p>Convert a constraint to a proper type.  
+<!-- doxytag: class="roboptim::detail::const_ref" -->
+<p>Return the proper const reference type of a given type.  
  <a href="a00038.html#details">More...</a></p>
 
 <p><code>#include &lt;roboptim/core/detail/utility.hh&gt;</code></p>
 
-<p><a href="a00346.html">List of all members.</a></p>
+<p><a href="a00354.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename C &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; typename <br class="typebreak"/>
-<a class="el" href="a00030.html">cast_constraint_type</a>&lt; C, CLIST &gt;<br class="typebreak"/>
-::type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00038.html#a20d22e82553158f19cd3c8175ebc50ac">operator()</a> (const boost::shared_ptr&lt; C &gt; &amp;c) const </td></tr>
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef if_&lt; <a class="el" href="a00082.html">is_eigen_type</a>&lt; T &gt;<br class="typebreak"/>
+, <a class="el" href="a00037.html">const_eigen_ref</a>&lt; T &gt;<br class="typebreak"/>
+, add_reference&lt; typename <br class="typebreak"/>
+add_const&lt; T &gt;::<a class="el" href="a00038.html#a5147b257ce0c8cccfff2119b9dd280b6">type</a> &gt;<br class="typebreak"/>
+ &gt;::type::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html#a5147b257ce0c8cccfff2119b9dd280b6">type</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename CLIST&gt;<br/>
-struct roboptim::detail::ConvertConstraint&lt; CLIST &gt;</h3>
+<div class="textblock"><h3>template&lt;typename T&gt;<br/>
+struct roboptim::detail::const_ref&lt; T &gt;</h3>
 
-<p>Convert a constraint to a proper type. </p>
+<p>Return the proper const reference type of a given type. </p>
+<p>For instance: const_ref&lt;float&gt;::value_t == const float&amp; const_ref&lt;argument_t&gt;::value_t == const_argument_ref</p>
+<p>This returns a const Eigen::Ref for dense Eigen matrices, else a simple const reference.</p>
+<p>Note: this currently does not cover all cases (e.g. sparse vectors), but should work for argument_t/vector_t (dense vectors).</p>
 <dl class=""><dt><b>Template Parameters:</b></dt><dd>
   <table class="">
-    <tr><td class="paramname">CLIST</td><td>a vector of valid constraint types. </td></tr>
+    <tr><td class="paramname">T</td><td>type. </td></tr>
   </table>
   </dd>
 </dl>
-</div><hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a20d22e82553158f19cd3c8175ebc50ac"></a><!-- doxytag: member="roboptim::detail::ConvertConstraint::operator()" ref="a20d22e82553158f19cd3c8175ebc50ac" args="(const boost::shared_ptr&lt; C &gt; &amp;c) const " -->
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a5147b257ce0c8cccfff2119b9dd280b6"></a><!-- doxytag: member="roboptim::detail::const_ref::type" ref="a5147b257ce0c8cccfff2119b9dd280b6" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename CLIST&gt; </div>
-<div class="memtemplate">
-template&lt;typename C &gt; </div>
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt;typename <a class="el" href="a00030.html">cast_constraint_type</a>&lt;C, CLIST&gt;::type&gt; <a class="el" href="a00038.html">roboptim::detail::ConvertConstraint</a>&lt; CLIST &gt;::operator() </td>
-          <td>(</td>
-          <td class="paramtype">const boost::shared_ptr&lt; C &gt; &amp;&#160;</td>
-          <td class="paramname"><em>c</em></td><td>)</td>
-          <td> const<code> [inline]</code></td>
+          <td class="memname">typedef if_&lt;<a class="el" href="a00082.html">is_eigen_type</a>&lt;T&gt;, <a class="el" href="a00037.html">const_eigen_ref</a>&lt;T&gt;, add_reference&lt;typename add_const&lt;T&gt;::<a class="el" href="a00038.html#a5147b257ce0c8cccfff2119b9dd280b6">type</a>&gt; &gt;::type::type <a class="el" href="a00038.html">roboptim::detail::const_ref</a>&lt; T &gt;::<a class="el" href="a00038.html#a5147b257ce0c8cccfff2119b9dd280b6">type</a></td>
         </tr>
       </table>
 </div>
@@ -134,8 +132,8 @@ template&lt;typename C &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00253.html">detail</a>      </li>
-      <li class="navelem"><a class="el" href="a00038.html">ConvertConstraint</a>      </li>
+      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00260.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00038.html">const_ref</a>      </li>
 </body>
 </html>

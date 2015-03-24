@@ -58,23 +58,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-  initNavTree('a00073.html','');
+  initNavTree('a00106.html','');
 </script>
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">roboptim::visualization::Gnuplot Member List</div>  </div>
+<div class="title">roboptim::detail::ProductDifferentiation Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-This is the complete list of members for <a class="el" href="a00073.html">roboptim::visualization::Gnuplot</a>, including all inherited members.<table>
-  <tr class="memlist"><td><a class="el" href="a00073.html#a0bc170d3f32a3abaa388b27e17242ad3">clear</a>()</td><td><a class="el" href="a00073.html">roboptim::visualization::Gnuplot</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00073.html#ab134923cbb8cc53b251664f4b5c6b73c">Gnuplot</a>(bool with_header=true)</td><td><a class="el" href="a00073.html">roboptim::visualization::Gnuplot</a></td><td><code> [explicit, protected]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00073.html#a55c76cc46b5c54b1bc0d4684128403ff">make_gnuplot</a>(bool with_header=true)</td><td><a class="el" href="a00073.html">roboptim::visualization::Gnuplot</a></td><td><code> [inline, static]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00073.html#a14e55569e7e70d12d7cd1d83117576a1">make_interactive_gnuplot</a>(bool with_header=true)</td><td><a class="el" href="a00073.html">roboptim::visualization::Gnuplot</a></td><td><code> [inline, static]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00073.html#af7addb186708c556e603c3fd8e7768a6">operator&lt;&lt;</a>(gnuplot::Command)</td><td><a class="el" href="a00073.html">roboptim::visualization::Gnuplot</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00073.html#ad4b42f563ebbdb501d397a42a4420525">print</a>(std::ostream &amp;) const </td><td><a class="el" href="a00073.html">roboptim::visualization::Gnuplot</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00073.html#aaa242efdd1e20124d0698793b4fd4bdd">push_command</a>(gnuplot::Command cmd)</td><td><a class="el" href="a00073.html">roboptim::visualization::Gnuplot</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00073.html#ab2620f9d29a97757d0acbfe68e6a2c79">~Gnuplot</a>()</td><td><a class="el" href="a00073.html">roboptim::visualization::Gnuplot</a></td><td></td></tr>
+This is the complete list of members for <a class="el" href="a00106.html">roboptim::detail::ProductDifferentiation</a>, including all inherited members.<table>
+  <tr class="memlist"><td><a class="el" href="a00106.html#a810eb3bd58a6eb145ded059dfa0f2175">gradient</a>(typename Types&lt; U, V &gt;::gradient_ref grad_uv, const typename Types&lt; U, V &gt;::vectorU_ref u, const typename Types&lt; U, V &gt;::vectorV_ref v, const typename Types&lt; U, V &gt;::gradientU_ref grad_u, const typename Types&lt; U, V &gt;::gradientV_ref grad_v, typename boost::enable_if&lt; typename Types&lt; U, V &gt;::fullDense_t &gt;::type *=0)</td><td><a class="el" href="a00106.html">roboptim::detail::ProductDifferentiation</a></td><td><code> [inline, static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00106.html#a3510f93f1915ec5bf88582ee6df2842f">gradient</a>(typename Types&lt; U, V &gt;::gradient_ref grad_uv, const typename Types&lt; U, V &gt;::vectorU_ref u, const typename Types&lt; U, V &gt;::vectorV_ref v, const typename Types&lt; U, V &gt;::gradientU_ref grad_u, const typename Types&lt; U, V &gt;::gradientV_ref grad_v, typename boost::disable_if&lt; typename Types&lt; U, V &gt;::fullDense_t &gt;::type *=0)</td><td><a class="el" href="a00106.html">roboptim::detail::ProductDifferentiation</a></td><td><code> [inline, static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00106.html#af666d36d962b31244b2838aea7df7951">jacobian</a>(typename Types&lt; U, V &gt;::jacobian_ref jac_uv, const typename Types&lt; U, V &gt;::vectorU_ref u, const typename Types&lt; U, V &gt;::vectorV_ref v, const typename Types&lt; U, V &gt;::jacobianU_ref jac_u, const typename Types&lt; U, V &gt;::jacobianV_ref jac_v, typename boost::enable_if&lt; typename Types&lt; U, V &gt;::fullDense_t &gt;::type *=0)</td><td><a class="el" href="a00106.html">roboptim::detail::ProductDifferentiation</a></td><td><code> [inline, static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00106.html#a9a55ee9762560feebe5f2c950e5b340c">jacobian</a>(typename Types&lt; U, V &gt;::jacobian_ref jac_uv, const typename Types&lt; U, V &gt;::vectorU_ref u, const typename Types&lt; U, V &gt;::vectorV_ref v, const typename Types&lt; U, V &gt;::jacobianU_ref jac_u, const typename Types&lt; U, V &gt;::jacobianV_ref jac_v, typename boost::disable_if&lt; typename Types&lt; U, V &gt;::fullDense_t &gt;::type *=0)</td><td><a class="el" href="a00106.html">roboptim::detail::ProductDifferentiation</a></td><td><code> [inline, static]</code></td></tr>
 </table></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"

@@ -1,18 +1,15 @@
 var a00089 =
 [
-    [ "argument_t", "a00089.html#af4bb1d815e33a2fbb81165604d48e32a", null ],
-    [ "const_argument_ref", "a00089.html#a5b689ddb53cba72b6fe79c550c3bef3e", null ],
-    [ "matrix_t", "a00089.html#ae1ae1137efff66af2fc84c967a2e64e5", null ],
-    [ "result_t", "a00089.html#a650dd3199ebc63021f83ab30b603d982", null ],
-    [ "size_type", "a00089.html#ac88a1cbae53587c432cb346982c9302d", null ],
-    [ "value_type", "a00089.html#ad6f5a983e3c1c4f657ef972d8a781a57", null ],
-    [ "vector_t", "a00089.html#a485059f799b3a571c5446677a8655a34", null ],
-    [ "ParametrizedFunction", "a00089.html#a0cb8331de8f0fdc4ad395446b191fc81", null ],
-    [ "~ParametrizedFunction", "a00089.html#af4e8e1ee202ade5a6ec8d66fd497fe29", null ],
-    [ "functionInputSize", "a00089.html#a067147c8d9a6cfe99f46820a41d08aeb", null ],
-    [ "functionOutputSize", "a00089.html#af15dfa5e7e9e13e7f5d4720091a7d28f", null ],
-    [ "impl_compute", "a00089.html#a51e63e20af1027306aa09b86bb968a7e", null ],
-    [ "inputSize", "a00089.html#aa11a87582936a2ce58f853f6ea4541d8", null ],
-    [ "operator()", "a00089.html#aa743716ae487e979498571784038240b", null ],
-    [ "print", "a00089.html#a7769a5ffb197cd0009a27c6e12d40888", null ]
+    [ "MinusShPtr_t", "a00089.html#ae344478e5d53643778a5c4aee576b55c", null ],
+    [ "parentType_t", "a00089.html#a8b7f52fa80d2c59b7c7bc9a35a7e0031", null ],
+    [ "Minus", "a00089.html#ac824027a41ce9d5a343d1e0faa13bb8c", null ],
+    [ "~Minus", "a00089.html#a4eb1f38d5fb4f07cb695b431ff715f6c", null ],
+    [ "impl_compute", "a00089.html#ac83aa9833c95aeee657e4e7f52da4650", null ],
+    [ "impl_gradient", "a00089.html#a0644c67716f21a1e58a5630f85ca264f", null ],
+    [ "impl_jacobian", "a00089.html#a54025f8e09cc4249bb754e17e39aef88", null ],
+    [ "left", "a00089.html#ad452d59bf5247d3f65c8e46154cce947", null ],
+    [ "left", "a00089.html#a6c53d7372eb9f682cf70b372df297b70", null ],
+    [ "right", "a00089.html#a736678b418a2be8841df0558ed2395fd", null ],
+    [ "right", "a00089.html#a6fb299cf7d68ae57699fca015b7f7eba", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00089.html#ada08c22a7499f3af4279f6df1c095d63", null ]
 ];

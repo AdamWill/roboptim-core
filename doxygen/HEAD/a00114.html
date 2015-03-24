@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::SolverWarning Class Reference</title>
+<title>roboptim::SelectionById&lt; U &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,90 +63,278 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::SolverWarning Class Reference<div class="ingroups"><a class="el" href="a00264.html">Optimization problems</a></div></div>  </div>
+<div class="title">roboptim::SelectionById&lt; U &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00270.html">Function filters</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::SolverWarning" --><!-- doxytag: inherits="roboptim::SolverError" -->
-<p>Exception used for non-critical errors during optimization.  
+<!-- doxytag: class="roboptim::SelectionById" -->
+<p>Select part of a function.  
  <a href="a00114.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/solver-warning.hh&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for roboptim::SolverWarning:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00114.png" usemap="#roboptim::SolverWarning_map" alt=""/>
-  <map id="roboptim::SolverWarning_map" name="roboptim::SolverWarning_map">
-<area href="a00111.html" title="Base exception class for solving errors." alt="roboptim::SolverError" shape="rect" coords="0,0,150,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;roboptim/core/operator/selection-by-id.hh&gt;</code></p>
 
-<p><a href="a00328.html">List of all members.</a></p>
+<p><a href="a00319.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00021.html">detail::AutopromoteTrait</a>&lt; U &gt;<br class="typebreak"/>
+::T_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html#a10ceafe26463a6befaf1a83bae6f2ba3">parentType_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="a00114.html">SelectionById</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html#a2f296e76debe6a7e703f0a769f5f9129">SelectionByIdShPtr_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html#a89480c8b6750a2207e6db13b6cade235">SolverWarning</a> (const std::string &amp;arg)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate the class with a message.  <a href="#a89480c8b6750a2207e6db13b6cade235"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html#a1b851aa758c3cccd4594ff817fb10190">print</a> (std::ostream &amp;) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the problem on the specified output stream.  <a href="#a1b851aa758c3cccd4594ff817fb10190"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html#a4238e53c744c850cde075fda814a2f26">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00114.html#a10ceafe26463a6befaf1a83bae6f2ba3">parentType_t</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html#afed4a5f3312bb43c36cd89e1b24da60e">SelectionById</a> (boost::shared_ptr&lt; U &gt; <a class="el" href="a00114.html#a96d0c5400637449ba56f14e7c25ec69d">origin</a>, std::vector&lt; bool &gt; selector)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html#a647ad16eec9c7afb716a748c42c1fd1f">~SelectionById</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html#a96d0c5400637449ba56f14e7c25ec69d">origin</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html#a3fe469f5a1b03ea25527636b326d85ab">origin</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html#a9e64ceaf5be532b1d08b43fd48fc1802">impl_compute</a> (result_ref result, const_argument_ref x) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html#a670b69ecefa042ad5e6e2f14300c3482">impl_gradient</a> (gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html#a27306334779e090f25bbd7d630418aa8">impl_jacobian</a> (jacobian_ref jacobian, const_argument_ref arg) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Exception used for non-critical errors during optimization. </p>
-<p>This class is mainly used to populate the warning vector of the <a class="el" href="a00103.html" title="Represents the solution of an optimization problem when errors occurred during the solving process...">ResultWithWarnings</a> class. </p>
-</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a89480c8b6750a2207e6db13b6cade235"></a><!-- doxytag: member="roboptim::SolverWarning::SolverWarning" ref="a89480c8b6750a2207e6db13b6cade235" args="(const std::string &amp;arg)" -->
+<div class="textblock"><h3>template&lt;typename U&gt;<br/>
+class roboptim::SelectionById&lt; U &gt;</h3>
+
+<p>Select part of a function. </p>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">U</td><td>input function type. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a10ceafe26463a6befaf1a83bae6f2ba3"></a><!-- doxytag: member="roboptim::SelectionById::parentType_t" ref="a10ceafe26463a6befaf1a83bae6f2ba3" args="" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00114.html#a89480c8b6750a2207e6db13b6cade235">roboptim::SolverWarning::SolverWarning</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>arg</em></td><td>)</td>
-          <td><code> [explicit]</code></td>
+          <td class="memname">typedef <a class="el" href="a00021.html">detail::AutopromoteTrait</a>&lt;U&gt;::T_type <a class="el" href="a00114.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00114.html#a10ceafe26463a6befaf1a83bae6f2ba3">parentType_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Instantiate the class with a message. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">arg</td><td>message </td></tr>
-  </table>
-  </dd>
-</dl>
+</div>
+</div>
+<a class="anchor" id="a2f296e76debe6a7e703f0a769f5f9129"></a><!-- doxytag: member="roboptim::SelectionById::SelectionByIdShPtr_t" ref="a2f296e76debe6a7e703f0a769f5f9129" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="a00114.html">SelectionById</a>&gt; <a class="el" href="a00114.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00114.html#a2f296e76debe6a7e703f0a769f5f9129">SelectionByIdShPtr_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="afed4a5f3312bb43c36cd89e1b24da60e"></a><!-- doxytag: member="roboptim::SelectionById::SelectionById" ref="afed4a5f3312bb43c36cd89e1b24da60e" args="(boost::shared_ptr&lt; U &gt; origin, std::vector&lt; bool &gt; selector)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00114.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00114.html">SelectionById</a> </td>
+          <td>(</td>
+          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
+          <td class="paramname"><em>origin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; bool &gt;&#160;</td>
+          <td class="paramname"><em>selector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00163.html#a2ca868887cc5e83d7426dd4e84d046d9">result_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a647ad16eec9c7afb716a748c42c1fd1f"></a><!-- doxytag: member="roboptim::SelectionById::~SelectionById" ref="a647ad16eec9c7afb716a748c42c1fd1f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00114.html">roboptim::SelectionById</a>&lt; U &gt;::~<a class="el" href="a00114.html">SelectionById</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a1b851aa758c3cccd4594ff817fb10190"></a><!-- doxytag: member="roboptim::SolverWarning::print" ref="a1b851aa758c3cccd4594ff817fb10190" args="(std::ostream &amp;) const " -->
+<a class="anchor" id="a9e64ceaf5be532b1d08b43fd48fc1802"></a><!-- doxytag: member="roboptim::SelectionById::impl_compute" ref="a9e64ceaf5be532b1d08b43fd48fc1802" args="(result_ref result, const_argument_ref x) const " -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream &amp; <a class="el" href="a00114.html#a1b851aa758c3cccd4594ff817fb10190">roboptim::SolverWarning::print</a> </td>
+          <td class="memname">void <a class="el" href="a00114.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00114.html#a9e64ceaf5be532b1d08b43fd48fc1802">impl_compute</a> </td>
           <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const<code> [virtual]</code></td>
+          <td class="paramtype">result_ref&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const_argument_ref&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Display the problem on the specified output stream. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
+<p>References <a class="el" href="a00163.html#a2ca868887cc5e83d7426dd4e84d046d9">result_</a>.</p>
 
-<p>Reimplemented from <a class="el" href="a00111.html#a8bffd424a6556c49b69aa8cefc0f9b64">roboptim::SolverError</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a670b69ecefa042ad5e6e2f14300c3482"></a><!-- doxytag: member="roboptim::SelectionById::impl_gradient" ref="a670b69ecefa042ad5e6e2f14300c3482" args="(gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00114.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00114.html#a670b69ecefa042ad5e6e2f14300c3482">impl_gradient</a> </td>
+          <td>(</td>
+          <td class="paramtype">gradient_ref&#160;</td>
+          <td class="paramname"><em>gradient</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const_argument_ref&#160;</td>
+          <td class="paramname"><em>argument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_type&#160;</td>
+          <td class="paramname"><em>functionId</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a27306334779e090f25bbd7d630418aa8"></a><!-- doxytag: member="roboptim::SelectionById::impl_jacobian" ref="a27306334779e090f25bbd7d630418aa8" args="(jacobian_ref jacobian, const_argument_ref arg) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00114.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00114.html#a27306334779e090f25bbd7d630418aa8">impl_jacobian</a> </td>
+          <td>(</td>
+          <td class="paramtype">jacobian_ref&#160;</td>
+          <td class="paramname"><em>jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const_argument_ref&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a96d0c5400637449ba56f14e7c25ec69d"></a><!-- doxytag: member="roboptim::SelectionById::origin" ref="a96d0c5400637449ba56f14e7c25ec69d" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00114.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00114.html#a96d0c5400637449ba56f14e7c25ec69d">origin</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3fe469f5a1b03ea25527636b326d85ab"></a><!-- doxytag: member="roboptim::SelectionById::origin" ref="a3fe469f5a1b03ea25527636b326d85ab" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00114.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00114.html#a96d0c5400637449ba56f14e7c25ec69d">origin</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4238e53c744c850cde075fda814a2f26"></a><!-- doxytag: member="roboptim::SelectionById::ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="a4238e53c744c850cde075fda814a2f26" args="(parentType_t)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00114.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00114.html#a4238e53c744c850cde075fda814a2f26">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00114.html#a10ceafe26463a6befaf1a83bae6f2ba3">parentType_t</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -168,7 +356,7 @@ Public Member Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00114.html">SolverWarning</a>      </li>
+      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00114.html">SelectionById</a>      </li>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::Problem&lt; F, CLIST &gt; Class Template Reference</title>
+<title>roboptim::OptimizationLogger&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -65,107 +65,575 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#friends">Friends</a>  </div>
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::Problem&lt; F, CLIST &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00264.html">Optimization problems</a></div></div>  </div>
+<div class="title">roboptim::OptimizationLogger&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::Problem" -->
-<p><code>#include &lt;roboptim/core/problem.hh&gt;</code></p>
+<!-- doxytag: class="roboptim::OptimizationLogger" -->
+<p>Log the optimization process (values, Jacobians, time taken etc.).  
+ <a href="a00095.html#details">More...</a></p>
 
-<p><a href="a00320.html">List of all members.</a></p>
+<p><code>#include &lt;roboptim/core/optimization-logger.hh&gt;</code></p>
+
+<p><a href="a00322.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00075.html">detail::list_converter</a><br class="typebreak"/>
-&lt; CLIST &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga8cdb6c5f60124dca5dc559f03fdb9e59">constraintsList_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraints types list.  <a href="a00264.html#ga8cdb6c5f60124dca5dc559f03fdb9e59"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef F&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga880fef200a8fcb92b7612a37d3aed945">function_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type.  <a href="a00264.html#ga880fef200a8fcb92b7612a37d3aed945"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00118.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a0212b30a8be78730debbb9b9bab8526a">problem_t</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="a00107.html">detail::shared_ptr_variant</a><br class="typebreak"/>
-&lt; <a class="el" href="a00264.html#ga8cdb6c5f60124dca5dc559f03fdb9e59">constraintsList_t</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga75dded03cc5626abe20a183b91f59855">constraint_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint's type.  <a href="a00264.html#ga75dded03cc5626abe20a183b91f59855"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gac4d8783eb3cce4fb35902ef5b91635fd">value_type</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import function's value_type type.  <a href="a00264.html#gac4d8783eb3cce4fb35902ef5b91635fd"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gaaf9afed23707274cd5f4515ddea8e72a">vector_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector type.  <a href="a00264.html#gaaf9afed23707274cd5f4515ddea8e72a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::argument_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga31eec097ccd217fa1ab8396386027fb9">argument_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument type.  <a href="a00264.html#ga31eec097ccd217fa1ab8396386027fb9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gac3031ce28dcf76501a038c37beeb5a0b">size_type</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Size type.  <a href="a00264.html#gac3031ce28dcf76501a038c37beeb5a0b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00264.html#ga75dded03cc5626abe20a183b91f59855">constraint_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga9087fb924dcb6579d1a15eab76b8526d">constraints_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraints are represented as a vector of constraints.  <a href="a00264.html#ga9087fb924dcb6579d1a15eab76b8526d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::optional<br class="typebreak"/>
-&lt; <a class="el" href="a00264.html#ga31eec097ccd217fa1ab8396386027fb9">argument_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga54cc9f9c4a2ce51572af2c2e106076d0">startingPoint_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional vector defines a starting point.  <a href="a00264.html#ga54cc9f9c4a2ce51572af2c2e106076d0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::interval_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga380a03c110b72daf32f237271c9132fb">interval_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval type (e.g. for bounds).  <a href="a00264.html#ga380a03c110b72daf32f237271c9132fb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::intervals_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Intervals type.  <a href="a00264.html#gad94c072558540fb7101c01002e08b3b8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00264.html#gac4d8783eb3cce4fb35902ef5b91635fd">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale vector.  <a href="a00264.html#ga81acce0cec82db9dd19c849569fb034e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::names_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga63c6a234f24ee27fb4d9be0f9d6e10a7">names_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of names (e.g. for arguments).  <a href="a00264.html#ga63c6a234f24ee27fb4d9be0f9d6e10a7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00264.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gad641304de213346c7bb5f7fa07b3c122">intervalsVect_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of interval vectors.  <a href="a00264.html#gad641304de213346c7bb5f7fa07b3c122"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00264.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gae1848dfccedc0fb037e5a10efb4c1ff5">scalesVect_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of scale vectors.  <a href="a00264.html#gae1848dfccedc0fb037e5a10efb4c1ff5"></a><br/></td></tr>
+<a class="el" href="a00271.html#gac4d8783eb3cce4fb35902ef5b91635fd">solver_t::problem_t::value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#aa961d523ab2d00705723330fe52870cd">value_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00271.html#gac3031ce28dcf76501a038c37beeb5a0b">solver_t::problem_t::size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a613629ff4ed7781b6b1ed4024a18fcbf">size_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00118.html#a42813adb1bed4804c8fadf94da6e624b">solver_t::problem_t::vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a0f6518966c5ceaba887f2fabe153aa38">vector_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00118.html#ae785fae316ee3993a6e7da0f53b24b5a">solver_t::solverState_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a734201c75aebed2ca9afe09d58c0d5cd">solverState_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00118.html#a8cb27cc8f35c120bf91513297156de88">solver_t::callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a8a8b67820eca81c2071abab2dc7491ba">callback_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+solver_t::problem_t::function_t::traits_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#ac695f321fe96a817b5f3afac87153630">traits_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00271.html#ga880fef200a8fcb92b7612a37d3aed945">solver_t::problem_t::function_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a4130fbb32eaf24ad40eabc63c272a5f6">function_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::matrix_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a7c2094343242c1e1fb0c945c7ce5c3fd">jacobian_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+function_t::const_argument_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a547c7fcbd8f8096817a7acf45f2d3ce0">const_argument_ref</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00063.html">GenericDifferentiableFunction</a><br class="typebreak"/>
+&lt; <a class="el" href="a00095.html#ac695f321fe96a817b5f3afac87153630">traits_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#aac7b9411f87e66936a28dbd648bdf996">differentiableFunction_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gad4c21d7353f11e2348381a3c1deac234">print</a> (std::ostream &amp;o) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the problem on the specified output stream.  <a href="a00264.html#gad4c21d7353f11e2348381a3c1deac234"></a><br/></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Constructors and destructors.</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gac2a43bc8b9231f7549a61b5b3d01eec0">Problem</a> (const <a class="el" href="a00264.html#ga880fef200a8fcb92b7612a37d3aed945">function_t</a> &amp;cost)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gacaa910e2f9c1242183acba8cde0887d5">Problem</a> (const <a class="el" href="a00095.html">Problem</a>&lt; F, CLIST &gt; &amp;pb)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="a00264.html#gacaa910e2f9c1242183acba8cde0887d5"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename F_ , typename CLIST_ &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00264.html#ga6ca16bc6a4e146d58e92445a3b4dce27">Problem</a> (const <a class="el" href="a00095.html">Problem</a>&lt; F_, CLIST_ &gt; &amp;pb)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor (convert from another class of problem).  <a href="a00264.html#ga6ca16bc6a4e146d58e92445a3b4dce27"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga64c92ade5e55f88d523f44cb0fd28104">~Problem</a> ()</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Cost function.</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00264.html#ga880fef200a8fcb92b7612a37d3aed945">function_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga2edd292aab53fc23f28ba983156e76d2">function</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve cost function.  <a href="a00264.html#ga2edd292aab53fc23f28ba983156e76d2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00264.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gae400e858c8def054c08375dfd08859db">argumentBounds</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments bounds.  <a href="a00264.html#gae400e858c8def054c08375dfd08859db"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00264.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga459997c38e215e21f2de950ee8c45d46">argumentBounds</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments bounds.  <a href="a00264.html#ga459997c38e215e21f2de950ee8c45d46"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00264.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gaee60337070faec61a157fd6067706932">argumentScales</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments scales.  <a href="a00264.html#gaee60337070faec61a157fd6067706932"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00264.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga1d3e35b7543c43f29c0fb75ccbfd925c">argumentScales</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments scales.  <a href="a00264.html#ga1d3e35b7543c43f29c0fb75ccbfd925c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00264.html#ga63c6a234f24ee27fb4d9be0f9d6e10a7">names_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gae40dfa8cc19ed0122e9db8ad3060a568">argumentNames</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments names.  <a href="a00264.html#gae40dfa8cc19ed0122e9db8ad3060a568"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00264.html#ga63c6a234f24ee27fb4d9be0f9d6e10a7">names_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga81ef07115a6a028973dad6b8dae0455e">argumentNames</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments names.  <a href="a00264.html#ga81ef07115a6a028973dad6b8dae0455e"></a><br/></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Constraints.</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00264.html#ga9087fb924dcb6579d1a15eab76b8526d">constraints_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gabde1f80f2f4721f844b0508265437065">constraints</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve constraints.  <a href="a00264.html#gabde1f80f2f4721f844b0508265437065"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename C &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00264.html#gaf42dc1f3d8e34b6eaf32a45004128c7a">addConstraint</a> (boost::shared_ptr&lt; C &gt; constraint, <a class="el" href="a00264.html#ga380a03c110b72daf32f237271c9132fb">interval_t</a> interval, <a class="el" href="a00264.html#gac4d8783eb3cce4fb35902ef5b91635fd">value_type</a> scale=1.)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a constraint to the problem.  <a href="a00264.html#gaf42dc1f3d8e34b6eaf32a45004128c7a"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename C &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00264.html#ga2a2a48229f704d8ad9aa9f428f846c03">addConstraint</a> (boost::shared_ptr&lt; C &gt; constraint, <a class="el" href="a00264.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a> intervals, <a class="el" href="a00264.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a> scales)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a constraint to the problem.  <a href="a00264.html#ga2a2a48229f704d8ad9aa9f428f846c03"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00264.html#gad641304de213346c7bb5f7fa07b3c122">intervalsVect_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga321c61b8b452cd74626d0343a8358e4c">boundsVector</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve constraints bounds vector.  <a href="a00264.html#ga321c61b8b452cd74626d0343a8358e4c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00264.html#gae1848dfccedc0fb037e5a10efb4c1ff5">scalesVect_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga35eb1490bb9b1cad4357553f60bf7959">scalesVector</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve constraints scales vector.  <a href="a00264.html#ga35eb1490bb9b1cad4357553f60bf7959"></a><br/></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Starting point (initial guess).</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00264.html#ga54cc9f9c4a2ce51572af2c2e106076d0">startingPoint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gac8049404b830aa3ef0e5b72c8975a849">startingPoint</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the initial guess.  <a href="a00264.html#gac8049404b830aa3ef0e5b72c8975a849"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00264.html#ga54cc9f9c4a2ce51572af2c2e106076d0">startingPoint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#ga41794d906c0d101dbb635f19f2c7e6c0">startingPoint</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the initial guess.  <a href="a00264.html#ga41794d906c0d101dbb635f19f2c7e6c0"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="friends"></a>
-Friends</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00264.html#gacc081cc87e465ee811f25f9676550d09">Problem</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#aed34e9f3f55c67a875575d552f69f0e8">OptimizationLogger</a> (<a class="el" href="a00095.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp;<a class="el" href="a00095.html#ad83299fdcc325b94a904721f4b9fe9c9">solver</a>, const boost::filesystem::path &amp;<a class="el" href="a00095.html#a046deb8bf8d4d59ac41008bcc88c4052">path</a>, bool selfRegister=true)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#aed34e9f3f55c67a875575d552f69f0e8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a7a0d794cc294617474adc0a499d42040">~OptimizationLogger</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a7a0d794cc294617474adc0a499d42040"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#ae7780abb8e2422fde009f12e39f0c96d">append</a> (const std::string &amp;text)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Append extra information to the log file.  <a href="#ae7780abb8e2422fde009f12e39f0c96d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00095.html#a8a8b67820eca81c2071abab2dc7491ba">callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a7c9ba7e965df0cab92f0e7021c38cbd8">callback</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the callback function.  <a href="#a7c9ba7e965df0cab92f0e7021c38cbd8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a9e7878a17d1c10a9ba477bd27521739d">logPath</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the path of the log directory.  <a href="#a9e7878a17d1c10a9ba477bd27521739d"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a875c3dad03fcf29633a0f0bfa801815f">perIterationCallback</a> (const <a class="el" href="a00095.html#a0212b30a8be78730debbb9b9bab8526a">problem_t</a> &amp;pb, const <a class="el" href="a00095.html#a734201c75aebed2ca9afe09d58c0d5cd">solverState_t</a> &amp;state)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#ae377f28f521a02a0d45e1601a1180a36">perIterationCallbackUnsafe</a> (const typename <a class="el" href="a00118.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a> &amp;pb, const typename <a class="el" href="a00118.html#ae785fae316ee3993a6e7da0f53b24b5a">solver_t::solverState_t</a> &amp;state)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a046deb8bf8d4d59ac41008bcc88c4052">path</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the path of the log directory.  <a href="#a046deb8bf8d4d59ac41008bcc88c4052"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a3bf8f33ae661284aac96f17b5bbf659c">path</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the path of the log directory.  <a href="#a3bf8f33ae661284aac96f17b5bbf659c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00095.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#ad83299fdcc325b94a904721f4b9fe9c9">solver</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the solver associated with the logger.  <a href="#ad83299fdcc325b94a904721f4b9fe9c9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00095.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a7d655721636abb6a57d0f07a791f8e8e">solver</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the solver associated with the logger.  <a href="#a7d655721636abb6a57d0f07a791f8e8e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00095.html#a6e35f515b0affa5541a048c289458e12">callbackCallId</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the callback iteration index.  <a href="#a6e35f515b0affa5541a048c289458e12"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename F, typename CLIST&gt;<br/>
-class roboptim::Problem&lt; F, CLIST &gt;</h3>
+<div class="textblock"><h3>template&lt;typename T&gt;<br/>
+class roboptim::OptimizationLogger&lt; T &gt;</h3>
 
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00009.html#_a0">problem-cc.cc</a>.</dd>
-</dl></div></div><!-- contents -->
+<p>Log the optimization process (values, Jacobians, time taken etc.). </p>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">T</td><td>solver type. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a8a8b67820eca81c2071abab2dc7491ba"></a><!-- doxytag: member="roboptim::OptimizationLogger::callback_t" ref="a8a8b67820eca81c2071abab2dc7491ba" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00118.html#a8cb27cc8f35c120bf91513297156de88">solver_t::callback_t</a> <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a8a8b67820eca81c2071abab2dc7491ba">callback_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a547c7fcbd8f8096817a7acf45f2d3ce0"></a><!-- doxytag: member="roboptim::OptimizationLogger::const_argument_ref" ref="a547c7fcbd8f8096817a7acf45f2d3ce0" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef function_t::const_argument_ref <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a547c7fcbd8f8096817a7acf45f2d3ce0">const_argument_ref</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac7b9411f87e66936a28dbd648bdf996"></a><!-- doxytag: member="roboptim::OptimizationLogger::differentiableFunction_t" ref="aac7b9411f87e66936a28dbd648bdf996" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00063.html">GenericDifferentiableFunction</a>&lt;<a class="el" href="a00095.html#ac695f321fe96a817b5f3afac87153630">traits_t</a>&gt; <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#aac7b9411f87e66936a28dbd648bdf996">differentiableFunction_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4130fbb32eaf24ad40eabc63c272a5f6"></a><!-- doxytag: member="roboptim::OptimizationLogger::function_t" ref="a4130fbb32eaf24ad40eabc63c272a5f6" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00271.html#ga880fef200a8fcb92b7612a37d3aed945">solver_t::problem_t::function_t</a> <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a4130fbb32eaf24ad40eabc63c272a5f6">function_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7c2094343242c1e1fb0c945c7ce5c3fd"></a><!-- doxytag: member="roboptim::OptimizationLogger::jacobian_t" ref="a7c2094343242c1e1fb0c945c7ce5c3fd" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef function_t::matrix_t <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a7c2094343242c1e1fb0c945c7ce5c3fd">jacobian_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0212b30a8be78730debbb9b9bab8526a"></a><!-- doxytag: member="roboptim::OptimizationLogger::problem_t" ref="a0212b30a8be78730debbb9b9bab8526a" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00118.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a> <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a0212b30a8be78730debbb9b9bab8526a">problem_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a613629ff4ed7781b6b1ed4024a18fcbf"></a><!-- doxytag: member="roboptim::OptimizationLogger::size_type" ref="a613629ff4ed7781b6b1ed4024a18fcbf" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00271.html#gac3031ce28dcf76501a038c37beeb5a0b">solver_t::problem_t::size_type</a> <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a613629ff4ed7781b6b1ed4024a18fcbf">size_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4bf684ba2187335313cc8382b635a8a9"></a><!-- doxytag: member="roboptim::OptimizationLogger::solver_t" ref="a4bf684ba2187335313cc8382b635a8a9" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef T <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a734201c75aebed2ca9afe09d58c0d5cd"></a><!-- doxytag: member="roboptim::OptimizationLogger::solverState_t" ref="a734201c75aebed2ca9afe09d58c0d5cd" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00118.html#ae785fae316ee3993a6e7da0f53b24b5a">solver_t::solverState_t</a> <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a734201c75aebed2ca9afe09d58c0d5cd">solverState_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac695f321fe96a817b5f3afac87153630"></a><!-- doxytag: member="roboptim::OptimizationLogger::traits_t" ref="ac695f321fe96a817b5f3afac87153630" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef solver_t::problem_t::function_t::traits_t <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#ac695f321fe96a817b5f3afac87153630">traits_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa961d523ab2d00705723330fe52870cd"></a><!-- doxytag: member="roboptim::OptimizationLogger::value_type" ref="aa961d523ab2d00705723330fe52870cd" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00271.html#gac4d8783eb3cce4fb35902ef5b91635fd">solver_t::problem_t::value_type</a> <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#aa961d523ab2d00705723330fe52870cd">value_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f6518966c5ceaba887f2fabe153aa38"></a><!-- doxytag: member="roboptim::OptimizationLogger::vector_t" ref="a0f6518966c5ceaba887f2fabe153aa38" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00118.html#a42813adb1bed4804c8fadf94da6e624b">solver_t::problem_t::vector_t</a> <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a0f6518966c5ceaba887f2fabe153aa38">vector_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="aed34e9f3f55c67a875575d552f69f0e8"></a><!-- doxytag: member="roboptim::OptimizationLogger::OptimizationLogger" ref="aed34e9f3f55c67a875575d552f69f0e8" args="(solver_t &amp;solver, const boost::filesystem::path &amp;path, bool selfRegister=true)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html">OptimizationLogger</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00095.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>solver</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::filesystem::path &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>selfRegister</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">solver</td><td>solver that will be logged. </td></tr>
+    <tr><td class="paramname">path</td><td>path to the log directory. </td></tr>
+    <tr><td class="paramname">selfRegister</td><td>whether the logger will register itself as a callback with the solver. Set this to false if you use it with a multiplexer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>References <a class="el" href="a00254.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a0d794cc294617474adc0a499d42040"></a><!-- doxytag: member="roboptim::OptimizationLogger::~OptimizationLogger" ref="a7a0d794cc294617474adc0a499d42040" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::~<a class="el" href="a00095.html">OptimizationLogger</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Destructor. </p>
+<p>CSV files are written in this destructor. </p>
+
+<p>References <a class="el" href="a00254.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, and <a class="el" href="a00163.html#a7ee55860e481e4ad3b4d61b056ed7d2b">x_</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ae7780abb8e2422fde009f12e39f0c96d"></a><!-- doxytag: member="roboptim::OptimizationLogger::append" ref="ae7780abb8e2422fde009f12e39f0c96d" args="(const std::string &amp;text)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#ae7780abb8e2422fde009f12e39f0c96d">append</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Append extra information to the log file. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>text to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>References <a class="el" href="a00254.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c9ba7e965df0cab92f0e7021c38cbd8"></a><!-- doxytag: member="roboptim::OptimizationLogger::callback" ref="a7c9ba7e965df0cab92f0e7021c38cbd8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00095.html">OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a8a8b67820eca81c2071abab2dc7491ba">callback_t</a> <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a7c9ba7e965df0cab92f0e7021c38cbd8">callback</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the callback function. </p>
+<p>This can be used with a callback multiplexer. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>callback function. </dd></dl>
+
+<p>References <a class="el" href="a00270.html#gac398776c05160b474382281f0501fa7b">roboptim::bind()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e35f515b0affa5541a048c289458e12"></a><!-- doxytag: member="roboptim::OptimizationLogger::callbackCallId" ref="a6e35f515b0affa5541a048c289458e12" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a6e35f515b0affa5541a048c289458e12">callbackCallId</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the callback iteration index. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>callback iteration index. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e7878a17d1c10a9ba477bd27521739d"></a><!-- doxytag: member="roboptim::OptimizationLogger::logPath" ref="a9e7878a17d1c10a9ba477bd27521739d" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const boost::filesystem::path &amp; <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a9e7878a17d1c10a9ba477bd27521739d">logPath</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the path of the log directory. </p>
+<dl class="note"><dt><b>Note:</b></dt><dd>Seeing that the non-const version of path () needs to be protected, we need to rename this function to make it public, since overload resolution takes place before accessibility checks. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>path of the log directory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a046deb8bf8d4d59ac41008bcc88c4052"></a><!-- doxytag: member="roboptim::OptimizationLogger::path" ref="a046deb8bf8d4d59ac41008bcc88c4052" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const boost::filesystem::path &amp; <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a046deb8bf8d4d59ac41008bcc88c4052">path</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the path of the log directory. </p>
+<dl class="note"><dt><b>Note:</b></dt><dd>This function should not be made public since the non-const version is protected. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>path of the log directory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3bf8f33ae661284aac96f17b5bbf659c"></a><!-- doxytag: member="roboptim::OptimizationLogger::path" ref="a3bf8f33ae661284aac96f17b5bbf659c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::filesystem::path &amp; <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a046deb8bf8d4d59ac41008bcc88c4052">path</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the path of the log directory. </p>
+<p>This method is protected since streams would need to be updated, and files that were already written moved to the new location. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>path of the log directory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a875c3dad03fcf29633a0f0bfa801815f"></a><!-- doxytag: member="roboptim::OptimizationLogger::perIterationCallback" ref="a875c3dad03fcf29633a0f0bfa801815f" args="(const problem_t &amp;pb, const solverState_t &amp;state)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a875c3dad03fcf29633a0f0bfa801815f">perIterationCallback</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00095.html#a0212b30a8be78730debbb9b9bab8526a">problem_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>pb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00095.html#a734201c75aebed2ca9afe09d58c0d5cd">solverState_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae377f28f521a02a0d45e1601a1180a36"></a><!-- doxytag: member="roboptim::OptimizationLogger::perIterationCallbackUnsafe" ref="ae377f28f521a02a0d45e1601a1180a36" args="(const typename solver_t::problem_t &amp;pb, const typename solver_t::solverState_t &amp;state)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#ae377f28f521a02a0d45e1601a1180a36">perIterationCallbackUnsafe</a> </td>
+          <td>(</td>
+          <td class="paramtype">const typename <a class="el" href="a00118.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>pb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="a00118.html#ae785fae316ee3993a6e7da0f53b24b5a">solver_t::solverState_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00254.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00254.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, <a class="el" href="a00254.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>, and <a class="el" href="a00163.html#a7ee55860e481e4ad3b4d61b056ed7d2b">x_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad83299fdcc325b94a904721f4b9fe9c9"></a><!-- doxytag: member="roboptim::OptimizationLogger::solver" ref="ad83299fdcc325b94a904721f4b9fe9c9" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00095.html">OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp; <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#ad83299fdcc325b94a904721f4b9fe9c9">solver</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the solver associated with the logger. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>solver associated with the logger. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7d655721636abb6a57d0f07a791f8e8e"></a><!-- doxytag: member="roboptim::OptimizationLogger::solver" ref="a7d655721636abb6a57d0f07a791f8e8e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00095.html">OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp; <a class="el" href="a00095.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00095.html#ad83299fdcc325b94a904721f4b9fe9c9">solver</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the solver associated with the logger. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>solver associated with the logger. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -183,7 +651,7 @@ class roboptim::Problem&lt; F, CLIST &gt;</h3>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00095.html">Problem</a>      </li>
+      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00095.html">OptimizationLogger</a>      </li>
 </body>
 </html>

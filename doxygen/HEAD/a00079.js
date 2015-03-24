@@ -1,13 +1,11 @@
 var a00079 =
 [
-    [ "MapShPtr_t", "a00079.html#a574f40013b83ac08459277e74dc8289e", null ],
-    [ "parentType_t", "a00079.html#aa472baf5213f2a8afc29b442073031eb", null ],
-    [ "Map", "a00079.html#a4c8f20cf07ee28545f24df00a427e7b9", null ],
-    [ "~Map", "a00079.html#af65411ba263b5776211a5edb162a89aa", null ],
-    [ "impl_compute", "a00079.html#a21a174f7e6e5c1fd925438234b74533a", null ],
-    [ "impl_gradient", "a00079.html#a50f3f13c83b02df9885bdc15a8b7d8c4", null ],
-    [ "impl_jacobian", "a00079.html#a55bf380b9fe15572cc595c3796978cec", null ],
-    [ "origin", "a00079.html#a6084518aafb074773522d069b84418b3", null ],
-    [ "origin", "a00079.html#a323b53ffd6ed09b1460ea1c112c1b340", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00079.html#a934ae91992e7f17a02dbde5ec8e7de3c", null ]
+    [ "~Gnuplot", "a00079.html#ab2620f9d29a97757d0acbfe68e6a2c79", null ],
+    [ "Gnuplot", "a00079.html#ab134923cbb8cc53b251664f4b5c6b73c", null ],
+    [ "clear", "a00079.html#a0bc170d3f32a3abaa388b27e17242ad3", null ],
+    [ "make_gnuplot", "a00079.html#a55c76cc46b5c54b1bc0d4684128403ff", null ],
+    [ "make_interactive_gnuplot", "a00079.html#a14e55569e7e70d12d7cd1d83117576a1", null ],
+    [ "operator<<", "a00079.html#af7addb186708c556e603c3fd8e7768a6", null ],
+    [ "print", "a00079.html#ad4b42f563ebbdb501d397a42a4420525", null ],
+    [ "push_command", "a00079.html#aaa242efdd1e20124d0698793b4fd4bdd", null ]
 ];

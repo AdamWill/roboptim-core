@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::ResultWithWarnings Class Reference</title>
+<title>roboptim::Problem&lt; F, CLIST &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,149 +63,109 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a>  </div>
+<a href="#friends">Friends</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::ResultWithWarnings Class Reference<div class="ingroups"><a class="el" href="a00264.html">Optimization problems</a></div></div>  </div>
+<div class="title">roboptim::Problem&lt; F, CLIST &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00271.html">Optimization problems</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::ResultWithWarnings" --><!-- doxytag: inherits="roboptim::Result" -->
-<p>Represents the solution of an optimization problem when errors occurred during the solving process.  
- <a href="a00103.html#details">More...</a></p>
+<!-- doxytag: class="roboptim::Problem" -->
+<p><code>#include &lt;roboptim/core/problem.hh&gt;</code></p>
 
-<p><code>#include &lt;roboptim/core/result-with-warnings.hh&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for roboptim::ResultWithWarnings:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00103.png" usemap="#roboptim::ResultWithWarnings_map" alt=""/>
-  <map id="roboptim::ResultWithWarnings_map" name="roboptim::ResultWithWarnings_map">
-<area href="a00102.html" title="Represents the solution of an optimization problem." alt="roboptim::Result" shape="rect" coords="0,0,177,24"/>
-</map>
- </div></div>
-
-<p><a href="a00322.html">List of all members.</a></p>
+<p><a href="a00328.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00083.html">detail::list_converter</a><br class="typebreak"/>
+&lt; CLIST &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga8cdb6c5f60124dca5dc559f03fdb9e59">constraintsList_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraints types list.  <a href="a00271.html#ga8cdb6c5f60124dca5dc559f03fdb9e59"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef F&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga880fef200a8fcb92b7612a37d3aed945">function_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function type.  <a href="a00271.html#ga880fef200a8fcb92b7612a37d3aed945"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00115.html">detail::shared_ptr_variant</a><br class="typebreak"/>
+&lt; <a class="el" href="a00271.html#ga8cdb6c5f60124dca5dc559f03fdb9e59">constraintsList_t</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga75dded03cc5626abe20a183b91f59855">constraint_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraint's type.  <a href="a00271.html#ga75dded03cc5626abe20a183b91f59855"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gac4d8783eb3cce4fb35902ef5b91635fd">value_type</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import function's value_type type.  <a href="a00271.html#gac4d8783eb3cce4fb35902ef5b91635fd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gaaf9afed23707274cd5f4515ddea8e72a">vector_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector type.  <a href="a00271.html#gaaf9afed23707274cd5f4515ddea8e72a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::argument_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga31eec097ccd217fa1ab8396386027fb9">argument_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument type.  <a href="a00271.html#ga31eec097ccd217fa1ab8396386027fb9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gac3031ce28dcf76501a038c37beeb5a0b">size_type</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Size type.  <a href="a00271.html#gac3031ce28dcf76501a038c37beeb5a0b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00271.html#ga75dded03cc5626abe20a183b91f59855">constraint_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga9087fb924dcb6579d1a15eab76b8526d">constraints_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constraints are represented as a vector of constraints.  <a href="a00271.html#ga9087fb924dcb6579d1a15eab76b8526d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::optional<br class="typebreak"/>
+&lt; <a class="el" href="a00271.html#ga31eec097ccd217fa1ab8396386027fb9">argument_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga54cc9f9c4a2ce51572af2c2e106076d0">startingPoint_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional vector defines a starting point.  <a href="a00271.html#ga54cc9f9c4a2ce51572af2c2e106076d0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::interval_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga380a03c110b72daf32f237271c9132fb">interval_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Interval type (e.g. for bounds).  <a href="a00271.html#ga380a03c110b72daf32f237271c9132fb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::intervals_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Intervals type.  <a href="a00271.html#gad94c072558540fb7101c01002e08b3b8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00271.html#gac4d8783eb3cce4fb35902ef5b91635fd">value_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale vector.  <a href="a00271.html#ga81acce0cec82db9dd19c849569fb034e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::names_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga63c6a234f24ee27fb4d9be0f9d6e10a7">names_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of names (e.g. for arguments).  <a href="a00271.html#ga63c6a234f24ee27fb4d9be0f9d6e10a7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00271.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gad641304de213346c7bb5f7fa07b3c122">intervalsVect_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of interval vectors.  <a href="a00271.html#gad641304de213346c7bb5f7fa07b3c122"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00271.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gae1848dfccedc0fb037e5a10efb4c1ff5">scalesVect_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of scale vectors.  <a href="a00271.html#gae1848dfccedc0fb037e5a10efb4c1ff5"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a2e3e3d6637bb1968eef831d451079124">ResultWithWarnings</a> (const <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">Function::size_type</a> <a class="el" href="a00102.html#af32478031f205ae7a8fd3676fc02f67d">inputSize</a>, const <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">Function::size_type</a> <a class="el" href="a00102.html#a562f3e5a026d2b9c6a008be5bc6c2ec7">outputSize</a>=1)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate the class from an input/output size.  <a href="#a2e3e3d6637bb1968eef831d451079124"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#aa3c7d443e5144fb8dea37bb88b50b387">~ResultWithWarnings</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a555b074ff9d1e8ecacc2c2665f9a5eec">print</a> (std::ostream &amp;o) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the result on the specified output stream.  <a href="#a555b074ff9d1e8ecacc2c2665f9a5eec"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a00114.html">SolverWarning</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00103.html#a644b84239da645b252e1d9cb1b0b49c8">warnings</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector of warnings.  <a href="#a644b84239da645b252e1d9cb1b0b49c8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gad4c21d7353f11e2348381a3c1deac234">print</a> (std::ostream &amp;o) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the problem on the specified output stream.  <a href="a00271.html#gad4c21d7353f11e2348381a3c1deac234"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Constructors and destructors.</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gac2a43bc8b9231f7549a61b5b3d01eec0">Problem</a> (const <a class="el" href="a00271.html#ga880fef200a8fcb92b7612a37d3aed945">function_t</a> &amp;cost)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gacaa910e2f9c1242183acba8cde0887d5">Problem</a> (const <a class="el" href="a00103.html">Problem</a>&lt; F, CLIST &gt; &amp;pb)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="a00271.html#gacaa910e2f9c1242183acba8cde0887d5"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename F_ , typename CLIST_ &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00271.html#ga6ca16bc6a4e146d58e92445a3b4dce27">Problem</a> (const <a class="el" href="a00103.html">Problem</a>&lt; F_, CLIST_ &gt; &amp;pb)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor (convert from another class of problem).  <a href="a00271.html#ga6ca16bc6a4e146d58e92445a3b4dce27"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga64c92ade5e55f88d523f44cb0fd28104">~Problem</a> ()</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Cost function.</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00271.html#ga880fef200a8fcb92b7612a37d3aed945">function_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga2edd292aab53fc23f28ba983156e76d2">function</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve cost function.  <a href="a00271.html#ga2edd292aab53fc23f28ba983156e76d2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00271.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gae400e858c8def054c08375dfd08859db">argumentBounds</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments bounds.  <a href="a00271.html#gae400e858c8def054c08375dfd08859db"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00271.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga459997c38e215e21f2de950ee8c45d46">argumentBounds</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments bounds.  <a href="a00271.html#ga459997c38e215e21f2de950ee8c45d46"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00271.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gaee60337070faec61a157fd6067706932">argumentScales</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments scales.  <a href="a00271.html#gaee60337070faec61a157fd6067706932"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00271.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga1d3e35b7543c43f29c0fb75ccbfd925c">argumentScales</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments scales.  <a href="a00271.html#ga1d3e35b7543c43f29c0fb75ccbfd925c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00271.html#ga63c6a234f24ee27fb4d9be0f9d6e10a7">names_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gae40dfa8cc19ed0122e9db8ad3060a568">argumentNames</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments names.  <a href="a00271.html#gae40dfa8cc19ed0122e9db8ad3060a568"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00271.html#ga63c6a234f24ee27fb4d9be0f9d6e10a7">names_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga81ef07115a6a028973dad6b8dae0455e">argumentNames</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve arguments names.  <a href="a00271.html#ga81ef07115a6a028973dad6b8dae0455e"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Constraints.</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00271.html#ga9087fb924dcb6579d1a15eab76b8526d">constraints_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gabde1f80f2f4721f844b0508265437065">constraints</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve constraints.  <a href="a00271.html#gabde1f80f2f4721f844b0508265437065"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename C &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00271.html#gaf42dc1f3d8e34b6eaf32a45004128c7a">addConstraint</a> (boost::shared_ptr&lt; C &gt; constraint, <a class="el" href="a00271.html#ga380a03c110b72daf32f237271c9132fb">interval_t</a> interval, <a class="el" href="a00271.html#gac4d8783eb3cce4fb35902ef5b91635fd">value_type</a> scale=1.)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a constraint to the problem.  <a href="a00271.html#gaf42dc1f3d8e34b6eaf32a45004128c7a"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename C &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00271.html#ga2a2a48229f704d8ad9aa9f428f846c03">addConstraint</a> (boost::shared_ptr&lt; C &gt; constraint, <a class="el" href="a00271.html#gad94c072558540fb7101c01002e08b3b8">intervals_t</a> intervals, <a class="el" href="a00271.html#ga81acce0cec82db9dd19c849569fb034e">scales_t</a> scales)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a constraint to the problem.  <a href="a00271.html#ga2a2a48229f704d8ad9aa9f428f846c03"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00271.html#gad641304de213346c7bb5f7fa07b3c122">intervalsVect_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga321c61b8b452cd74626d0343a8358e4c">boundsVector</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve constraints bounds vector.  <a href="a00271.html#ga321c61b8b452cd74626d0343a8358e4c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00271.html#gae1848dfccedc0fb037e5a10efb4c1ff5">scalesVect_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga35eb1490bb9b1cad4357553f60bf7959">scalesVector</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve constraints scales vector.  <a href="a00271.html#ga35eb1490bb9b1cad4357553f60bf7959"></a><br/></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Starting point (initial guess).</div></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00271.html#ga54cc9f9c4a2ce51572af2c2e106076d0">startingPoint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gac8049404b830aa3ef0e5b72c8975a849">startingPoint</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the initial guess.  <a href="a00271.html#gac8049404b830aa3ef0e5b72c8975a849"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00271.html#ga54cc9f9c4a2ce51572af2c2e106076d0">startingPoint_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#ga41794d906c0d101dbb635f19f2c7e6c0">startingPoint</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the initial guess.  <a href="a00271.html#ga41794d906c0d101dbb635f19f2c7e6c0"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="friends"></a>
+Friends</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00271.html#gacc081cc87e465ee811f25f9676550d09">Problem</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Represents the solution of an optimization problem when errors occurred during the solving process. </p>
-<p>This class is returned by a solver if a result has been found, but some problems happened.</p>
-<p>A vector or warnings is provided in this result, otherwise the class behaves like <a class="el" href="a00102.html" title="Represents the solution of an optimization problem.">Result</a>. </p>
-</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2e3e3d6637bb1968eef831d451079124"></a><!-- doxytag: member="roboptim::ResultWithWarnings::ResultWithWarnings" ref="a2e3e3d6637bb1968eef831d451079124" args="(const Function::size_type inputSize, const Function::size_type outputSize=1)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00103.html#a2e3e3d6637bb1968eef831d451079124">roboptim::ResultWithWarnings::ResultWithWarnings</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">Function::size_type</a>&#160;</td>
-          <td class="paramname"><em>inputSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">Function::size_type</a>&#160;</td>
-          <td class="paramname"><em>outputSize</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [explicit]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<div class="textblock"><h3>template&lt;typename F, typename CLIST&gt;<br/>
+class roboptim::Problem&lt; F, CLIST &gt;</h3>
 
-<p>Instantiate the class from an input/output size. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">inputSize</td><td>input size </td></tr>
-    <tr><td class="paramname">outputSize</td><td>output size </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aa3c7d443e5144fb8dea37bb88b50b387"></a><!-- doxytag: member="roboptim::ResultWithWarnings::~ResultWithWarnings" ref="aa3c7d443e5144fb8dea37bb88b50b387" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00103.html#aa3c7d443e5144fb8dea37bb88b50b387">roboptim::ResultWithWarnings::~ResultWithWarnings</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a555b074ff9d1e8ecacc2c2665f9a5eec"></a><!-- doxytag: member="roboptim::ResultWithWarnings::print" ref="a555b074ff9d1e8ecacc2c2665f9a5eec" args="(std::ostream &amp;o) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; <a class="el" href="a00103.html#a555b074ff9d1e8ecacc2c2665f9a5eec">roboptim::ResultWithWarnings::print</a> </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const<code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Display the result on the specified output stream. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
-
-<p>Reimplemented from <a class="el" href="a00102.html#af065a63ebc7497011f49be220857b0f0">roboptim::Result</a>.</p>
-
-<p>References <a class="el" href="a00247.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00247.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, <a class="el" href="a00247.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>, and <a class="el" href="a00103.html#a644b84239da645b252e1d9cb1b0b49c8">warnings</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a644b84239da645b252e1d9cb1b0b49c8"></a><!-- doxytag: member="roboptim::ResultWithWarnings::warnings" ref="a644b84239da645b252e1d9cb1b0b49c8" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="a00114.html">SolverWarning</a>&gt; <a class="el" href="a00103.html#a644b84239da645b252e1d9cb1b0b49c8">roboptim::ResultWithWarnings::warnings</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Vector of warnings. </p>
-<p>Each element of this vector is a potential problem that occurred during the optimization. </p>
-
-<p>Referenced by <a class="el" href="a00103.html#a555b074ff9d1e8ecacc2c2665f9a5eec">print()</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00009.html#_a0">problem-cc.cc</a>.</dd>
+</dl></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -223,7 +183,7 @@ Public Attributes</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00103.html">ResultWithWarnings</a>      </li>
+      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00103.html">Problem</a>      </li>
 </body>
 </html>

@@ -1,12 +1,20 @@
 var a00063 =
 [
-    [ "size_type", "a00063.html#ae382b9a557d9e2f5e54a54ef60acb10c", null ],
-    [ "value_type", "a00063.html#af0e69c7fd4c248106029270aef16c58e", null ],
-    [ "ROBOPTIM_GENERATE_TYPEDEFS_REF", "a00063.html#a0fd451375c60605423e3d5ad5ac76447", null ],
-    [ "ROBOPTIM_GENERATE_TYPEDEFS_REF", "a00063.html#a6d3d40b5090bc22216c60c54210b6a5b", null ],
-    [ "ROBOPTIM_GENERATE_TYPEDEFS_REF", "a00063.html#a3ceb25a89bb5ff29ab19ad8f4607081f", null ],
-    [ "ROBOPTIM_GENERATE_TYPEDEFS_REF", "a00063.html#a74204a2ae21b1ee5b380e571108ab684", null ],
-    [ "ROBOPTIM_GENERATE_TYPEDEFS_REF", "a00063.html#a42e3d89e7934125e2d85223d40cbef90", null ],
-    [ "ROBOPTIM_GENERATE_TYPEDEFS_REF", "a00063.html#aed5e8ac8cc2ff9b0844f14de973b29e1", null ],
-    [ "ROBOPTIM_GENERATE_TYPEDEFS_REF", "a00063.html#a470dbcc845cdd0d3f2e0a73be5f80417", null ]
+    [ "jacobianSize_t", "a00063.html#aac13c21f0df1f14ce16286fd81a6643a", null ],
+    [ "GenericDifferentiableFunction", "a00063.html#a5fa47fea06495251f413721483a35dba", null ],
+    [ "gradient", "a00063.html#a03a9c0c4bee28944a49cd508252a9049", null ],
+    [ "gradient", "a00063.html#aa32b7e4ac45ae8bb63afca8fe23eb72e", null ],
+    [ "gradientSize", "a00063.html#a8c3700cd209f38a0079b739a83edbb4a", null ],
+    [ "impl_gradient", "a00063.html#af392bd6266e56fbf8e38c0df16d22224", null ],
+    [ "impl_jacobian", "a00063.html#a1452fef189bb9c7c24acbfe36404d4e5", null ],
+    [ "impl_jacobian", "a00063.html#a69908de96e02e56b0f3332307ed03d94", null ],
+    [ "isValidGradient", "a00063.html#a0a061e75f289dc6c21530bba1f28a82e", null ],
+    [ "isValidJacobian", "a00063.html#af3de7a6e09f0ebf87e9a0e3c5f5d6e18", null ],
+    [ "jacobian", "a00063.html#a77c47b7abb1a80b79afe4aa3ef058f4c", null ],
+    [ "jacobian", "a00063.html#ab42dcb0d900b4f108a0a25eaa1ea1384", null ],
+    [ "jacobianSize", "a00063.html#a9202ded2cd1138fea87965b792b68057", null ],
+    [ "print", "a00063.html#a9c50e545609bd7ace4f2dad69029fac3", null ],
+    [ "ROBOPTIM_FUNCTION_FWD_TYPEDEFS_", "a00063.html#a8e6535968c7ef22e7930b638c5c8a344", null ],
+    [ "ROBOPTIM_GENERATE_TRAITS_REFS_", "a00063.html#aee74c751bb85e5398a89861732a80dc3", null ],
+    [ "ROBOPTIM_GENERATE_TRAITS_REFS_", "a00063.html#a11a8796c62239517682e1eec33d29f2a", null ]
 ];

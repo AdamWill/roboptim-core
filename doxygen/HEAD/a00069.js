@@ -1,16 +1,13 @@
 var a00069 =
 [
-    [ "result_t", "a00069.html#acd6988bec0b7bda9b8565232d32d1bae", null ],
-    [ "solutions", "a00069.html#a12c31c6bd2e018b05a71d51dd5b34846", null ],
-    [ "GenericSolver", "a00069.html#ac73eb90d375eebe2580be8ad275bbf39", null ],
-    [ "GenericSolver", "a00069.html#a73789e83216bf0ef32a3f123088f04b4", null ],
-    [ "~GenericSolver", "a00069.html#a86170d03b3066285f5c47bfc78819571", null ],
-    [ "getMinimum", "a00069.html#a3f01ea84c377efc66cd55bc38f8676ad", null ],
-    [ "minimum", "a00069.html#aef2460331a80efc404356e9b68269b8c", null ],
-    [ "minimumType", "a00069.html#a2426a7c827ce0c46c77ac29ad1d7f846", null ],
-    [ "print", "a00069.html#a06ac6c38696f931bc1333d974ef25d03", null ],
-    [ "reset", "a00069.html#a16884b058070f8fb6759c6c194665cb7", null ],
-    [ "solve", "a00069.html#a4573db8138895e5dc5eee8880e02e928", null ],
-    [ "logger", "a00069.html#a7fbfdfbf962a90aace9fd42e92e0a428", null ],
-    [ "result_", "a00069.html#ab36ece190971122f7111d7e92c4e66cf", null ]
+    [ "size_type", "a00069.html#ae382b9a557d9e2f5e54a54ef60acb10c", null ],
+    [ "value_type", "a00069.html#af0e69c7fd4c248106029270aef16c58e", null ],
+    [ "ROBOPTIM_GENERATE_TYPEDEFS_EIGEN_REF", "a00069.html#adc4e8ebe74893432259687429e7bf122", null ],
+    [ "ROBOPTIM_GENERATE_TYPEDEFS_EIGEN_REF", "a00069.html#af9e1b20e8a236a7b67c109f8f9b5c934", null ],
+    [ "ROBOPTIM_GENERATE_TYPEDEFS_EIGEN_REF", "a00069.html#ab8e5dc91c3827ec92cb0741019570f9f", null ],
+    [ "ROBOPTIM_GENERATE_TYPEDEFS_REF", "a00069.html#aa5b8e636856f9f0c2607841f89366f0c", null ],
+    [ "ROBOPTIM_GENERATE_TYPEDEFS_REF", "a00069.html#a42e3d89e7934125e2d85223d40cbef90", null ],
+    [ "ROBOPTIM_GENERATE_TYPEDEFS_REF", "a00069.html#aed5e8ac8cc2ff9b0844f14de973b29e1", null ],
+    [ "ROBOPTIM_GENERATE_TYPEDEFS_REF", "a00069.html#a470dbcc845cdd0d3f2e0a73be5f80417", null ],
+    [ "StorageOrder", "a00069.html#ac589de0ba331e2f4963b3a1de6441815", null ]
 ];

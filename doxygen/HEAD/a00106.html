@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::SelectionById&lt; U &gt; Class Template Reference</title>
+<title>roboptim::detail::ProductDifferentiation Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,278 +63,261 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::SelectionById&lt; U &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00263.html">Function filters</a></div></div>  </div>
+<div class="title">roboptim::detail::ProductDifferentiation Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::SelectionById" -->
-<p>Select part of a function.  
+<!-- doxytag: class="roboptim::detail::ProductDifferentiation" -->
+<p>Utility structure used for product differentiation.  
  <a href="a00106.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/filter/selection-by-id.hh&gt;</code></p>
+<p><code>#include &lt;roboptim/core/operator/product.hxx&gt;</code></p>
 
-<p><a href="a00293.html">List of all members.</a></p>
+<p><a href="a00359.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="a00021.html">detail::AutopromoteTrait</a>&lt; U &gt;<br class="typebreak"/>
-::T_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a10ceafe26463a6befaf1a83bae6f2ba3">parentType_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="a00106.html">SelectionById</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a2f296e76debe6a7e703f0a769f5f9129">SelectionByIdShPtr_t</a></td></tr>
-<tr><td colspan="2"><h2><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a4238e53c744c850cde075fda814a2f26">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00106.html#a10ceafe26463a6befaf1a83bae6f2ba3">parentType_t</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#afed4a5f3312bb43c36cd89e1b24da60e">SelectionById</a> (boost::shared_ptr&lt; U &gt; <a class="el" href="a00106.html#a96d0c5400637449ba56f14e7c25ec69d">origin</a>, std::vector&lt; bool &gt; selector)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a647ad16eec9c7afb716a748c42c1fd1f">~SelectionById</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a96d0c5400637449ba56f14e7c25ec69d">origin</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a3fe469f5a1b03ea25527636b326d85ab">origin</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a9e64ceaf5be532b1d08b43fd48fc1802">impl_compute</a> (result_ref result, const_argument_ref x) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a670b69ecefa042ad5e6e2f14300c3482">impl_gradient</a> (gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a27306334779e090f25bbd7d630418aa8">impl_jacobian</a> (jacobian_ref jacobian, const_argument_ref arg) const </td></tr>
+<tr><td colspan="2"><h2><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00126.html">Types</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Some useful types for product differentiation.  <a href="a00126.html#details">More...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00106.html#a810eb3bd58a6eb145ded059dfa0f2175">gradient</a> (typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::gradient_ref grad_uv, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorU_ref u, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorV_ref v, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::gradientU_ref grad_u, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::gradientV_ref grad_v, typename boost::enable_if&lt; typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::fullDense_t &gt;::type *=0)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Full dense version of gradient computation.  <a href="#a810eb3bd58a6eb145ded059dfa0f2175"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00106.html#a3510f93f1915ec5bf88582ee6df2842f">gradient</a> (typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::gradient_ref grad_uv, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorU_ref u, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorV_ref v, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::gradientU_ref grad_u, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::gradientV_ref grad_v, typename boost::disable_if&lt; typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::fullDense_t &gt;::type *=0)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Dense/sparse version of gradient computation.  <a href="#a3510f93f1915ec5bf88582ee6df2842f"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00106.html#af666d36d962b31244b2838aea7df7951">jacobian</a> (typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::jacobian_ref jac_uv, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorU_ref u, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorV_ref v, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::jacobianU_ref jac_u, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::jacobianV_ref jac_v, typename boost::enable_if&lt; typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::fullDense_t &gt;::type *=0)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Full dense version of Jacobian computation.  <a href="#af666d36d962b31244b2838aea7df7951"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00106.html#a9a55ee9762560feebe5f2c950e5b340c">jacobian</a> (typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::jacobian_ref jac_uv, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorU_ref u, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorV_ref v, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::jacobianU_ref jac_u, const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::jacobianV_ref jac_v, typename boost::disable_if&lt; typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::fullDense_t &gt;::type *=0)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Dense/sparse version of Jacobian computation.  <a href="#a9a55ee9762560feebe5f2c950e5b340c"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename U&gt;<br/>
-class roboptim::SelectionById&lt; U &gt;</h3>
-
-<p>Select part of a function. </p>
-<dl class=""><dt><b>Template Parameters:</b></dt><dd>
-  <table class="">
-    <tr><td class="paramname">U</td><td>input function type. </td></tr>
-  </table>
-  </dd>
-</dl>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a10ceafe26463a6befaf1a83bae6f2ba3"></a><!-- doxytag: member="roboptim::SelectionById::parentType_t" ref="a10ceafe26463a6befaf1a83bae6f2ba3" args="" -->
+<div class="textblock"><p>Utility structure used for product differentiation. </p>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a810eb3bd58a6eb145ded059dfa0f2175"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::gradient" ref="a810eb3bd58a6eb145ded059dfa0f2175" args="(typename Types&lt; U, V &gt;::gradient_ref grad_uv, const typename Types&lt; U, V &gt;::vectorU_ref u, const typename Types&lt; U, V &gt;::vectorV_ref v, const typename Types&lt; U, V &gt;::gradientU_ref grad_u, const typename Types&lt; U, V &gt;::gradientV_ref grad_v, typename boost::enable_if&lt; typename Types&lt; U, V &gt;::fullDense_t &gt;::type *=0)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U , typename V &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00021.html">detail::AutopromoteTrait</a>&lt;U&gt;::T_type <a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html#a10ceafe26463a6befaf1a83bae6f2ba3">parentType_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2f296e76debe6a7e703f0a769f5f9129"></a><!-- doxytag: member="roboptim::SelectionById::SelectionByIdShPtr_t" ref="a2f296e76debe6a7e703f0a769f5f9129" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="a00106.html">SelectionById</a>&gt; <a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html#a2f296e76debe6a7e703f0a769f5f9129">SelectionByIdShPtr_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="afed4a5f3312bb43c36cd89e1b24da60e"></a><!-- doxytag: member="roboptim::SelectionById::SelectionById" ref="afed4a5f3312bb43c36cd89e1b24da60e" args="(boost::shared_ptr&lt; U &gt; origin, std::vector&lt; bool &gt; selector)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html">SelectionById</a> </td>
+          <td class="memname">static void <a class="el" href="a00106.html#a810eb3bd58a6eb145ded059dfa0f2175">roboptim::detail::ProductDifferentiation::gradient</a> </td>
           <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>origin</em>, </td>
+          <td class="paramtype">typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::gradient_ref&#160;</td>
+          <td class="paramname"><em>grad_uv</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>selector</em>&#160;</td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorU_ref&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorV_ref&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::gradientU_ref&#160;</td>
+          <td class="paramname"><em>grad_u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::gradientV_ref&#160;</td>
+          <td class="paramname"><em>grad_v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename boost::enable_if&lt; typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::fullDense_t &gt;::type *&#160;</td>
+          <td class="paramname"> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td><code> [explicit]</code></td>
+          <td></td><td><code> [inline, static]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00154.html#a2ca868887cc5e83d7426dd4e84d046d9">result_</a>.</p>
+<p>Full dense version of gradient computation. </p>
 
 </div>
 </div>
-<a class="anchor" id="a647ad16eec9c7afb716a748c42c1fd1f"></a><!-- doxytag: member="roboptim::SelectionById::~SelectionById" ref="a647ad16eec9c7afb716a748c42c1fd1f" args="()" -->
+<a class="anchor" id="a3510f93f1915ec5bf88582ee6df2842f"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::gradient" ref="a3510f93f1915ec5bf88582ee6df2842f" args="(typename Types&lt; U, V &gt;::gradient_ref grad_uv, const typename Types&lt; U, V &gt;::vectorU_ref u, const typename Types&lt; U, V &gt;::vectorV_ref v, const typename Types&lt; U, V &gt;::gradientU_ref grad_u, const typename Types&lt; U, V &gt;::gradientV_ref grad_v, typename boost::disable_if&lt; typename Types&lt; U, V &gt;::fullDense_t &gt;::type *=0)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U , typename V &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::~<a class="el" href="a00106.html">SelectionById</a> </td>
+          <td class="memname">static void <a class="el" href="a00106.html#a810eb3bd58a6eb145ded059dfa0f2175">roboptim::detail::ProductDifferentiation::gradient</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a9e64ceaf5be532b1d08b43fd48fc1802"></a><!-- doxytag: member="roboptim::SelectionById::impl_compute" ref="a9e64ceaf5be532b1d08b43fd48fc1802" args="(result_ref result, const_argument_ref x) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html#a9e64ceaf5be532b1d08b43fd48fc1802">impl_compute</a> </td>
-          <td>(</td>
-          <td class="paramtype">result_ref&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
+          <td class="paramtype">typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::gradient_ref&#160;</td>
+          <td class="paramname"><em>grad_uv</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorU_ref&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorV_ref&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::gradientU_ref&#160;</td>
+          <td class="paramname"><em>grad_u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::gradientV_ref&#160;</td>
+          <td class="paramname"><em>grad_v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename boost::disable_if&lt; typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::fullDense_t &gt;::type *&#160;</td>
+          <td class="paramname"> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td><code> [inline, static]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00154.html#a2ca868887cc5e83d7426dd4e84d046d9">result_</a>.</p>
+<p>Dense/sparse version of gradient computation. </p>
+<p>dense.cwiseProduct (sparse) or sparse.cwiseProduct (dense) are apparently not available in Eigen. </p>
 
 </div>
 </div>
-<a class="anchor" id="a670b69ecefa042ad5e6e2f14300c3482"></a><!-- doxytag: member="roboptim::SelectionById::impl_gradient" ref="a670b69ecefa042ad5e6e2f14300c3482" args="(gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const " -->
+<a class="anchor" id="af666d36d962b31244b2838aea7df7951"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::jacobian" ref="af666d36d962b31244b2838aea7df7951" args="(typename Types&lt; U, V &gt;::jacobian_ref jac_uv, const typename Types&lt; U, V &gt;::vectorU_ref u, const typename Types&lt; U, V &gt;::vectorV_ref v, const typename Types&lt; U, V &gt;::jacobianU_ref jac_u, const typename Types&lt; U, V &gt;::jacobianV_ref jac_v, typename boost::enable_if&lt; typename Types&lt; U, V &gt;::fullDense_t &gt;::type *=0)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U , typename V &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html#a670b69ecefa042ad5e6e2f14300c3482">impl_gradient</a> </td>
+          <td class="memname">static void <a class="el" href="a00106.html#af666d36d962b31244b2838aea7df7951">roboptim::detail::ProductDifferentiation::jacobian</a> </td>
           <td>(</td>
-          <td class="paramtype">gradient_ref&#160;</td>
-          <td class="paramname"><em>gradient</em>, </td>
+          <td class="paramtype">typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::jacobian_ref&#160;</td>
+          <td class="paramname"><em>jac_uv</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorU_ref&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_type&#160;</td>
-          <td class="paramname"><em>functionId</em> = <code>0</code>&#160;</td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorV_ref&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::jacobianU_ref&#160;</td>
+          <td class="paramname"><em>jac_u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::jacobianV_ref&#160;</td>
+          <td class="paramname"><em>jac_v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename boost::enable_if&lt; typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::fullDense_t &gt;::type *&#160;</td>
+          <td class="paramname"> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td><code> [inline, static]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Full dense version of Jacobian computation. </p>
+
 </div>
 </div>
-<a class="anchor" id="a27306334779e090f25bbd7d630418aa8"></a><!-- doxytag: member="roboptim::SelectionById::impl_jacobian" ref="a27306334779e090f25bbd7d630418aa8" args="(jacobian_ref jacobian, const_argument_ref arg) const " -->
+<a class="anchor" id="a9a55ee9762560feebe5f2c950e5b340c"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::jacobian" ref="a9a55ee9762560feebe5f2c950e5b340c" args="(typename Types&lt; U, V &gt;::jacobian_ref jac_uv, const typename Types&lt; U, V &gt;::vectorU_ref u, const typename Types&lt; U, V &gt;::vectorV_ref v, const typename Types&lt; U, V &gt;::jacobianU_ref jac_u, const typename Types&lt; U, V &gt;::jacobianV_ref jac_v, typename boost::disable_if&lt; typename Types&lt; U, V &gt;::fullDense_t &gt;::type *=0)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U , typename V &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html#a27306334779e090f25bbd7d630418aa8">impl_jacobian</a> </td>
+          <td class="memname">static void <a class="el" href="a00106.html#af666d36d962b31244b2838aea7df7951">roboptim::detail::ProductDifferentiation::jacobian</a> </td>
           <td>(</td>
-          <td class="paramtype">jacobian_ref&#160;</td>
-          <td class="paramname"><em>jacobian</em>, </td>
+          <td class="paramtype">typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::jacobian_ref&#160;</td>
+          <td class="paramname"><em>jac_uv</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorU_ref&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::vectorV_ref&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::jacobianU_ref&#160;</td>
+          <td class="paramname"><em>jac_u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::jacobianV_ref&#160;</td>
+          <td class="paramname"><em>jac_v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename boost::disable_if&lt; typename <a class="el" href="a00126.html">Types</a>&lt; U, V &gt;::fullDense_t &gt;::type *&#160;</td>
+          <td class="paramname"> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td><code> [inline, static]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a96d0c5400637449ba56f14e7c25ec69d"></a><!-- doxytag: member="roboptim::SelectionById::origin" ref="a96d0c5400637449ba56f14e7c25ec69d" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html#a96d0c5400637449ba56f14e7c25ec69d">origin</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3fe469f5a1b03ea25527636b326d85ab"></a><!-- doxytag: member="roboptim::SelectionById::origin" ref="a3fe469f5a1b03ea25527636b326d85ab" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html#a96d0c5400637449ba56f14e7c25ec69d">origin</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4238e53c744c850cde075fda814a2f26"></a><!-- doxytag: member="roboptim::SelectionById::ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="a4238e53c744c850cde075fda814a2f26" args="(parentType_t)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00106.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00106.html#a4238e53c744c850cde075fda814a2f26">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00106.html#a10ceafe26463a6befaf1a83bae6f2ba3">parentType_t</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>Dense/sparse version of Jacobian computation. </p>
+<p>dense.cwiseProduct (sparse) or sparse.cwiseProduct (dense) are apparently not available in Eigen. </p>
 
 </div>
 </div>
@@ -356,7 +339,8 @@ template&lt;typename U &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00106.html">SelectionById</a>      </li>
+      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00260.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00106.html">ProductDifferentiation</a>      </li>
 </body>
 </html>

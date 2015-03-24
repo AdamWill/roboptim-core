@@ -1,4 +1,4 @@
 var a00038 =
 [
-    [ "operator()", "a00038.html#a20d22e82553158f19cd3c8175ebc50ac", null ]
+    [ "type", "a00038.html#a5147b257ce0c8cccfff2119b9dd280b6", null ]
 ];

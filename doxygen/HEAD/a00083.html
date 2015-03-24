@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>noncopyable Class Reference</title>
+<title>roboptim::detail::list_converter&lt; CLIST &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,27 +63,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">noncopyable Class Reference</div>  </div>
+<div class="title">roboptim::detail::list_converter&lt; CLIST &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="boost::noncopyable" --><div class="dynheader">
-Inheritance diagram for noncopyable:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00083.png" usemap="#noncopyable_map" alt=""/>
-  <map id="noncopyable_map" name="noncopyable_map">
-<area href="a00069.html" title="Abstract interface satisfied by all solvers." alt="roboptim::GenericSolver" shape="rect" coords="874,56,1447,80"/>
-<area href="a00113.html" title="State of the solver." alt="roboptim::SolverState&lt; P &gt;" shape="rect" coords="1457,56,2030,80"/>
-<area href="a00110.html" title="Solver for a specific problem class." alt="roboptim::Solver&lt; F, C &gt;" shape="rect" coords="0,112,573,136"/>
-<area href="a00110.html" alt="roboptim::Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;" shape="rect" coords="583,112,1156,136"/>
-<area href="a00110.html" alt="roboptim::Solver&lt; Function, boost::mpl::vector&lt; Function &gt; &gt;" shape="rect" coords="1166,112,1739,136"/>
-<area href="a00110.html" alt="roboptim::Solver&lt; TwiceDifferentiableFunction, boost::mpl::vector&lt; TwiceDifferentiableFunction &gt; &gt;" shape="rect" coords="1749,112,2322,136"/>
-<area href="a00058.html" title="Dummy solver which always fails, but returns the last state of the solver." alt="roboptim::GenericDummySolverLastState&lt; F &gt;" shape="rect" coords="583,168,1156,192"/>
-<area href="a00048.html" title="Dummy solver which always fails." alt="roboptim::DummySolver" shape="rect" coords="1166,168,1739,192"/>
-<area href="a00049.html" title="Dummy solver which always fails." alt="roboptim::DummySolverTd" shape="rect" coords="1749,168,2322,192"/>
-</map>
- </div></div>
-</div><!-- contents -->
+<!-- doxytag: class="roboptim::detail::list_converter" -->
+<p>Converts CLIST to a boost::mpl::vector to ensure a similar behavior for codes using different random access sequences (vector, list, etc.).  
+ <a href="a00083.html#details">More...</a></p>
+
+<p><code>#include &lt;roboptim/core/detail/utility.hh&gt;</code></p>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename CLIST&gt;<br/>
+struct roboptim::detail::list_converter&lt; CLIST &gt;</h3>
+
+<p>Converts CLIST to a boost::mpl::vector to ensure a similar behavior for codes using different random access sequences (vector, list, etc.). </p>
+<p>In the case of boost::mpl::vector, this ensures a normalized representation of the vector (boost::mpl::vector converted to boost::mpl::v_item) and orders the constraints in a proper way. This makes the use of typeid comparison possible.</p>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">CLIST</td><td>vector of types </td></tr>
+  </table>
+  </dd>
+</dl>
+</div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -101,6 +101,8 @@ Inheritance diagram for noncopyable:</div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00083.html">noncopyable</a>      </li>
+      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00260.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00083.html">list_converter</a>      </li>
 </body>
 </html>

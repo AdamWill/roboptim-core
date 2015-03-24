@@ -1,11 +1,14 @@
 var a00064 =
 [
-    [ "GenericIdentityFunction", "a00064.html#ab54d82769bc4a7bf83aad7a6ca7b26d5", null ],
-    [ "~GenericIdentityFunction", "a00064.html#ae60050ae16bed7e7d13dcfbdcf15ca65", null ],
-    [ "impl_compute", "a00064.html#a44daded3fd164f9eeafcc2da5d858fc5", null ],
-    [ "impl_gradient", "a00262.html#ga1d058b086530ec6170fa87fc1e16f821", null ],
-    [ "impl_gradient", "a00064.html#a5c70da9fa4718dcf3a90d0b68a40ad5e", null ],
-    [ "impl_jacobian", "a00064.html#a5dbc03d6fef05ed28a88bb50e87eed99", null ],
-    [ "print", "a00064.html#adc5eff6387532970e7b1e14daeb2d8af", null ],
-    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00064.html#a96bed4fb0ae0a69ca8c0ba546b161aaa", null ]
+    [ "callback_t", "a00064.html#acff89ad608c772f445edb654d4c234c2", null ],
+    [ "parent_t", "a00064.html#a63f3a8b1ebcc44f3655882d84ad9bc76", null ],
+    [ "problem_t", "a00064.html#a6c145f7f2b71a1e7d6c09b7578d03c6a", null ],
+    [ "solverState_t", "a00064.html#a35e2684e79e9e563323ad1ab2e729e82", null ],
+    [ "GenericDummySolverLastState", "a00064.html#a6048ac28ab501a9457b41aba611b2565", null ],
+    [ "~GenericDummySolverLastState", "a00064.html#a4f6039d2238b8461c6b5a94acd62e6ac", null ],
+    [ "callback", "a00064.html#a6a0c6a45d831bb9c967becf970330407", null ],
+    [ "setIterationCallback", "a00064.html#a5ce028c7aae7bbec2264162a79c93619", null ],
+    [ "solve", "a00064.html#a9c572e37e56f4f5e9bf43f57b1803e09", null ],
+    [ "callback_", "a00064.html#ae8a13793b24ec9f3e772b939b2cd695a", null ],
+    [ "solverState_", "a00064.html#a1697fef1f95edda99bc4420e1143350e", null ]
 ];

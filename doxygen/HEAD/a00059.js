@@ -1,12 +1,11 @@
 var a00059 =
 [
-    [ "GenericFiniteDifferenceGradient", "a00059.html#ade644f357e04020a3fb84207994f745b", null ],
-    [ "~GenericFiniteDifferenceGradient", "a00059.html#a52f35b313494e42eba9b96264ac4ab2f", null ],
-    [ "impl_compute", "a00059.html#a39b12ddb131ed26919c89cb928c10322", null ],
-    [ "impl_gradient", "a00059.html#a8ac89f5ee69c2f36688df60401af03e8", null ],
-    [ "impl_jacobian", "a00059.html#af0bd3d03507cbf30e9d3c0ac96fe2e5b", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00059.html#a583e5aeb130b6c46b7d12fe0f65c717f", null ],
-    [ "adaptee_", "a00059.html#aad6048bf897c560c6a0e03ce355413d1", null ],
-    [ "epsilon_", "a00059.html#a351983c229ac4c9cd42cdeb7ad0aebda", null ],
-    [ "xEps_", "a00059.html#a5c3139b3bfa459c225a2e77058259cb1", null ]
+    [ "interval_t", "a00059.html#aa1fe89a5855ff977bbece5d78f90a5d2", null ],
+    [ "intervalsVect_t", "a00059.html#a8047bc98d54e46144b3f522dd6812d4c", null ],
+    [ "size_type", "a00059.html#a63530c370e23c26988f0727e540e24d4", null ],
+    [ "value_type", "a00059.html#a640d8344231b239f17a20392517c1d68", null ],
+    [ "vector_t", "a00059.html#a0264a3b65ffb6e4ab0753116dbba61c5", null ],
+    [ "EvaluateConstraintViolation", "a00059.html#a306dbff7446a9f1252d32d1ff67cd1f0", null ],
+    [ "computeViolation", "a00059.html#aecd68350a1eb5e9999d0d27f9f02723d", null ],
+    [ "uniformNorm", "a00059.html#a40d8c34b08bf85f2f65f1d12a221dde7", null ]
 ];

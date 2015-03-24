@@ -1,10 +1,16 @@
 var a00171 =
 [
-    [ "decendl", "a00247.html#a40c2b30f2b9839b3f1f16f3e1bcf8769", null ],
-    [ "decindent", "a00247.html#a5a9d36182ac616874a038fd4217f0a9c", null ],
-    [ "iendl", "a00247.html#a27b6e86639bb04ec042979cdaad0a851", null ],
-    [ "incendl", "a00247.html#a522f7549c2f312397403265b950a9144", null ],
-    [ "incindent", "a00247.html#a053552edbb5c42ac287c22175ea43e69", null ],
-    [ "indent", "a00247.html#a2b00a3916f44e9f9d69e4fc157a0da79", null ],
-    [ "resetindent", "a00247.html#a3f228456aacf0bc862482828cbde643b", null ]
+    [ "cd", "a00273.html#ga195d042fd97469e044b37abc0faf1e0f", null ],
+    [ "clear", "a00273.html#gad96d84d9e1a5bab7a33ed90bef8bc01d", null ],
+    [ "comment", "a00273.html#ga108c0cb6161fb8813817a7b7a1ac980d", null ],
+    [ "comment", "a00273.html#ga7a509faa4e3dd9a30373a2b320b98c23", null ],
+    [ "help", "a00273.html#gabecfe2b1ab67fa65ea2fa8f9de592d0a", null ],
+    [ "pwd", "a00273.html#ga05e850b5c5dc912807d645863c01acd9", null ],
+    [ "quit", "a00273.html#ga9ecd6983c2e9525527f1269b72b85291", null ],
+    [ "replot", "a00273.html#gaa265dffb4d80ad3841b7775136f9f9bb", null ],
+    [ "reread", "a00273.html#gacc11e69c9499c334e4ec1a962c6e6536", null ],
+    [ "reset", "a00273.html#ga73987a2ddca2e5fc23ff8bbdf703842d", null ],
+    [ "set", "a00273.html#gad77630a233193748534b41d069d4e180", null ],
+    [ "show", "a00273.html#gaf90f5364d8c3597b8909ba99083fc23f", null ],
+    [ "unset", "a00273.html#ga2c2a188b2e89955eee09aa10b5426e43", null ]
 ];

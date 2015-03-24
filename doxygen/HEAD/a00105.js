@@ -1,13 +1,15 @@
 var a00105 =
 [
-    [ "parentType_t", "a00105.html#a6802dfd6761714f83c4dbbe5f9bcef19", null ],
-    [ "SelectionShPtr_t", "a00105.html#a5cf29c8b2e9a95cf3553d7f21bb1ee83", null ],
-    [ "Selection", "a00105.html#ac07895f78f6a65a8b3f54d5fc1020629", null ],
-    [ "~Selection", "a00105.html#a2f5c18b892a2c6e4d6d1f30561334d4e", null ],
-    [ "impl_compute", "a00105.html#a27810cd60947270ff41970b79f10e741", null ],
-    [ "impl_gradient", "a00105.html#a34eb7fca5608b393e2dff858bbbaa60f", null ],
-    [ "impl_jacobian", "a00105.html#a33d09bf5aa65daf658f4b853322d2b9b", null ],
-    [ "origin", "a00105.html#a5e3e5098b2fe6dd32b773d06ba3de648", null ],
-    [ "origin", "a00105.html#a0cbd7cc3ecf575d338b16306ea1b4646", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00105.html#a224033bde371676be065a7c89fba3d77", null ]
+    [ "parentType_t", "a00105.html#ac3331e7746ea38a799a09fb68c0e057e", null ],
+    [ "ProductShPtr_t", "a00105.html#a7ed381024c39ddaa1123e0fa5e1488dd", null ],
+    [ "Product", "a00105.html#ab76dde7e852516b81cdb7d78a621596b", null ],
+    [ "~Product", "a00105.html#ac478e0d0632fa9805cc730e7bb6d53f4", null ],
+    [ "impl_compute", "a00105.html#a68108350282033815a0c5d03c97e7087", null ],
+    [ "impl_gradient", "a00105.html#a6d55588c9d0480dd7a34e883aa837399", null ],
+    [ "impl_jacobian", "a00105.html#a4660c503634f2cd3364a3736d9c666e1", null ],
+    [ "left", "a00105.html#a641399a2f1b6c3abd60c605dd0d537d8", null ],
+    [ "left", "a00105.html#aa9df8d10e508914ed7714d047e73e68d", null ],
+    [ "right", "a00105.html#a2a04bb5774afd196984863548dd7be56", null ],
+    [ "right", "a00105.html#a5ae21a63e263c7c94d40762eafc3f047", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00105.html#a8aedb5c3a59794247402eaef608e1ed6", null ]
 ];

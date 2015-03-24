@@ -1,10 +1,7 @@
 var a00172 =
 [
-    [ "decendl", "a00247.html#a40c2b30f2b9839b3f1f16f3e1bcf8769", null ],
-    [ "decindent", "a00247.html#a5a9d36182ac616874a038fd4217f0a9c", null ],
-    [ "iendl", "a00247.html#a27b6e86639bb04ec042979cdaad0a851", null ],
-    [ "incendl", "a00247.html#a522f7549c2f312397403265b950a9144", null ],
-    [ "incindent", "a00247.html#a053552edbb5c42ac287c22175ea43e69", null ],
-    [ "indent", "a00247.html#a2b00a3916f44e9f9d69e4fc157a0da79", null ],
-    [ "resetindent", "a00247.html#a3f228456aacf0bc862482828cbde643b", null ]
+    [ "dense_jacobian_to_gnuplot", "a00265.html#a00f78445b522347c5914f58bb68c80a0", null ],
+    [ "plot_jac", "a00273.html#ga6089434a4bb7b902af79ee92fbfea1ea", null ],
+    [ "plot_jac", "a00273.html#gaa1f821ed4194ecba54db36327af0fd13", null ],
+    [ "sparse_jacobian_to_gnuplot", "a00265.html#a406862b4cef98a34eca862ce87b99aa5", null ]
 ];

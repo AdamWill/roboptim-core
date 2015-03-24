@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::NTimesDerivableFunction&lt; 2 &gt; Class Template Reference</title>
+<title>roboptim::LRUCache&lt; K, V, H &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,611 +63,638 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::NTimesDerivableFunction&lt; 2 &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00262.html">Mathematical functions</a></div></div>  </div>
+<div class="title">roboptim::LRUCache&lt; K, V, H &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::NTimesDerivableFunction&lt; 2 &gt;" --><!-- doxytag: inherits="roboptim::GenericTwiceDifferentiableFunction" -->
-<p>Explicit specialization for the stop case of NTimesDerivable class.  
+<!-- doxytag: class="roboptim::LRUCache" -->
+<p>LRU (Least Recently Used) cache.  
  <a href="a00086.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/n-times-derivable-function.hh&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for roboptim::NTimesDerivableFunction&lt; 2 &gt;:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00086.png" usemap="#roboptim::NTimesDerivableFunction&lt; 2 &gt;_map" alt=""/>
-  <map id="roboptim::NTimesDerivableFunction&lt; 2 &gt;_map" name="roboptim::NTimesDerivableFunction&lt; 2 &gt;_map">
-<area href="a00071.html" title="Define an abstract function which is twice-derivable ( )." alt="roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;" shape="rect" coords="0,112,396,136"/>
-<area href="a00057.html" title="Define an abstract derivable function ( )." alt="roboptim::GenericDifferentiableFunction&lt; T &gt;" shape="rect" coords="0,56,396,80"/>
-<area href="a00060.html" title="Define an abstract mathematical function ( )." alt="roboptim::GenericFunction&lt; T &gt;" shape="rect" coords="0,0,396,24"/>
-</map>
- </div></div>
+<p><code>#include &lt;roboptim/core/cache.hh&gt;</code></p>
 
-<p><a href="a00310.html">List of all members.</a></p>
+<p><a href="a00283.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef K&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#ad57cd01910721c067fceedf70733940e">key_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of keys.  <a href="#ad57cd01910721c067fceedf70733940e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00038.html">detail::const_ref</a><br class="typebreak"/>
+&lt; <a class="el" href="a00086.html#ad57cd01910721c067fceedf70733940e">key_t</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#ae32f39d94dd9f3a727ea74b5d8c22838">const_key_ref</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of const reference to key.  <a href="#ae32f39d94dd9f3a727ea74b5d8c22838"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a81e187e255654c3dd8f4f0db5684c5bb">value_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of values.  <a href="#a81e187e255654c3dd8f4f0db5684c5bb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00038.html">detail::const_ref</a><br class="typebreak"/>
+&lt; <a class="el" href="a00086.html#a81e187e255654c3dd8f4f0db5684c5bb">value_t</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#ab4a5ba50c50ade714f8c2b768e25e62a">const_value_ref</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of const reference to key.  <a href="#ab4a5ba50c50ade714f8c2b768e25e62a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef H&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#ae939c7ec7ccfe94a25a123363bc163ae">hasher_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00080.html" title="Hash generator for argument vector.">Hasher</a> type.  <a href="#ae939c7ec7ccfe94a25a123363bc163ae"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#aabd655bbb6f61a44c513396358d0252b">hash_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash type used by the Boost map.  <a href="#aabd655bbb6f61a44c513396358d0252b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; <a class="el" href="a00086.html#a81e187e255654c3dd8f4f0db5684c5bb">value_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#add51600be37d5b0b0f15647825efb11f">valuePool_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::list&lt; <a class="el" href="a00086.html#aabd655bbb6f61a44c513396358d0252b">hash_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a2e8c3e4c8bc87279c6d4375c021d433b">keyTracker_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">List used to track key usage.  <a href="#a2e8c3e4c8bc87279c6d4375c021d433b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00086.html#aabd655bbb6f61a44c513396358d0252b">hash_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a1ae5b2657ca3f720c681010097eef091">mapKey_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Key type for the underlying map.  <a href="#a1ae5b2657ca3f720c681010097eef091"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00038.html">detail::const_ref</a><br class="typebreak"/>
+&lt; <a class="el" href="a00086.html#a1ae5b2657ca3f720c681010097eef091">mapKey_t</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a2f2452a386805fec6691009e2a5cbef5">const_mapKey_ref</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::unordered_map<br class="typebreak"/>
+&lt; <a class="el" href="a00086.html#a1ae5b2657ca3f720c681010097eef091">mapKey_t</a>, typename <br class="typebreak"/>
+valuePool_t::iterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a24267f12834eaa54c46633e855b4b502">map_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00087.html" title="Apply a function several times to an input vector.">Map</a> from map's key to iterator in the value pool.  <a href="#a24267f12834eaa54c46633e855b4b502"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef map_t::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a0bb8e1dadc746db6dd352e7bfe77f3cb">const_iterator</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef map_t::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a63f0724637e168eea217af3a438d168f">iterator</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a1a183ff8b5a808c6f7055046d3d92c61">derivabilityOrderMax</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum derivability order (relevant for N&gt;2 only)  <a href="#a1a183ff8b5a808c6f7055046d3d92c61"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#aa53731c25ac3d5d1fc7a3ea8150aed11">~NTimesDerivableFunction</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a268b3fd1413566d680615cacd990b16a">derivativeSize</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the derivative vector.  <a href="#a268b3fd1413566d680615cacd990b16a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a2e9a8778445f0b28d444b24eddf8dad0">isValidDerivative</a> (const_gradient_ref <a class="el" href="a00086.html#a7314148103af030f3d080f136abe8d94">derivative</a>) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a derivative is valid (check sizes).  <a href="#a2e9a8778445f0b28d444b24eddf8dad0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">result_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a28c3421f695912a9ad78728e0cf9f3b9">operator()</a> (<a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a> argument) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the function at a specified point.  <a href="#a28c3421f695912a9ad78728e0cf9f3b9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#af2490b8d0ea10daa90173e080456edba">operator()</a> (result_ref result, <a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a> argument) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the function at a specified point.  <a href="#af2490b8d0ea10daa90173e080456edba"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">gradient_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a7314148103af030f3d080f136abe8d94">derivative</a> (<a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a> argument, <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> order=1) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the derivative of the function.  <a href="#a7314148103af030f3d080f136abe8d94"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a736bf3a581c7ab3216762a2824b34fcf">derivative</a> (gradient_ref <a class="el" href="a00086.html#a7314148103af030f3d080f136abe8d94">derivative</a>, <a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a> argument, <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> order=1) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the derivative of the function.  <a href="#a736bf3a581c7ab3216762a2824b34fcf"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#ae0961c8f2f33ecb177216919420b21cb">print</a> (std::ostream &amp;o) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#ae0961c8f2f33ecb177216919420b21cb"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#ac4e7bbc8e11d709811e4c748ea7bb067">derivabilityOrder</a> = 2</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function derivability order.  <a href="#ac4e7bbc8e11d709811e4c748ea7bb067"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a43c46f8d4d4d71d1c1ec4c42eca7504d">LRUCache</a> (size_t <a class="el" href="a00086.html#a12f564d099f7eced90d088d802a555fc">size</a>=10)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a43c46f8d4d4d71d1c1ec4c42eca7504d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#abebca2518399f6fdb2376174c855b766">~LRUCache</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#abebca2518399f6fdb2376174c855b766"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a12f564d099f7eced90d088d802a555fc">size</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the cache.  <a href="#a12f564d099f7eced90d088d802a555fc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#aa15ee6a0a84f8ce791e23d65b079e4b6">resize</a> (size_t <a class="el" href="a00086.html#a12f564d099f7eced90d088d802a555fc">size</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the size of the cache.  <a href="#aa15ee6a0a84f8ce791e23d65b079e4b6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00086.html#a0bb8e1dadc746db6dd352e7bfe77f3cb">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a10c73975f00e739eb6d8846fa709ce41">find</a> (<a class="el" href="a00086.html#ae32f39d94dd9f3a727ea74b5d8c22838">const_key_ref</a> key) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Find an element in the cache.  <a href="#a10c73975f00e739eb6d8846fa709ce41"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00086.html#a63f0724637e168eea217af3a438d168f">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#aca4eca2d48c018e9b1c7422b3a235ca7">begin</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator to the beginning of the cache.  <a href="#aca4eca2d48c018e9b1c7422b3a235ca7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00086.html#a63f0724637e168eea217af3a438d168f">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a65f5f6d8240f66caecef00ab19c4e451">end</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator to the end of the cache.  <a href="#a65f5f6d8240f66caecef00ab19c4e451"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00086.html#a0bb8e1dadc746db6dd352e7bfe77f3cb">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a9b10be54b2321d8202f954c21362b147">cbegin</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator to the beginning of the cache.  <a href="#a9b10be54b2321d8202f954c21362b147"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00086.html#a0bb8e1dadc746db6dd352e7bfe77f3cb">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a6913332bbb1fdbfd94aecdac27098d91">cend</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator to the end of the cache.  <a href="#a6913332bbb1fdbfd94aecdac27098d91"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">V &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#af749ebd7ea96ba84d320ceb6145ecc6c">operator[]</a> (<a class="el" href="a00086.html#ae32f39d94dd9f3a727ea74b5d8c22838">const_key_ref</a> key)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Access a cached element.  <a href="#af749ebd7ea96ba84d320ceb6145ecc6c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#afd9948554164b539b4e3da1285946d03">insert</a> (<a class="el" href="a00086.html#ae32f39d94dd9f3a727ea74b5d8c22838">const_key_ref</a> key, <a class="el" href="a00086.html#ab4a5ba50c50ade714f8c2b768e25e62a">const_value_ref</a> value)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a value into the cache.  <a href="#afd9948554164b539b4e3da1285946d03"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a21749c149bd1eb6d826a6ea3dd74ce4b">clear</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the cache.  <a href="#a21749c149bd1eb6d826a6ea3dd74ce4b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a2b8069a2b57711ff2dd74d7b80c93af0">print</a> (std::ostream &amp;) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the cache on the specified output stream.  <a href="#a2b8069a2b57711ff2dd74d7b80c93af0"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#aadbad9470dae42b36850ae6335061499">NTimesDerivableFunction</a> (<a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> <a class="el" href="a00060.html#a0aaf1d1daaab80d27aa6cba0a3ee006f">outputSize</a>=1, std::string name=std::string())</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Concrete class constructor should call this constructor.  <a href="#aadbad9470dae42b36850ae6335061499"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a608c4e68e7860f984b6b08e534b2019b">impl_compute</a> (result_ref result, const_argument_ref argument) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluation.  <a href="#a608c4e68e7860f984b6b08e534b2019b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#aa731d43cd179890bd75e36ed6477f707">impl_compute</a> (result_ref result, <a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a> t) const =0</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluation.  <a href="#aa731d43cd179890bd75e36ed6477f707"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#aa7e2133add7bc02a1126d66bfe0d0c63">impl_gradient</a> (gradient_ref <a class="el" href="a00057.html#a03a9c0c4bee28944a49cd508252a9049">gradient</a>, const_argument_ref argument, <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> functionId=0) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradient evaluation.  <a href="#aa7e2133add7bc02a1126d66bfe0d0c63"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#af69b8615f7a19cec67ba3530290ece30">impl_derivative</a> (gradient_ref <a class="el" href="a00086.html#a7314148103af030f3d080f136abe8d94">derivative</a>, <a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a> argument, <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> order=1) const =0</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00042.html" title="Return the derivative of a function w.r.t.">Derivative</a> evaluation.  <a href="#af69b8615f7a19cec67ba3530290ece30"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a76b7c04673c755f81d57d9236465d293">impl_hessian</a> (hessian_ref <a class="el" href="a00071.html#ae9cd62bec5a2c9637b96d738b90caeab">hessian</a>, const_argument_ref argument, <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> functionId=0) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hessian evaluation.  <a href="#a76b7c04673c755f81d57d9236465d293"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00086.html#aabd655bbb6f61a44c513396358d0252b">hash_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a00d803305bd134f557a470a5bd91960f">hash_function</a> (<a class="el" href="a00086.html#ae32f39d94dd9f3a727ea74b5d8c22838">const_key_ref</a> key) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash function used in the cache.  <a href="#a00d803305bd134f557a470a5bd91960f"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;&gt;<br/>
-class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
+<div class="textblock"><h3>template&lt;typename K, typename V, typename H = boost::hash&lt;K&gt;&gt;<br/>
+class roboptim::LRUCache&lt; K, V, H &gt;</h3>
 
-<p>Explicit specialization for the stop case of NTimesDerivable class. </p>
-<p>This specialization defines the interface of a ``n times derivable function'' and implements generic methods required by upper classes using this class specific interface. </p>
-</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aa53731c25ac3d5d1fc7a3ea8150aed11"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::~NTimesDerivableFunction" ref="aa53731c25ac3d5d1fc7a3ea8150aed11" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::~<a class="el" href="a00085.html">NTimesDerivableFunction</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aadbad9470dae42b36850ae6335061499"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::NTimesDerivableFunction" ref="aadbad9470dae42b36850ae6335061499" args="(size_type outputSize=1, std::string name=std::string())" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::<a class="el" href="a00085.html">NTimesDerivableFunction</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
-          <td class="paramname"><em>outputSize</em> = <code>1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em> = <code>std::string&#160;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [inline, protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Concrete class constructor should call this constructor. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">outputSize</td><td>output size (result size) </td></tr>
-    <tr><td class="paramname">name</td><td>function's name </td></tr>
+<p>LRU (Least Recently Used) cache. </p>
+<p>Note that the cache is unidirectional, i.e. the map does not store the actual keys, since this was designed with large vectors in mind.</p>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">K</td><td>type for keys. </td></tr>
+    <tr><td class="paramname">V</td><td>type for values.</td></tr>
   </table>
   </dd>
 </dl>
+<p>Some of the ideas used here come from Tim Day's "LRU cache implementation in C++" (<a href="http://timday.bitbucket.org/lru.html">http://timday.bitbucket.org/lru.html</a>) </p>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a0bb8e1dadc746db6dd352e7bfe77f3cb"></a><!-- doxytag: member="roboptim::LRUCache::const_iterator" ref="a0bb8e1dadc746db6dd352e7bfe77f3cb" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V, typename H = boost::hash&lt;K&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef map_t::const_iterator <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a0bb8e1dadc746db6dd352e7bfe77f3cb">const_iterator</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae32f39d94dd9f3a727ea74b5d8c22838"></a><!-- doxytag: member="roboptim::LRUCache::const_key_ref" ref="ae32f39d94dd9f3a727ea74b5d8c22838" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V, typename H = boost::hash&lt;K&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00038.html">detail::const_ref</a>&lt;<a class="el" href="a00086.html#ad57cd01910721c067fceedf70733940e">key_t</a>&gt;::type <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#ae32f39d94dd9f3a727ea74b5d8c22838">const_key_ref</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type of const reference to key. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2f2452a386805fec6691009e2a5cbef5"></a><!-- doxytag: member="roboptim::LRUCache::const_mapKey_ref" ref="a2f2452a386805fec6691009e2a5cbef5" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V, typename H = boost::hash&lt;K&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00038.html">detail::const_ref</a>&lt;<a class="el" href="a00086.html#a1ae5b2657ca3f720c681010097eef091">mapKey_t</a>&gt;::type <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a2f2452a386805fec6691009e2a5cbef5">const_mapKey_ref</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab4a5ba50c50ade714f8c2b768e25e62a"></a><!-- doxytag: member="roboptim::LRUCache::const_value_ref" ref="ab4a5ba50c50ade714f8c2b768e25e62a" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V, typename H = boost::hash&lt;K&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00038.html">detail::const_ref</a>&lt;<a class="el" href="a00086.html#a81e187e255654c3dd8f4f0db5684c5bb">value_t</a>&gt;::type <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#ab4a5ba50c50ade714f8c2b768e25e62a">const_value_ref</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type of const reference to key. </p>
+
+</div>
+</div>
+<a class="anchor" id="aabd655bbb6f61a44c513396358d0252b"></a><!-- doxytag: member="roboptim::LRUCache::hash_t" ref="aabd655bbb6f61a44c513396358d0252b" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V, typename H = boost::hash&lt;K&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::size_t <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#aabd655bbb6f61a44c513396358d0252b">hash_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Hash type used by the Boost map. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae939c7ec7ccfe94a25a123363bc163ae"></a><!-- doxytag: member="roboptim::LRUCache::hasher_t" ref="ae939c7ec7ccfe94a25a123363bc163ae" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V, typename H = boost::hash&lt;K&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef H <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#ae939c7ec7ccfe94a25a123363bc163ae">hasher_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="a00080.html" title="Hash generator for argument vector.">Hasher</a> type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a63f0724637e168eea217af3a438d168f"></a><!-- doxytag: member="roboptim::LRUCache::iterator" ref="a63f0724637e168eea217af3a438d168f" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V, typename H = boost::hash&lt;K&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef map_t::iterator <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a63f0724637e168eea217af3a438d168f">iterator</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad57cd01910721c067fceedf70733940e"></a><!-- doxytag: member="roboptim::LRUCache::key_t" ref="ad57cd01910721c067fceedf70733940e" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V, typename H = boost::hash&lt;K&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef K <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#ad57cd01910721c067fceedf70733940e">key_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type of keys. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2e8c3e4c8bc87279c6d4375c021d433b"></a><!-- doxytag: member="roboptim::LRUCache::keyTracker_t" ref="a2e8c3e4c8bc87279c6d4375c021d433b" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V, typename H = boost::hash&lt;K&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::list&lt;<a class="el" href="a00086.html#aabd655bbb6f61a44c513396358d0252b">hash_t</a>&gt; <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a2e8c3e4c8bc87279c6d4375c021d433b">keyTracker_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>List used to track key usage. </p>
+<p>Note: we use hashes rather than vectors to prevent costly allocations. </p>
+
+</div>
+</div>
+<a class="anchor" id="a24267f12834eaa54c46633e855b4b502"></a><!-- doxytag: member="roboptim::LRUCache::map_t" ref="a24267f12834eaa54c46633e855b4b502" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V, typename H = boost::hash&lt;K&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::unordered_map&lt;<a class="el" href="a00086.html#a1ae5b2657ca3f720c681010097eef091">mapKey_t</a>, typename valuePool_t::iterator&gt; <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a24267f12834eaa54c46633e855b4b502">map_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="a00087.html" title="Apply a function several times to an input vector.">Map</a> from map's key to iterator in the value pool. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1ae5b2657ca3f720c681010097eef091"></a><!-- doxytag: member="roboptim::LRUCache::mapKey_t" ref="a1ae5b2657ca3f720c681010097eef091" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V, typename H = boost::hash&lt;K&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00086.html#aabd655bbb6f61a44c513396358d0252b">hash_t</a> <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a1ae5b2657ca3f720c681010097eef091">mapKey_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Key type for the underlying map. </p>
+
+</div>
+</div>
+<a class="anchor" id="a81e187e255654c3dd8f4f0db5684c5bb"></a><!-- doxytag: member="roboptim::LRUCache::value_t" ref="a81e187e255654c3dd8f4f0db5684c5bb" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V, typename H = boost::hash&lt;K&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef V <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a81e187e255654c3dd8f4f0db5684c5bb">value_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type of values. </p>
+
+</div>
+</div>
+<a class="anchor" id="add51600be37d5b0b0f15647825efb11f"></a><!-- doxytag: member="roboptim::LRUCache::valuePool_t" ref="add51600be37d5b0b0f15647825efb11f" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K, typename V, typename H = boost::hash&lt;K&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="a00086.html#a81e187e255654c3dd8f4f0db5684c5bb">value_t</a>&gt; <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#add51600be37d5b0b0f15647825efb11f">valuePool_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a43c46f8d4d4d71d1c1ec4c42eca7504d"></a><!-- doxytag: member="roboptim::LRUCache::LRUCache" ref="a43c46f8d4d4d71d1c1ec4c42eca7504d" args="(size_t size=10)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename H &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html">LRUCache</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em> = <code>10</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor. </p>
+<p>Note: all the memory is allocated in the constructor. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>maximum size of the cache. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abebca2518399f6fdb2376174c855b766"></a><!-- doxytag: member="roboptim::LRUCache::~LRUCache" ref="abebca2518399f6fdb2376174c855b766" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename H &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::~<a class="el" href="a00086.html">LRUCache</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Destructor. </p>
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a1a183ff8b5a808c6f7055046d3d92c61"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::derivabilityOrderMax" ref="a1a183ff8b5a808c6f7055046d3d92c61" args="() const " -->
+<a class="anchor" id="aca4eca2d48c018e9b1c7422b3a235ca7"></a><!-- doxytag: member="roboptim::LRUCache::begin" ref="aca4eca2d48c018e9b1c7422b3a235ca7" args="()" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename H &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::<a class="el" href="a00086.html#a1a183ff8b5a808c6f7055046d3d92c61">derivabilityOrderMax</a> </td>
+          <td class="memname"><a class="el" href="a00086.html">LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a63f0724637e168eea217af3a438d168f">iterator</a> <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#aca4eca2d48c018e9b1c7422b3a235ca7">begin</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline, virtual]</code></td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Returns the maximum derivability order (relevant for N&gt;2 only) </p>
+<p>Iterator to the beginning of the cache. </p>
 
 </div>
 </div>
-<a class="anchor" id="a7314148103af030f3d080f136abe8d94"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::derivative" ref="a7314148103af030f3d080f136abe8d94" args="(value_type argument, size_type order=1) const " -->
+<a class="anchor" id="a9b10be54b2321d8202f954c21362b147"></a><!-- doxytag: member="roboptim::LRUCache::cbegin" ref="a9b10be54b2321d8202f954c21362b147" args="() const " -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename H &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">gradient_t <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::<a class="el" href="a00086.html#a7314148103af030f3d080f136abe8d94">derivative</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a>&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
-          <td class="paramname"><em>order</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Compute the derivative of the function. </p>
-<p><a class="el" href="a00042.html" title="Return the derivative of a function w.r.t.">Derivative</a> is computed for a certain order, at a given point. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">argument</td><td>point at which the derivative will be computed </td></tr>
-    <tr><td class="paramname">order</td><td>derivative order (if 0 then function is evaluated) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>derivative vector </dd></dl>
-
-<p>References <a class="el" href="a00263.html#ga2aca003d14f5cd52e55a6b4fd6fec025">roboptim::derivative()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a736bf3a581c7ab3216762a2824b34fcf"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::derivative" ref="a736bf3a581c7ab3216762a2824b34fcf" args="(gradient_ref derivative, value_type argument, size_type order=1) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::<a class="el" href="a00086.html#a7314148103af030f3d080f136abe8d94">derivative</a> </td>
-          <td>(</td>
-          <td class="paramtype">gradient_ref&#160;</td>
-          <td class="paramname"><em>derivative</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a>&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
-          <td class="paramname"><em>order</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Compute the derivative of the function. </p>
-<p><a class="el" href="a00042.html" title="Return the derivative of a function w.r.t.">Derivative</a> is computed for a certain order, at a given point. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">derivative</td><td>derivative will be stored in this vector </td></tr>
-    <tr><td class="paramname">argument</td><td>point at which the derivative will be computed </td></tr>
-    <tr><td class="paramname">order</td><td>derivative order (if 0 then function is evaluated) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>References <a class="el" href="a00085.html#a78da40b42cc149c600873c1c7707941b">roboptim::NTimesDerivableFunction&lt; DerivabilityOrder &gt;::derivabilityOrderMax()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a268b3fd1413566d680615cacd990b16a"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::derivativeSize" ref="a268b3fd1413566d680615cacd990b16a" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::<a class="el" href="a00086.html#a268b3fd1413566d680615cacd990b16a">derivativeSize</a> </td>
+          <td class="memname"><a class="el" href="a00086.html">LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a0bb8e1dadc746db6dd352e7bfe77f3cb">const_iterator</a> <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a9b10be54b2321d8202f954c21362b147">cbegin</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline]</code></td>
+          <td> const</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Return the size of the derivative vector. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>derivative vector size </dd></dl>
+<p>Iterator to the beginning of the cache. </p>
 
 </div>
 </div>
-<a class="anchor" id="a608c4e68e7860f984b6b08e534b2019b"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::impl_compute" ref="a608c4e68e7860f984b6b08e534b2019b" args="(result_ref result, const_argument_ref argument) const " -->
+<a class="anchor" id="a6913332bbb1fdbfd94aecdac27098d91"></a><!-- doxytag: member="roboptim::LRUCache::cend" ref="a6913332bbb1fdbfd94aecdac27098d91" args="() const " -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename H &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::<a class="el" href="a00086.html#a608c4e68e7860f984b6b08e534b2019b">impl_compute</a> </td>
+          <td class="memname"><a class="el" href="a00086.html">LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a0bb8e1dadc746db6dd352e7bfe77f3cb">const_iterator</a> <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a6913332bbb1fdbfd94aecdac27098d91">cend</a> </td>
           <td>(</td>
-          <td class="paramtype">result_ref&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Iterator to the end of the cache. </p>
+
+</div>
+</div>
+<a class="anchor" id="a21749c149bd1eb6d826a6ea3dd74ce4b"></a><!-- doxytag: member="roboptim::LRUCache::clear" ref="a21749c149bd1eb6d826a6ea3dd74ce4b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename H &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a21749c149bd1eb6d826a6ea3dd74ce4b">clear</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Clear the cache. </p>
+
+</div>
+</div>
+<a class="anchor" id="a65f5f6d8240f66caecef00ab19c4e451"></a><!-- doxytag: member="roboptim::LRUCache::end" ref="a65f5f6d8240f66caecef00ab19c4e451" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename H &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00086.html">LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a63f0724637e168eea217af3a438d168f">iterator</a> <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a65f5f6d8240f66caecef00ab19c4e451">end</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Iterator to the end of the cache. </p>
+
+</div>
+</div>
+<a class="anchor" id="a10c73975f00e739eb6d8846fa709ce41"></a><!-- doxytag: member="roboptim::LRUCache::find" ref="a10c73975f00e739eb6d8846fa709ce41" args="(const_key_ref key) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename H &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00086.html">LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a0bb8e1dadc746db6dd352e7bfe77f3cb">const_iterator</a> <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a10c73975f00e739eb6d8846fa709ce41">find</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00086.html#ae32f39d94dd9f3a727ea74b5d8c22838">const_key_ref</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Find an element in the cache. </p>
+
+<p>Referenced by <a class="el" href="a00029.html#a4631bbd9e8b4672d23a4a996c96f27d2">roboptim::CachedFunction&lt; T &gt;::cachedFunctionDerivative()</a>, <a class="el" href="a00029.html#a9a7093903e4eb9c5d2567f821428fa69">roboptim::CachedFunction&lt; T &gt;::cachedFunctionJacobian()</a>, and <a class="el" href="a00029.html#a34ae7bad75739453f387ff095d08a0e8">roboptim::CachedFunction&lt; T &gt;::impl_compute()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a00d803305bd134f557a470a5bd91960f"></a><!-- doxytag: member="roboptim::LRUCache::hash_function" ref="a00d803305bd134f557a470a5bd91960f" args="(const_key_ref key) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename H &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00086.html">LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#aabd655bbb6f61a44c513396358d0252b">hash_t</a> <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a00d803305bd134f557a470a5bd91960f">hash_function</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00086.html#ae32f39d94dd9f3a727ea74b5d8c22838">const_key_ref</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Hash function used in the cache. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>key to hash. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>hashed key. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afd9948554164b539b4e3da1285946d03"></a><!-- doxytag: member="roboptim::LRUCache::insert" ref="afd9948554164b539b4e3da1285946d03" args="(const_key_ref key, const_value_ref value)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename H &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#afd9948554164b539b4e3da1285946d03">insert</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00086.html#ae32f39d94dd9f3a727ea74b5d8c22838">const_key_ref</a>&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>argument</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00086.html#ab4a5ba50c50ade714f8c2b768e25e62a">const_value_ref</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const<code> [inline, protected, virtual]</code></td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Function evaluation. </p>
-<p>Implement generic function evaluation, as required by Function, using this class evaluation method (using a double instead of a vector).</p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00060.html#a4a8297b3ba77ee0e291a31c4049a2acd" title="Evaluate the function at a specified point.">operator()(result_ref, const_argument_ref) const</a> instead.</dd></dl>
+<p>Insert a value into the cache. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">result</td><td>result will be stored in this vector </td></tr>
-    <tr><td class="paramname">argument</td><td>point at which the function will be evaluated </td></tr>
+    <tr><td class="paramname">key</td><td>key of the element. </td></tr>
+    <tr><td class="paramname">value</td><td>value of the element. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="a00060.html#a6c50a900a98c913158bac04419bb79a3">roboptim::GenericFunction&lt; T &gt;</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="aa731d43cd179890bd75e36ed6477f707"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::impl_compute" ref="aa731d43cd179890bd75e36ed6477f707" args="(result_ref result, value_type t) const =0" -->
+<a class="anchor" id="af749ebd7ea96ba84d320ceb6145ecc6c"></a><!-- doxytag: member="roboptim::LRUCache::operator[]" ref="af749ebd7ea96ba84d320ceb6145ecc6c" args="(const_key_ref key)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename H &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::<a class="el" href="a00086.html#a608c4e68e7860f984b6b08e534b2019b">impl_compute</a> </td>
+          <td class="memname">V &amp; <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::operator[] </td>
           <td>(</td>
-          <td class="paramtype">result_ref&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00086.html#ae32f39d94dd9f3a727ea74b5d8c22838">const_key_ref</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a>&#160;</td>
-          <td class="paramname"><em>t</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [protected, pure virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Function evaluation. </p>
-<p>Evaluate the function, has to be implemented in concrete classes. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call #operator()(double) const instead. </dd></dl>
+<p>Access a cached element. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">result</td><td>result will be stored in this vector </td></tr>
-    <tr><td class="paramname">t</td><td>point at which the function will be evaluated </td></tr>
+    <tr><td class="paramname">key</td><td>key to the element. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>reference to the element. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="af69b8615f7a19cec67ba3530290ece30"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::impl_derivative" ref="af69b8615f7a19cec67ba3530290ece30" args="(gradient_ref derivative, value_type argument, size_type order=1) const =0" -->
+<a class="anchor" id="a2b8069a2b57711ff2dd74d7b80c93af0"></a><!-- doxytag: member="roboptim::LRUCache::print" ref="a2b8069a2b57711ff2dd74d7b80c93af0" args="(std::ostream &amp;) const " -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename H &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::<a class="el" href="a00086.html#af69b8615f7a19cec67ba3530290ece30">impl_derivative</a> </td>
-          <td>(</td>
-          <td class="paramtype">gradient_ref&#160;</td>
-          <td class="paramname"><em>derivative</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a>&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
-          <td class="paramname"><em>order</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [protected, pure virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p><a class="el" href="a00042.html" title="Return the derivative of a function w.r.t.">Derivative</a> evaluation. </p>
-<p>Compute the derivative, has to be implemented in concrete classes. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00086.html#a7314148103af030f3d080f136abe8d94" title="Compute the derivative of the function.">derivative</a> instead. </dd></dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">derivative</td><td>derivative will be store in this argument </td></tr>
-    <tr><td class="paramname">argument</td><td>point where the gradient will be computed </td></tr>
-    <tr><td class="paramname">order</td><td>derivative order (if 0 evaluates the function) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aa7e2133add7bc02a1126d66bfe0d0c63"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::impl_gradient" ref="aa7e2133add7bc02a1126d66bfe0d0c63" args="(gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::<a class="el" href="a00086.html#aa7e2133add7bc02a1126d66bfe0d0c63">impl_gradient</a> </td>
-          <td>(</td>
-          <td class="paramtype">gradient_ref&#160;</td>
-          <td class="paramname"><em>gradient</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
-          <td class="paramname"><em>functionId</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [inline, protected, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Gradient evaluation. </p>
-<p>Implement the gradient computation, as required by DerivableFunction. The gradient is computed for a specific sub-function which id is passed through the functionId argument. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00057.html#a03a9c0c4bee28944a49cd508252a9049" title="Computes the gradient.">gradient</a> or <a class="el" href="a00086.html#a7314148103af030f3d080f136abe8d94" title="Compute the derivative of the function.">derivative</a> instead. </dd></dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">gradient</td><td>gradient will be store in this argument </td></tr>
-    <tr><td class="paramname">argument</td><td>point where the gradient will be computed </td></tr>
-    <tr><td class="paramname">functionId</td><td>evaluated function id in the split representation </td></tr>
-  </table>
-  </dd>
-</dl>
-<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
-
-<p>Implements <a class="el" href="a00057.html#af392bd6266e56fbf8e38c0df16d22224">roboptim::GenericDifferentiableFunction&lt; T &gt;</a>.</p>
-
-<p>References <a class="el" href="a00263.html#ga2aca003d14f5cd52e55a6b4fd6fec025">roboptim::derivative()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a76b7c04673c755f81d57d9236465d293"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::impl_hessian" ref="a76b7c04673c755f81d57d9236465d293" args="(hessian_ref hessian, const_argument_ref argument, size_type functionId=0) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::<a class="el" href="a00086.html#a76b7c04673c755f81d57d9236465d293">impl_hessian</a> </td>
-          <td>(</td>
-          <td class="paramtype">hessian_ref&#160;</td>
-          <td class="paramname"><em>hessian</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const_argument_ref&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
-          <td class="paramname"><em>functionId</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [inline, protected, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Hessian evaluation. </p>
-<p>Implement the hessian computation, as required by the TwiceDerivableFunction class using the <a class="el" href="a00086.html#a7314148103af030f3d080f136abe8d94" title="Compute the derivative of the function.">derivative</a> method. The hessian is computed for a specific sub-function which id is passed through the functionId argument. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00071.html#ae9cd62bec5a2c9637b96d738b90caeab" title="Compute the hessian at a given point.">hessian</a> instead. </dd></dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hessian</td><td>hessian will be stored here </td></tr>
-    <tr><td class="paramname">argument</td><td>point where the hessian will be computed </td></tr>
-    <tr><td class="paramname">functionId</td><td>evaluated function id in the split representation </td></tr>
-  </table>
-  </dd>
-</dl>
-<p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
-
-<p>Implements <a class="el" href="a00071.html#af7263e60b22683378ea9027e976fbb29">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</a>.</p>
-
-<p>References <a class="el" href="a00263.html#ga2aca003d14f5cd52e55a6b4fd6fec025">roboptim::derivative()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a2e9a8778445f0b28d444b24eddf8dad0"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::isValidDerivative" ref="a2e9a8778445f0b28d444b24eddf8dad0" args="(const_gradient_ref derivative) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::<a class="el" href="a00086.html#a2e9a8778445f0b28d444b24eddf8dad0">isValidDerivative</a> </td>
-          <td>(</td>
-          <td class="paramtype">const_gradient_ref&#160;</td>
-          <td class="paramname"><em>derivative</em></td><td>)</td>
-          <td> const<code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Check if a derivative is valid (check sizes). </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">derivative</td><td>derivative vector to be checked </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>true if valid, false if not </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a28c3421f695912a9ad78728e0cf9f3b9"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::operator()" ref="a28c3421f695912a9ad78728e0cf9f3b9" args="(value_type argument) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">result_t <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::operator() </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a>&#160;</td>
-          <td class="paramname"><em>argument</em></td><td>)</td>
-          <td> const<code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Evaluate the function at a specified point. </p>
-<p>The program will abort if the argument does not have the expected size. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">argument</td><td>point at which the function will be evaluated </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>computed result </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af2490b8d0ea10daa90173e080456edba"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::operator()" ref="af2490b8d0ea10daa90173e080456edba" args="(result_ref result, value_type argument) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::operator() </td>
-          <td>(</td>
-          <td class="paramtype">result_ref&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00060.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a>&#160;</td>
-          <td class="paramname"><em>argument</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Evaluate the function at a specified point. </p>
-<p>The program will abort if the argument does not have the expected size. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">result</td><td>result will be stored in this vector </td></tr>
-    <tr><td class="paramname">argument</td><td>point at which the function will be evaluated </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>computed result </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ae0961c8f2f33ecb177216919420b21cb"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::print" ref="ae0961c8f2f33ecb177216919420b21cb" args="(std::ostream &amp;o) const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual std::ostream&amp; <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::<a class="el" href="a00086.html#ae0961c8f2f33ecb177216919420b21cb">print</a> </td>
+          <td class="memname">std::ostream &amp; <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a2b8069a2b57711ff2dd74d7b80c93af0">print</a> </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const<code> [inline, virtual]</code></td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Display the function on the specified output stream. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
-
-<p>Reimplemented from <a class="el" href="a00071.html#a78bf9018548e92c38803bbd0b39ef29a">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</a>.</p>
-
-<p>References <a class="el" href="a00085.html#a78da40b42cc149c600873c1c7707941b">roboptim::NTimesDerivableFunction&lt; DerivabilityOrder &gt;::derivabilityOrderMax()</a>.</p>
+<p>Display the cache on the specified output stream. </p>
 
 </div>
 </div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="ac4e7bbc8e11d709811e4c748ea7bb067"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::derivabilityOrder" ref="ac4e7bbc8e11d709811e4c748ea7bb067" args="" -->
+<a class="anchor" id="aa15ee6a0a84f8ce791e23d65b079e4b6"></a><!-- doxytag: member="roboptim::LRUCache::resize" ref="aa15ee6a0a84f8ce791e23d65b079e4b6" args="(size_t size)" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename H &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00060.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> <a class="el" href="a00085.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::<a class="el" href="a00086.html#ac4e7bbc8e11d709811e4c748ea7bb067">derivabilityOrder</a> = 2<code> [static]</code></td>
+          <td class="memname">void <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#aa15ee6a0a84f8ce791e23d65b079e4b6">resize</a> </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Function derivability order. </p>
-<p>One static const variable per class in inheritance structure. </p>
+<p>Change the size of the cache. </p>
+
+</div>
+</div>
+<a class="anchor" id="a12f564d099f7eced90d088d802a555fc"></a><!-- doxytag: member="roboptim::LRUCache::size" ref="a12f564d099f7eced90d088d802a555fc" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename H &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="a00086.html">roboptim::LRUCache</a>&lt; K, V, H &gt;::<a class="el" href="a00086.html#a12f564d099f7eced90d088d802a555fc">size</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Size of the cache. </p>
 
 </div>
 </div>
@@ -689,7 +716,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00247.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00086.html">NTimesDerivableFunction&lt; 2 &gt;</a>      </li>
+      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00086.html">LRUCache</a>      </li>
 </body>
 </html>
