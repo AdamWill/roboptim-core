@@ -15,6 +15,6 @@ var searchData=
   ['blue',['blue',['../a00261.html#a399dec9b833e5e69dbafa4fc99b32606',1,'roboptim::fg']]],
   ['boost_5fmpl_5fassert',['BOOST_MPL_ASSERT',['../a00109.html#a6e4a50c4e55255b57f664c321151579c',1,'roboptim::detail::PromoteTrait']]],
   ['boost_5fmpl_5fassert_5fmsg',['BOOST_MPL_ASSERT_MSG',['../a00078.html#a87e0e44324d64840bad7e4431688be4b',1,'roboptim::detail::get_descendant']]],
-  ['boundsvector',['boundsVector',['../a00271.html#ga321c61b8b452cd74626d0343a8358e4c',1,'roboptim::Problem']]],
+  ['boundsvector',['boundsVector',['../a00272.html#ga321c61b8b452cd74626d0343a8358e4c',1,'roboptim::Problem']]],
   ['boundvalues_5ft',['boundValues_t',['../a00028.html#aa29cc46acf1eb84bda53d9da6ff4a632',1,'roboptim::Bind']]]
 ];

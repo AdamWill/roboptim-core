@@ -1,9 +1,9 @@
 var searchData=
 [
   ['red',['red',['../a00261.html#ab6a33a0073e8b3a206ebf68ffd86a1cb',1,'roboptim::fg']]],
-  ['replot',['replot',['../a00273.html#gaa265dffb4d80ad3841b7775136f9f9bb',1,'roboptim::visualization::gnuplot']]],
-  ['reread',['reread',['../a00273.html#gacc11e69c9499c334e4ec1a962c6e6536',1,'roboptim::visualization::gnuplot']]],
-  ['reset',['reset',['../a00029.html#a83046d99a6b20073ad2d06380d9d4fb3',1,'roboptim::CachedFunction::reset()'],['../a00075.html#a16884b058070f8fb6759c6c194665cb7',1,'roboptim::GenericSolver::reset()'],['../a00261.html#ac20a553dc2fb3400a4e1a2a639c3ab34',1,'roboptim::fg::reset()'],['../a00273.html#ga73987a2ddca2e5fc23ff8bbdf703842d',1,'roboptim::visualization::gnuplot::reset()']]],
+  ['replot',['replot',['../a00274.html#gaa265dffb4d80ad3841b7775136f9f9bb',1,'roboptim::visualization::gnuplot']]],
+  ['reread',['reread',['../a00274.html#gacc11e69c9499c334e4ec1a962c6e6536',1,'roboptim::visualization::gnuplot']]],
+  ['reset',['reset',['../a00029.html#a83046d99a6b20073ad2d06380d9d4fb3',1,'roboptim::CachedFunction::reset()'],['../a00075.html#a16884b058070f8fb6759c6c194665cb7',1,'roboptim::GenericSolver::reset()'],['../a00261.html#ac20a553dc2fb3400a4e1a2a639c3ab34',1,'roboptim::fg::reset()'],['../a00274.html#ga73987a2ddca2e5fc23ff8bbdf703842d',1,'roboptim::visualization::gnuplot::reset()']]],
   ['resetimports',['resetImports',['../a00088.html#ab6d4daa910500975a1805b340fa82c33',1,'roboptim::visualization::Matplotlib']]],
   ['resetindent',['resetindent',['../a00254.html#a3f228456aacf0bc862482828cbde643b',1,'roboptim']]],
   ['resize',['resize',['../a00086.html#aa15ee6a0a84f8ce791e23d65b079e4b6',1,'roboptim::LRUCache']]],

@@ -34,7 +34,7 @@ var searchData=
   ['_7eplus',['~Plus',['../a00098.html#abedb0ecb21222e9aca4c7f103d04ea99',1,'roboptim::Plus']]],
   ['_7epolicy',['~Policy',['../a00099.html#a06bcca9fb5616927cd28834f4ad156b6',1,'roboptim::finiteDifferenceGradientPolicies::Policy']]],
   ['_7epolynomial',['~Polynomial',['../a00100.html#ae57cba490238f13f941fc6bb016436d0',1,'roboptim::Polynomial']]],
-  ['_7eproblem',['~Problem',['../a00271.html#ga18c4d0e5a905e7154a5109aa03e47561',1,'roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::~Problem()'],['../a00271.html#ga64c92ade5e55f88d523f44cb0fd28104',1,'roboptim::Problem::~Problem()']]],
+  ['_7eproblem',['~Problem',['../a00272.html#ga18c4d0e5a905e7154a5109aa03e47561',1,'roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::~Problem()'],['../a00272.html#ga64c92ade5e55f88d523f44cb0fd28104',1,'roboptim::Problem::~Problem()']]],
   ['_7eproduct',['~Product',['../a00105.html#ac478e0d0632fa9805cc730e7bb6d53f4',1,'roboptim::Product']]],
   ['_7eresult',['~Result',['../a00110.html#a888c809793214ded502bfa374dd0c811',1,'roboptim::Result']]],
   ['_7eresultwithwarnings',['~ResultWithWarnings',['../a00111.html#aa3c7d443e5144fb8dea37bb88b50b387',1,'roboptim::ResultWithWarnings']]],
