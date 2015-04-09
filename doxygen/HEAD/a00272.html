@@ -176,7 +176,8 @@ Constructors and destructors.</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename F_ &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00272.html#gafc8876f9b6f551a7f410c7839768cee9">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::Problem</a> (const Problem&lt; F_, boost::mpl::vector&lt;&gt; &gt; &amp;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor (convert from another class of problem).  <a href="#gafc8876f9b6f551a7f410c7839768cee9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00272.html#ga18c4d0e5a905e7154a5109aa03e47561">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::~Problem</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00272.html#ga18c4d0e5a905e7154a5109aa03e47561">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::~Problem</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#ga18c4d0e5a905e7154a5109aa03e47561"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="member-group"></a>
 Cost function.</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const function_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00272.html#ga228e69db29968ff3fd6721672be5193e">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::function</a> () const </td></tr>
@@ -207,7 +208,8 @@ Constructors and destructors.</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename F_ , typename CLIST_ &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00272.html#ga6ca16bc6a4e146d58e92445a3b4dce27">roboptim::Problem&lt; F, CLIST &gt;::Problem</a> (const Problem&lt; F_, CLIST_ &gt; &amp;pb)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor (convert from another class of problem).  <a href="#ga6ca16bc6a4e146d58e92445a3b4dce27"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00272.html#ga64c92ade5e55f88d523f44cb0fd28104">roboptim::Problem&lt; F, CLIST &gt;::~Problem</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00272.html#ga64c92ade5e55f88d523f44cb0fd28104">roboptim::Problem&lt; F, CLIST &gt;::~Problem</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#ga64c92ade5e55f88d523f44cb0fd28104"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="member-group"></a>
 Cost function.</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const function_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00272.html#ga2edd292aab53fc23f28ba983156e76d2">roboptim::Problem&lt; F, CLIST &gt;::function</a> () const </td></tr>
@@ -1760,11 +1762,14 @@ template&lt;typename F &gt; </div>
           <td class="memname"><a class="el" href="a00103.html">roboptim::Problem</a>&lt; F, boost::mpl::vector&lt;&gt; &gt;::~Problem </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Virtual destructor. </p>
+<p>One may want to inherit from <a class="el" href="a00103.html">Problem</a> to provide extra information to a solver plugin. </p>
 
 </div>
 </div>
@@ -1778,11 +1783,14 @@ template&lt;typename F , typename CLIST &gt; </div>
           <td class="memname"><a class="el" href="a00103.html">roboptim::Problem</a>&lt; F, CLIST &gt;::~Problem </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Virtual destructor. </p>
+<p>One may want to inherit from <a class="el" href="a00103.html">Problem</a> to provide extra information to a solver plugin. </p>
 
 </div>
 </div>
