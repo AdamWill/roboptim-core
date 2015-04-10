@@ -1,4 +1,6 @@
 var a00177 =
 [
-    [ "operator<<", "a00263.html#a45951c8d967c172f9f8213900b3d7884", null ]
+    [ "plot_mat", "a00275.html#gadcb1b5fd0907ef64ce8b6b5aaff42db6", null ],
+    [ "plot_mat", "a00275.html#ga22b3284ccb0b83b4dccef09f4ce53cab", null ],
+    [ "plot_mat", "a00275.html#gabc8e5c002378981e9c06e741d221cffd", null ]
 ];

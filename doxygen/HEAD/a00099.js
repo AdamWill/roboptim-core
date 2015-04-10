@@ -1,13 +1,15 @@
 var a00099 =
 [
-    [ "Policy", "a00099.html#acb3099be9c39be49e8b9497071ee6619", null ],
-    [ "~Policy", "a00099.html#a06bcca9fb5616927cd28834f4ad156b6", null ],
-    [ "computeColumn", "a00099.html#ade034beaccda7a4a064f9a25eb7b0697", null ],
-    [ "computeGradient", "a00099.html#ab4b0ec314e44cddf2a719764a7059bca", null ],
-    [ "computeJacobian", "a00099.html#a59292ba39ede372fa78b14f6f1fabaa8", null ],
-    [ "computeJacobian", "a00099.html#ab5425e8a0254a168b4a51306fca0f376", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00099.html#af62d50124971caeadae570717fbf1740", null ],
-    [ "adaptee_", "a00099.html#a33fa24969277dd190a73d07811e3cff0", null ],
-    [ "column_", "a00099.html#af18811a8993439d855e166dec16860c7", null ],
-    [ "gradient_", "a00099.html#ad242918f0c749310f5a8cbe77efe8936", null ]
+    [ "parentType_t", "a00099.html#ab4d12a8f0bcae135aff2dc0e8998801b", null ],
+    [ "PlusShPtr_t", "a00099.html#a4293f7f153edd79aec49ed9d8dd03122", null ],
+    [ "Plus", "a00099.html#a8ab9e9b7348f75e9447251693fc81a7e", null ],
+    [ "~Plus", "a00099.html#abedb0ecb21222e9aca4c7f103d04ea99", null ],
+    [ "impl_compute", "a00099.html#a33dddd26dcadcaf9559ff73581938111", null ],
+    [ "impl_gradient", "a00099.html#a01c9b6d9ef74d019eeb035b706eb5784", null ],
+    [ "impl_jacobian", "a00099.html#aedbf297e4a9ed8d697eb890ece91a7e3", null ],
+    [ "left", "a00099.html#a02962e5b5637c3a0a1f61bf6f188fb9e", null ],
+    [ "left", "a00099.html#af8a02db6bba1a1f20b8a32f10a809248", null ],
+    [ "right", "a00099.html#ade7a10db019cd559298cd1918ebda9ff", null ],
+    [ "right", "a00099.html#a93ea170baf1cb3bcd521edf776676dc1", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00099.html#a0135d05c16cd40f3794d4497f1d2ec4b", null ]
 ];

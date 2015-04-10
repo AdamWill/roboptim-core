@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['optimizationlogger',['OptimizationLogger',['../a00095.html',1,'roboptim']]]
+  ['optimizationlogger',['OptimizationLogger',['../a00096.html',1,'roboptim']]]
 ];
