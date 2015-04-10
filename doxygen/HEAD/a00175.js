@@ -1,6 +1,8 @@
 var a00175 =
 [
-    [ "discreteInterval_t", "a00275.html#ga1c2bbde67ed2275a6def58e1cea970f3", null ],
-    [ "plot", "a00275.html#ga7a1939a1db1b12c576e85859b728458c", null ],
-    [ "plot_xy", "a00275.html#ga0dba01288d4436dfa417d3dfd5520c27", null ]
+    [ "dense_matrix_to_gnuplot", "a00265.html#abf27b2e0087da6e9ec89b10bbdef8c4e", null ],
+    [ "plot_mat", "a00274.html#gadcb1b5fd0907ef64ce8b6b5aaff42db6", null ],
+    [ "plot_mat", "a00274.html#ga22b3284ccb0b83b4dccef09f4ce53cab", null ],
+    [ "set_matrix_header", "a00265.html#aca3546228e3d8781b5e35ce15a50e0ca", null ],
+    [ "sparse_matrix_to_gnuplot", "a00265.html#a81a6cbb7778fc1a14fe74689c2ea7ed6", null ]
 ];

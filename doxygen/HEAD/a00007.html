@@ -80,8 +80,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <span class="preprocessor">#include &lt;iostream&gt;</span>
 
-<span class="preprocessor">#include &lt;<a class="code" href="a00183.html">roboptim/core/io.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00199.html">roboptim/core/numeric-linear-function.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00182.html">roboptim/core/io.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00198.html">roboptim/core/numeric-linear-function.hh</a>&gt;</span>
 
 <span class="keyword">using namespace </span>roboptim;
 
@@ -132,7 +132,7 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (numeric_linear_function, T, functionTypes_t)
 
   <a class="code" href="a00072.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;</a> numericLinearFunctionRebuilt (*linearFunction);
 
-  BOOST_CHECK (<a name="a11"></a><a class="code" href="a00255.html#a553b9a5a35bb96778d0f07cedf0a3bb6" title="Compare sparse vectors (matrices) using both relative and absolute tolerances.">allclose</a> (numericLinearFunction.<a name="a12"></a><a class="code" href="a00072.html#a317e5f83c8637b1310e86c47e29938f4">A</a> (),
+  BOOST_CHECK (<a name="a11"></a><a class="code" href="a00254.html#a553b9a5a35bb96778d0f07cedf0a3bb6" title="Compare sparse vectors (matrices) using both relative and absolute tolerances.">allclose</a> (numericLinearFunction.<a name="a12"></a><a class="code" href="a00072.html#a317e5f83c8637b1310e86c47e29938f4">A</a> (),
        numericLinearFunctionRebuilt.<a class="code" href="a00072.html#a317e5f83c8637b1310e86c47e29938f4">A</a> ()));
   BOOST_CHECK_EQUAL (numericLinearFunction.<a name="a13"></a><a class="code" href="a00072.html#a3bf54cafed27cb3f8e5efb3d7bc716cd">b</a> (), numericLinearFunctionRebuilt.<a class="code" href="a00072.html#a3bf54cafed27cb3f8e5efb3d7bc716cd">b</a> ());
 
