@@ -66,7 +66,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::BadJacobian&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00271.html">Function decorators</a></div></div>  </div>
+<div class="title">roboptim::BadJacobian&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00273.html">Function decorators</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="roboptim::BadJacobian" --><!-- doxytag: inherits="std::runtime_error" -->
@@ -77,11 +77,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Inherits std::runtime_error.</p>
 
-<p><a href="a00288.html">List of all members.</a></p>
+<p><a href="a00291.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a1a6b0d428a0f18e912d58a365f30cc65">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00063.html">GenericDifferentiableFunction</a>&lt; T &gt;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a1a6b0d428a0f18e912d58a365f30cc65">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00064.html">GenericDifferentiableFunction</a>&lt; T &gt;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a55bcece908699e021e8385beda8ecde2">BadJacobian</a> (const_argument_ref x, const_jacobian_ref analyticalJacobian, const_jacobian_ref finiteDifferenceJacobian, const value_type &amp;threshold)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a55bcece908699e021e8385beda8ecde2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a426326464926492fb64c0afd2aeac521">~BadJacobian</a> ()  throw ()</td></tr>
@@ -91,8 +91,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00027.html#aa44364253696684fefa34d8169853c07">BadJacobian</a> (const_argument_ref x, const_jacobian_ref analyticalJacobian, const_jacobian_ref finiteDifferenceJacobian, const value_type &amp;threshold)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ae11afa252b4e25f252ada67120017988">x_</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jacobian has been computed for this point.  <a href="#ae11afa252b4e25f252ada67120017988"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">argument_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#abf91759f1939641ce35b3ad8540e9303">x_</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jacobian has been computed for this point.  <a href="#abf91759f1939641ce35b3ad8540e9303"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">gradient_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#ae0a97e300f4cae9e05c948dc7c165cb4">analyticalJacobian_</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Analytical Jacobian.  <a href="#ae0a97e300f4cae9e05c948dc7c165cb4"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">gradient_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a971f9df17b198609ff11b66bf7efa7c1">finiteDifferenceJacobian_</a></td></tr>
@@ -181,7 +181,7 @@ template&lt;typename T &gt; </div>
 template&lt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00027.html">roboptim::BadJacobian</a>&lt; <a class="el" href="a00057.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00027.html">BadJacobian</a> </td>
+          <td class="memname"><a class="el" href="a00027.html">roboptim::BadJacobian</a>&lt; <a class="el" href="a00058.html">EigenMatrixSparse</a> &gt;::<a class="el" href="a00027.html">BadJacobian</a> </td>
           <td>(</td>
           <td class="paramtype">const_argument_ref&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -242,7 +242,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
 
-<p>References <a class="el" href="a00254.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00254.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, <a class="el" href="a00254.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>, and <a class="el" href="a00164.html#a7ee55860e481e4ad3b4d61b056ed7d2b">x_</a>.</p>
+<p>References <a class="el" href="a00256.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00256.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, <a class="el" href="a00256.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>, and <a class="el" href="a00166.html#a7ee55860e481e4ad3b4d61b056ed7d2b">x_</a>.</p>
 
 </div>
 </div>
@@ -255,7 +255,7 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="a00027.html">roboptim::BadJacobian</a>&lt; T &gt;::<a class="el" href="a00027.html#a1a6b0d428a0f18e912d58a365f30cc65">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00063.html">GenericDifferentiableFunction</a>&lt; T &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="a00064.html">GenericDifferentiableFunction</a>&lt; T &gt;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -372,14 +372,14 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae11afa252b4e25f252ada67120017988"></a><!-- doxytag: member="roboptim::BadJacobian::x_" ref="ae11afa252b4e25f252ada67120017988" args="" -->
+<a class="anchor" id="abf91759f1939641ce35b3ad8540e9303"></a><!-- doxytag: member="roboptim::BadJacobian::x_" ref="abf91759f1939641ce35b3ad8540e9303" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">vector_t <a class="el" href="a00027.html">roboptim::BadJacobian</a>&lt; T &gt;::<a class="el" href="a00027.html#ae11afa252b4e25f252ada67120017988">x_</a></td>
+          <td class="memname">argument_t <a class="el" href="a00027.html">roboptim::BadJacobian</a>&lt; T &gt;::<a class="el" href="a00027.html#abf91759f1939641ce35b3ad8540e9303">x_</a></td>
         </tr>
       </table>
 </div>
@@ -407,7 +407,7 @@ template&lt;typename T&gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00254.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00256.html">roboptim</a>      </li>
       <li class="navelem"><a class="el" href="a00027.html">BadJacobian</a>      </li>
 </body>
 </html>

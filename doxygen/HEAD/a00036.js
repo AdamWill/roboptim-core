@@ -2,6 +2,7 @@ var a00036 =
 [
     [ "ConcatenateShPtr_t", "a00036.html#a5d14bdcac92150922c3a6ab7e0e83ac3", null ],
     [ "parentType_t", "a00036.html#a296934dc4f3e7ce26fe30d70af74f13b", null ],
+    [ "traits_t", "a00036.html#ad25d7273113be231d495ea9c832291f0", null ],
     [ "Concatenate", "a00036.html#a31c6c96619fbe0b2bcf4fe96ecc7de1f", null ],
     [ "~Concatenate", "a00036.html#a01f215c419d421a23aeedc726bc6684f", null ],
     [ "impl_compute", "a00036.html#a466edb2579a301fff0224d2ecaa5fe3e", null ],

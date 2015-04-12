@@ -1,4 +1,8 @@
 var a00223 =
 [
-    [ "selectionById", "a00270.html#ga9b4a2fa027f79ee2d559bd8704d376c6", null ]
+    [ "operator*", "a00272.html#ga18d7466822b488bac385bfb3a389a8d4", null ],
+    [ "operator*", "a00272.html#ga2317dd14956eb1499e4fde7cc9fc2024", null ],
+    [ "operator+", "a00272.html#ga8d0e9408d11db81a2b24b216ed3cd370", null ],
+    [ "operator-", "a00272.html#gaa692f09a5e2833a1fb15c1834d0603f5", null ],
+    [ "scalar", "a00272.html#ga6354c8c5e1101410ab5a74b2f6f11cfb", null ]
 ];

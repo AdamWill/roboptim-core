@@ -1,10 +1,14 @@
 var a00120 =
 [
-    [ "SolverError", "a00120.html#aa8893a6fd45b24fcd4f9a21dc33a5516", null ],
-    [ "SolverError", "a00120.html#ac8b42969cdfac13559a460c4ae38b7a0", null ],
-    [ "SolverError", "a00120.html#ab95d88488f2c6a8563cd2242e41c0b01", null ],
-    [ "~SolverError", "a00120.html#a1a06e6de7a8827debf85b100948a25e8", null ],
-    [ "lastState", "a00120.html#a902e79a13337accd1abe8a9acd0bbacd", null ],
-    [ "lastState", "a00120.html#a242b7cb46fe4e752f4e2077c2879c1a5", null ],
-    [ "print", "a00120.html#a8bffd424a6556c49b69aa8cefc0f9b64", null ]
+    [ "Sin", "a00120.html#a4732d5e0a1e37379c5b0275effe7e67c", null ],
+    [ "~Sin", "a00120.html#ac23f4e74782bcb9aaa1b5b2453d67d7d", null ],
+    [ "impl_compute", "a00120.html#ae29b31cbfed8b87a6852ce0861bb2696", null ],
+    [ "impl_gradient", "a00271.html#ga41ce1d89a5562b7d36e69606cf166e1b", null ],
+    [ "impl_gradient", "a00120.html#a80554051f4f47797d355874ce956c136", null ],
+    [ "impl_hessian", "a00271.html#gaec6e904bd4d1be042d5ae9692c5b45a9", null ],
+    [ "impl_hessian", "a00120.html#a2d17659d3d99ef9aef862369da8547c5", null ],
+    [ "impl_jacobian", "a00271.html#ga967172085eebe8ca14010a3dee324477", null ],
+    [ "impl_jacobian", "a00120.html#a14f62ccaccebdcc852691a1bdd31fdab", null ],
+    [ "print", "a00120.html#ad1127d5c57e79dd7c1a4dc20398e1086", null ],
+    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00120.html#a0859e9a410b3c1bf41fd7f2cf8636f5a", null ]
 ];

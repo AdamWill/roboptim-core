@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>Function operators</title>
+<title>Mathematical abstract functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -56,117 +56,168 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">Function operators</div>  </div>
+<div class="title">Mathematical abstract functions</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html">roboptim::Bind&lt; U &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00028.html" title="Bind some function input to a constant value.">Bind</a> some function input to a constant value.  <a href="a00028.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html">roboptim::Chain&lt; U, V &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00032.html" title="Chain two RobOptim functions.">Chain</a> two RobOptim functions.  <a href="a00032.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00036.html">roboptim::Concatenate&lt; U &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00036.html" title="Concatenate the output of two functions.">Concatenate</a> the output of two functions.  <a href="a00036.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html">roboptim::Derivative&lt; U &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the derivative of a function w.r.t.  <a href="a00045.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html">roboptim::Map&lt; U &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a function several times to an input vector.  <a href="a00088.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html">roboptim::Minus&lt; U, V &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtract two RobOptim functions.  <a href="a00090.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html">roboptim::Plus&lt; U, V &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sum two RobOptim functions.  <a href="a00099.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html">roboptim::Product&lt; U, V &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00106.html" title="Product of two RobOptim functions.">Product</a> of two RobOptim functions.  <a href="a00106.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00113.html">roboptim::Scalar&lt; U &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply by a constant scalar value.  <a href="a00113.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00115.html">roboptim::SelectionById&lt; U &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Select part of a function.  <a href="a00115.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html">roboptim::Selection&lt; U &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a block of a function's output.  <a href="a00114.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00124.html">roboptim::Split&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Select an element of a function's output.  <a href="a00124.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html">roboptim::DerivableParametrizedFunction&lt; F &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Parametrized function with parameter derivative available.  <a href="a00045.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html">roboptim::GenericDifferentiableFunction&lt; T &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract derivable function ( <img class="formulaInl" alt="$C^1$" src="form_3.png"/>).  <a href="a00064.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00062.html">roboptim::FunctionPool&lt; F, FLIST &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A pool of functions that will be processed together.  <a href="a00062.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html">roboptim::GenericFunctionTraits&lt; T &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00067.html" title="Define an abstract mathematical function ( ).">GenericFunction</a> traits.  <a href="a00068.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html">roboptim::GenericFunction&lt; T &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract mathematical function ( <img class="formulaInl" alt="$C^0$" src="form_21.png"/>).  <a href="a00067.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html">roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Trait specializing <a class="el" href="a00067.html" title="Define an abstract mathematical function ( ).">GenericFunction</a> for Eigen dense matrices.  <a href="a00069.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html">roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Trait specializing <a class="el" href="a00067.html" title="Define an abstract mathematical function ( ).">GenericFunction</a> for Eigen sparse matrices.  <a href="a00070.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00072.html">roboptim::GenericLinearFunction&lt; T &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract linear function.  <a href="a00072.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract parametrized mathematical function ( <img class="formulaInl" alt="$C^0$" src="form_21.png"/>).  <a href="a00099.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html">roboptim::GenericQuadraticFunction&lt; T &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract quadratic function.  <a href="a00075.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html">roboptim::GenericSumOfC1Squares&lt; T &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic sum of the squares of differentiable functions.  <a href="a00077.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract function which is twice-derivable ( <img class="formulaInl" alt="$C^2$" src="form_40.png"/>).  <a href="a00078.html#details">More...</a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef GenericSumOfC1Squares<br class="typebreak"/>
+&lt; EigenMatrixDense &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00270.html#gafefbc90e9cc685f442eb32986ceca7ca">roboptim::SumOfC1Squares</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sum of the squares of dense differentiable functions.  <a href="#gafefbc90e9cc685f442eb32986ceca7ca"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef GenericSumOfC1Squares<br class="typebreak"/>
+&lt; EigenMatrixSparse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00270.html#gaeaea633c6cce7cf8a129a9ec1120a57b">roboptim::SumOfC1SquaresSparse</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sum of the squares of sparse differentiable functions.  <a href="#gaeaea633c6cce7cf8a129a9ec1120a57b"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Bind&lt; U &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#gac398776c05160b474382281f0501fa7b">roboptim::bind</a> (boost::shared_ptr&lt; U &gt; origin, const typename Bind&lt; U &gt;::boundValues_t &amp;boundValues)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Chain&lt; U, V &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#gac0b8c0fb2f17746d44b4a74b90da5520">roboptim::chain</a> (boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00032.html" title="Chain two RobOptim functions.">Chain</a> two RobOptim functions.  <a href="#gac0b8c0fb2f17746d44b4a74b90da5520"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Concatenate<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-detail::PromoteTrait&lt; U, V &gt;<br class="typebreak"/>
-::T_promote &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#gab96495c02bce2fe1e2ad1e08770f4dcc">roboptim::concatenate</a> (boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Derivative<br class="typebreak"/>
-&lt; U &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#ga2aca003d14f5cd52e55a6b4fd6fec025">roboptim::derivative</a> (boost::shared_ptr&lt; U &gt; origin, typename Derivative&lt; U &gt;::size_type variableId=0)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Map&lt; U &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#ga12201667276a7a25982f7ba037720734">roboptim::map</a> (boost::shared_ptr&lt; U &gt; origin, typename U::size_type repeat)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Minus&lt; U, V &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#ga50b429f2b86fb7a9d63333e4686ca688">roboptim::minus</a> (boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Minus&lt; U, V &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#gafb698191cd075127b51cc64130d1b1d3">roboptim::operator-</a> (boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Plus&lt; U, V &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#ga29192465f69ffd7e843e907cb66dbe75">roboptim::plus</a> (boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Plus&lt; U, V &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#ga1c85364bc3106af5973bb6cb5113e2dd">roboptim::operator+</a> (boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Product&lt; U, <br class="typebreak"/>
-V &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#ga673c3306f8238e795813509847ee31f8">roboptim::product</a> (boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U , typename V &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Product&lt; U, <br class="typebreak"/>
-V &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#gaf11c3c491b73e8b7a6587174cb964dc0">roboptim::operator*</a> (boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Scalar&lt; U &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#ga6354c8c5e1101410ab5a74b2f6f11cfb">roboptim::scalar</a> (boost::shared_ptr&lt; U &gt; origin, typename Scalar&lt; U &gt;::size_type start=0, typename Scalar&lt; U &gt;::size_type size=1)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Scalar&lt; U &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#ga18d7466822b488bac385bfb3a389a8d4">roboptim::operator*</a> (typename Scalar&lt; U &gt;::value_type scalar, boost::shared_ptr&lt; U &gt; origin)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Scalar&lt; U &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#ga2317dd14956eb1499e4fde7cc9fc2024">roboptim::operator*</a> (boost::shared_ptr&lt; U &gt; origin, typename Scalar&lt; U &gt;::value_type scalar)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; U &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#ga8d0e9408d11db81a2b24b216ed3cd370">roboptim::operator+</a> (boost::shared_ptr&lt; U &gt; origin)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Scalar&lt; U &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#gaa692f09a5e2833a1fb15c1834d0603f5">roboptim::operator-</a> (boost::shared_ptr&lt; U &gt; origin)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr<br class="typebreak"/>
-&lt; SelectionById&lt; U &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#ga9b4a2fa027f79ee2d559bd8704d376c6">roboptim::selectionById</a> (boost::shared_ptr&lt; U &gt; origin, std::vector&lt; bool &gt; selector)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Selection&lt; U &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#gab04bd0199420c0f6bcbe3d25029428bc">roboptim::selection</a> (boost::shared_ptr&lt; U &gt; origin, typename Selection&lt; U &gt;::size_type start=0, typename Selection&lt; U &gt;::size_type size=1)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename P , typename C &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#ga8fdc2e0627fa0b18b05c1ae5f85dd477">roboptim::addNonScalarConstraint</a> (P &amp;problem, boost::shared_ptr&lt; C &gt; constraint, std::vector&lt; Function::interval_t &gt; interval, std::vector&lt; Function::value_type &gt; scale=std::vector&lt; Function::value_type &gt;())</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00270.html#gac1811528dd1c9cc4c233c14bf5ed6e81">roboptim::operator&lt;&lt;</a> (std::ostream &amp;o, const GenericFunction&lt; T &gt; &amp;f)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override operator&lt;&lt; to handle function display.  <a href="#gac1811528dd1c9cc4c233c14bf5ed6e81"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00270.html#ga1d025a85d12b2eb8f85409a150cad994">roboptim::GenericFunction&lt; T &gt;::GenericFunction</a> (size_type inputSize, size_type outputSize=1, std::string name=std::string())</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Concrete class constructor should call this constructor.  <a href="#ga1d025a85d12b2eb8f85409a150cad994"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00270.html#gac5f8e82a0e2ec840c40396a8a6d949c2">roboptim::GenericFunction&lt; T &gt;::~GenericFunction</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Trivial destructor.  <a href="#gac5f8e82a0e2ec840c40396a8a6d949c2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00270.html#ga762e9ee9b4cff36e36b78dad53ba9e32">roboptim::GenericFunction&lt; T &gt;::print</a> (std::ostream &amp;) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#ga762e9ee9b4cff36e36b78dad53ba9e32"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00270.html#gae4e272df17bb4c04ecfaec9370a7f8f5">roboptim::StorageOrder</a> = Eigen::ROBOPTIM_STORAGE_ORDER</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default matrix storage order.  <a href="#gae4e272df17bb4c04ecfaec9370a7f8f5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static log4cxx::LoggerPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00270.html#gac33ccf681554a2bad6663a107f436be8">roboptim::GenericFunction&lt; T &gt;::logger</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to function logger (see log4cxx documentation).  <a href="#gac33ccf681554a2bad6663a107f436be8"></a><br/></td></tr>
 </table>
+<hr/><h2>Typedef Documentation</h2>
+<a class="anchor" id="gafefbc90e9cc685f442eb32986ceca7ca"></a><!-- doxytag: member="roboptim::SumOfC1Squares" ref="gafefbc90e9cc685f442eb32986ceca7ca" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GenericSumOfC1Squares&lt;EigenMatrixDense&gt; <a class="el" href="a00270.html#gafefbc90e9cc685f442eb32986ceca7ca">roboptim::SumOfC1Squares</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sum of the squares of dense differentiable functions. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="a00077.html" title="Generic sum of the squares of differentiable functions.">GenericSumOfC1Squares</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaeaea633c6cce7cf8a129a9ec1120a57b"></a><!-- doxytag: member="roboptim::SumOfC1SquaresSparse" ref="gaeaea633c6cce7cf8a129a9ec1120a57b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GenericSumOfC1Squares&lt;EigenMatrixSparse&gt; <a class="el" href="a00270.html#gaeaea633c6cce7cf8a129a9ec1120a57b">roboptim::SumOfC1SquaresSparse</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sum of the squares of sparse differentiable functions. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="a00077.html" title="Generic sum of the squares of differentiable functions.">GenericSumOfC1Squares</a> </dd></dl>
+
+</div>
+</div>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="ga8fdc2e0627fa0b18b05c1ae5f85dd477"></a><!-- doxytag: member="roboptim::addNonScalarConstraint" ref="ga8fdc2e0627fa0b18b05c1ae5f85dd477" args="(P &amp;problem, boost::shared_ptr&lt; C &gt; constraint, std::vector&lt; Function::interval_t &gt; interval, std::vector&lt; Function::value_type &gt; scale=std::vector&lt; Function::value_type &gt;())" -->
+<a class="anchor" id="ga1d025a85d12b2eb8f85409a150cad994"></a><!-- doxytag: member="roboptim::GenericFunction::GenericFunction" ref="ga1d025a85d12b2eb8f85409a150cad994" args="(size_type inputSize, size_type outputSize=1, std::string name=std::string())" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename P , typename C &gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00270.html#ga8fdc2e0627fa0b18b05c1ae5f85dd477">roboptim::addNonScalarConstraint</a> </td>
+          <td class="memname"><a class="el" href="a00067.html">roboptim::GenericFunction</a>&lt; T &gt;::GenericFunction </td>
           <td>(</td>
-          <td class="paramtype">P &amp;&#160;</td>
-          <td class="paramname"><em>problem</em>, </td>
+          <td class="paramtype"><a class="el" href="a00067.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
+          <td class="paramname"><em>inputSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; C &gt;&#160;</td>
-          <td class="paramname"><em>constraint</em>, </td>
+          <td class="paramtype"><a class="el" href="a00067.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
+          <td class="paramname"><em>outputSize</em> = <code>1</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; Function::interval_t &gt;&#160;</td>
-          <td class="paramname"><em>interval</em>, </td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em> = <code>std::string&#160;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Concrete class constructor should call this constructor. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inputSize</td><td>function arity </td></tr>
+    <tr><td class="paramname">outputSize</td><td>result size </td></tr>
+    <tr><td class="paramname">name</td><td>function's name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gac1811528dd1c9cc4c233c14bf5ed6e81"></a><!-- doxytag: member="roboptim::operator&lt;&lt;" ref="gac1811528dd1c9cc4c233c14bf5ed6e81" args="(std::ostream &amp;o, const GenericFunction&lt; T &gt; &amp;f)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; roboptim::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; Function::value_type &gt;&#160;</td>
-          <td class="paramname"><em>scale</em> = <code>std::vector&lt;Function::value_type&gt;&#160;()</code>&#160;</td>
+          <td class="paramtype">const GenericFunction&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -177,532 +228,102 @@ template&lt;typename P , typename C &gt; </div>
 </div>
 <div class="memdoc">
 
+<p>Override operator&lt;&lt; to handle function display. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
+    <tr><td class="paramname">f</td><td>function to be displayed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
+
 </div>
 </div>
-<a class="anchor" id="gac398776c05160b474382281f0501fa7b"></a><!-- doxytag: member="roboptim::bind" ref="gac398776c05160b474382281f0501fa7b" args="(boost::shared_ptr&lt; U &gt; origin, const typename Bind&lt; U &gt;::boundValues_t &amp;boundValues)" -->
+<a class="anchor" id="ga762e9ee9b4cff36e36b78dad53ba9e32"></a><!-- doxytag: member="roboptim::GenericFunction::print" ref="ga762e9ee9b4cff36e36b78dad53ba9e32" args="(std::ostream &amp;) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt;Bind&lt;U&gt; &gt; <a class="el" href="a00270.html#gac398776c05160b474382281f0501fa7b">roboptim::bind</a> </td>
+          <td class="memname">std::ostream &amp; <a class="el" href="a00067.html">roboptim::GenericFunction</a>&lt; T &gt;::print </td>
           <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>origin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const typename Bind&lt; U &gt;::boundValues_t &amp;&#160;</td>
-          <td class="paramname"><em>boundValues</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="a00091.html#a5c62587c4e6d6c97262a9fc322f0f304">roboptim::callback::Multiplexer&lt; S &gt;::attach()</a>, and <a class="el" href="a00096.html#a7c9ba7e965df0cab92f0e7021c38cbd8">roboptim::OptimizationLogger&lt; T &gt;::callback()</a>.</p>
+<p>Display the function on the specified output stream. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
+
+<p>Reimplemented in <a class="el" href="a00064.html#a9c50e545609bd7ace4f2dad69029fac3">roboptim::GenericDifferentiableFunction&lt; T &gt;</a>, <a class="el" href="a00096.html#ae0961c8f2f33ecb177216919420b21cb">roboptim::NTimesDerivableFunction&lt; 2 &gt;</a>, <a class="el" href="a00078.html#a78bf9018548e92c38803bbd0b39ef29a">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</a>, <a class="el" href="a00074.html#ab43858fd0eb1c257664a80004111c8ab">roboptim::GenericNumericQuadraticFunction&lt; T &gt;</a>, <a class="el" href="a00063.html#ac98c86704dc8443933a50ad664cca533">roboptim::GenericConstantFunction&lt; T &gt;</a>, <a class="el" href="a00073.html#ae57fb039df18b98b7ab403b73c277632">roboptim::GenericNumericLinearFunction&lt; T &gt;</a>, <a class="el" href="a00071.html#adc5eff6387532970e7b1e14daeb2d8af">roboptim::GenericIdentityFunction&lt; T &gt;</a>, <a class="el" href="a00102.html#a9d9d9ee3fd558e30aa8f5891e3028aba">roboptim::Polynomial&lt; T &gt;</a>, <a class="el" href="a00072.html#a00e124bc18548130332a1f5ceacf70c5">roboptim::GenericLinearFunction&lt; T &gt;</a>, <a class="el" href="a00075.html#a38f3f609626f43393e854351555459ee">roboptim::GenericQuadraticFunction&lt; T &gt;</a>, <a class="el" href="a00044.html#a39db9ef66cdb3605a811b232fcfaad13">roboptim::Cos&lt; T &gt;</a>, and <a class="el" href="a00120.html#ad1127d5c57e79dd7c1a4dc20398e1086">roboptim::Sin&lt; T &gt;</a>.</p>
+
+<p>References <a class="el" href="a00256.html#a2b00a3916f44e9f9d69e4fc157a0da79">roboptim::indent()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gac0b8c0fb2f17746d44b4a74b90da5520"></a><!-- doxytag: member="roboptim::chain" ref="gac0b8c0fb2f17746d44b4a74b90da5520" args="(boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)" -->
+<a class="anchor" id="gac5f8e82a0e2ec840c40396a8a6d949c2"></a><!-- doxytag: member="roboptim::GenericFunction::~GenericFunction" ref="gac5f8e82a0e2ec840c40396a8a6d949c2" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt;Chain&lt;U, V&gt; &gt; <a class="el" href="a00270.html#gac0b8c0fb2f17746d44b4a74b90da5520">roboptim::chain</a> </td>
+          <td class="memname"><a class="el" href="a00067.html">roboptim::GenericFunction</a>&lt; T &gt;::~GenericFunction </td>
           <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; V &gt;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p><a class="el" href="a00032.html" title="Chain two RobOptim functions.">Chain</a> two RobOptim functions. </p>
-<p>This will instantiate a Chain&lt;U,V&gt; RobOptim operator that will realize the underlying computations. </p>
+<p>Trivial destructor. </p>
 
 </div>
 </div>
-<a class="anchor" id="gab96495c02bce2fe1e2ad1e08770f4dcc"></a><!-- doxytag: member="roboptim::concatenate" ref="gab96495c02bce2fe1e2ad1e08770f4dcc" args="(boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)" -->
+<hr/><h2>Variable Documentation</h2>
+<a class="anchor" id="gac33ccf681554a2bad6663a107f436be8"></a><!-- doxytag: member="roboptim::GenericFunction::logger" ref="gac33ccf681554a2bad6663a107f436be8" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt;Concatenate&lt;typename detail::PromoteTrait&lt;U, V&gt;::T_promote &gt; &gt; <a class="el" href="a00270.html#gab96495c02bce2fe1e2ad1e08770f4dcc">roboptim::concatenate</a> </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; V &gt;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">log4cxx::LoggerPtr <a class="el" href="a00067.html">roboptim::GenericFunction</a>&lt; T &gt;::logger<code> [static, protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Pointer to function logger (see log4cxx documentation). </p>
+
+<p>Referenced by <a class="el" href="a00064.html#aa32b7e4ac45ae8bb63afca8fe23eb72e">roboptim::GenericDifferentiableFunction&lt; T &gt;::gradient()</a>, <a class="el" href="a00078.html#a1d3a2847469eaf4dfb754da35d9a4d6a">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;::hessian()</a>, <a class="el" href="a00064.html#ab42dcb0d900b4f108a0a25eaa1ea1384">roboptim::GenericDifferentiableFunction&lt; T &gt;::jacobian()</a>, and <a class="el" href="a00067.html#a4a8297b3ba77ee0e291a31c4049a2acd">roboptim::GenericFunction&lt; T &gt;::operator()()</a>.</p>
+
 </div>
 </div>
-<a class="anchor" id="ga2aca003d14f5cd52e55a6b4fd6fec025"></a><!-- doxytag: member="roboptim::derivative" ref="ga2aca003d14f5cd52e55a6b4fd6fec025" args="(boost::shared_ptr&lt; U &gt; origin, typename Derivative&lt; U &gt;::size_type variableId=0)" -->
+<a class="anchor" id="gae4e272df17bb4c04ecfaec9370a7f8f5"></a><!-- doxytag: member="roboptim::StorageOrder" ref="gae4e272df17bb4c04ecfaec9370a7f8f5" args="" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt;Derivative&lt;U&gt; &gt; <a class="el" href="a00270.html#ga2aca003d14f5cd52e55a6b4fd6fec025">roboptim::derivative</a> </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>origin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">typename Derivative&lt; U &gt;::size_type&#160;</td>
-          <td class="paramname"><em>variableId</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">const int <a class="el" href="a00270.html#gae4e272df17bb4c04ecfaec9370a7f8f5">roboptim::StorageOrder</a> = Eigen::ROBOPTIM_STORAGE_ORDER<code> [static]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="a00029.html#a4631bbd9e8b4672d23a4a996c96f27d2">roboptim::CachedFunction&lt; T &gt;::cachedFunctionDerivative()</a>, <a class="el" href="a00095.html#a7314148103af030f3d080f136abe8d94">roboptim::NTimesDerivableFunction&lt; 2 &gt;::derivative()</a>, <a class="el" href="a00029.html#a4130fcb490095b653df292a1987450ce">roboptim::CachedFunction&lt; T &gt;::impl_derivative()</a>, <a class="el" href="a00095.html#aa7e2133add7bc02a1126d66bfe0d0c63">roboptim::NTimesDerivableFunction&lt; 2 &gt;::impl_gradient()</a>, and <a class="el" href="a00095.html#a76b7c04673c755f81d57d9236465d293">roboptim::NTimesDerivableFunction&lt; 2 &gt;::impl_hessian()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga12201667276a7a25982f7ba037720734"></a><!-- doxytag: member="roboptim::map" ref="ga12201667276a7a25982f7ba037720734" args="(boost::shared_ptr&lt; U &gt; origin, typename U::size_type repeat)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;Map&lt;U&gt; &gt; <a class="el" href="a00270.html#ga12201667276a7a25982f7ba037720734">roboptim::map</a> </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>origin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">typename U::size_type&#160;</td>
-          <td class="paramname"><em>repeat</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ga50b429f2b86fb7a9d63333e4686ca688"></a><!-- doxytag: member="roboptim::minus" ref="ga50b429f2b86fb7a9d63333e4686ca688" args="(boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;Minus&lt;U, V&gt; &gt; <a class="el" href="a00270.html#ga50b429f2b86fb7a9d63333e4686ca688">roboptim::minus</a> </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; V &gt;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ga18d7466822b488bac385bfb3a389a8d4"></a><!-- doxytag: member="roboptim::operator*" ref="ga18d7466822b488bac385bfb3a389a8d4" args="(typename Scalar&lt; U &gt;::value_type scalar, boost::shared_ptr&lt; U &gt; origin)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;Scalar&lt;U&gt; &gt; roboptim::operator* </td>
-          <td>(</td>
-          <td class="paramtype">typename Scalar&lt; U &gt;::value_type&#160;</td>
-          <td class="paramname"><em>scalar</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>origin</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="a00270.html#ga6354c8c5e1101410ab5a74b2f6f11cfb">roboptim::scalar()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ga2317dd14956eb1499e4fde7cc9fc2024"></a><!-- doxytag: member="roboptim::operator*" ref="ga2317dd14956eb1499e4fde7cc9fc2024" args="(boost::shared_ptr&lt; U &gt; origin, typename Scalar&lt; U &gt;::value_type scalar)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;Scalar&lt;U&gt; &gt; roboptim::operator* </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>origin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">typename Scalar&lt; U &gt;::value_type&#160;</td>
-          <td class="paramname"><em>scalar</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="a00270.html#ga6354c8c5e1101410ab5a74b2f6f11cfb">roboptim::scalar()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gaf11c3c491b73e8b7a6587174cb964dc0"></a><!-- doxytag: member="roboptim::operator*" ref="gaf11c3c491b73e8b7a6587174cb964dc0" args="(boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;Product&lt;U, V&gt; &gt; roboptim::operator* </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; V &gt;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ga1c85364bc3106af5973bb6cb5113e2dd"></a><!-- doxytag: member="roboptim::operator+" ref="ga1c85364bc3106af5973bb6cb5113e2dd" args="(boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;Plus&lt;U, V&gt; &gt; roboptim::operator+ </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; V &gt;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ga8d0e9408d11db81a2b24b216ed3cd370"></a><!-- doxytag: member="roboptim::operator+" ref="ga8d0e9408d11db81a2b24b216ed3cd370" args="(boost::shared_ptr&lt; U &gt; origin)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;U&gt; roboptim::operator+ </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>origin</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="gafb698191cd075127b51cc64130d1b1d3"></a><!-- doxytag: member="roboptim::operator&#45;" ref="gafb698191cd075127b51cc64130d1b1d3" args="(boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;Minus&lt;U, V&gt; &gt; roboptim::operator- </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; V &gt;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="gaa692f09a5e2833a1fb15c1834d0603f5"></a><!-- doxytag: member="roboptim::operator&#45;" ref="gaa692f09a5e2833a1fb15c1834d0603f5" args="(boost::shared_ptr&lt; U &gt; origin)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;Scalar&lt;U&gt; &gt; roboptim::operator- </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>origin</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ga29192465f69ffd7e843e907cb66dbe75"></a><!-- doxytag: member="roboptim::plus" ref="ga29192465f69ffd7e843e907cb66dbe75" args="(boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;Plus&lt;U, V&gt; &gt; <a class="el" href="a00270.html#ga29192465f69ffd7e843e907cb66dbe75">roboptim::plus</a> </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; V &gt;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ga673c3306f8238e795813509847ee31f8"></a><!-- doxytag: member="roboptim::product" ref="ga673c3306f8238e795813509847ee31f8" args="(boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;Product&lt;U, V&gt; &gt; <a class="el" href="a00270.html#ga673c3306f8238e795813509847ee31f8">roboptim::product</a> </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; V &gt;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ga6354c8c5e1101410ab5a74b2f6f11cfb"></a><!-- doxytag: member="roboptim::scalar" ref="ga6354c8c5e1101410ab5a74b2f6f11cfb" args="(boost::shared_ptr&lt; U &gt; origin, typename Scalar&lt; U &gt;::size_type start=0, typename Scalar&lt; U &gt;::size_type size=1)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;Scalar&lt;U&gt; &gt; <a class="el" href="a00270.html#ga6354c8c5e1101410ab5a74b2f6f11cfb">roboptim::scalar</a> </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>origin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">typename Scalar&lt; U &gt;::size_type&#160;</td>
-          <td class="paramname"><em>start</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">typename Scalar&lt; U &gt;::size_type&#160;</td>
-          <td class="paramname"><em>size</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Referenced by <a class="el" href="a00270.html#ga18d7466822b488bac385bfb3a389a8d4">roboptim::operator*()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gab04bd0199420c0f6bcbe3d25029428bc"></a><!-- doxytag: member="roboptim::selection" ref="gab04bd0199420c0f6bcbe3d25029428bc" args="(boost::shared_ptr&lt; U &gt; origin, typename Selection&lt; U &gt;::size_type start=0, typename Selection&lt; U &gt;::size_type size=1)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;Selection&lt;U&gt; &gt; <a class="el" href="a00270.html#gab04bd0199420c0f6bcbe3d25029428bc">roboptim::selection</a> </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>origin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">typename Selection&lt; U &gt;::size_type&#160;</td>
-          <td class="paramname"><em>start</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">typename Selection&lt; U &gt;::size_type&#160;</td>
-          <td class="paramname"><em>size</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ga9b4a2fa027f79ee2d559bd8704d376c6"></a><!-- doxytag: member="roboptim::selectionById" ref="ga9b4a2fa027f79ee2d559bd8704d376c6" args="(boost::shared_ptr&lt; U &gt; origin, std::vector&lt; bool &gt; selector)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::shared_ptr&lt;SelectionById&lt;U&gt; &gt; <a class="el" href="a00270.html#ga9b4a2fa027f79ee2d559bd8704d376c6">roboptim::selectionById</a> </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>origin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>selector</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>Default matrix storage order. </p>
 
 </div>
 </div>

@@ -1,12 +1,14 @@
 var a00065 =
 [
-    [ "GenericFiniteDifferenceGradient", "a00065.html#ade644f357e04020a3fb84207994f745b", null ],
-    [ "~GenericFiniteDifferenceGradient", "a00065.html#a52f35b313494e42eba9b96264ac4ab2f", null ],
-    [ "impl_compute", "a00065.html#a39b12ddb131ed26919c89cb928c10322", null ],
-    [ "impl_gradient", "a00065.html#a8ac89f5ee69c2f36688df60401af03e8", null ],
-    [ "impl_jacobian", "a00065.html#af0bd3d03507cbf30e9d3c0ac96fe2e5b", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00065.html#a583e5aeb130b6c46b7d12fe0f65c717f", null ],
-    [ "adaptee_", "a00065.html#aad6048bf897c560c6a0e03ce355413d1", null ],
-    [ "epsilon_", "a00065.html#a351983c229ac4c9cd42cdeb7ad0aebda", null ],
-    [ "xEps_", "a00065.html#a5c3139b3bfa459c225a2e77058259cb1", null ]
+    [ "callback_t", "a00065.html#acff89ad608c772f445edb654d4c234c2", null ],
+    [ "parent_t", "a00065.html#a63f3a8b1ebcc44f3655882d84ad9bc76", null ],
+    [ "problem_t", "a00065.html#a6c145f7f2b71a1e7d6c09b7578d03c6a", null ],
+    [ "solverState_t", "a00065.html#a35e2684e79e9e563323ad1ab2e729e82", null ],
+    [ "GenericDummySolverLastState", "a00065.html#a6048ac28ab501a9457b41aba611b2565", null ],
+    [ "~GenericDummySolverLastState", "a00065.html#a4f6039d2238b8461c6b5a94acd62e6ac", null ],
+    [ "callback", "a00065.html#a6a0c6a45d831bb9c967becf970330407", null ],
+    [ "setIterationCallback", "a00065.html#a5ce028c7aae7bbec2264162a79c93619", null ],
+    [ "solve", "a00065.html#a9c572e37e56f4f5e9bf43f57b1803e09", null ],
+    [ "callback_", "a00065.html#ae8a13793b24ec9f3e772b939b2cd695a", null ],
+    [ "solverState_", "a00065.html#a1697fef1f95edda99bc4420e1143350e", null ]
 ];

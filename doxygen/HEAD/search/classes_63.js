@@ -8,11 +8,12 @@ var searchData=
   ['command',['Command',['../a00034.html',1,'roboptim::visualization::gnuplot']]],
   ['command',['Command',['../a00035.html',1,'roboptim::visualization::matplotlib']]],
   ['concatenate',['Concatenate',['../a00036.html',1,'roboptim']]],
-  ['const_5feigen_5fref',['const_eigen_ref',['../a00037.html',1,'roboptim::detail']]],
-  ['const_5fref',['const_ref',['../a00038.html',1,'roboptim::detail']]],
-  ['constraintname',['ConstraintName',['../a00039.html',1,'roboptim::detail']]],
-  ['contains_5fbase_5fof',['contains_base_of',['../a00040.html',1,'roboptim::detail']]],
-  ['convertconstraint',['ConvertConstraint',['../a00041.html',1,'roboptim::detail']]],
-  ['convertconstraintvariant',['ConvertConstraintVariant',['../a00042.html',1,'roboptim::detail']]],
-  ['cos',['Cos',['../a00043.html',1,'roboptim']]]
+  ['concatenatetypes',['ConcatenateTypes',['../a00037.html',1,'roboptim::detail']]],
+  ['const_5feigen_5fref',['const_eigen_ref',['../a00038.html',1,'roboptim::detail']]],
+  ['const_5fref',['const_ref',['../a00039.html',1,'roboptim::detail']]],
+  ['constraintname',['ConstraintName',['../a00040.html',1,'roboptim::detail']]],
+  ['contains_5fbase_5fof',['contains_base_of',['../a00041.html',1,'roboptim::detail']]],
+  ['convertconstraint',['ConvertConstraint',['../a00042.html',1,'roboptim::detail']]],
+  ['convertconstraintvariant',['ConvertConstraintVariant',['../a00043.html',1,'roboptim::detail']]],
+  ['cos',['Cos',['../a00044.html',1,'roboptim']]]
 ];

@@ -1,11 +1,13 @@
 var a00117 =
 [
-    [ "policy_t", "a00117.html#aead16c4e17b1af1a391083124556ed08", null ],
-    [ "Simple", "a00117.html#af284d376d832bca3c9d5e768be6942ed", null ],
-    [ "computeColumn", "a00117.html#aff9ecf8615384943e55930c2280fe4c1", null ],
-    [ "computeColumn", "a00117.html#afdc6c5a2606636ef484ab56fa3375f42", null ],
-    [ "computeGradient", "a00117.html#a588b478c5cb78d973c164c4d33e8bc3e", null ],
-    [ "computeGradient", "a00117.html#a691aeef4b20ee0c6facc126168d6c140", null ],
-    [ "computeJacobian", "a00117.html#ac25340db400888380475be3bbd0ec88c", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00117.html#a589c0a7f4d846453adf91866789ebd7d", null ]
+    [ "parentType_t", "a00117.html#a10ceafe26463a6befaf1a83bae6f2ba3", null ],
+    [ "SelectionByIdShPtr_t", "a00117.html#a2f296e76debe6a7e703f0a769f5f9129", null ],
+    [ "SelectionById", "a00117.html#afed4a5f3312bb43c36cd89e1b24da60e", null ],
+    [ "~SelectionById", "a00117.html#a647ad16eec9c7afb716a748c42c1fd1f", null ],
+    [ "impl_compute", "a00117.html#a9e64ceaf5be532b1d08b43fd48fc1802", null ],
+    [ "impl_gradient", "a00117.html#a670b69ecefa042ad5e6e2f14300c3482", null ],
+    [ "impl_jacobian", "a00117.html#a27306334779e090f25bbd7d630418aa8", null ],
+    [ "origin", "a00117.html#a96d0c5400637449ba56f14e7c25ec69d", null ],
+    [ "origin", "a00117.html#a3fe469f5a1b03ea25527636b326d85ab", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00117.html#a4238e53c744c850cde075fda814a2f26", null ]
 ];
