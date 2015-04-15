@@ -1,4 +1,4 @@
 var a00133 =
 [
-    [ "operator<<", "a00256.html#a23e15c865af641127484e55eef981cc7", null ]
+    [ "bind", "a00274.html#gac398776c05160b474382281f0501fa7b", null ]
 ];

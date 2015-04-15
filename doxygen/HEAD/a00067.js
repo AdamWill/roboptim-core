@@ -8,8 +8,8 @@ var a00067 =
     [ "size_type", "a00067.html#ad3d5888dc78d2ca132d807abfd8e94f2", null ],
     [ "traits_t", "a00067.html#a28cc55c9e45976db775fe9fec8fedc94", null ],
     [ "value_type", "a00067.html#a1cfc07bf5c22d02af3dae45364ef1407", null ],
-    [ "~GenericFunction", "a00270.html#gac5f8e82a0e2ec840c40396a8a6d949c2", null ],
-    [ "GenericFunction", "a00270.html#ga1d025a85d12b2eb8f85409a150cad994", null ],
+    [ "~GenericFunction", "a00272.html#gac5f8e82a0e2ec840c40396a8a6d949c2", null ],
+    [ "GenericFunction", "a00272.html#ga1d025a85d12b2eb8f85409a150cad994", null ],
     [ "epsilon", "a00067.html#a8166423941ffb4b4f07f5321fe941fb4", null ],
     [ "foreach", "a00067.html#a17aa035d334aa84cadade27cb7e8dd37", null ],
     [ "foreach", "a00067.html#a200b1c4f2230a656b5e0c6f6541138e2", null ],
@@ -32,11 +32,11 @@ var a00067 =
     [ "operator()", "a00067.html#a6b6781522d1e02599e343193f6fae9a7", null ],
     [ "operator()", "a00067.html#a4a8297b3ba77ee0e291a31c4049a2acd", null ],
     [ "outputSize", "a00067.html#a0aaf1d1daaab80d27aa6cba0a3ee006f", null ],
-    [ "print", "a00270.html#ga762e9ee9b4cff36e36b78dad53ba9e32", null ],
+    [ "print", "a00272.html#ga762e9ee9b4cff36e36b78dad53ba9e32", null ],
     [ "ROBOPTIM_GENERATE_TRAITS_REFS_", "a00067.html#af33f7912394e9b55b48d1fe129e9b8ab", null ],
     [ "ROBOPTIM_GENERATE_TRAITS_REFS_", "a00067.html#aed20bb89076af5950e72ed3d3f8d812a", null ],
     [ "ROBOPTIM_GENERATE_TRAITS_REFS_", "a00067.html#ae25f0cef1deb88a7ae08be59caa0bca5", null ],
     [ "ROBOPTIM_GENERATE_TRAITS_REFS_", "a00067.html#aea71f5faf3eebe0a0efffc4b8fea6f39", null ],
     [ "ROBOPTIM_GENERATE_TRAITS_REFS_", "a00067.html#a63754adafacfd7408d1999242f5f83bb", null ],
-    [ "logger", "a00270.html#gac33ccf681554a2bad6663a107f436be8", null ]
+    [ "logger", "a00272.html#gac33ccf681554a2bad6663a107f436be8", null ]
 ];

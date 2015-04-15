@@ -1,9 +1,5 @@
 var a00250 =
 [
-    [ "allclose", "a00256.html#a553b9a5a35bb96778d0f07cedf0a3bb6", null ],
-    [ "allclose", "a00256.html#ae044018ab08f8cebb5e7e9b3a0a409eb", null ],
-    [ "array_to_vector", "a00262.html#a18239091e8dccca412363bc04ab52748", null ],
-    [ "sparse_to_dense", "a00256.html#afd78f2c9e9f13163183da639019c6f05", null ],
-    [ "sparse_to_dense", "a00256.html#ad88a3cbb485670804344f0ed6a42dfe7", null ],
-    [ "vector_to_array", "a00262.html#a45d027e5d21701eaed1833b65b9c479f", null ]
+    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS", "a00250.html#a2def6adcd8c6b13fe8be72ba4a6b41bf", null ],
+    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00250.html#a4e569ff9277e3bd7fc49eadf52fcc2f3", null ]
 ];
