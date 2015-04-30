@@ -8,5 +8,6 @@ var a00270 =
     [ "import", "a00278.html#ga39b68128dabb457499f493b7f17d3413", null ],
     [ "import", "a00278.html#ga7f5c136cb79bd9bb01b3681e9f3b693e", null ],
     [ "set", "a00278.html#ga7cdf3f4f9a0ad3a8a3428375389c1332", null ],
-    [ "show", "a00278.html#ga1be293206175e5a7801b489aacfdaf81", null ]
+    [ "show", "a00278.html#ga1be293206175e5a7801b489aacfdaf81", null ],
+    [ "title", "a00278.html#gac53d81b20f0182a4d2381db27a475837", null ]
 ];

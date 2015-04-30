@@ -95,14 +95,18 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to print the header (imports).  <a href="#a02fc7712b24296ca6da6f5c7b15a4a5c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#a59afeebf5cc92b39b8dd53a05ad05c9f">withHeader</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to print the header (imports).  <a href="#a59afeebf5cc92b39b8dd53a05ad05c9f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#a7ab9c2b8a3970b4ad9a844943e63baa5">multiplot</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Plots layout.  <a href="#a7ab9c2b8a3970b4ad9a844943e63baa5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#a24e1d662a986d8fa5321cee29e909ced">multiplot</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Plots layout. {1,1} if unspecified.  <a href="#a24e1d662a986d8fa5321cee29e909ced"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00090.html">Matplotlib</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#a05c08fa46fa302274df29d1a680c92a9">make_matplotlib</a> (bool with_header=true)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instanciate a matplotlib without setting a term.  <a href="#a05c08fa46fa302274df29d1a680c92a9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00090.html">Matplotlib</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#a76f40fe422159fba4501080eca915ebd">make_matplotlib</a> (std::pair&lt; int, int &gt; <a class="el" href="a00090.html#a7ab9c2b8a3970b4ad9a844943e63baa5">multiplot</a>=std::make_pair(1, 1), bool with_header=true)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instanciate a matplotlib without setting a term.  <a href="#a76f40fe422159fba4501080eca915ebd"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#a1d2873b927c952d8d71934c9507c1001">Matplotlib</a> (bool with_header=true)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor can not be called directly.  <a href="#a1d2873b927c952d8d71934c9507c1001"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#af77550d6aaa0ecf435abf50516f90c06">Matplotlib</a> (std::pair&lt; int, int &gt; <a class="el" href="a00090.html#a7ab9c2b8a3970b4ad9a844943e63baa5">multiplot</a>=std::make_pair(1, 1), bool with_header=true)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor can not be called directly.  <a href="#af77550d6aaa0ecf435abf50516f90c06"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#ab6d4daa910500975a1805b340fa82c33">resetImports</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset imports to initial values.  <a href="#ab6d4daa910500975a1805b340fa82c33"></a><br/></td></tr>
 </table>
@@ -127,16 +131,26 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1d2873b927c952d8d71934c9507c1001"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::Matplotlib" ref="a1d2873b927c952d8d71934c9507c1001" args="(bool with_header=true)" -->
+<a class="anchor" id="af77550d6aaa0ecf435abf50516f90c06"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::Matplotlib" ref="af77550d6aaa0ecf435abf50516f90c06" args="(std::pair&lt; int, int &gt; multiplot=std::make_pair(1, 1), bool with_header=true)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00090.html#a1d2873b927c952d8d71934c9507c1001">roboptim::visualization::Matplotlib::Matplotlib</a> </td>
+          <td class="memname"><a class="el" href="a00090.html#af77550d6aaa0ecf435abf50516f90c06">roboptim::visualization::Matplotlib::Matplotlib</a> </td>
           <td>(</td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>multiplot</em> = <code>std::make_pair(1,&#160;1)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>with_header</em> = <code>true</code></td><td>)</td>
-          <td><code> [explicit, protected]</code></td>
+          <td class="paramname"><em>with_header</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [explicit, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -170,16 +184,26 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a05c08fa46fa302274df29d1a680c92a9"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::make_matplotlib" ref="a05c08fa46fa302274df29d1a680c92a9" args="(bool with_header=true)" -->
+<a class="anchor" id="a76f40fe422159fba4501080eca915ebd"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::make_matplotlib" ref="a76f40fe422159fba4501080eca915ebd" args="(std::pair&lt; int, int &gt; multiplot=std::make_pair(1, 1), bool with_header=true)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="a00090.html">Matplotlib</a> <a class="el" href="a00090.html#a05c08fa46fa302274df29d1a680c92a9">roboptim::visualization::Matplotlib::make_matplotlib</a> </td>
+          <td class="memname">static <a class="el" href="a00090.html">Matplotlib</a> <a class="el" href="a00090.html#a76f40fe422159fba4501080eca915ebd">roboptim::visualization::Matplotlib::make_matplotlib</a> </td>
           <td>(</td>
+          <td class="paramtype">std::pair&lt; int, int &gt;&#160;</td>
+          <td class="paramname"><em>multiplot</em> = <code>std::make_pair(1,&#160;1)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>with_header</em> = <code>true</code></td><td>)</td>
-          <td><code> [inline, static]</code></td>
+          <td class="paramname"><em>with_header</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline, static]</code></td>
         </tr>
       </table>
 </div>
@@ -193,6 +217,46 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>matplotlib instance </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7ab9c2b8a3970b4ad9a844943e63baa5"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::multiplot" ref="a7ab9c2b8a3970b4ad9a844943e63baa5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; int, int &gt; &amp; <a class="el" href="a00090.html#a7ab9c2b8a3970b4ad9a844943e63baa5">roboptim::visualization::Matplotlib::multiplot</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Plots layout. </p>
+<p>{1,1} if unspecified. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Reference to multiplot_ </dd></dl>
+
+<p>Referenced by <a class="el" href="a00090.html#a565123c4086afdec4934dfd78aa5e6dc">print()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a24e1d662a986d8fa5321cee29e909ced"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::multiplot" ref="a24e1d662a986d8fa5321cee29e909ced" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; int, int &gt; <a class="el" href="a00090.html#a7ab9c2b8a3970b4ad9a844943e63baa5">roboptim::visualization::Matplotlib::multiplot</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Plots layout. {1,1} if unspecified. </p>
 
 </div>
 </div>
@@ -257,6 +321,8 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
+
+<p>References <a class="el" href="a00090.html#a7ab9c2b8a3970b4ad9a844943e63baa5">multiplot()</a>, and <a class="el" href="a00090.html#a02fc7712b24296ca6da6f5c7b15a4a5c">withHeader()</a>.</p>
 
 <p>Referenced by <a class="el" href="a00267.html#aa5714b11301afc8bc1ee4d544eafac2f">roboptim::visualization::operator&lt;&lt;()</a>.</p>
 
@@ -332,7 +398,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reset imports to initial values. </p>
 
-<p>Referenced by <a class="el" href="a00090.html#ab74d871b72839dedd30f30877d05f960">clear()</a>, and <a class="el" href="a00090.html#a1d2873b927c952d8d71934c9507c1001">Matplotlib()</a>.</p>
+<p>Referenced by <a class="el" href="a00090.html#ab74d871b72839dedd30f30877d05f960">clear()</a>, and <a class="el" href="a00090.html#af77550d6aaa0ecf435abf50516f90c06">Matplotlib()</a>.</p>
 
 </div>
 </div>
@@ -352,6 +418,8 @@ Protected Member Functions</h2></td></tr>
 
 <p>Whether to print the header (imports). </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Reference to withHeader_. </dd></dl>
+
+<p>Referenced by <a class="el" href="a00090.html#a565123c4086afdec4934dfd78aa5e6dc">print()</a>.</p>
 
 </div>
 </div>

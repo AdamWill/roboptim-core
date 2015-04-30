@@ -35,6 +35,8 @@ var searchData=
   ['isnotntimesderivable_5ft',['isNotNTimesDerivable_t',['../a00030.html#a33bc2fae9ae427a3fcca9322b94abf39',1,'roboptim::detail::CachedFunctionTypes']]],
   ['isnottwicedifferentiable_5ft',['isNotTwiceDifferentiable_t',['../a00030.html#a42b9e6a5c248c8507fb4a26ead365dc9',1,'roboptim::detail::CachedFunctionTypes']]],
   ['isntimesderivable_5ft',['isNTimesDerivable_t',['../a00030.html#ab74d7b014a0941d6ea4ca8f40ad7eb17',1,'roboptim::detail::CachedFunctionTypes']]],
+  ['isplot',['isPlot',['../a00035.html#a1e2040ac38c225f8c0a7ed9bb437e5b0',1,'roboptim::visualization::matplotlib::Command']]],
+  ['isplot_5f',['isPlot_',['../a00035.html#a32729142e186da5975948a6f5369e69d',1,'roboptim::visualization::matplotlib::Command']]],
   ['istwicedifferentiable_5ft',['isTwiceDifferentiable_t',['../a00030.html#a442a32d612feb3f14ef45ee52244ffda',1,'roboptim::detail::CachedFunctionTypes']]],
   ['isvalidderivative',['isValidDerivative',['../a00096.html#ab3cf75353ae399e19e7ae0009ae50054',1,'roboptim::NTimesDerivableFunction&lt; 2 &gt;']]],
   ['isvalidgradient',['isValidGradient',['../a00045.html#a3eae70842eed08c5ae278349dfe1854c',1,'roboptim::DerivableParametrizedFunction::isValidGradient()'],['../a00064.html#a0a061e75f289dc6c21530bba1f28a82e',1,'roboptim::GenericDifferentiableFunction::isValidGradient()']]],

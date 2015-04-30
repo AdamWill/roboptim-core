@@ -1,6 +1,7 @@
 var a00191 =
 [
     [ "MATPLOTLIB_UNARY_COMMAND", "a00191.html#ada98b8f63c02be17bdbf654bc529d0bd", null ],
+    [ "MATPLOTLIB_UNARY_COMMAND_ARG", "a00191.html#adcd6527d205fadf14757084bb7902f82", null ],
     [ "MATPLOTLIB_UNARY_COMMAND_VAR", "a00191.html#ae91cb430ac819bcd54672228ac6094cd", null ],
     [ "comment", "a00278.html#ga1263290fead3bbefebb52ad9acba0236", null ],
     [ "import", "a00278.html#ga39b68128dabb457499f493b7f17d3413", null ],

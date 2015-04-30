@@ -79,30 +79,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a7f53cd737e01064aa4dcfacca66b00a2">Command</a> (const std::string &amp;cmd)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a command from a string.  <a href="#a7f53cd737e01064aa4dcfacca66b00a2"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a5260e4338787992500f910db76baffaa">Command</a> (const std::string &amp;cmd, bool <a class="el" href="a00035.html#a1e2040ac38c225f8c0a7ed9bb437e5b0">isPlot</a>=false)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a command from a string.  <a href="#a5260e4338787992500f910db76baffaa"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a7ec8a75c1fddc31e7aba9333211472d6">~Command</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#abbb1210a9e14226f7510f58cfd61f449">command</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the command as a string.  <a href="#abbb1210a9e14226f7510f58cfd61f449"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a1e2040ac38c225f8c0a7ed9bb437e5b0">isPlot</a> () const </td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a6c60c3824fde4491187bcb8dee8084de">command_</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Store matplotlib command.  <a href="#a6c60c3824fde4491187bcb8dee8084de"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html#a32729142e186da5975948a6f5369e69d">isPlot_</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command is a plot or not.  <a href="#a32729142e186da5975948a6f5369e69d"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>matplotlib command. </p>
 <p>A command represents a matplotlib command. The representation of the command as a string can be accessed through the <a class="el" href="a00035.html#abbb1210a9e14226f7510f58cfd61f449" title="Retrieve the command as a string.">command()</a> method. </p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7f53cd737e01064aa4dcfacca66b00a2"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Command::Command" ref="a7f53cd737e01064aa4dcfacca66b00a2" args="(const std::string &amp;cmd)" -->
+<a class="anchor" id="a5260e4338787992500f910db76baffaa"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Command::Command" ref="a5260e4338787992500f910db76baffaa" args="(const std::string &amp;cmd, bool isPlot=false)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00035.html#a7f53cd737e01064aa4dcfacca66b00a2">roboptim::visualization::matplotlib::Command::Command</a> </td>
+          <td class="memname"><a class="el" href="a00035.html#a5260e4338787992500f910db76baffaa">roboptim::visualization::matplotlib::Command::Command</a> </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>cmd</em></td><td>)</td>
-          <td><code> [explicit]</code></td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isPlot</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
@@ -149,6 +162,24 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1e2040ac38c225f8c0a7ed9bb437e5b0"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Command::isPlot" ref="a1e2040ac38c225f8c0a7ed9bb437e5b0" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool &amp; <a class="el" href="a00035.html#a1e2040ac38c225f8c0a7ed9bb437e5b0">roboptim::visualization::matplotlib::Command::isPlot</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00035.html#a32729142e186da5975948a6f5369e69d">isPlot_</a>.</p>
+
+</div>
+</div>
 <hr/><h2>Member Data Documentation</h2>
 <a class="anchor" id="a6c60c3824fde4491187bcb8dee8084de"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Command::command_" ref="a6c60c3824fde4491187bcb8dee8084de" args="" -->
 <div class="memitem">
@@ -164,6 +195,23 @@ Protected Attributes</h2></td></tr>
 <p>Store matplotlib command. </p>
 
 <p>Referenced by <a class="el" href="a00035.html#abbb1210a9e14226f7510f58cfd61f449">command()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a32729142e186da5975948a6f5369e69d"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Command::isPlot_" ref="a32729142e186da5975948a6f5369e69d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00035.html#a32729142e186da5975948a6f5369e69d">roboptim::visualization::matplotlib::Command::isPlot_</a><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Whether the command is a plot or not. </p>
+
+<p>Referenced by <a class="el" href="a00035.html#a1e2040ac38c225f8c0a7ed9bb437e5b0">isPlot()</a>.</p>
 
 </div>
 </div>

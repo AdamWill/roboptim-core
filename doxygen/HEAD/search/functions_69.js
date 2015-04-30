@@ -15,6 +15,7 @@ var searchData=
   ['inputsize',['inputSize',['../a00067.html#ac56c279d34f3c4047c0f66b738a1bd7f',1,'roboptim::GenericFunction::inputSize()'],['../a00099.html#aa11a87582936a2ce58f853f6ea4541d8',1,'roboptim::ParametrizedFunction::inputSize()']]],
   ['insert',['insert',['../a00088.html#afd9948554164b539b4e3da1285946d03',1,'roboptim::LRUCache']]],
   ['is_5fmalloc_5fallowed_5fupdate',['is_malloc_allowed_update',['../a00258.html#ae2e1dddeae677fc704d88966882fd75f',1,'roboptim']]],
+  ['isplot',['isPlot',['../a00035.html#a1e2040ac38c225f8c0a7ed9bb437e5b0',1,'roboptim::visualization::matplotlib::Command']]],
   ['isvalidderivative',['isValidDerivative',['../a00096.html#ab3cf75353ae399e19e7ae0009ae50054',1,'roboptim::NTimesDerivableFunction&lt; 2 &gt;']]],
   ['isvalidgradient',['isValidGradient',['../a00045.html#a3eae70842eed08c5ae278349dfe1854c',1,'roboptim::DerivableParametrizedFunction::isValidGradient()'],['../a00064.html#a0a061e75f289dc6c21530bba1f28a82e',1,'roboptim::GenericDifferentiableFunction::isValidGradient()']]],
   ['isvalidhessian',['isValidHessian',['../a00078.html#a95b5ca91432ba1dc459785802efd1057',1,'roboptim::GenericTwiceDifferentiableFunction']]],
