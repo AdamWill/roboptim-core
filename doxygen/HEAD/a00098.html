@@ -64,47 +64,106 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::Parameter Struct Reference<div class="ingroups"><a class="el" href="a00276.html">Optimization problems</a></div></div>  </div>
+<div class="title">roboptim::Parameter Struct Reference<div class="ingroups"><a class="el" href="a00277.html">Optimization problems</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="roboptim::Parameter" -->
-<p>Parameters type.  
+<p><a class="el" href="a00122.html" title="Solver for a specific problem class.">Solver</a> parameter type.  
  <a href="a00098.html#details">More...</a></p>
 
 <p><code>#include &lt;roboptim/core/solver.hh&gt;</code></p>
 
-<p><a href="a00343.html">List of all members.</a></p>
+<p><a href="a00344.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00067.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00098.html#a0fb49780f98cd996a9b3e45bf19b41ec">value_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef Function::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00098.html#a7af3eec9012669354d55a58132f04901">vector_t</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef boost::variant<br class="typebreak"/>
-&lt; <a class="el" href="a00067.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a>, int, <br class="typebreak"/>
-std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00098.html#a20a7c0403832ff03174d093943f98f77">parameterValues_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allowed types for parameters.  <a href="#a20a7c0403832ff03174d093943f98f77"></a><br/></td></tr>
+&lt; <a class="el" href="a00098.html#a0fb49780f98cd996a9b3e45bf19b41ec">value_type</a>, <a class="el" href="a00098.html#a7af3eec9012669354d55a58132f04901">vector_t</a>, int, <br class="typebreak"/>
+std::string, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00098.html#ae22aab4f180e46eb0764eb2a1ec4e258">parameterValues_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allowed types for solver parameters:  <a href="#ae22aab4f180e46eb0764eb2a1ec4e258"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00215.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00098.html#a7ed3b8d90d1dc1c6853eefbf2fe1c9e9">Parameter</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a7ed3b8d90d1dc1c6853eefbf2fe1c9e9"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00098.html#a8758825ae290c6722354c7e2b4a40453">description</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00098.html" title="Parameters type.">Parameter</a> description (for humans).  <a href="#a8758825ae290c6722354c7e2b4a40453"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00098.html#a20a7c0403832ff03174d093943f98f77">parameterValues_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00098.html#a6a9253ce0d03f844c642a1a41dcd60b1">value</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00098.html" title="Solver parameter type.">Parameter</a> description (for humans).  <a href="#a8758825ae290c6722354c7e2b4a40453"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00098.html#ae22aab4f180e46eb0764eb2a1ec4e258">parameterValues_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00098.html#a6a9253ce0d03f844c642a1a41dcd60b1">value</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Value.  <a href="#a6a9253ce0d03f844c642a1a41dcd60b1"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Parameters type. </p>
+<div class="textblock"><p><a class="el" href="a00122.html" title="Solver for a specific problem class.">Solver</a> parameter type. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a20a7c0403832ff03174d093943f98f77"></a><!-- doxytag: member="roboptim::Parameter::parameterValues_t" ref="a20a7c0403832ff03174d093943f98f77" args="" -->
+<a class="anchor" id="ae22aab4f180e46eb0764eb2a1ec4e258"></a><!-- doxytag: member="roboptim::Parameter::parameterValues_t" ref="ae22aab4f180e46eb0764eb2a1ec4e258" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::variant&lt;<a class="el" href="a00067.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a>, int, std::string&gt; <a class="el" href="a00098.html#a20a7c0403832ff03174d093943f98f77">roboptim::Parameter::parameterValues_t</a></td>
+          <td class="memname">typedef boost::variant&lt;<a class="el" href="a00098.html#a0fb49780f98cd996a9b3e45bf19b41ec">value_type</a>, <a class="el" href="a00098.html#a7af3eec9012669354d55a58132f04901">vector_t</a>, int, std::string, bool&gt; <a class="el" href="a00098.html#ae22aab4f180e46eb0764eb2a1ec4e258">roboptim::Parameter::parameterValues_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Allowed types for parameters. </p>
+<p>Allowed types for solver parameters: </p>
+<ul>
+<li>value (double)</li>
+<li>vector (of double)</li>
+<li>integer</li>
+<li>string</li>
+<li>bool </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a0fb49780f98cd996a9b3e45bf19b41ec"></a><!-- doxytag: member="roboptim::Parameter::value_type" ref="a0fb49780f98cd996a9b3e45bf19b41ec" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00067.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a> <a class="el" href="a00098.html#a0fb49780f98cd996a9b3e45bf19b41ec">roboptim::Parameter::value_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7af3eec9012669354d55a58132f04901"></a><!-- doxytag: member="roboptim::Parameter::vector_t" ref="a7af3eec9012669354d55a58132f04901" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Function::vector_t <a class="el" href="a00098.html#a7af3eec9012669354d55a58132f04901">roboptim::Parameter::vector_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a7ed3b8d90d1dc1c6853eefbf2fe1c9e9"></a><!-- doxytag: member="roboptim::Parameter::Parameter" ref="a7ed3b8d90d1dc1c6853eefbf2fe1c9e9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00098.html#a7ed3b8d90d1dc1c6853eefbf2fe1c9e9">roboptim::Parameter::Parameter</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Default constructor. </p>
 
 </div>
 </div>
@@ -120,9 +179,9 @@ Public Attributes</h2></td></tr>
 </div>
 <div class="memdoc">
 
-<p><a class="el" href="a00098.html" title="Parameters type.">Parameter</a> description (for humans). </p>
+<p><a class="el" href="a00098.html" title="Solver parameter type.">Parameter</a> description (for humans). </p>
 
-<p>Referenced by <a class="el" href="a00276.html#gaec29bb03838e3b8e4fd86b85db5fe19a">roboptim::operator&lt;&lt;()</a>.</p>
+<p>Referenced by <a class="el" href="a00277.html#gaec29bb03838e3b8e4fd86b85db5fe19a">roboptim::operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
@@ -131,7 +190,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00098.html#a20a7c0403832ff03174d093943f98f77">parameterValues_t</a> <a class="el" href="a00098.html#a6a9253ce0d03f844c642a1a41dcd60b1">roboptim::Parameter::value</a></td>
+          <td class="memname"><a class="el" href="a00098.html#ae22aab4f180e46eb0764eb2a1ec4e258">parameterValues_t</a> <a class="el" href="a00098.html#a6a9253ce0d03f844c642a1a41dcd60b1">roboptim::Parameter::value</a></td>
         </tr>
       </table>
 </div>
@@ -139,7 +198,7 @@ Public Attributes</h2></td></tr>
 
 <p>Value. </p>
 
-<p>Referenced by <a class="el" href="a00276.html#gaec29bb03838e3b8e4fd86b85db5fe19a">roboptim::operator&lt;&lt;()</a>.</p>
+<p>Referenced by <a class="el" href="a00277.html#gaec29bb03838e3b8e4fd86b85db5fe19a">roboptim::operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
@@ -161,7 +220,7 @@ Public Attributes</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00258.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00259.html">roboptim</a>      </li>
       <li class="navelem"><a class="el" href="a00098.html">Parameter</a>      </li>
 </body>
 </html>

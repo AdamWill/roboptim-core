@@ -1,13 +1,8 @@
 var a00270 =
 [
-    [ "Import", "a00082.html", null ],
-    [ "Command", "a00035.html", null ],
-    [ "discreteInterval_t", "a00278.html#gac1d12393050610f8e70843e70183259f", null ],
-    [ "comment", "a00278.html#ga1263290fead3bbefebb52ad9acba0236", null ],
-    [ "figure", "a00278.html#ga064c7f29eb271392e24cbff1699e34c2", null ],
-    [ "import", "a00278.html#ga39b68128dabb457499f493b7f17d3413", null ],
-    [ "import", "a00278.html#ga7f5c136cb79bd9bb01b3681e9f3b693e", null ],
-    [ "set", "a00278.html#ga7cdf3f4f9a0ad3a8a3428375389c1332", null ],
-    [ "show", "a00278.html#ga1be293206175e5a7801b489aacfdaf81", null ],
-    [ "title", "a00278.html#gac53d81b20f0182a4d2381db27a475837", null ]
+    [ "dense_jacobian_to_gnuplot", "a00270.html#a00f78445b522347c5914f58bb68c80a0", null ],
+    [ "dense_matrix_to_gnuplot", "a00270.html#abf27b2e0087da6e9ec89b10bbdef8c4e", null ],
+    [ "set_matrix_header", "a00270.html#aca3546228e3d8781b5e35ce15a50e0ca", null ],
+    [ "sparse_jacobian_to_gnuplot", "a00270.html#a406862b4cef98a34eca862ce87b99aa5", null ],
+    [ "sparse_matrix_to_gnuplot", "a00270.html#a81a6cbb7778fc1a14fe74689c2ea7ed6", null ]
 ];

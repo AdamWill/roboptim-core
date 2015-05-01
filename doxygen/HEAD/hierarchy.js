@@ -54,7 +54,7 @@ var hierarchy =
           ] ],
           [ "roboptim::NTimesDerivableFunction< 2 >", "a00096.html", null ],
           [ "roboptim::Polynomial< T >", "a00102.html", null ],
-          [ "roboptim::Sin< T >", "a00120.html", null ]
+          [ "roboptim::Sin< T >", "a00121.html", null ]
         ] ]
       ] ]
     ] ],
@@ -77,18 +77,18 @@ var hierarchy =
     [ "roboptim::callback::Multiplexer< S >", "a00092.html", null ],
     [ "noncopyable", "a00093.html", [
       [ "roboptim::GenericSolver", "a00076.html", [
-        [ "roboptim::Solver< F, C >", "a00121.html", null ],
-        [ "roboptim::Solver< F, boost::mpl::vector< F > >", "a00121.html", [
+        [ "roboptim::Solver< F, C >", "a00122.html", null ],
+        [ "roboptim::Solver< F, boost::mpl::vector< F > >", "a00122.html", [
           [ "roboptim::GenericDummySolverLastState< F >", "a00065.html", null ]
         ] ],
-        [ "roboptim::Solver< Function, boost::mpl::vector< Function > >", "a00121.html", [
+        [ "roboptim::Solver< Function, boost::mpl::vector< Function > >", "a00122.html", [
           [ "roboptim::DummySolver", "a00055.html", null ]
         ] ],
-        [ "roboptim::Solver< TwiceDifferentiableFunction, boost::mpl::vector< TwiceDifferentiableFunction > >", "a00121.html", [
+        [ "roboptim::Solver< TwiceDifferentiableFunction, boost::mpl::vector< TwiceDifferentiableFunction > >", "a00122.html", [
           [ "roboptim::DummySolverTd", "a00056.html", null ]
         ] ]
       ] ],
-      [ "roboptim::SolverState< P >", "a00124.html", null ]
+      [ "roboptim::SolverState< P >", "a00125.html", null ]
     ] ],
     [ "roboptim::NoSolution", "a00094.html", null ],
     [ "roboptim::NTimesDerivableFunction< DerivabilityOrder >", "a00095.html", null ],
@@ -100,31 +100,32 @@ var hierarchy =
     [ "roboptim::Plus< U, V >", "a00100.html", null ],
     [ "roboptim::finiteDifferenceGradientPolicies::Policy< T >", "a00101.html", [
       [ "roboptim::finiteDifferenceGradientPolicies::FivePointsRule< T >", "a00061.html", null ],
-      [ "roboptim::finiteDifferenceGradientPolicies::Simple< T >", "a00119.html", null ]
+      [ "roboptim::finiteDifferenceGradientPolicies::Simple< T >", "a00120.html", null ]
     ] ],
     [ "roboptim::detail::PrecisionTrait< T >", "a00103.html", null ],
     [ "roboptim::detail::printConstraint< P >", "a00104.html", null ],
-    [ "roboptim::Problem< F, CLIST >", "a00105.html", null ],
-    [ "roboptim::Problem< F, boost::mpl::vector<> >", "a00106.html", null ],
-    [ "roboptim::Product< U, V >", "a00107.html", null ],
-    [ "roboptim::detail::ProductDifferentiation", "a00108.html", null ],
-    [ "roboptim::detail::promote2< T1, T2, promoteToT1 >", "a00109.html", null ],
-    [ "roboptim::detail::promote2< T1, T2, 0 >", "a00110.html", null ],
-    [ "roboptim::detail::PromoteTrait< T1_orig, T2_orig >", "a00111.html", null ],
-    [ "roboptim::Result", "a00112.html", [
-      [ "roboptim::ResultWithWarnings", "a00113.html", null ]
+    [ "roboptim::detail::PrintSolverParameter", "a00105.html", null ],
+    [ "roboptim::Problem< F, CLIST >", "a00106.html", null ],
+    [ "roboptim::Problem< F, boost::mpl::vector<> >", "a00107.html", null ],
+    [ "roboptim::Product< U, V >", "a00108.html", null ],
+    [ "roboptim::detail::ProductDifferentiation", "a00109.html", null ],
+    [ "roboptim::detail::promote2< T1, T2, promoteToT1 >", "a00110.html", null ],
+    [ "roboptim::detail::promote2< T1, T2, 0 >", "a00111.html", null ],
+    [ "roboptim::detail::PromoteTrait< T1_orig, T2_orig >", "a00112.html", null ],
+    [ "roboptim::Result", "a00113.html", [
+      [ "roboptim::ResultWithWarnings", "a00114.html", null ]
     ] ],
-    [ "roboptim::detail::row_vector_stride< SO >", "a00114.html", null ],
-    [ "roboptim::Scalar< U >", "a00115.html", null ],
-    [ "roboptim::Selection< U >", "a00116.html", null ],
-    [ "roboptim::SelectionById< U >", "a00117.html", null ],
-    [ "roboptim::detail::shared_ptr_variant< CLIST >", "a00118.html", null ],
-    [ "roboptim::SolverError", "a00122.html", [
-      [ "roboptim::SolverWarning", "a00125.html", null ]
+    [ "roboptim::detail::row_vector_stride< SO >", "a00115.html", null ],
+    [ "roboptim::Scalar< U >", "a00116.html", null ],
+    [ "roboptim::Selection< U >", "a00117.html", null ],
+    [ "roboptim::SelectionById< U >", "a00118.html", null ],
+    [ "roboptim::detail::shared_ptr_variant< CLIST >", "a00119.html", null ],
+    [ "roboptim::SolverError", "a00123.html", [
+      [ "roboptim::SolverWarning", "a00126.html", null ]
     ] ],
-    [ "roboptim::SolverFactory< T >", "a00123.html", null ],
-    [ "roboptim::Split< T >", "a00126.html", null ],
-    [ "roboptim::StateParameter< F >", "a00127.html", null ],
-    [ "roboptim::detail::StateParameterPrintVisitor", "a00128.html", null ],
-    [ "roboptim::detail::ProductDifferentiation::Types< U, V >", "a00129.html", null ]
+    [ "roboptim::SolverFactory< T >", "a00124.html", null ],
+    [ "roboptim::Split< T >", "a00127.html", null ],
+    [ "roboptim::StateParameter< F >", "a00128.html", null ],
+    [ "roboptim::detail::StateParameterPrintVisitor", "a00129.html", null ],
+    [ "roboptim::detail::ProductDifferentiation::Types< U, V >", "a00130.html", null ]
 ];
