@@ -11,6 +11,6 @@ var a00170 =
     [ "ROBOPTIM_GENERATE_TYPEDEFS_EIGEN_REF_VEC", "a00170.html#aaa0f1b75f2360834e870f4bb0f458695", null ],
     [ "ROBOPTIM_GENERATE_TYPEDEFS_REF", "a00170.html#ada2ae6a941857678bb864be9523e7eaf", null ],
     [ "BOOST_STATIC_ASSERT_MSG", "a00170.html#a4e42d026dc5961a189ce401e9d27c6f5", null ],
-    [ "operator<<", "a00273.html#gac1811528dd1c9cc4c233c14bf5ed6e81", null ],
-    [ "StorageOrder", "a00273.html#gae4e272df17bb4c04ecfaec9370a7f8f5", null ]
+    [ "operator<<", "a00271.html#gac1811528dd1c9cc4c233c14bf5ed6e81", null ],
+    [ "StorageOrder", "a00271.html#gae4e272df17bb4c04ecfaec9370a7f8f5", null ]
 ];

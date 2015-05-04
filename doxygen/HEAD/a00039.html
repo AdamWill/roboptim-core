@@ -74,15 +74,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;roboptim/core/detail/utility.hh&gt;</code></p>
 
-<p><a href="a00361.html">List of all members.</a></p>
+<p><a href="a00359.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef if_&lt; <a class="el" href="a00084.html">is_eigen_type</a>&lt; T &gt;<br class="typebreak"/>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::mpl::if_<br class="typebreak"/>
+&lt; <a class="el" href="a00084.html">is_eigen_type</a>&lt; T &gt;<br class="typebreak"/>
 , <a class="el" href="a00038.html">const_eigen_ref</a>&lt; T &gt;<br class="typebreak"/>
-, add_reference&lt; typename <br class="typebreak"/>
-add_const&lt; T &gt;::<a class="el" href="a00039.html#a5147b257ce0c8cccfff2119b9dd280b6">type</a> &gt;<br class="typebreak"/>
- &gt;::type::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00039.html#a5147b257ce0c8cccfff2119b9dd280b6">type</a></td></tr>
+, boost::add_reference<br class="typebreak"/>
+&lt; typename boost::add_const&lt; T &gt;<br class="typebreak"/>
+::<a class="el" href="a00039.html#a6a2be654dbb64c5dfe5e3bc377a21825">type</a> &gt; &gt;::type::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00039.html#a6a2be654dbb64c5dfe5e3bc377a21825">type</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br/>
@@ -99,14 +100,14 @@ struct roboptim::detail::const_ref&lt; T &gt;</h3>
   </dd>
 </dl>
 </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a5147b257ce0c8cccfff2119b9dd280b6"></a><!-- doxytag: member="roboptim::detail::const_ref::type" ref="a5147b257ce0c8cccfff2119b9dd280b6" args="" -->
+<a class="anchor" id="a6a2be654dbb64c5dfe5e3bc377a21825"></a><!-- doxytag: member="roboptim::detail::const_ref::type" ref="a6a2be654dbb64c5dfe5e3bc377a21825" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef if_&lt;<a class="el" href="a00084.html">is_eigen_type</a>&lt;T&gt;, <a class="el" href="a00038.html">const_eigen_ref</a>&lt;T&gt;, add_reference&lt;typename add_const&lt;T&gt;::<a class="el" href="a00039.html#a5147b257ce0c8cccfff2119b9dd280b6">type</a>&gt; &gt;::type::type <a class="el" href="a00039.html">roboptim::detail::const_ref</a>&lt; T &gt;::<a class="el" href="a00039.html#a5147b257ce0c8cccfff2119b9dd280b6">type</a></td>
+          <td class="memname">typedef boost::mpl::if_&lt;<a class="el" href="a00084.html">is_eigen_type</a>&lt;T&gt;, <a class="el" href="a00038.html">const_eigen_ref</a>&lt;T&gt;, boost::add_reference&lt;typename boost::add_const&lt;T&gt;::<a class="el" href="a00039.html#a6a2be654dbb64c5dfe5e3bc377a21825">type</a>&gt; &gt;::type::type <a class="el" href="a00039.html">roboptim::detail::const_ref</a>&lt; T &gt;::<a class="el" href="a00039.html#a6a2be654dbb64c5dfe5e3bc377a21825">type</a></td>
         </tr>
       </table>
 </div>
@@ -132,8 +133,8 @@ template&lt;typename T&gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00259.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00265.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00257.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00263.html">detail</a>      </li>
       <li class="navelem"><a class="el" href="a00039.html">const_ref</a>      </li>
 </body>
 </html>

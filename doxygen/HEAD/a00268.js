@@ -1,9 +1,8 @@
 var a00268 =
 [
-    [ "Gnuplot", "a00080.html", null ],
-    [ "Matplotlib", "a00090.html", null ],
-    [ "operator<<", "a00279.html#ga22576c0708e8fe4af42060ff87bfad20", null ],
-    [ "operator<<", "a00268.html#a45951c8d967c172f9f8213900b3d7884", null ],
-    [ "operator<<", "a00279.html#ga754766ba098561274be740474369e1ba", null ],
-    [ "operator<<", "a00268.html#aa5714b11301afc8bc1ee4d544eafac2f", null ]
+    [ "dense_jacobian_to_gnuplot", "a00268.html#a00f78445b522347c5914f58bb68c80a0", null ],
+    [ "dense_matrix_to_gnuplot", "a00268.html#abf27b2e0087da6e9ec89b10bbdef8c4e", null ],
+    [ "set_matrix_header", "a00268.html#aca3546228e3d8781b5e35ce15a50e0ca", null ],
+    [ "sparse_jacobian_to_gnuplot", "a00268.html#a406862b4cef98a34eca862ce87b99aa5", null ],
+    [ "sparse_matrix_to_gnuplot", "a00268.html#a81a6cbb7778fc1a14fe74689c2ea7ed6", null ]
 ];

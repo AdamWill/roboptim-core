@@ -5,10 +5,10 @@ var searchData=
   ['badjacobian',['BadJacobian',['../a00027.html#a55bcece908699e021e8385beda8ecde2',1,'roboptim::BadJacobian::BadJacobian(const_argument_ref x, const_jacobian_ref analyticalJacobian, const_jacobian_ref finiteDifferenceJacobian, const value_type &amp;threshold)'],['../a00027.html#aa44364253696684fefa34d8169853c07',1,'roboptim::BadJacobian::BadJacobian(const_argument_ref x, const_jacobian_ref analyticalJacobian, const_jacobian_ref finiteDifferenceJacobian, const value_type &amp;threshold)']]],
   ['basefunction',['baseFunction',['../a00077.html#adb62136d2d933844f7310a19c930f98d',1,'roboptim::GenericSumOfC1Squares']]],
   ['begin',['begin',['../a00088.html#aca4eca2d48c018e9b1c7422b3a235ca7',1,'roboptim::LRUCache']]],
-  ['bind',['Bind',['../a00028.html#ad1718b5f15fa061eda50ee71e3c01846',1,'roboptim::Bind::Bind()'],['../a00275.html#gac398776c05160b474382281f0501fa7b',1,'roboptim::bind()']]],
-  ['blue',['blue',['../a00266.html#a399dec9b833e5e69dbafa4fc99b32606',1,'roboptim::fg']]],
+  ['bind',['Bind',['../a00028.html#ad1718b5f15fa061eda50ee71e3c01846',1,'roboptim::Bind::Bind()'],['../a00273.html#gac398776c05160b474382281f0501fa7b',1,'roboptim::bind()']]],
+  ['blue',['blue',['../a00264.html#a399dec9b833e5e69dbafa4fc99b32606',1,'roboptim::fg']]],
   ['boost_5fmpl_5fassert',['BOOST_MPL_ASSERT',['../a00112.html#a6e4a50c4e55255b57f664c321151579c',1,'roboptim::detail::PromoteTrait']]],
-  ['boost_5fmpl_5fassert_5fmsg',['BOOST_MPL_ASSERT_MSG',['../a00079.html#a87e0e44324d64840bad7e4431688be4b',1,'roboptim::detail::get_descendant']]],
+  ['boost_5fmpl_5fassert_5fmsg',['BOOST_MPL_ASSERT_MSG',['../a00079.html#aa8e467afb6c3726d57ccc069ace612dc',1,'roboptim::detail::get_descendant']]],
   ['boost_5fstatic_5fassert_5fmsg',['BOOST_STATIC_ASSERT_MSG',['../a00170.html#a4e42d026dc5961a189ce401e9d27c6f5',1,'function.hh']]],
-  ['boundsvector',['boundsVector',['../a00277.html#ga321c61b8b452cd74626d0343a8358e4c',1,'roboptim::Problem']]]
+  ['boundsvector',['boundsVector',['../a00275.html#ga321c61b8b452cd74626d0343a8358e4c',1,'roboptim::Problem']]]
 ];

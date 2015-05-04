@@ -4,7 +4,7 @@ var searchData=
   ['hash_5ft',['hash_t',['../a00088.html#aabd655bbb6f61a44c513396358d0252b',1,'roboptim::LRUCache']]],
   ['hasher',['Hasher',['../a00081.html',1,'roboptim']]],
   ['hasher_5ft',['hasher_t',['../a00088.html#ae939c7ec7ccfe94a25a123363bc163ae',1,'roboptim::LRUCache']]],
-  ['help',['help',['../a00279.html#gabecfe2b1ab67fa65ea2fa8f9de592d0a',1,'roboptim::visualization::gnuplot']]],
+  ['help',['help',['../a00277.html#gabecfe2b1ab67fa65ea2fa8f9de592d0a',1,'roboptim::visualization::gnuplot']]],
   ['hessian',['hessian',['../a00078.html#ae9cd62bec5a2c9637b96d738b90caeab',1,'roboptim::GenericTwiceDifferentiableFunction::hessian(const_argument_ref argument, size_type functionId=0) const '],['../a00078.html#a1d3a2847469eaf4dfb754da35d9a4d6a',1,'roboptim::GenericTwiceDifferentiableFunction::hessian(hessian_ref hessian, const_argument_ref argument, size_type functionId=0) const ']]],
   ['hessiancache_5f',['hessianCache_',['../a00029.html#a40e2de21fc46d0fcd90b7c6d1eec6613',1,'roboptim::CachedFunction']]],
   ['hessiancache_5ft',['hessianCache_t',['../a00029.html#a07039cc957e34e4aa6119c90b6c092a8',1,'roboptim::CachedFunction']]],

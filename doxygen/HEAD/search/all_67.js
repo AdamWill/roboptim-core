@@ -10,7 +10,7 @@ var searchData=
   ['genericdummysolverlaststate',['GenericDummySolverLastState',['../a00065.html',1,'roboptim']]],
   ['genericfinitedifferencegradient',['GenericFiniteDifferenceGradient',['../a00066.html#ade644f357e04020a3fb84207994f745b',1,'roboptim::GenericFiniteDifferenceGradient']]],
   ['genericfinitedifferencegradient',['GenericFiniteDifferenceGradient',['../a00066.html',1,'roboptim']]],
-  ['genericfunction',['GenericFunction',['../a00273.html#ga1d025a85d12b2eb8f85409a150cad994',1,'roboptim::GenericFunction']]],
+  ['genericfunction',['GenericFunction',['../a00271.html#ga1d025a85d12b2eb8f85409a150cad994',1,'roboptim::GenericFunction']]],
   ['genericfunction',['GenericFunction',['../a00067.html',1,'roboptim']]],
   ['genericfunctiontraits',['GenericFunctionTraits',['../a00068.html',1,'roboptim']]],
   ['genericfunctiontraits_3c_20eigenmatrixdense_20_3e',['GenericFunctionTraits< EigenMatrixDense >',['../a00069.html',1,'roboptim']]],
@@ -64,5 +64,5 @@ var searchData=
   ['gradientu_5ft',['gradientU_t',['../a00130.html#af31cbe6ad6b4decc7f93f05b96758df4',1,'roboptim::detail::ProductDifferentiation::Types']]],
   ['gradientv_5fref',['gradientV_ref',['../a00130.html#af005feb543fb95ab4d5aab6fac059c7a',1,'roboptim::detail::ProductDifferentiation::Types']]],
   ['gradientv_5ft',['gradientV_t',['../a00130.html#a22311a22a417e5cfb32bbaf1c201fba4',1,'roboptim::detail::ProductDifferentiation::Types']]],
-  ['green',['green',['../a00266.html#af56277d22032f2e720a4ac600c0d26af',1,'roboptim::fg']]]
+  ['green',['green',['../a00264.html#af56277d22032f2e720a4ac600c0d26af',1,'roboptim::fg']]]
 ];
