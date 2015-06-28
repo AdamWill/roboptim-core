@@ -1,4 +1,4 @@
 var a00140 =
 [
-    [ "chain", "a00273.html#gac0b8c0fb2f17746d44b4a74b90da5520", null ]
+    [ "bind", "a00284.html#gac398776c05160b474382281f0501fa7b", null ]
 ];

@@ -1,6 +1,9 @@
 var a00181 =
 [
-    [ "plot_mat", "a00277.html#gadcb1b5fd0907ef64ce8b6b5aaff42db6", null ],
-    [ "plot_mat", "a00277.html#ga22b3284ccb0b83b4dccef09f4ce53cab", null ],
-    [ "plot_mat", "a00277.html#gabc8e5c002378981e9c06e741d221cffd", null ]
+    [ "GNUPLOT_STR_COMMAND", "a00181.html#a44cffa7dc6979331d7660d604e7c8f48", null ],
+    [ "GNUPLOT_UNARY_COMMAND", "a00181.html#abdaa2512aec3201d566ccbfc73fafc46", null ],
+    [ "comment", "a00288.html#ga108c0cb6161fb8813817a7b7a1ac980d", null ],
+    [ "set", "a00288.html#gad77630a233193748534b41d069d4e180", null ],
+    [ "show", "a00288.html#gaf90f5364d8c3597b8909ba99083fc23f", null ],
+    [ "unset", "a00288.html#ga2c2a188b2e89955eee09aa10b5426e43", null ]
 ];

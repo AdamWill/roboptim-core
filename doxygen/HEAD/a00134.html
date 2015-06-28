@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>bind.hh File Reference</title>
+<title>roboptim::detail::StructuredInputJacobianInternal&lt; FuncType, roboptim::EigenMatrixDense &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -18,8 +18,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -41,8 +41,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -61,36 +63,142 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">bind.hh File Reference</div>  </div>
+<div class="title">roboptim::detail::StructuredInputJacobianInternal&lt; FuncType, roboptim::EigenMatrixDense &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdexcept&gt;</code><br/>
-<code>#include &lt;vector&gt;</code><br/>
-<code>#include &lt;boost/make_shared.hpp&gt;</code><br/>
-<code>#include &lt;boost/optional.hpp&gt;</code><br/>
-<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00133.html">roboptim/core/detail/autopromote.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00153.html">roboptim/core/differentiable-function.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00135.html">roboptim/core/operator/bind.hxx</a>&gt;</code><br/>
-</div><table class="memberdecls">
-<tr><td colspan="2"><h2><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html">roboptim::Bind&lt; U &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00028.html" title="Bind some function input to a constant value.">Bind</a> some function input to a constant value.  <a href="a00028.html#details">More...</a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00257.html">roboptim</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solver-related classes. </p>
-<br/></td></tr>
-<tr><td colspan="2"><h2><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; Bind&lt; U &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00273.html#gac398776c05160b474382281f0501fa7b">roboptim::bind</a> (boost::shared_ptr&lt; U &gt; origin, const typename Bind&lt; U &gt;::boundValues_t &amp;boundValues)</td></tr>
+<!-- doxytag: class="roboptim::detail::StructuredInputJacobianInternal&lt; FuncType, roboptim::EigenMatrixDense &gt;" --><!-- doxytag: inherits="roboptim::detail::BlockProvider" -->
+<p>DenseMatrix specialization of the <a class="el" href="a00134.html#a070146b9afb2019479c4b0a42f4fbd77" title="retrieve a specific block of the jacobian given as an input">getJacobianBlock()</a> method provider.  
+ <a href="a00134.html#details">More...</a></p>
+
+<p><code>#include &lt;roboptim/core/detail/structured-input.hh&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for roboptim::detail::StructuredInputJacobianInternal&lt; FuncType, roboptim::EigenMatrixDense &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00134.png" usemap="#roboptim::detail::StructuredInputJacobianInternal&lt; FuncType, roboptim::EigenMatrixDense &gt;_map" alt=""/>
+  <map id="roboptim::detail::StructuredInputJacobianInternal&lt; FuncType, roboptim::EigenMatrixDense &gt;_map" name="roboptim::detail::StructuredInputJacobianInternal&lt; FuncType, roboptim::EigenMatrixDense &gt;_map">
+<area href="a00029.html" title="Gives access to a std::vector of std::pair&lt;size_t, size_t&gt; representing blocks of input Those blocks ..." alt="roboptim::detail::BlockProvider" shape="rect" coords="0,0,529,24"/>
+</map>
+ </div></div>
+
+<p><a href="a00370.html">List of all members.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00065.html">roboptim::GenericDifferentiableFunction</a><br class="typebreak"/>
+&lt; typename FuncType::traits_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a3224e351839e394b8d76418f2e28950b">differentiableFunction_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Differentiable function type.  <a href="#a3224e351839e394b8d76418f2e28950b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+differentiableFunction_t::jacobian_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a69f120973d7aca2fd509099865f7225b">JacBlock</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">return type of the <a class="el" href="a00134.html#a070146b9afb2019479c4b0a42f4fbd77" title="retrieve a specific block of the jacobian given as an input">getJacobianBlock()</a> method  <a href="#a69f120973d7aca2fd509099865f7225b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+differentiableFunction_t::jacobian_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a58fff3a16762ebf8c259e763804a516c">InputJacBlock</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">input type of the jacobian given by the user  <a href="#a58fff3a16762ebf8c259e763804a516c"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00134.html#a69f120973d7aca2fd509099865f7225b">JacBlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a070146b9afb2019479c4b0a42f4fbd77">getJacobianBlock</a> (<a class="el" href="a00134.html#a58fff3a16762ebf8c259e763804a516c">InputJacBlock</a> jacobian, size_t blockInd) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieve a specific block of the jacobian given as an input  <a href="#a070146b9afb2019479c4b0a42f4fbd77"></a><br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename FuncType&gt;<br/>
+struct roboptim::detail::StructuredInputJacobianInternal&lt; FuncType, roboptim::EigenMatrixDense &gt;</h3>
+
+<p>DenseMatrix specialization of the <a class="el" href="a00134.html#a070146b9afb2019479c4b0a42f4fbd77" title="retrieve a specific block of the jacobian given as an input">getJacobianBlock()</a> method provider. </p>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a3224e351839e394b8d76418f2e28950b"></a><!-- doxytag: member="roboptim::detail::StructuredInputJacobianInternal&lt; FuncType, roboptim::EigenMatrixDense &gt;::differentiableFunction_t" ref="a3224e351839e394b8d76418f2e28950b" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FuncType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00065.html">roboptim::GenericDifferentiableFunction</a>&lt;typename FuncType::traits_t&gt; <a class="el" href="a00133.html">roboptim::detail::StructuredInputJacobianInternal</a>&lt; FuncType, <a class="el" href="a00058.html">roboptim::EigenMatrixDense</a> &gt;::<a class="el" href="a00134.html#a3224e351839e394b8d76418f2e28950b">differentiableFunction_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Differentiable function type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a58fff3a16762ebf8c259e763804a516c"></a><!-- doxytag: member="roboptim::detail::StructuredInputJacobianInternal&lt; FuncType, roboptim::EigenMatrixDense &gt;::InputJacBlock" ref="a58fff3a16762ebf8c259e763804a516c" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FuncType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef differentiableFunction_t::jacobian_ref <a class="el" href="a00133.html">roboptim::detail::StructuredInputJacobianInternal</a>&lt; FuncType, <a class="el" href="a00058.html">roboptim::EigenMatrixDense</a> &gt;::<a class="el" href="a00134.html#a58fff3a16762ebf8c259e763804a516c">InputJacBlock</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>input type of the jacobian given by the user </p>
+
+</div>
+</div>
+<a class="anchor" id="a69f120973d7aca2fd509099865f7225b"></a><!-- doxytag: member="roboptim::detail::StructuredInputJacobianInternal&lt; FuncType, roboptim::EigenMatrixDense &gt;::JacBlock" ref="a69f120973d7aca2fd509099865f7225b" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FuncType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef differentiableFunction_t::jacobian_ref <a class="el" href="a00133.html">roboptim::detail::StructuredInputJacobianInternal</a>&lt; FuncType, <a class="el" href="a00058.html">roboptim::EigenMatrixDense</a> &gt;::<a class="el" href="a00134.html#a69f120973d7aca2fd509099865f7225b">JacBlock</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>return type of the <a class="el" href="a00134.html#a070146b9afb2019479c4b0a42f4fbd77" title="retrieve a specific block of the jacobian given as an input">getJacobianBlock()</a> method </p>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a070146b9afb2019479c4b0a42f4fbd77"></a><!-- doxytag: member="roboptim::detail::StructuredInputJacobianInternal&lt; FuncType, roboptim::EigenMatrixDense &gt;::getJacobianBlock" ref="a070146b9afb2019479c4b0a42f4fbd77" args="(InputJacBlock jacobian, size_t blockInd) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FuncType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00133.html">StructuredInputJacobianInternal</a>&lt; FuncType, <a class="el" href="a00058.html">roboptim::EigenMatrixDense</a> &gt;::<a class="el" href="a00134.html#a69f120973d7aca2fd509099865f7225b">JacBlock</a> <a class="el" href="a00133.html">roboptim::detail::StructuredInputJacobianInternal</a>&lt; FuncType, <a class="el" href="a00058.html">roboptim::EigenMatrixDense</a> &gt;::<a class="el" href="a00134.html#a070146b9afb2019479c4b0a42f4fbd77">getJacobianBlock</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00134.html#a58fff3a16762ebf8c259e763804a516c">InputJacBlock</a>&#160;</td>
+          <td class="paramname"><em>jacobian</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>blockInd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>retrieve a specific block of the jacobian given as an input </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jacobian</td><td>the jacobian to operate upon </td></tr>
+    <tr><td class="paramname">blockInd</td><td>the index of the block to be retrieved </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -109,6 +217,8 @@ Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00134.html">bind.hh</a>      </li>
+      <li class="navelem"><a class="el" href="a00267.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00273.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00134.html">StructuredInputJacobianInternal&lt; FuncType, roboptim::EigenMatrixDense &gt;</a>      </li>
 </body>
 </html>

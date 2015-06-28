@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::ParametrizedFunction&lt; F &gt; Class Template Reference</title>
+<title>roboptim::OptimizationLogger&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -67,234 +67,487 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::ParametrizedFunction&lt; F &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00271.html">Mathematical abstract functions</a></div></div>  </div>
+<div class="title">roboptim::OptimizationLogger&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::ParametrizedFunction" -->
-<p>Define an abstract parametrized mathematical function ( <img class="formulaInl" alt="$C^0$" src="form_21.png"/>).  
+<!-- doxytag: class="roboptim::OptimizationLogger" -->
+<p>Log the optimization process (values, Jacobians, time taken etc.).  
  <a href="a00099.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/parametrized-function.hh&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for roboptim::ParametrizedFunction&lt; F &gt;:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00099.png" usemap="#roboptim::ParametrizedFunction&lt; F &gt;_map" alt=""/>
-  <map id="roboptim::ParametrizedFunction&lt; F &gt;_map" name="roboptim::ParametrizedFunction&lt; F &gt;_map">
-<area href="a00045.html" title="Parametrized function with parameter derivative available." alt="roboptim::DerivableParametrizedFunction&lt; F &gt;" shape="rect" coords="0,56,276,80"/>
-</map>
- </div></div>
+<p><code>#include &lt;roboptim/core/optimization-logger.hh&gt;</code></p>
 
-<p><a href="a00328.html">List of all members.</a></p>
+<p><a href="a00338.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef F::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#ad6f5a983e3c1c4f657ef972d8a781a57">value_type</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import value type.  <a href="#ad6f5a983e3c1c4f657ef972d8a781a57"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef F::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#ac88a1cbae53587c432cb346982c9302d">size_type</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import size type.  <a href="#ac88a1cbae53587c432cb346982c9302d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef F::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a485059f799b3a571c5446677a8655a34">vector_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import vector type.  <a href="#a485059f799b3a571c5446677a8655a34"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef F::matrix_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#ae1ae1137efff66af2fc84c967a2e64e5">matrix_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import matrix type.  <a href="#ae1ae1137efff66af2fc84c967a2e64e5"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef F&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a650dd3199ebc63021f83ab30b603d982">result_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import result type.  <a href="#a650dd3199ebc63021f83ab30b603d982"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef F::argument_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#af4bb1d815e33a2fbb81165604d48e32a">argument_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import argument types.  <a href="#af4bb1d815e33a2fbb81165604d48e32a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef F::const_argument_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a5b689ddb53cba72b6fe79c550c3bef3e">const_argument_ref</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00124.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a0212b30a8be78730debbb9b9bab8526a">problem_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00286.html#gac4d8783eb3cce4fb35902ef5b91635fd">solver_t::problem_t::value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#aa961d523ab2d00705723330fe52870cd">value_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00286.html#gac3031ce28dcf76501a038c37beeb5a0b">solver_t::problem_t::size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a613629ff4ed7781b6b1ed4024a18fcbf">size_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00124.html#a42813adb1bed4804c8fadf94da6e624b">solver_t::problem_t::vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a0f6518966c5ceaba887f2fabe153aa38">vector_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00124.html#ae785fae316ee3993a6e7da0f53b24b5a">solver_t::solverState_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a734201c75aebed2ca9afe09d58c0d5cd">solverState_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00124.html#a8cb27cc8f35c120bf91513297156de88">solver_t::callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a8a8b67820eca81c2071abab2dc7491ba">callback_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+solver_t::problem_t::function_t::traits_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#ac695f321fe96a817b5f3afac87153630">traits_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00286.html#ga880fef200a8fcb92b7612a37d3aed945">solver_t::problem_t::function_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a4130fbb32eaf24ad40eabc63c272a5f6">function_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef function_t::matrix_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a7c2094343242c1e1fb0c945c7ce5c3fd">jacobian_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+function_t::const_argument_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a547c7fcbd8f8096817a7acf45f2d3ce0">const_argument_ref</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00065.html">GenericDifferentiableFunction</a><br class="typebreak"/>
+&lt; <a class="el" href="a00099.html#ac695f321fe96a817b5f3afac87153630">traits_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#aac7b9411f87e66936a28dbd648bdf996">differentiableFunction_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00099.html#a650dd3199ebc63021f83ab30b603d982">result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#aa743716ae487e979498571784038240b">operator()</a> (<a class="el" href="a00099.html#a5b689ddb53cba72b6fe79c550c3bef3e">const_argument_ref</a> argument) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the function at a specified point.  <a href="#aa743716ae487e979498571784038240b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00099.html#ac88a1cbae53587c432cb346982c9302d">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#aa11a87582936a2ce58f853f6ea4541d8">inputSize</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the input size (i.e.  <a href="#aa11a87582936a2ce58f853f6ea4541d8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00099.html#ac88a1cbae53587c432cb346982c9302d">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a067147c8d9a6cfe99f46820a41d08aeb">functionInputSize</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the function's input size (i.e.  <a href="#a067147c8d9a6cfe99f46820a41d08aeb"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00099.html#ac88a1cbae53587c432cb346982c9302d">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#af15dfa5e7e9e13e7f5d4720091a7d28f">functionOutputSize</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the function's output size (i.e.  <a href="#af15dfa5e7e9e13e7f5d4720091a7d28f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a7769a5ffb197cd0009a27c6e12d40888">print</a> (std::ostream &amp;) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#a7769a5ffb197cd0009a27c6e12d40888"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#aed34e9f3f55c67a875575d552f69f0e8">OptimizationLogger</a> (<a class="el" href="a00099.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp;<a class="el" href="a00099.html#ad83299fdcc325b94a904721f4b9fe9c9">solver</a>, const boost::filesystem::path &amp;<a class="el" href="a00099.html#a046deb8bf8d4d59ac41008bcc88c4052">path</a>, bool selfRegister=true)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#aed34e9f3f55c67a875575d552f69f0e8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a7a0d794cc294617474adc0a499d42040">~OptimizationLogger</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a7a0d794cc294617474adc0a499d42040"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#ae7780abb8e2422fde009f12e39f0c96d">append</a> (const std::string &amp;text)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Append extra information to the log file.  <a href="#ae7780abb8e2422fde009f12e39f0c96d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00099.html#a8a8b67820eca81c2071abab2dc7491ba">callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a7c9ba7e965df0cab92f0e7021c38cbd8">callback</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the callback function.  <a href="#a7c9ba7e965df0cab92f0e7021c38cbd8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a9e7878a17d1c10a9ba477bd27521739d">logPath</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the path of the log directory.  <a href="#a9e7878a17d1c10a9ba477bd27521739d"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a0cb8331de8f0fdc4ad395446b191fc81">ParametrizedFunction</a> (<a class="el" href="a00099.html#ac88a1cbae53587c432cb346982c9302d">size_type</a> <a class="el" href="a00099.html#aa11a87582936a2ce58f853f6ea4541d8">inputSize</a>, <a class="el" href="a00099.html#ac88a1cbae53587c432cb346982c9302d">size_type</a> <a class="el" href="a00099.html#a067147c8d9a6cfe99f46820a41d08aeb">functionInputSize</a>, <a class="el" href="a00099.html#ac88a1cbae53587c432cb346982c9302d">size_type</a> <a class="el" href="a00099.html#af15dfa5e7e9e13e7f5d4720091a7d28f">functionOutputSize</a>)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Concrete class constructor should call this constructor.  <a href="#a0cb8331de8f0fdc4ad395446b191fc81"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#af4e8e1ee202ade5a6ec8d66fd497fe29">~ParametrizedFunction</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00099.html#a650dd3199ebc63021f83ab30b603d982">result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a51e63e20af1027306aa09b86bb968a7e">impl_compute</a> (<a class="el" href="a00099.html#a5b689ddb53cba72b6fe79c550c3bef3e">const_argument_ref</a> argument) const =0</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluation.  <a href="#a51e63e20af1027306aa09b86bb968a7e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a875c3dad03fcf29633a0f0bfa801815f">perIterationCallback</a> (const <a class="el" href="a00099.html#a0212b30a8be78730debbb9b9bab8526a">problem_t</a> &amp;pb, const <a class="el" href="a00099.html#a734201c75aebed2ca9afe09d58c0d5cd">solverState_t</a> &amp;state)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#ae377f28f521a02a0d45e1601a1180a36">perIterationCallbackUnsafe</a> (const typename <a class="el" href="a00124.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a> &amp;pb, const typename <a class="el" href="a00124.html#ae785fae316ee3993a6e7da0f53b24b5a">solver_t::solverState_t</a> &amp;state)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a046deb8bf8d4d59ac41008bcc88c4052">path</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the path of the log directory.  <a href="#a046deb8bf8d4d59ac41008bcc88c4052"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a3bf8f33ae661284aac96f17b5bbf659c">path</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the path of the log directory.  <a href="#a3bf8f33ae661284aac96f17b5bbf659c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00099.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#ad83299fdcc325b94a904721f4b9fe9c9">solver</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the solver associated with the logger.  <a href="#ad83299fdcc325b94a904721f4b9fe9c9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00099.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a7d655721636abb6a57d0f07a791f8e8e">solver</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the solver associated with the logger.  <a href="#a7d655721636abb6a57d0f07a791f8e8e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html#a6e35f515b0affa5541a048c289458e12">callbackCallId</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the callback iteration index.  <a href="#a6e35f515b0affa5541a048c289458e12"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename F&gt;<br/>
-class roboptim::ParametrizedFunction&lt; F &gt;</h3>
+<div class="textblock"><h3>template&lt;typename T&gt;<br/>
+class roboptim::OptimizationLogger&lt; T &gt;</h3>
 
-<p>Define an abstract parametrized mathematical function ( <img class="formulaInl" alt="$C^0$" src="form_21.png"/>). </p>
-<p>A function is an object that can be evaluated for a given point.</p>
-<p class="formulaDsp">
-<img class="formulaDsp" alt="\[ f : p \rightarrow g \]" src="form_31.png"/>
-</p>
-<p> <img class="formulaInl" alt="$p \in \mathbb{R}^p$" src="form_32.png"/>, <img class="formulaInl" alt="$g \in G$" src="form_33.png"/> where <img class="formulaInl" alt="$p$" src="form_34.png"/> is the input size and <img class="formulaInl" alt="$G = \mathbb{R}^n \in \mathbb{R}^m$" src="form_35.png"/> ( <img class="formulaInl" alt="$n, m \in \mathbb{R}^2$" src="form_36.png"/>).</p>
-<p>Functions are pure immutable objects: evaluating a function twice at a given point <b>must</b> give the same result.</p>
+<p>Log the optimization process (values, Jacobians, time taken etc.). </p>
 <dl class=""><dt><b>Template Parameters:</b></dt><dd>
   <table class="">
-    <tr><td class="paramname">F</td><td>inner function type. </td></tr>
+    <tr><td class="paramname">T</td><td>solver type. </td></tr>
   </table>
   </dd>
 </dl>
 </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="af4bb1d815e33a2fbb81165604d48e32a"></a><!-- doxytag: member="roboptim::ParametrizedFunction::argument_t" ref="af4bb1d815e33a2fbb81165604d48e32a" args="" -->
+<a class="anchor" id="a8a8b67820eca81c2071abab2dc7491ba"></a><!-- doxytag: member="roboptim::OptimizationLogger::callback_t" ref="a8a8b67820eca81c2071abab2dc7491ba" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F&gt; </div>
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef F::argument_t <a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#af4bb1d815e33a2fbb81165604d48e32a">argument_t</a></td>
+          <td class="memname">typedef <a class="el" href="a00124.html#a8cb27cc8f35c120bf91513297156de88">solver_t::callback_t</a> <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a8a8b67820eca81c2071abab2dc7491ba">callback_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Import argument types. </p>
-
-<p>Reimplemented in <a class="el" href="a00045.html#a051f9b319c32ebf642211d595e660261">roboptim::DerivableParametrizedFunction&lt; F &gt;</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a5b689ddb53cba72b6fe79c550c3bef3e"></a><!-- doxytag: member="roboptim::ParametrizedFunction::const_argument_ref" ref="a5b689ddb53cba72b6fe79c550c3bef3e" args="" -->
+<a class="anchor" id="a547c7fcbd8f8096817a7acf45f2d3ce0"></a><!-- doxytag: member="roboptim::OptimizationLogger::const_argument_ref" ref="a547c7fcbd8f8096817a7acf45f2d3ce0" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F&gt; </div>
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef F::const_argument_ref <a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#a5b689ddb53cba72b6fe79c550c3bef3e">const_argument_ref</a></td>
+          <td class="memname">typedef function_t::const_argument_ref <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a547c7fcbd8f8096817a7acf45f2d3ce0">const_argument_ref</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="a00045.html#a16c703d1ad2ddf7306e6bd1843ec001e">roboptim::DerivableParametrizedFunction&lt; F &gt;</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="ae1ae1137efff66af2fc84c967a2e64e5"></a><!-- doxytag: member="roboptim::ParametrizedFunction::matrix_t" ref="ae1ae1137efff66af2fc84c967a2e64e5" args="" -->
+<a class="anchor" id="aac7b9411f87e66936a28dbd648bdf996"></a><!-- doxytag: member="roboptim::OptimizationLogger::differentiableFunction_t" ref="aac7b9411f87e66936a28dbd648bdf996" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F&gt; </div>
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef F::matrix_t <a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#ae1ae1137efff66af2fc84c967a2e64e5">matrix_t</a></td>
+          <td class="memname">typedef <a class="el" href="a00065.html">GenericDifferentiableFunction</a>&lt;<a class="el" href="a00099.html#ac695f321fe96a817b5f3afac87153630">traits_t</a>&gt; <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#aac7b9411f87e66936a28dbd648bdf996">differentiableFunction_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Import matrix type. </p>
-
-<p>Reimplemented in <a class="el" href="a00045.html#a83f856b4d5ec300fdd47d3eaa1059027">roboptim::DerivableParametrizedFunction&lt; F &gt;</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a650dd3199ebc63021f83ab30b603d982"></a><!-- doxytag: member="roboptim::ParametrizedFunction::result_t" ref="a650dd3199ebc63021f83ab30b603d982" args="" -->
+<a class="anchor" id="a4130fbb32eaf24ad40eabc63c272a5f6"></a><!-- doxytag: member="roboptim::OptimizationLogger::function_t" ref="a4130fbb32eaf24ad40eabc63c272a5f6" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F&gt; </div>
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef F <a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#a650dd3199ebc63021f83ab30b603d982">result_t</a></td>
+          <td class="memname">typedef <a class="el" href="a00286.html#ga880fef200a8fcb92b7612a37d3aed945">solver_t::problem_t::function_t</a> <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a4130fbb32eaf24ad40eabc63c272a5f6">function_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Import result type. </p>
-
-<p>Reimplemented in <a class="el" href="a00045.html#ac117ca019da56c1fa6c98e4736bcf278">roboptim::DerivableParametrizedFunction&lt; F &gt;</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="ac88a1cbae53587c432cb346982c9302d"></a><!-- doxytag: member="roboptim::ParametrizedFunction::size_type" ref="ac88a1cbae53587c432cb346982c9302d" args="" -->
+<a class="anchor" id="a7c2094343242c1e1fb0c945c7ce5c3fd"></a><!-- doxytag: member="roboptim::OptimizationLogger::jacobian_t" ref="a7c2094343242c1e1fb0c945c7ce5c3fd" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F&gt; </div>
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef F::size_type <a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#ac88a1cbae53587c432cb346982c9302d">size_type</a></td>
+          <td class="memname">typedef function_t::matrix_t <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a7c2094343242c1e1fb0c945c7ce5c3fd">jacobian_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Import size type. </p>
-
-<p>Reimplemented in <a class="el" href="a00045.html#afb6a74b60a4b8c47e7d1c3a0fb09b7e0">roboptim::DerivableParametrizedFunction&lt; F &gt;</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="ad6f5a983e3c1c4f657ef972d8a781a57"></a><!-- doxytag: member="roboptim::ParametrizedFunction::value_type" ref="ad6f5a983e3c1c4f657ef972d8a781a57" args="" -->
+<a class="anchor" id="a0212b30a8be78730debbb9b9bab8526a"></a><!-- doxytag: member="roboptim::OptimizationLogger::problem_t" ref="a0212b30a8be78730debbb9b9bab8526a" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F&gt; </div>
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef F::value_type <a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#ad6f5a983e3c1c4f657ef972d8a781a57">value_type</a></td>
+          <td class="memname">typedef <a class="el" href="a00124.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a> <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a0212b30a8be78730debbb9b9bab8526a">problem_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Import value type. </p>
-
-<p>Reimplemented in <a class="el" href="a00045.html#af6b26e286b887ecfff3dc9c6494adeeb">roboptim::DerivableParametrizedFunction&lt; F &gt;</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a485059f799b3a571c5446677a8655a34"></a><!-- doxytag: member="roboptim::ParametrizedFunction::vector_t" ref="a485059f799b3a571c5446677a8655a34" args="" -->
+<a class="anchor" id="a613629ff4ed7781b6b1ed4024a18fcbf"></a><!-- doxytag: member="roboptim::OptimizationLogger::size_type" ref="a613629ff4ed7781b6b1ed4024a18fcbf" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F&gt; </div>
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef F::vector_t <a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#a485059f799b3a571c5446677a8655a34">vector_t</a></td>
+          <td class="memname">typedef <a class="el" href="a00286.html#gac3031ce28dcf76501a038c37beeb5a0b">solver_t::problem_t::size_type</a> <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a613629ff4ed7781b6b1ed4024a18fcbf">size_type</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Import vector type. </p>
+</div>
+</div>
+<a class="anchor" id="a4bf684ba2187335313cc8382b635a8a9"></a><!-- doxytag: member="roboptim::OptimizationLogger::solver_t" ref="a4bf684ba2187335313cc8382b635a8a9" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef T <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="a00045.html#a5de78c3bd9ce46bd1cda8ec6fd31c958">roboptim::DerivableParametrizedFunction&lt; F &gt;</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a734201c75aebed2ca9afe09d58c0d5cd"></a><!-- doxytag: member="roboptim::OptimizationLogger::solverState_t" ref="a734201c75aebed2ca9afe09d58c0d5cd" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00124.html#ae785fae316ee3993a6e7da0f53b24b5a">solver_t::solverState_t</a> <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a734201c75aebed2ca9afe09d58c0d5cd">solverState_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac695f321fe96a817b5f3afac87153630"></a><!-- doxytag: member="roboptim::OptimizationLogger::traits_t" ref="ac695f321fe96a817b5f3afac87153630" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef solver_t::problem_t::function_t::traits_t <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#ac695f321fe96a817b5f3afac87153630">traits_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa961d523ab2d00705723330fe52870cd"></a><!-- doxytag: member="roboptim::OptimizationLogger::value_type" ref="aa961d523ab2d00705723330fe52870cd" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00286.html#gac4d8783eb3cce4fb35902ef5b91635fd">solver_t::problem_t::value_type</a> <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#aa961d523ab2d00705723330fe52870cd">value_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0f6518966c5ceaba887f2fabe153aa38"></a><!-- doxytag: member="roboptim::OptimizationLogger::vector_t" ref="a0f6518966c5ceaba887f2fabe153aa38" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00124.html#a42813adb1bed4804c8fadf94da6e624b">solver_t::problem_t::vector_t</a> <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a0f6518966c5ceaba887f2fabe153aa38">vector_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a0cb8331de8f0fdc4ad395446b191fc81"></a><!-- doxytag: member="roboptim::ParametrizedFunction::ParametrizedFunction" ref="a0cb8331de8f0fdc4ad395446b191fc81" args="(size_type inputSize, size_type functionInputSize, size_type functionOutputSize)" -->
+<a class="anchor" id="aed34e9f3f55c67a875575d552f69f0e8"></a><!-- doxytag: member="roboptim::OptimizationLogger::OptimizationLogger" ref="aed34e9f3f55c67a875575d552f69f0e8" args="(solver_t &amp;solver, const boost::filesystem::path &amp;path, bool selfRegister=true)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F &gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html">ParametrizedFunction</a> </td>
+          <td class="memname"><a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html">OptimizationLogger</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00099.html#ac88a1cbae53587c432cb346982c9302d">size_type</a>&#160;</td>
-          <td class="paramname"><em>inputSize</em>, </td>
+          <td class="paramtype"><a class="el" href="a00099.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>solver</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00099.html#ac88a1cbae53587c432cb346982c9302d">size_type</a>&#160;</td>
-          <td class="paramname"><em>functionInputSize</em>, </td>
+          <td class="paramtype">const boost::filesystem::path &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00099.html#ac88a1cbae53587c432cb346982c9302d">size_type</a>&#160;</td>
-          <td class="paramname"><em>functionOutputSize</em>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>selfRegister</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">solver</td><td>solver that will be logged. </td></tr>
+    <tr><td class="paramname">path</td><td>path to the log directory. </td></tr>
+    <tr><td class="paramname">selfRegister</td><td>whether the logger will register itself as a callback with the solver. Set this to false if you use it with a multiplexer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>References <a class="el" href="a00267.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a0d794cc294617474adc0a499d42040"></a><!-- doxytag: member="roboptim::OptimizationLogger::~OptimizationLogger" ref="a7a0d794cc294617474adc0a499d42040" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::~<a class="el" href="a00099.html">OptimizationLogger</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Destructor. </p>
+<p>CSV files are written in this destructor. </p>
+
+<p>References <a class="el" href="a00267.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, and <a class="el" href="a00175.html#a7ee55860e481e4ad3b4d61b056ed7d2b">x_</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ae7780abb8e2422fde009f12e39f0c96d"></a><!-- doxytag: member="roboptim::OptimizationLogger::append" ref="ae7780abb8e2422fde009f12e39f0c96d" args="(const std::string &amp;text)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#ae7780abb8e2422fde009f12e39f0c96d">append</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Append extra information to the log file. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>text to append. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>References <a class="el" href="a00267.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c9ba7e965df0cab92f0e7021c38cbd8"></a><!-- doxytag: member="roboptim::OptimizationLogger::callback" ref="a7c9ba7e965df0cab92f0e7021c38cbd8" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00099.html">OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a8a8b67820eca81c2071abab2dc7491ba">callback_t</a> <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a7c9ba7e965df0cab92f0e7021c38cbd8">callback</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the callback function. </p>
+<p>This can be used with a callback multiplexer. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>callback function. </dd></dl>
+
+<p>References <a class="el" href="a00284.html#gac398776c05160b474382281f0501fa7b">roboptim::bind()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e35f515b0affa5541a048c289458e12"></a><!-- doxytag: member="roboptim::OptimizationLogger::callbackCallId" ref="a6e35f515b0affa5541a048c289458e12" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a6e35f515b0affa5541a048c289458e12">callbackCallId</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the callback iteration index. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>callback iteration index. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e7878a17d1c10a9ba477bd27521739d"></a><!-- doxytag: member="roboptim::OptimizationLogger::logPath" ref="a9e7878a17d1c10a9ba477bd27521739d" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const boost::filesystem::path &amp; <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a9e7878a17d1c10a9ba477bd27521739d">logPath</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the path of the log directory. </p>
+<dl class="note"><dt><b>Note:</b></dt><dd>Seeing that the non-const version of path () needs to be protected, we need to rename this function to make it public, since overload resolution takes place before accessibility checks. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>path of the log directory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a046deb8bf8d4d59ac41008bcc88c4052"></a><!-- doxytag: member="roboptim::OptimizationLogger::path" ref="a046deb8bf8d4d59ac41008bcc88c4052" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const boost::filesystem::path &amp; <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a046deb8bf8d4d59ac41008bcc88c4052">path</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the path of the log directory. </p>
+<dl class="note"><dt><b>Note:</b></dt><dd>This function should not be made public since the non-const version is protected. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>path of the log directory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3bf8f33ae661284aac96f17b5bbf659c"></a><!-- doxytag: member="roboptim::OptimizationLogger::path" ref="a3bf8f33ae661284aac96f17b5bbf659c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::filesystem::path &amp; <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a046deb8bf8d4d59ac41008bcc88c4052">path</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the path of the log directory. </p>
+<p>This method is protected since streams would need to be updated, and files that were already written moved to the new location. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>path of the log directory. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a875c3dad03fcf29633a0f0bfa801815f"></a><!-- doxytag: member="roboptim::OptimizationLogger::perIterationCallback" ref="a875c3dad03fcf29633a0f0bfa801815f" args="(const problem_t &amp;pb, const solverState_t &amp;state)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a875c3dad03fcf29633a0f0bfa801815f">perIterationCallback</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00099.html#a0212b30a8be78730debbb9b9bab8526a">problem_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>pb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00099.html#a734201c75aebed2ca9afe09d58c0d5cd">solverState_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -305,192 +558,78 @@ template&lt;typename F &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Concrete class constructor should call this constructor. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">inputSize</td><td>parameter size </td></tr>
-    <tr><td class="paramname">functionInputSize</td><td>inner function argument size </td></tr>
-    <tr><td class="paramname">functionOutputSize</td><td>inner function result size </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
-<a class="anchor" id="af4e8e1ee202ade5a6ec8d66fd497fe29"></a><!-- doxytag: member="roboptim::ParametrizedFunction::~ParametrizedFunction" ref="af4e8e1ee202ade5a6ec8d66fd497fe29" args="()" -->
+<a class="anchor" id="ae377f28f521a02a0d45e1601a1180a36"></a><!-- doxytag: member="roboptim::OptimizationLogger::perIterationCallbackUnsafe" ref="ae377f28f521a02a0d45e1601a1180a36" args="(const typename solver_t::problem_t &amp;pb, const typename solver_t::solverState_t &amp;state)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F&gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::~<a class="el" href="a00099.html">ParametrizedFunction</a> </td>
+          <td class="memname">void <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#ae377f28f521a02a0d45e1601a1180a36">perIterationCallbackUnsafe</a> </td>
+          <td>(</td>
+          <td class="paramtype">const typename <a class="el" href="a00124.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>pb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const typename <a class="el" href="a00124.html#ae785fae316ee3993a6e7da0f53b24b5a">solver_t::solverState_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [protected, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00267.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00267.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, <a class="el" href="a00267.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>, and <a class="el" href="a00175.html#a7ee55860e481e4ad3b4d61b056ed7d2b">x_</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad83299fdcc325b94a904721f4b9fe9c9"></a><!-- doxytag: member="roboptim::OptimizationLogger::solver" ref="ad83299fdcc325b94a904721f4b9fe9c9" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="a00099.html">OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp; <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#ad83299fdcc325b94a904721f4b9fe9c9">solver</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline, protected, virtual]</code></td>
+          <td> const<code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Return the solver associated with the logger. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>solver associated with the logger. </dd></dl>
+
 </div>
 </div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a067147c8d9a6cfe99f46820a41d08aeb"></a><!-- doxytag: member="roboptim::ParametrizedFunction::functionInputSize" ref="a067147c8d9a6cfe99f46820a41d08aeb" args="() const " -->
+<a class="anchor" id="a7d655721636abb6a57d0f07a791f8e8e"></a><!-- doxytag: member="roboptim::OptimizationLogger::solver" ref="a7d655721636abb6a57d0f07a791f8e8e" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F &gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00099.html">ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#ac88a1cbae53587c432cb346982c9302d">size_type</a> <a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#a067147c8d9a6cfe99f46820a41d08aeb">functionInputSize</a> </td>
+          <td class="memname"><a class="el" href="a00099.html">OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp; <a class="el" href="a00099.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00099.html#ad83299fdcc325b94a904721f4b9fe9c9">solver</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Return the function's input size (i.e. </p>
-<p>argument's vector size).</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>input size </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="af15dfa5e7e9e13e7f5d4720091a7d28f"></a><!-- doxytag: member="roboptim::ParametrizedFunction::functionOutputSize" ref="af15dfa5e7e9e13e7f5d4720091a7d28f" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00099.html">ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#ac88a1cbae53587c432cb346982c9302d">size_type</a> <a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#af15dfa5e7e9e13e7f5d4720091a7d28f">functionOutputSize</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Return the function's output size (i.e. </p>
-<p>result's vector size).</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>output size </dd></dl>
-
-<p>Referenced by <a class="el" href="a00045.html#a6be4fba122ca755b09ca35534b0e4820">roboptim::DerivableParametrizedFunction&lt; F &gt;::impl_jacobian()</a>, and <a class="el" href="a00045.html#ae4a3296aedba67d66e12bca6c8ed0f1e">roboptim::DerivableParametrizedFunction&lt; F &gt;::jacobianSize()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a51e63e20af1027306aa09b86bb968a7e"></a><!-- doxytag: member="roboptim::ParametrizedFunction::impl_compute" ref="a51e63e20af1027306aa09b86bb968a7e" args="(const_argument_ref argument) const =0" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="a00099.html#a650dd3199ebc63021f83ab30b603d982">result_t</a> <a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#a51e63e20af1027306aa09b86bb968a7e">impl_compute</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00099.html#a5b689ddb53cba72b6fe79c550c3bef3e">const_argument_ref</a>&#160;</td>
-          <td class="paramname"><em>argument</em></td><td>)</td>
-          <td> const<code> [protected, pure virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Function evaluation. </p>
-<p>Evaluate the function, has to be implemented in concrete classes. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00099.html#aa743716ae487e979498571784038240b" title="Evaluate the function at a specified point.">operator()(const_argument_ref) const </a>instead. </dd></dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">argument</td><td>point at which the function will be evaluated </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aa11a87582936a2ce58f853f6ea4541d8"></a><!-- doxytag: member="roboptim::ParametrizedFunction::inputSize" ref="aa11a87582936a2ce58f853f6ea4541d8" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00099.html">ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#ac88a1cbae53587c432cb346982c9302d">size_type</a> <a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#aa11a87582936a2ce58f853f6ea4541d8">inputSize</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Return the input size (i.e. </p>
-<p>argument's vector size).</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>input size </dd></dl>
-
-<p>Referenced by <a class="el" href="a00045.html#a10dc769892383f64ae8076e0781c5cd4">roboptim::DerivableParametrizedFunction&lt; F &gt;::gradient()</a>, <a class="el" href="a00045.html#a313708158dabab24b7d2525a89b2813f">roboptim::DerivableParametrizedFunction&lt; F &gt;::gradientSize()</a>, <a class="el" href="a00045.html#a6be4fba122ca755b09ca35534b0e4820">roboptim::DerivableParametrizedFunction&lt; F &gt;::impl_jacobian()</a>, <a class="el" href="a00045.html#acf03fae161b01bb3389c6b04dee682ef">roboptim::DerivableParametrizedFunction&lt; F &gt;::jacobian()</a>, and <a class="el" href="a00045.html#ae4a3296aedba67d66e12bca6c8ed0f1e">roboptim::DerivableParametrizedFunction&lt; F &gt;::jacobianSize()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa743716ae487e979498571784038240b"></a><!-- doxytag: member="roboptim::ParametrizedFunction::operator()" ref="aa743716ae487e979498571784038240b" args="(const_argument_ref argument) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00099.html">ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#a650dd3199ebc63021f83ab30b603d982">result_t</a> <a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::operator() </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00099.html#a5b689ddb53cba72b6fe79c550c3bef3e">const_argument_ref</a>&#160;</td>
-          <td class="paramname"><em>argument</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Evaluate the function at a specified point. </p>
-<p>The program will abort if the argument does not have the expected size. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">argument</td><td>point at which the function will be evaluated </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>computed result </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a7769a5ffb197cd0009a27c6e12d40888"></a><!-- doxytag: member="roboptim::ParametrizedFunction::print" ref="a7769a5ffb197cd0009a27c6e12d40888" args="(std::ostream &amp;) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::ostream &amp; <a class="el" href="a00099.html">roboptim::ParametrizedFunction</a>&lt; F &gt;::<a class="el" href="a00099.html#a7769a5ffb197cd0009a27c6e12d40888">print</a> </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const<code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Display the function on the specified output stream. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
-
-<p>Reimplemented in <a class="el" href="a00045.html#acdee3d7760065fae1f8a948c5fdba03b">roboptim::DerivableParametrizedFunction&lt; F &gt;</a>.</p>
+<p>Return the solver associated with the logger. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>solver associated with the logger. </dd></dl>
 
 </div>
 </div>
@@ -512,7 +651,7 @@ template&lt;typename F &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00257.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00099.html">ParametrizedFunction</a>      </li>
+      <li class="navelem"><a class="el" href="a00267.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00099.html">OptimizationLogger</a>      </li>
 </body>
 </html>

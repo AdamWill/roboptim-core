@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt; Struct Template Reference</title>
+<title>roboptim::StateParameter&lt; F &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,72 +63,86 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt; Struct Template Reference</div>  </div>
+<div class="title">roboptim::StateParameter&lt; F &gt; Struct Template Reference<div class="ingroups"><a class="el" href="a00286.html">Optimization problems</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::detail::ProductDifferentiation::Types" -->
-<p>Some useful types for product differentiation.  
+<!-- doxytag: class="roboptim::StateParameter" -->
+<p><a class="el" href="a00124.html" title="Solver for a specific problem class.">Solver</a> state parameters type.  
  <a href="a00130.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/operator/product.hxx&gt;</code></p>
+<p><code>#include &lt;roboptim/core/solver-state.hh&gt;</code></p>
 
-<p><a href="a00368.html">List of all members.</a></p>
+<p><a href="a00350.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::mpl::and_<br class="typebreak"/>
-&lt; boost::is_same&lt; typename <br class="typebreak"/>
-U::traits_t, <a class="el" href="a00057.html">EigenMatrixDense</a> &gt;<br class="typebreak"/>
-, boost::is_same&lt; typename <br class="typebreak"/>
-V::traits_t, <a class="el" href="a00057.html">EigenMatrixDense</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a274b7e2e4294839941f34eeda3321169">fullDense_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00108.html">Product</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a66d1f3a83ef661ffb621f5c944b6cbf7">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a66d1f3a83ef661ffb621f5c944b6cbf7">size_type</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00108.html">Product</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a994f3d3e48ffc911b40f9a7e28979692">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a994f3d3e48ffc911b40f9a7e28979692">value_type</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef U::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a1c1fc587a3b258bbcbbbcb87f16f9138">vectorU_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef V::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#add12a07c744cc581841ca5703404f958">vectorV_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef U::vector_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ab787576aa325608ccfcf9bacd712c995">vectorU_ref</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef V::vector_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a91f72f387d1fe6e6315438f24058a6ab">vectorV_ref</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef U::rowVector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a7bcd2f6382511c740be6a5e0e30f8bec">rowVectorU_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef V::rowVector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a5f1b79a77a187a85d6811138b4882d9d">rowVectorV_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef U::rowVector_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a3e2cc32b0a282edb16ecef36f6c1c448">rowVectorU_ref</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef V::rowVector_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ab121a6c0eb355186b35d0799ceec48fb">rowVectorV_ref</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef U::gradient_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#af31cbe6ad6b4decc7f93f05b96758df4">gradientU_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef V::gradient_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a22311a22a417e5cfb32bbaf1c201fba4">gradientV_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00108.html">Product</a>&lt; U, V &gt;::<a class="el" href="a00130.html#ac1d10d2e062c9df230d2e824f21ac055">gradient_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ac1d10d2e062c9df230d2e824f21ac055">gradient_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef U::gradient_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a1477f94f1ae327bdad97d63112552476">gradientU_ref</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef V::gradient_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#af005feb543fb95ab4d5aab6fac059c7a">gradientV_ref</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00108.html">Product</a>&lt; U, V &gt;<br class="typebreak"/>
-::<a class="el" href="a00130.html#a3a3547a08d34aa4772b152d32753a636">gradient_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a3a3547a08d34aa4772b152d32753a636">gradient_ref</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef U::jacobian_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#af19873151b60ab357dd7ffc9c4fee909">jacobianU_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef V::jacobian_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a9ea41e92078c1b800662fc5e3c963a1f">jacobianV_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00108.html">Product</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a47913e4c9fa621dd074a8297546055db">jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a47913e4c9fa621dd074a8297546055db">jacobian_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef U::jacobian_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#abb117c79c6f093a3d9baea1465aa30c0">jacobianU_ref</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef V::jacobian_ref&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a861119dc0ff48bd33c1a3fa1ad3a9ce4">jacobianV_ref</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00108.html">Product</a>&lt; U, V &gt;<br class="typebreak"/>
-::<a class="el" href="a00130.html#a59f2faa18234a91e2b2802b2c1c33551">jacobian_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a59f2faa18234a91e2b2802b2c1c33551">jacobian_ref</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef F::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#af38870c17e9386f3aa40a15bf44e9467">value_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef F::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ab55b90cb13220e1594123938dbfce8d4">vector_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::variant<br class="typebreak"/>
+&lt; <a class="el" href="a00130.html#af38870c17e9386f3aa40a15bf44e9467">value_type</a>, <a class="el" href="a00130.html#ab55b90cb13220e1594123938dbfce8d4">vector_t</a>, int, <br class="typebreak"/>
+std::string, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a50eb5a3c9554f3b004c82a3591481e63">stateParameterValues_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allowed types for parameters:  <a href="#a50eb5a3c9554f3b004c82a3591481e63"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#ad24a32a783f49685457f2de5c5207d27">print</a> (std::ostream &amp;) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the solver parameter on the specified output stream.  <a href="#ad24a32a783f49685457f2de5c5207d27"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#abc168c4019e42e7ff29d6dc6a9ed382b">~StateParameter</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor.  <a href="#abc168c4019e42e7ff29d6dc6a9ed382b"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a6b8e48f9075e7c5f53c345c0bbff8c1f">description</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00100.html" title="Solver parameter type.">Parameter</a> description (for humans).  <a href="#a6b8e48f9075e7c5f53c345c0bbff8c1f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00130.html#a50eb5a3c9554f3b004c82a3591481e63">stateParameterValues_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html#a6ee3c1c57d9a56520f246ee084d91686">value</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Value.  <a href="#a6ee3c1c57d9a56520f246ee084d91686"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename U, typename V&gt;<br/>
-struct roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt;</h3>
+<div class="textblock"><h3>template&lt;typename F&gt;<br/>
+struct roboptim::StateParameter&lt; F &gt;</h3>
 
-<p>Some useful types for product differentiation. </p>
+<p><a class="el" href="a00124.html" title="Solver for a specific problem class.">Solver</a> state parameters type. </p>
 <dl class=""><dt><b>Template Parameters:</b></dt><dd>
   <table class="">
-    <tr><td class="paramname">U</td><td>left function. </td></tr>
-    <tr><td class="paramname">V</td><td>right function. </td></tr>
+    <tr><td class="paramname">F</td><td>function type. </td></tr>
   </table>
   </dd>
 </dl>
 </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a274b7e2e4294839941f34eeda3321169"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::fullDense_t" ref="a274b7e2e4294839941f34eeda3321169" args="" -->
+<a class="anchor" id="a50eb5a3c9554f3b004c82a3591481e63"></a><!-- doxytag: member="roboptim::StateParameter::stateParameterValues_t" ref="a50eb5a3c9554f3b004c82a3591481e63" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
+template&lt;typename F&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::mpl::and_&lt; boost::is_same&lt;typename U::traits_t, <a class="el" href="a00057.html">EigenMatrixDense</a>&gt;, boost::is_same&lt;typename V::traits_t, <a class="el" href="a00057.html">EigenMatrixDense</a>&gt; &gt; <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a274b7e2e4294839941f34eeda3321169">fullDense_t</a></td>
+          <td class="memname">typedef boost::variant&lt;<a class="el" href="a00130.html#af38870c17e9386f3aa40a15bf44e9467">value_type</a>, <a class="el" href="a00130.html#ab55b90cb13220e1594123938dbfce8d4">vector_t</a>, int, std::string, bool&gt; <a class="el" href="a00130.html">roboptim::StateParameter</a>&lt; F &gt;::<a class="el" href="a00130.html#a50eb5a3c9554f3b004c82a3591481e63">stateParameterValues_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Allowed types for parameters: </p>
+<ul>
+<li>value (e.g. constraint violation)</li>
+<li>vector (e.g. current x)</li>
+<li>integer (e.g. current iteration)</li>
+<li>string (e.g. warning message from the solver)</li>
+<li>bool (e.g. whether to stop the optimization) </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="af38870c17e9386f3aa40a15bf44e9467"></a><!-- doxytag: member="roboptim::StateParameter::value_type" ref="af38870c17e9386f3aa40a15bf44e9467" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef F::value_type <a class="el" href="a00130.html">roboptim::StateParameter</a>&lt; F &gt;::<a class="el" href="a00130.html#af38870c17e9386f3aa40a15bf44e9467">value_type</a></td>
         </tr>
       </table>
 </div>
@@ -136,14 +150,14 @@ template&lt;typename U, typename V&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3a3547a08d34aa4772b152d32753a636"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::gradient_ref" ref="a3a3547a08d34aa4772b152d32753a636" args="" -->
+<a class="anchor" id="ab55b90cb13220e1594123938dbfce8d4"></a><!-- doxytag: member="roboptim::StateParameter::vector_t" ref="ab55b90cb13220e1594123938dbfce8d4" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
+template&lt;typename F&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00108.html">Product</a>&lt;U,V&gt;::<a class="el" href="a00130.html#a3a3547a08d34aa4772b152d32753a636">gradient_ref</a> <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a3a3547a08d34aa4772b152d32753a636">gradient_ref</a></td>
+          <td class="memname">typedef F::vector_t <a class="el" href="a00130.html">roboptim::StateParameter</a>&lt; F &gt;::<a class="el" href="a00130.html#ab55b90cb13220e1594123938dbfce8d4">vector_t</a></td>
         </tr>
       </table>
 </div>
@@ -151,318 +165,88 @@ template&lt;typename U, typename V&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac1d10d2e062c9df230d2e824f21ac055"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::gradient_t" ref="ac1d10d2e062c9df230d2e824f21ac055" args="" -->
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="abc168c4019e42e7ff29d6dc6a9ed382b"></a><!-- doxytag: member="roboptim::StateParameter::~StateParameter" ref="abc168c4019e42e7ff29d6dc6a9ed382b" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
+template&lt;typename F&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00108.html">Product</a>&lt;U,V&gt;::<a class="el" href="a00130.html#ac1d10d2e062c9df230d2e824f21ac055">gradient_t</a> <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#ac1d10d2e062c9df230d2e824f21ac055">gradient_t</a></td>
+          <td class="memname">virtual <a class="el" href="a00130.html">roboptim::StateParameter</a>&lt; F &gt;::~<a class="el" href="a00130.html">StateParameter</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Virtual destructor. </p>
+
 </div>
 </div>
-<a class="anchor" id="a1477f94f1ae327bdad97d63112552476"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::gradientU_ref" ref="a1477f94f1ae327bdad97d63112552476" args="" -->
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ad24a32a783f49685457f2de5c5207d27"></a><!-- doxytag: member="roboptim::StateParameter::print" ref="ad24a32a783f49685457f2de5c5207d27" args="(std::ostream &amp;) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
+template&lt;typename F &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef U::gradient_ref <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a1477f94f1ae327bdad97d63112552476">gradientU_ref</a></td>
+          <td class="memname">std::ostream &amp; <a class="el" href="a00130.html">roboptim::StateParameter</a>&lt; F &gt;::<a class="el" href="a00130.html#ad24a32a783f49685457f2de5c5207d27">print</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p>Display the solver parameter on the specified output stream. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
+
 </div>
 </div>
-<a class="anchor" id="af31cbe6ad6b4decc7f93f05b96758df4"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::gradientU_t" ref="af31cbe6ad6b4decc7f93f05b96758df4" args="" -->
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a6b8e48f9075e7c5f53c345c0bbff8c1f"></a><!-- doxytag: member="roboptim::StateParameter::description" ref="a6b8e48f9075e7c5f53c345c0bbff8c1f" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
+template&lt;typename F&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef U::gradient_t <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#af31cbe6ad6b4decc7f93f05b96758df4">gradientU_t</a></td>
+          <td class="memname">std::string <a class="el" href="a00130.html">roboptim::StateParameter</a>&lt; F &gt;::<a class="el" href="a00130.html#a6b8e48f9075e7c5f53c345c0bbff8c1f">description</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
+<p><a class="el" href="a00100.html" title="Solver parameter type.">Parameter</a> description (for humans). </p>
+
 </div>
 </div>
-<a class="anchor" id="af005feb543fb95ab4d5aab6fac059c7a"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::gradientV_ref" ref="af005feb543fb95ab4d5aab6fac059c7a" args="" -->
+<a class="anchor" id="a6ee3c1c57d9a56520f246ee084d91686"></a><!-- doxytag: member="roboptim::StateParameter::value" ref="a6ee3c1c57d9a56520f246ee084d91686" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
+template&lt;typename F&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef V::gradient_ref <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#af005feb543fb95ab4d5aab6fac059c7a">gradientV_ref</a></td>
+          <td class="memname"><a class="el" href="a00130.html#a50eb5a3c9554f3b004c82a3591481e63">stateParameterValues_t</a> <a class="el" href="a00130.html">roboptim::StateParameter</a>&lt; F &gt;::<a class="el" href="a00130.html#a6ee3c1c57d9a56520f246ee084d91686">value</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a22311a22a417e5cfb32bbaf1c201fba4"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::gradientV_t" ref="a22311a22a417e5cfb32bbaf1c201fba4" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef V::gradient_t <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a22311a22a417e5cfb32bbaf1c201fba4">gradientV_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a59f2faa18234a91e2b2802b2c1c33551"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::jacobian_ref" ref="a59f2faa18234a91e2b2802b2c1c33551" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00108.html">Product</a>&lt;U,V&gt;::<a class="el" href="a00130.html#a59f2faa18234a91e2b2802b2c1c33551">jacobian_ref</a> <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a59f2faa18234a91e2b2802b2c1c33551">jacobian_ref</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a47913e4c9fa621dd074a8297546055db"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::jacobian_t" ref="a47913e4c9fa621dd074a8297546055db" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00108.html">Product</a>&lt;U,V&gt;::<a class="el" href="a00130.html#a47913e4c9fa621dd074a8297546055db">jacobian_t</a> <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a47913e4c9fa621dd074a8297546055db">jacobian_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abb117c79c6f093a3d9baea1465aa30c0"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::jacobianU_ref" ref="abb117c79c6f093a3d9baea1465aa30c0" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef U::jacobian_ref <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#abb117c79c6f093a3d9baea1465aa30c0">jacobianU_ref</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af19873151b60ab357dd7ffc9c4fee909"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::jacobianU_t" ref="af19873151b60ab357dd7ffc9c4fee909" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef U::jacobian_t <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#af19873151b60ab357dd7ffc9c4fee909">jacobianU_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a861119dc0ff48bd33c1a3fa1ad3a9ce4"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::jacobianV_ref" ref="a861119dc0ff48bd33c1a3fa1ad3a9ce4" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef V::jacobian_ref <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a861119dc0ff48bd33c1a3fa1ad3a9ce4">jacobianV_ref</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9ea41e92078c1b800662fc5e3c963a1f"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::jacobianV_t" ref="a9ea41e92078c1b800662fc5e3c963a1f" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef V::jacobian_t <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a9ea41e92078c1b800662fc5e3c963a1f">jacobianV_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3e2cc32b0a282edb16ecef36f6c1c448"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::rowVectorU_ref" ref="a3e2cc32b0a282edb16ecef36f6c1c448" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef U::rowVector_ref <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a3e2cc32b0a282edb16ecef36f6c1c448">rowVectorU_ref</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7bcd2f6382511c740be6a5e0e30f8bec"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::rowVectorU_t" ref="a7bcd2f6382511c740be6a5e0e30f8bec" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef U::rowVector_t <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a7bcd2f6382511c740be6a5e0e30f8bec">rowVectorU_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab121a6c0eb355186b35d0799ceec48fb"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::rowVectorV_ref" ref="ab121a6c0eb355186b35d0799ceec48fb" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef V::rowVector_ref <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#ab121a6c0eb355186b35d0799ceec48fb">rowVectorV_ref</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a5f1b79a77a187a85d6811138b4882d9d"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::rowVectorV_t" ref="a5f1b79a77a187a85d6811138b4882d9d" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef V::rowVector_t <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a5f1b79a77a187a85d6811138b4882d9d">rowVectorV_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a66d1f3a83ef661ffb621f5c944b6cbf7"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::size_type" ref="a66d1f3a83ef661ffb621f5c944b6cbf7" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00108.html">Product</a>&lt;U,V&gt;::<a class="el" href="a00130.html#a66d1f3a83ef661ffb621f5c944b6cbf7">size_type</a> <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a66d1f3a83ef661ffb621f5c944b6cbf7">size_type</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a994f3d3e48ffc911b40f9a7e28979692"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::value_type" ref="a994f3d3e48ffc911b40f9a7e28979692" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00108.html">Product</a>&lt;U,V&gt;::<a class="el" href="a00130.html#a994f3d3e48ffc911b40f9a7e28979692">value_type</a> <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a994f3d3e48ffc911b40f9a7e28979692">value_type</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab787576aa325608ccfcf9bacd712c995"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::vectorU_ref" ref="ab787576aa325608ccfcf9bacd712c995" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef U::vector_ref <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#ab787576aa325608ccfcf9bacd712c995">vectorU_ref</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1c1fc587a3b258bbcbbbcb87f16f9138"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::vectorU_t" ref="a1c1fc587a3b258bbcbbbcb87f16f9138" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef U::vector_t <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a1c1fc587a3b258bbcbbbcb87f16f9138">vectorU_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a91f72f387d1fe6e6315438f24058a6ab"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::vectorV_ref" ref="a91f72f387d1fe6e6315438f24058a6ab" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef V::vector_ref <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#a91f72f387d1fe6e6315438f24058a6ab">vectorV_ref</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="add12a07c744cc581841ca5703404f958"></a><!-- doxytag: member="roboptim::detail::ProductDifferentiation::Types::vectorV_t" ref="add12a07c744cc581841ca5703404f958" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U, typename V&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef V::vector_t <a class="el" href="a00130.html">roboptim::detail::ProductDifferentiation::Types</a>&lt; U, V &gt;::<a class="el" href="a00130.html#add12a07c744cc581841ca5703404f958">vectorV_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>Value. </p>
 
 </div>
 </div>
@@ -484,9 +268,7 @@ template&lt;typename U, typename V&gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00257.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00263.html">detail</a>      </li>
-      <li class="navelem"><a class="el" href="a00109.html">ProductDifferentiation</a>      </li>
-      <li class="navelem"><a class="el" href="a00130.html">Types</a>      </li>
+      <li class="navelem"><a class="el" href="a00267.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00130.html">StateParameter</a>      </li>
 </body>
 </html>

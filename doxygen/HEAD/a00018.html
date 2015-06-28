@@ -63,18 +63,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>
 Functions which represent different kinds of mathematical functions and their associated features (gradient, hessian, etc.). </li>
 <li>
-A problem class defining a whole optimization problem including some technical details (scales). </li>
+A problem class defining a whole optimization problem including some technical details (scaling). </li>
 <li>
 A solver hierarchy defining solvers that are working on a class of optimizations problem (for instance, a QP solver solves problems with a quadratic objective function and linear constraints). </li>
 </ul>
 <h2><a class="anchor" id="fct"></a>
 The function hierarchy</h2>
 <p>The function hierarchy is an abstract hierarchy which defines <b>meta-functions</b> in the sense that the user has to derive from these classes to define its <b>real</b> function.</p>
-<div class="fragment"><pre class="fragment">   <span class="keyword">struct </span>MyLinearFunction : <span class="keyword">public</span> <a class="code" href="a00257.html#abbf3e635a932ae99934936a092aec72c">LinearFunction</a> {
+<div class="fragment"><pre class="fragment">   <span class="keyword">struct </span>MyLinearFunction : <span class="keyword">public</span> <a class="code" href="a00267.html#abbf3e635a932ae99934936a092aec72c">LinearFunction</a> {
      <span class="comment">// FIXME: some code is missing</span>
    };
 
-   <span class="keyword">struct </span>MyDerivableFunction : <span class="keyword">public</span> <a class="code" href="a00257.html#a3b8400e3e4a5bc0372d283a4db8eb0de" title="Legacy name of TwiceDifferentiableFunction.">DerivableFunction</a> {
+   <span class="keyword">struct </span>MyDerivableFunction : <span class="keyword">public</span> <a class="code" href="a00267.html#a3b8400e3e4a5bc0372d283a4db8eb0de" title="Legacy name of TwiceDifferentiableFunction.">DerivableFunction</a> {
      <span class="comment">// FIXME: some code is missing</span>
    };
    <span class="comment">// etc...</span>
@@ -108,9 +108,9 @@ Bounds on the input arguments. </li>
 <li>
 Bounds on the constraints functions output. </li>
 <li>
-Scales on the input arguments. </li>
+Scaling on the input arguments. </li>
 <li>
-Scales on the constraints functions output. </li>
+Scaling on the constraint functions output. </li>
 </ul>
 <p>The problem class is templated by two parameters: </p>
 <ul>

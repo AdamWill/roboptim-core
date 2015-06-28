@@ -58,22 +58,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-  initNavTree('a00128.html','');
+  initNavTree('a00101.html','');
 </script>
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">roboptim::StateParameter&lt; F &gt; Member List</div>  </div>
+<div class="title">roboptim::ParametrizedFunction&lt; F &gt; Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-This is the complete list of members for <a class="el" href="a00128.html">roboptim::StateParameter&lt; F &gt;</a>, including all inherited members.<table>
-  <tr class="memlist"><td><a class="el" href="a00128.html#a6b8e48f9075e7c5f53c345c0bbff8c1f">description</a></td><td><a class="el" href="a00128.html">roboptim::StateParameter&lt; F &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00128.html#ad24a32a783f49685457f2de5c5207d27">print</a>(std::ostream &amp;) const </td><td><a class="el" href="a00128.html">roboptim::StateParameter&lt; F &gt;</a></td><td><code> [virtual]</code></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00128.html#a50eb5a3c9554f3b004c82a3591481e63">stateParameterValues_t</a> typedef</td><td><a class="el" href="a00128.html">roboptim::StateParameter&lt; F &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00128.html#a6ee3c1c57d9a56520f246ee084d91686">value</a></td><td><a class="el" href="a00128.html">roboptim::StateParameter&lt; F &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00128.html#af38870c17e9386f3aa40a15bf44e9467">value_type</a> typedef</td><td><a class="el" href="a00128.html">roboptim::StateParameter&lt; F &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00128.html#ab55b90cb13220e1594123938dbfce8d4">vector_t</a> typedef</td><td><a class="el" href="a00128.html">roboptim::StateParameter&lt; F &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00128.html#abc168c4019e42e7ff29d6dc6a9ed382b">~StateParameter</a>()</td><td><a class="el" href="a00128.html">roboptim::StateParameter&lt; F &gt;</a></td><td><code> [inline, virtual]</code></td></tr>
+This is the complete list of members for <a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a>, including all inherited members.<table>
+  <tr class="memlist"><td><a class="el" href="a00101.html#af4bb1d815e33a2fbb81165604d48e32a">argument_t</a> typedef</td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00101.html#a5b689ddb53cba72b6fe79c550c3bef3e">const_argument_ref</a> typedef</td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00101.html#a067147c8d9a6cfe99f46820a41d08aeb">functionInputSize</a>() const </td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00101.html#af15dfa5e7e9e13e7f5d4720091a7d28f">functionOutputSize</a>() const </td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00101.html#a51e63e20af1027306aa09b86bb968a7e">impl_compute</a>(const_argument_ref argument) const =0</td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td><code> [protected, pure virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00101.html#aa11a87582936a2ce58f853f6ea4541d8">inputSize</a>() const </td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00101.html#ae1ae1137efff66af2fc84c967a2e64e5">matrix_t</a> typedef</td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00101.html#aa743716ae487e979498571784038240b">operator()</a>(const_argument_ref argument) const </td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00101.html#a0cb8331de8f0fdc4ad395446b191fc81">ParametrizedFunction</a>(size_type inputSize, size_type functionInputSize, size_type functionOutputSize)</td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00101.html#a7769a5ffb197cd0009a27c6e12d40888">print</a>(std::ostream &amp;) const </td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td><code> [virtual]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00101.html#a650dd3199ebc63021f83ab30b603d982">result_t</a> typedef</td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00101.html#ac88a1cbae53587c432cb346982c9302d">size_type</a> typedef</td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00101.html#ad6f5a983e3c1c4f657ef972d8a781a57">value_type</a> typedef</td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00101.html#a485059f799b3a571c5446677a8655a34">vector_t</a> typedef</td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00101.html#af4e8e1ee202ade5a6ec8d66fd497fe29">~ParametrizedFunction</a>()</td><td><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td><code> [inline, protected, virtual]</code></td></tr>
 </table></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"

@@ -1,14 +1,20 @@
 var a00065 =
 [
-    [ "callback_t", "a00065.html#acff89ad608c772f445edb654d4c234c2", null ],
-    [ "parent_t", "a00065.html#a63f3a8b1ebcc44f3655882d84ad9bc76", null ],
-    [ "problem_t", "a00065.html#a6c145f7f2b71a1e7d6c09b7578d03c6a", null ],
-    [ "solverState_t", "a00065.html#a35e2684e79e9e563323ad1ab2e729e82", null ],
-    [ "GenericDummySolverLastState", "a00065.html#a6048ac28ab501a9457b41aba611b2565", null ],
-    [ "~GenericDummySolverLastState", "a00065.html#a4f6039d2238b8461c6b5a94acd62e6ac", null ],
-    [ "callback", "a00065.html#a6a0c6a45d831bb9c967becf970330407", null ],
-    [ "setIterationCallback", "a00065.html#a5ce028c7aae7bbec2264162a79c93619", null ],
-    [ "solve", "a00065.html#a9c572e37e56f4f5e9bf43f57b1803e09", null ],
-    [ "callback_", "a00065.html#ae8a13793b24ec9f3e772b939b2cd695a", null ],
-    [ "solverState_", "a00065.html#a1697fef1f95edda99bc4420e1143350e", null ]
+    [ "jacobianSize_t", "a00065.html#aac13c21f0df1f14ce16286fd81a6643a", null ],
+    [ "GenericDifferentiableFunction", "a00065.html#a5fa47fea06495251f413721483a35dba", null ],
+    [ "gradient", "a00065.html#a03a9c0c4bee28944a49cd508252a9049", null ],
+    [ "gradient", "a00065.html#aa32b7e4ac45ae8bb63afca8fe23eb72e", null ],
+    [ "gradientSize", "a00065.html#a8c3700cd209f38a0079b739a83edbb4a", null ],
+    [ "impl_gradient", "a00065.html#af392bd6266e56fbf8e38c0df16d22224", null ],
+    [ "impl_jacobian", "a00065.html#a1452fef189bb9c7c24acbfe36404d4e5", null ],
+    [ "impl_jacobian", "a00065.html#a69908de96e02e56b0f3332307ed03d94", null ],
+    [ "isValidGradient", "a00065.html#a0a061e75f289dc6c21530bba1f28a82e", null ],
+    [ "isValidJacobian", "a00065.html#af3de7a6e09f0ebf87e9a0e3c5f5d6e18", null ],
+    [ "jacobian", "a00065.html#a77c47b7abb1a80b79afe4aa3ef058f4c", null ],
+    [ "jacobian", "a00065.html#ab42dcb0d900b4f108a0a25eaa1ea1384", null ],
+    [ "jacobianSize", "a00065.html#a9202ded2cd1138fea87965b792b68057", null ],
+    [ "print", "a00065.html#a9c50e545609bd7ace4f2dad69029fac3", null ],
+    [ "ROBOPTIM_FUNCTION_FWD_TYPEDEFS_", "a00065.html#a8e6535968c7ef22e7930b638c5c8a344", null ],
+    [ "ROBOPTIM_GENERATE_TRAITS_REFS_", "a00065.html#aee74c751bb85e5398a89861732a80dc3", null ],
+    [ "ROBOPTIM_GENERATE_TRAITS_REFS_", "a00065.html#a11a8796c62239517682e1eec33d29f2a", null ]
 ];

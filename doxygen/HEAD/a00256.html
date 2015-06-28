@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>utility.hh File Reference</title>
+<title>sum-of-c1-squares.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -62,72 +62,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
-<div class="title">utility.hh File Reference</div>  </div>
+<div class="title">sum-of-c1-squares.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/mpl/assert.hpp&gt;</code><br/>
-<code>#include &lt;boost/mpl/back_inserter.hpp&gt;</code><br/>
-<code>#include &lt;boost/mpl/copy.hpp&gt;</code><br/>
-<code>#include &lt;boost/mpl/count_if.hpp&gt;</code><br/>
-<code>#include &lt;boost/mpl/fold.hpp&gt;</code><br/>
-<code>#include &lt;boost/mpl/greater.hpp&gt;</code><br/>
-<code>#include &lt;boost/mpl/has_xxx.hpp&gt;</code><br/>
-<code>#include &lt;boost/mpl/logical.hpp&gt;</code><br/>
-<code>#include &lt;boost/mpl/transform.hpp&gt;</code><br/>
-<code>#include &lt;boost/mpl/vector.hpp&gt;</code><br/>
-<code>#include &lt;boost/variant.hpp&gt;</code><br/>
-<code>#include &lt;boost/shared_ptr.hpp&gt;</code><br/>
-<code>#include &lt;boost/type_traits/is_base_of.hpp&gt;</code><br/>
-<code>#include &lt;Eigen/Core&gt;</code><br/>
+<div class="textblock"><code>#include &lt;boost/shared_ptr.hpp&gt;</code><br/>
+<code>#include &lt;roboptim/core/config.hh&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00159.html">roboptim/core/differentiable-function.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00176.html">roboptim/core/function.hh</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="a00257.html">roboptim/core/sum-of-c1-squares.hxx</a>&gt;</code><br/>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html">roboptim::detail::add_shared_ptr&lt; CLIST &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a types list into a types list of shared pointers.  <a href="a00020.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00119.html">roboptim::detail::shared_ptr_variant&lt; CLIST &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Boost.Variant of shared pointers from the static constraints types list.  <a href="a00119.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html">roboptim::detail::is_eigen_type&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the type provided is an Eigen type.  <a href="a00084.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00038.html">roboptim::detail::const_eigen_ref&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the type of a const reference to an Eigen matrix, using Eigen's Ref.  <a href="a00038.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00039.html">roboptim::detail::const_ref&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the proper const reference type of a given type.  <a href="a00039.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00115.html">roboptim::detail::row_vector_stride&lt; SO &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the matrix stride type for a row vector, given a matrix storage order.  <a href="a00115.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html">roboptim::detail::list_converter&lt; CLIST &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts CLIST to a boost::mpl::vector to ensure a similar behavior for codes using different random access sequences (vector, list, etc.).  <a href="a00085.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00041.html">roboptim::detail::contains_base_of&lt; Sequence, Type &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a sequence of types contains a base of a given type.  <a href="a00041.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html">roboptim::detail::get_descendant&lt; Type1, Type2 &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the descendant among two relatives.  <a href="a00079.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00033.html">roboptim::detail::check_constraint_type&lt; C, CLIST &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether C is a valid constraint type in CLIST.  <a href="a00033.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html">roboptim::detail::cast_constraint_type&lt; C, CLIST &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the constraint type of CLIST that best match C.  <a href="a00031.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00052.html">roboptim::detail::derives_from_function&lt; F &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the function types derives from Function or SparseFunction.  <a href="a00052.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html">roboptim::detail::derives_from_differentiable_function&lt; F &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the function type derives from DifferentiableFunction or DifferentiableSparseFunction.  <a href="a00051.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html">roboptim::detail::derives_from_twice_differentiable_function&lt; F &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the function type derives from TwiceDifferentiableFunction or TwiceDifferentiableSparseFunction.  <a href="a00054.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html">roboptim::detail::derives_from_ntimes_derivable_function&lt; F &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the function type derives from <a class="el" href="a00095.html" title="Define a  function, derivable n times ( ).">NTimesDerivableFunction</a>.  <a href="a00053.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html">roboptim::detail::list_derives_from_function&lt; CLIST &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether all the constraints derive from Function or SparseFunction.  <a href="a00086.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html">roboptim::detail::is_compatible_list&lt; CLIST_, CLIST &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that CLIST_ is a subset of CLIST (i.e.  <a href="a00083.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00042.html">roboptim::detail::ConvertConstraint&lt; CLIST &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a constraint to a proper type.  <a href="a00042.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00043.html">roboptim::detail::ConvertConstraintVariant&lt; P &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a constraint from a Boost.Variant to an adequate constraint type depending on the problem's constraints type.  <a href="a00043.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html">roboptim::GenericSumOfC1Squares&lt; T &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic sum of the squares of differentiable functions.  <a href="a00078.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00257.html">roboptim</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solver-related classes. </p>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html">roboptim</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>defined(EIGEN_RUNTIME_NO_MALLOC) &amp;&amp; !defined(ROBOPTIM_DO_NOT_CHECK_ALLOCATION) </p>
 <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00263.html">roboptim::detail</a></td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef GenericSumOfC1Squares<br class="typebreak"/>
+&lt; EigenMatrixDense &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00282.html#gafefbc90e9cc685f442eb32986ceca7ca">roboptim::SumOfC1Squares</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sum of the squares of dense differentiable functions.  <a href="a00282.html#gafefbc90e9cc685f442eb32986ceca7ca"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef GenericSumOfC1Squares<br class="typebreak"/>
+&lt; EigenMatrixSparse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00282.html#gaeaea633c6cce7cf8a129a9ec1120a57b">roboptim::SumOfC1SquaresSparse</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sum of the squares of sparse differentiable functions.  <a href="a00282.html#gaeaea633c6cce7cf8a129a9ec1120a57b"></a><br/></td></tr>
 </table>
 </div><!-- contents -->
 </div>
@@ -147,6 +110,6 @@ Namespaces</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00256.html">utility.hh</a>      </li>
+      <li class="navelem"><a class="el" href="a00256.html">sum-of-c1-squares.hh</a>      </li>
 </body>
 </html>

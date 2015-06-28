@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::detail::cast_constraint_type&lt; C, CLIST &gt; Struct Template Reference</title>
+<title>roboptim::detail::CachedFunctionTypes&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,55 +63,180 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::detail::cast_constraint_type&lt; C, CLIST &gt; Struct Template Reference</div>  </div>
+<div class="title">roboptim::detail::CachedFunctionTypes&lt; T &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::detail::cast_constraint_type" -->
-<p>Get the constraint type of CLIST that best match C.  
- <a href="a00031.html#details">More...</a></p>
+<!-- doxytag: class="roboptim::detail::CachedFunctionTypes" -->
+<p><code>#include &lt;roboptim/core/decorator/cached-function.hxx&gt;</code></p>
 
-<p><code>#include &lt;roboptim/core/detail/utility.hh&gt;</code></p>
-
-<p><a href="a00362.html">List of all members.</a></p>
+<p><a href="a00358.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::mpl::fold<br class="typebreak"/>
-&lt; CLIST, void, boost::mpl::if_<br class="typebreak"/>
-&lt; boost::is_base_of<br class="typebreak"/>
-&lt; boost::mpl::_2, C &gt;<br class="typebreak"/>
-, boost::mpl::if_<br class="typebreak"/>
-&lt; boost::is_void<br class="typebreak"/>
-&lt; boost::mpl::_1 &gt;<br class="typebreak"/>
-, boost::mpl::_2, <br class="typebreak"/>
-<a class="el" href="a00079.html">detail::get_descendant</a><br class="typebreak"/>
-&lt; boost::mpl::_1, <br class="typebreak"/>
-boost::mpl::_2 &gt;<br class="typebreak"/>
- &gt;, boost::mpl::_1 &gt; &gt;::<a class="el" href="a00031.html#aa74344501f635b1556f04facb8d3e249">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#aa74344501f635b1556f04facb8d3e249">type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef T::traits_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a178a476da351532ad95491b1843967cb">traits_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00030.html">CachedFunction</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#ad418dd28ea83cb3162e0fc4e64de3123">cachedFunction_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::enable_if<br class="typebreak"/>
+&lt; <a class="el" href="a00052.html">detail::derives_from_differentiable_function</a><br class="typebreak"/>
+&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a69ba22478fb7fc428a4b724d1230ffe0">isDifferentiable_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::disable_if<br class="typebreak"/>
+&lt; <a class="el" href="a00052.html">detail::derives_from_differentiable_function</a><br class="typebreak"/>
+&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#adb5058dc4f0ec1481df1c04fbcd91a81">isNotDifferentiable_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::enable_if<br class="typebreak"/>
+&lt; <a class="el" href="a00055.html">detail::derives_from_twice_differentiable_function</a><br class="typebreak"/>
+&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a442a32d612feb3f14ef45ee52244ffda">isTwiceDifferentiable_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::disable_if<br class="typebreak"/>
+&lt; <a class="el" href="a00055.html">detail::derives_from_twice_differentiable_function</a><br class="typebreak"/>
+&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a42b9e6a5c248c8507fb4a26ead365dc9">isNotTwiceDifferentiable_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::enable_if<br class="typebreak"/>
+&lt; <a class="el" href="a00055.html">detail::derives_from_twice_differentiable_function</a><br class="typebreak"/>
+&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#ab74d7b014a0941d6ea4ca8f40ad7eb17">isNTimesDerivable_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::disable_if<br class="typebreak"/>
+&lt; <a class="el" href="a00054.html">detail::derives_from_ntimes_derivable_function</a><br class="typebreak"/>
+&lt; T &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a33bc2fae9ae427a3fcca9322b94abf39">isNotNTimesDerivable_t</a></td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a8e344b4a090132dccf63aa26829b3412">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00079.html">GenericTwiceDifferentiableFunction</a>&lt; <a class="el" href="a00031.html#a178a476da351532ad95491b1843967cb">traits_t</a> &gt;)</td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename C, typename CLIST&gt;<br/>
-struct roboptim::detail::cast_constraint_type&lt; C, CLIST &gt;</h3>
+<h3>template&lt;typename T&gt;<br/>
+ struct roboptim::detail::CachedFunctionTypes&lt; T &gt;</h3>
 
-<p>Get the constraint type of CLIST that best match C. </p>
-<dl class=""><dt><b>Template Parameters:</b></dt><dd>
-  <table class="">
-    <tr><td class="paramname">C</td><td>constraint type. </td></tr>
-    <tr><td class="paramname">CLIST</td><td>a vector of constraint types. </td></tr>
-  </table>
-  </dd>
-</dl>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="aa74344501f635b1556f04facb8d3e249"></a><!-- doxytag: member="roboptim::detail::cast_constraint_type::type" ref="aa74344501f635b1556f04facb8d3e249" args="" -->
+<hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="ad418dd28ea83cb3162e0fc4e64de3123"></a><!-- doxytag: member="roboptim::detail::CachedFunctionTypes::cachedFunction_t" ref="ad418dd28ea83cb3162e0fc4e64de3123" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename C, typename CLIST&gt; </div>
+template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::mpl::fold&lt;CLIST, void, boost::mpl::if_&lt;boost::is_base_of&lt;boost::mpl::_2, C&gt;, boost::mpl::if_&lt;boost::is_void&lt;boost::mpl::_1&gt;, boost::mpl::_2, <a class="el" href="a00079.html">detail::get_descendant</a>&lt;boost::mpl::_1, boost::mpl::_2&gt; &gt;, boost::mpl::_1&gt; &gt;::<a class="el" href="a00031.html#aa74344501f635b1556f04facb8d3e249">type</a> <a class="el" href="a00031.html">roboptim::detail::cast_constraint_type</a>&lt; C, CLIST &gt;::<a class="el" href="a00031.html#aa74344501f635b1556f04facb8d3e249">type</a></td>
+          <td class="memname">typedef <a class="el" href="a00030.html">CachedFunction</a>&lt;T&gt; <a class="el" href="a00031.html">roboptim::detail::CachedFunctionTypes</a>&lt; T &gt;::<a class="el" href="a00031.html#ad418dd28ea83cb3162e0fc4e64de3123">cachedFunction_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a69ba22478fb7fc428a4b724d1230ffe0"></a><!-- doxytag: member="roboptim::detail::CachedFunctionTypes::isDifferentiable_t" ref="a69ba22478fb7fc428a4b724d1230ffe0" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::enable_if&lt;detail:: <a class="el" href="a00052.html">derives_from_differentiable_function</a>&lt;T&gt; &gt; <a class="el" href="a00031.html">roboptim::detail::CachedFunctionTypes</a>&lt; T &gt;::<a class="el" href="a00031.html#a69ba22478fb7fc428a4b724d1230ffe0">isDifferentiable_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adb5058dc4f0ec1481df1c04fbcd91a81"></a><!-- doxytag: member="roboptim::detail::CachedFunctionTypes::isNotDifferentiable_t" ref="adb5058dc4f0ec1481df1c04fbcd91a81" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::disable_if&lt;detail:: <a class="el" href="a00052.html">derives_from_differentiable_function</a>&lt;T&gt; &gt; <a class="el" href="a00031.html">roboptim::detail::CachedFunctionTypes</a>&lt; T &gt;::<a class="el" href="a00031.html#adb5058dc4f0ec1481df1c04fbcd91a81">isNotDifferentiable_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a33bc2fae9ae427a3fcca9322b94abf39"></a><!-- doxytag: member="roboptim::detail::CachedFunctionTypes::isNotNTimesDerivable_t" ref="a33bc2fae9ae427a3fcca9322b94abf39" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::disable_if&lt;detail:: <a class="el" href="a00054.html">derives_from_ntimes_derivable_function</a>&lt;T&gt; &gt; <a class="el" href="a00031.html">roboptim::detail::CachedFunctionTypes</a>&lt; T &gt;::<a class="el" href="a00031.html#a33bc2fae9ae427a3fcca9322b94abf39">isNotNTimesDerivable_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42b9e6a5c248c8507fb4a26ead365dc9"></a><!-- doxytag: member="roboptim::detail::CachedFunctionTypes::isNotTwiceDifferentiable_t" ref="a42b9e6a5c248c8507fb4a26ead365dc9" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::disable_if&lt;detail:: <a class="el" href="a00055.html">derives_from_twice_differentiable_function</a>&lt;T&gt; &gt; <a class="el" href="a00031.html">roboptim::detail::CachedFunctionTypes</a>&lt; T &gt;::<a class="el" href="a00031.html#a42b9e6a5c248c8507fb4a26ead365dc9">isNotTwiceDifferentiable_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab74d7b014a0941d6ea4ca8f40ad7eb17"></a><!-- doxytag: member="roboptim::detail::CachedFunctionTypes::isNTimesDerivable_t" ref="ab74d7b014a0941d6ea4ca8f40ad7eb17" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::enable_if&lt;detail:: <a class="el" href="a00055.html">derives_from_twice_differentiable_function</a>&lt;T&gt; &gt; <a class="el" href="a00031.html">roboptim::detail::CachedFunctionTypes</a>&lt; T &gt;::<a class="el" href="a00031.html#ab74d7b014a0941d6ea4ca8f40ad7eb17">isNTimesDerivable_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a442a32d612feb3f14ef45ee52244ffda"></a><!-- doxytag: member="roboptim::detail::CachedFunctionTypes::isTwiceDifferentiable_t" ref="a442a32d612feb3f14ef45ee52244ffda" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef boost::enable_if&lt;detail:: <a class="el" href="a00055.html">derives_from_twice_differentiable_function</a>&lt;T&gt; &gt; <a class="el" href="a00031.html">roboptim::detail::CachedFunctionTypes</a>&lt; T &gt;::<a class="el" href="a00031.html#a442a32d612feb3f14ef45ee52244ffda">isTwiceDifferentiable_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a178a476da351532ad95491b1843967cb"></a><!-- doxytag: member="roboptim::detail::CachedFunctionTypes::traits_t" ref="a178a476da351532ad95491b1843967cb" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef T::traits_t <a class="el" href="a00031.html">roboptim::detail::CachedFunctionTypes</a>&lt; T &gt;::<a class="el" href="a00031.html#a178a476da351532ad95491b1843967cb">traits_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a8e344b4a090132dccf63aa26829b3412"></a><!-- doxytag: member="roboptim::detail::CachedFunctionTypes::ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="a8e344b4a090132dccf63aa26829b3412" args="(GenericTwiceDifferentiableFunction&lt; traits_t &gt;)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00031.html">roboptim::detail::CachedFunctionTypes</a>&lt; T &gt;::<a class="el" href="a00031.html#a8e344b4a090132dccf63aa26829b3412">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00079.html">GenericTwiceDifferentiableFunction</a>&lt; <a class="el" href="a00031.html#a178a476da351532ad95491b1843967cb">traits_t</a> &gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -137,8 +262,8 @@ template&lt;typename C, typename CLIST&gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00257.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00263.html">detail</a>      </li>
-      <li class="navelem"><a class="el" href="a00031.html">cast_constraint_type</a>      </li>
+      <li class="navelem"><a class="el" href="a00267.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00273.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00031.html">CachedFunctionTypes</a>      </li>
 </body>
 </html>

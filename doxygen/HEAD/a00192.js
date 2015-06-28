@@ -1,10 +1,10 @@
 var a00192 =
 [
-    [ "MATPLOTLIB_UNARY_COMMAND", "a00192.html#ada98b8f63c02be17bdbf654bc529d0bd", null ],
-    [ "MATPLOTLIB_UNARY_COMMAND_ARG", "a00192.html#adcd6527d205fadf14757084bb7902f82", null ],
-    [ "MATPLOTLIB_UNARY_COMMAND_VAR", "a00192.html#ae91cb430ac819bcd54672228ac6094cd", null ],
-    [ "comment", "a00277.html#ga1263290fead3bbefebb52ad9acba0236", null ],
-    [ "import", "a00277.html#ga39b68128dabb457499f493b7f17d3413", null ],
-    [ "import", "a00277.html#ga7f5c136cb79bd9bb01b3681e9f3b693e", null ],
-    [ "set", "a00277.html#ga7cdf3f4f9a0ad3a8a3428375389c1332", null ]
+    [ "decendl", "a00267.html#a40c2b30f2b9839b3f1f16f3e1bcf8769", null ],
+    [ "decindent", "a00267.html#a5a9d36182ac616874a038fd4217f0a9c", null ],
+    [ "iendl", "a00267.html#a27b6e86639bb04ec042979cdaad0a851", null ],
+    [ "incendl", "a00267.html#a522f7549c2f312397403265b950a9144", null ],
+    [ "incindent", "a00267.html#a053552edbb5c42ac287c22175ea43e69", null ],
+    [ "indent", "a00267.html#a2b00a3916f44e9f9d69e4fc157a0da79", null ],
+    [ "resetindent", "a00267.html#a3f228456aacf0bc862482828cbde643b", null ]
 ];

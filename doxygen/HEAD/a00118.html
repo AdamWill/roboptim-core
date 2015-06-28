@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::SelectionById&lt; U &gt; Class Template Reference</title>
+<title>roboptim::Scalar&lt; U &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -66,40 +66,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::SelectionById&lt; U &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00273.html">Function operators</a></div></div>  </div>
+<div class="title">roboptim::Scalar&lt; U &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00284.html">Function operators</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::SelectionById" -->
-<p>Select part of a function.  
+<!-- doxytag: class="roboptim::Scalar" -->
+<p>Multiply by a constant scalar value.  
  <a href="a00118.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/operator/selection-by-id.hh&gt;</code></p>
+<p><code>#include &lt;roboptim/core/operator/scalar.hh&gt;</code></p>
 
-<p><a href="a00324.html">List of all members.</a></p>
+<p><a href="a00334.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
 <a class="el" href="a00021.html">detail::AutopromoteTrait</a>&lt; U &gt;<br class="typebreak"/>
-::T_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a10ceafe26463a6befaf1a83bae6f2ba3">parentType_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr<br class="typebreak"/>
-&lt; <a class="el" href="a00118.html">SelectionById</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a2f296e76debe6a7e703f0a769f5f9129">SelectionByIdShPtr_t</a></td></tr>
+::T_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a7953a20600361495460caa1f213e9011">parentType_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="a00118.html">Scalar</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a20f63dc977977915cfc81b1743bd2416">ScalarShPtr_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a4238e53c744c850cde075fda814a2f26">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00118.html#a10ceafe26463a6befaf1a83bae6f2ba3">parentType_t</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#afed4a5f3312bb43c36cd89e1b24da60e">SelectionById</a> (boost::shared_ptr&lt; U &gt; <a class="el" href="a00118.html#a96d0c5400637449ba56f14e7c25ec69d">origin</a>, std::vector&lt; bool &gt; selector)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a647ad16eec9c7afb716a748c42c1fd1f">~SelectionById</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a96d0c5400637449ba56f14e7c25ec69d">origin</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a3fe469f5a1b03ea25527636b326d85ab">origin</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a9e64ceaf5be532b1d08b43fd48fc1802">impl_compute</a> (result_ref result, const_argument_ref x) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a670b69ecefa042ad5e6e2f14300c3482">impl_gradient</a> (gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a27306334779e090f25bbd7d630418aa8">impl_jacobian</a> (jacobian_ref jacobian, const_argument_ref arg) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#aefa2eb6460580af5ce6ecc78bf0319de">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00118.html#a7953a20600361495460caa1f213e9011">parentType_t</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#ac79b4a6aef381f457296bfdc7f2a3701">Scalar</a> (boost::shared_ptr&lt; U &gt; fct, value_type <a class="el" href="a00284.html#ga6354c8c5e1101410ab5a74b2f6f11cfb">scalar</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a scalar operator.  <a href="#ac79b4a6aef381f457296bfdc7f2a3701"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a50fe6bb5f735657401bafce30044056c">~Scalar</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#ad17cc3b06c7818946a6b94254ffcb1c1">origin</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a4e8961237859adaa361aa9fec0d5057d">origin</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a5b51703743a37256cac90680f2b2360f">impl_compute</a> (result_ref result, const_argument_ref x) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#ae035b79d51ac9930f7c1f8fc44cdc1bd">impl_gradient</a> (gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a2c0c26a9bea4b5a08455521e568f3068">impl_jacobian</a> (jacobian_ref jacobian, const_argument_ref arg) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename U&gt;<br/>
-class roboptim::SelectionById&lt; U &gt;</h3>
+class roboptim::Scalar&lt; U &gt;</h3>
 
-<p>Select part of a function. </p>
+<p>Multiply by a constant scalar value. </p>
 <dl class=""><dt><b>Template Parameters:</b></dt><dd>
   <table class="">
     <tr><td class="paramname">U</td><td>input function type. </td></tr>
@@ -107,14 +107,14 @@ class roboptim::SelectionById&lt; U &gt;</h3>
   </dd>
 </dl>
 </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a10ceafe26463a6befaf1a83bae6f2ba3"></a><!-- doxytag: member="roboptim::SelectionById::parentType_t" ref="a10ceafe26463a6befaf1a83bae6f2ba3" args="" -->
+<a class="anchor" id="a7953a20600361495460caa1f213e9011"></a><!-- doxytag: member="roboptim::Scalar::parentType_t" ref="a7953a20600361495460caa1f213e9011" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00021.html">detail::AutopromoteTrait</a>&lt;U&gt;::T_type <a class="el" href="a00118.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00118.html#a10ceafe26463a6befaf1a83bae6f2ba3">parentType_t</a></td>
+          <td class="memname">typedef <a class="el" href="a00021.html">detail::AutopromoteTrait</a>&lt;U&gt;::T_type <a class="el" href="a00118.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00118.html#a7953a20600361495460caa1f213e9011">parentType_t</a></td>
         </tr>
       </table>
 </div>
@@ -122,14 +122,14 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a2f296e76debe6a7e703f0a769f5f9129"></a><!-- doxytag: member="roboptim::SelectionById::SelectionByIdShPtr_t" ref="a2f296e76debe6a7e703f0a769f5f9129" args="" -->
+<a class="anchor" id="a20f63dc977977915cfc81b1743bd2416"></a><!-- doxytag: member="roboptim::Scalar::ScalarShPtr_t" ref="a20f63dc977977915cfc81b1743bd2416" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="a00118.html">SelectionById</a>&gt; <a class="el" href="a00118.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00118.html#a2f296e76debe6a7e703f0a769f5f9129">SelectionByIdShPtr_t</a></td>
+          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="a00118.html">Scalar</a>&gt; <a class="el" href="a00118.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00118.html#a20f63dc977977915cfc81b1743bd2416">ScalarShPtr_t</a></td>
         </tr>
       </table>
 </div>
@@ -138,23 +138,23 @@ template&lt;typename U &gt; </div>
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="afed4a5f3312bb43c36cd89e1b24da60e"></a><!-- doxytag: member="roboptim::SelectionById::SelectionById" ref="afed4a5f3312bb43c36cd89e1b24da60e" args="(boost::shared_ptr&lt; U &gt; origin, std::vector&lt; bool &gt; selector)" -->
+<a class="anchor" id="ac79b4a6aef381f457296bfdc7f2a3701"></a><!-- doxytag: member="roboptim::Scalar::Scalar" ref="ac79b4a6aef381f457296bfdc7f2a3701" args="(boost::shared_ptr&lt; U &gt; fct, value_type scalar)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00118.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00118.html">SelectionById</a> </td>
+          <td class="memname"><a class="el" href="a00118.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00118.html">Scalar</a> </td>
           <td>(</td>
           <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>origin</em>, </td>
+          <td class="paramname"><em>fct</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>selector</em>&#160;</td>
+          <td class="paramtype">value_type&#160;</td>
+          <td class="paramname"><em>scalar</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -165,18 +165,25 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00169.html#a2ca868887cc5e83d7426dd4e84d046d9">result_</a>.</p>
+<p>Create a scalar operator. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fct</td><td>input function. </td></tr>
+    <tr><td class="paramname">scalar</td><td>scalar value. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a647ad16eec9c7afb716a748c42c1fd1f"></a><!-- doxytag: member="roboptim::SelectionById::~SelectionById" ref="a647ad16eec9c7afb716a748c42c1fd1f" args="()" -->
+<a class="anchor" id="a50fe6bb5f735657401bafce30044056c"></a><!-- doxytag: member="roboptim::Scalar::~Scalar" ref="a50fe6bb5f735657401bafce30044056c" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00118.html">roboptim::SelectionById</a>&lt; U &gt;::~<a class="el" href="a00118.html">SelectionById</a> </td>
+          <td class="memname"><a class="el" href="a00118.html">roboptim::Scalar</a>&lt; U &gt;::~<a class="el" href="a00118.html">Scalar</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -188,14 +195,14 @@ template&lt;typename U &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a9e64ceaf5be532b1d08b43fd48fc1802"></a><!-- doxytag: member="roboptim::SelectionById::impl_compute" ref="a9e64ceaf5be532b1d08b43fd48fc1802" args="(result_ref result, const_argument_ref x) const " -->
+<a class="anchor" id="a5b51703743a37256cac90680f2b2360f"></a><!-- doxytag: member="roboptim::Scalar::impl_compute" ref="a5b51703743a37256cac90680f2b2360f" args="(result_ref result, const_argument_ref x) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00118.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00118.html#a9e64ceaf5be532b1d08b43fd48fc1802">impl_compute</a> </td>
+          <td class="memname">void <a class="el" href="a00118.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00118.html#a5b51703743a37256cac90680f2b2360f">impl_compute</a> </td>
           <td>(</td>
           <td class="paramtype">result_ref&#160;</td>
           <td class="paramname"><em>result</em>, </td>
@@ -215,18 +222,16 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00169.html#a2ca868887cc5e83d7426dd4e84d046d9">result_</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a670b69ecefa042ad5e6e2f14300c3482"></a><!-- doxytag: member="roboptim::SelectionById::impl_gradient" ref="a670b69ecefa042ad5e6e2f14300c3482" args="(gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const " -->
+<a class="anchor" id="ae035b79d51ac9930f7c1f8fc44cdc1bd"></a><!-- doxytag: member="roboptim::Scalar::impl_gradient" ref="ae035b79d51ac9930f7c1f8fc44cdc1bd" args="(gradient_ref gradient, const_argument_ref argument, size_type functionId=0) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00118.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00118.html#a670b69ecefa042ad5e6e2f14300c3482">impl_gradient</a> </td>
+          <td class="memname">void <a class="el" href="a00118.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00118.html#ae035b79d51ac9930f7c1f8fc44cdc1bd">impl_gradient</a> </td>
           <td>(</td>
           <td class="paramtype">gradient_ref&#160;</td>
           <td class="paramname"><em>gradient</em>, </td>
@@ -254,14 +259,14 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a27306334779e090f25bbd7d630418aa8"></a><!-- doxytag: member="roboptim::SelectionById::impl_jacobian" ref="a27306334779e090f25bbd7d630418aa8" args="(jacobian_ref jacobian, const_argument_ref arg) const " -->
+<a class="anchor" id="a2c0c26a9bea4b5a08455521e568f3068"></a><!-- doxytag: member="roboptim::Scalar::impl_jacobian" ref="a2c0c26a9bea4b5a08455521e568f3068" args="(jacobian_ref jacobian, const_argument_ref arg) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00118.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00118.html#a27306334779e090f25bbd7d630418aa8">impl_jacobian</a> </td>
+          <td class="memname">void <a class="el" href="a00118.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00118.html#a2c0c26a9bea4b5a08455521e568f3068">impl_jacobian</a> </td>
           <td>(</td>
           <td class="paramtype">jacobian_ref&#160;</td>
           <td class="paramname"><em>jacobian</em>, </td>
@@ -283,14 +288,14 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a96d0c5400637449ba56f14e7c25ec69d"></a><!-- doxytag: member="roboptim::SelectionById::origin" ref="a96d0c5400637449ba56f14e7c25ec69d" args="() const " -->
+<a class="anchor" id="ad17cc3b06c7818946a6b94254ffcb1c1"></a><!-- doxytag: member="roboptim::Scalar::origin" ref="ad17cc3b06c7818946a6b94254ffcb1c1" args="() const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00118.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00118.html#a96d0c5400637449ba56f14e7c25ec69d">origin</a> </td>
+          <td class="memname">const boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00118.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00118.html#ad17cc3b06c7818946a6b94254ffcb1c1">origin</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
@@ -301,14 +306,14 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3fe469f5a1b03ea25527636b326d85ab"></a><!-- doxytag: member="roboptim::SelectionById::origin" ref="a3fe469f5a1b03ea25527636b326d85ab" args="()" -->
+<a class="anchor" id="a4e8961237859adaa361aa9fec0d5057d"></a><!-- doxytag: member="roboptim::Scalar::origin" ref="a4e8961237859adaa361aa9fec0d5057d" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00118.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00118.html#a96d0c5400637449ba56f14e7c25ec69d">origin</a> </td>
+          <td class="memname">boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00118.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00118.html#ad17cc3b06c7818946a6b94254ffcb1c1">origin</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td><code> [inline]</code></td>
@@ -319,16 +324,16 @@ template&lt;typename U &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4238e53c744c850cde075fda814a2f26"></a><!-- doxytag: member="roboptim::SelectionById::ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="a4238e53c744c850cde075fda814a2f26" args="(parentType_t)" -->
+<a class="anchor" id="aefa2eb6460580af5ce6ecc78bf0319de"></a><!-- doxytag: member="roboptim::Scalar::ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="aefa2eb6460580af5ce6ecc78bf0319de" args="(parentType_t)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00118.html">roboptim::SelectionById</a>&lt; U &gt;::<a class="el" href="a00118.html#a4238e53c744c850cde075fda814a2f26">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
+          <td class="memname"><a class="el" href="a00118.html">roboptim::Scalar</a>&lt; U &gt;::<a class="el" href="a00118.html#aefa2eb6460580af5ce6ecc78bf0319de">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00118.html#a10ceafe26463a6befaf1a83bae6f2ba3">parentType_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="a00118.html#a7953a20600361495460caa1f213e9011">parentType_t</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -356,7 +361,7 @@ template&lt;typename U &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00257.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00118.html">SelectionById</a>      </li>
+      <li class="navelem"><a class="el" href="a00267.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00118.html">Scalar</a>      </li>
 </body>
 </html>

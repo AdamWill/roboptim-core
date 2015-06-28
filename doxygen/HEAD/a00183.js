@@ -1,6 +1,7 @@
 var a00183 =
 [
-    [ "EIGEN_YES_I_KNOW_SPARE_MODULE_IS_NOT_STABLE_YET", "a00183.html#a77e6db63e071b40535df9ee30f2acfd7", null ],
-    [ "operator<<", "a00277.html#ga22576c0708e8fe4af42060ff87bfad20", null ],
-    [ "operator<<", "a00266.html#a45951c8d967c172f9f8213900b3d7884", null ]
+    [ "dense_jacobian_to_gnuplot", "a00278.html#a00f78445b522347c5914f58bb68c80a0", null ],
+    [ "plot_jac", "a00288.html#ga6089434a4bb7b902af79ee92fbfea1ea", null ],
+    [ "plot_jac", "a00288.html#gaa1f821ed4194ecba54db36327af0fd13", null ],
+    [ "sparse_jacobian_to_gnuplot", "a00278.html#a406862b4cef98a34eca862ce87b99aa5", null ]
 ];

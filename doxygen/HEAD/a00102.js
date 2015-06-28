@@ -1,12 +1,15 @@
 var a00102 =
 [
-    [ "Polynomial", "a00102.html#af6448679b2e79b074d33139e0423a951", null ],
-    [ "~Polynomial", "a00102.html#ae57cba490238f13f941fc6bb016436d0", null ],
-    [ "applyPolynomial", "a00102.html#a20789828939c48f1aae49d3d01c2c44f", null ],
-    [ "impl_compute", "a00102.html#a60614acc1f02dc2e6cd0311dbc9c6ae5", null ],
-    [ "impl_gradient", "a00102.html#a2e022ec6db958a1cc218ba86945550d6", null ],
-    [ "impl_hessian", "a00102.html#aee32daf5b3b242cbc8edca6a788a9cc4", null ],
-    [ "impl_jacobian", "a00102.html#a8fce95a83b5d976bca83351c60412b18", null ],
-    [ "print", "a00102.html#a9d9d9ee3fd558e30aa8f5891e3028aba", null ],
-    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00102.html#af3c2cfc898e83edc8ce340b00c81e1dd", null ]
+    [ "parentType_t", "a00102.html#ab4d12a8f0bcae135aff2dc0e8998801b", null ],
+    [ "PlusShPtr_t", "a00102.html#a4293f7f153edd79aec49ed9d8dd03122", null ],
+    [ "Plus", "a00102.html#a8ab9e9b7348f75e9447251693fc81a7e", null ],
+    [ "~Plus", "a00102.html#abedb0ecb21222e9aca4c7f103d04ea99", null ],
+    [ "impl_compute", "a00102.html#a33dddd26dcadcaf9559ff73581938111", null ],
+    [ "impl_gradient", "a00102.html#a01c9b6d9ef74d019eeb035b706eb5784", null ],
+    [ "impl_jacobian", "a00102.html#aedbf297e4a9ed8d697eb890ece91a7e3", null ],
+    [ "left", "a00102.html#a02962e5b5637c3a0a1f61bf6f188fb9e", null ],
+    [ "left", "a00102.html#af8a02db6bba1a1f20b8a32f10a809248", null ],
+    [ "right", "a00102.html#ade7a10db019cd559298cd1918ebda9ff", null ],
+    [ "right", "a00102.html#a93ea170baf1cb3bcd521edf776676dc1", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00102.html#a0135d05c16cd40f3794d4497f1d2ec4b", null ]
 ];

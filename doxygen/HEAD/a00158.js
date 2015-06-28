@@ -1,5 +1,4 @@
 var a00158 =
 [
-    [ "DummyDifferentiableSparseSolverLastState", "a00257.html#a415aec27929dfc02eae5a5e612e59ef2", null ],
-    [ "DummySolverLastState", "a00257.html#a34ad703a5fff1c09628b79d9d328f28c", null ]
+    [ "derivative", "a00284.html#ga2aca003d14f5cd52e55a6b4fd6fec025", null ]
 ];
