@@ -77,7 +77,7 @@ var searchData=
   ['contains_5fbase_5fof',['contains_base_of',['../a00042.html',1,'roboptim::detail']]],
   ['convertconstraint',['ConvertConstraint',['../a00043.html',1,'roboptim::detail']]],
   ['convertconstraintvariant',['ConvertConstraintVariant',['../a00044.html',1,'roboptim::detail']]],
-  ['copysparseblock',['copySparseBlock',['../a00267.html#a2788770572cf84afe25607661cd5c37f',1,'roboptim']]],
+  ['copysparseblock',['copySparseBlock',['../a00267.html#ae9526e5e0444381e40fb702db2798ea4',1,'roboptim']]],
   ['core_2ehh',['core.hh',['../a00151.html',1,'']]],
   ['cos',['Cos',['../a00045.html',1,'roboptim']]],
   ['cos',['Cos',['../a00045.html#a22276bb5907afad6ce3ef5d9ad724ab8',1,'roboptim::Cos']]],
