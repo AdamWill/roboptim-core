@@ -13,6 +13,6 @@ var a00264 =
     [ "operator<<", "a00267.html#a77056f38462908511453bafb27f9cb76", null ],
     [ "sparse_to_dense", "a00267.html#afd78f2c9e9f13163183da639019c6f05", null ],
     [ "sparse_to_dense", "a00267.html#ad88a3cbb485670804344f0ed6a42dfe7", null ],
-    [ "updateSparseBlock", "a00267.html#a342c3092e9739ac50c23e5ecd877b6ca", null ],
+    [ "updateSparseBlock", "a00267.html#a96a1a2743fd6d3badea5a533cf9e2705", null ],
     [ "vector_to_array", "a00273.html#a45d027e5d21701eaed1833b65b9c479f", null ]
 ];

@@ -8,5 +8,5 @@ var a00265 =
     [ "operator<<", "a00267.html#a60f421259ace431168bc735b2e0ba023", null ],
     [ "operator<<", "a00267.html#a4bcd8b74fe875ec19837dc78308ddd78", null ],
     [ "operator<<", "a00267.html#a77056f38462908511453bafb27f9cb76", null ],
-    [ "updateSparseBlock", "a00267.html#a342c3092e9739ac50c23e5ecd877b6ca", null ]
+    [ "updateSparseBlock", "a00267.html#a96a1a2743fd6d3badea5a533cf9e2705", null ]
 ];

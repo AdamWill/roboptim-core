@@ -149,7 +149,7 @@ var a00267 =
     [ "sparse_to_dense", "a00267.html#afd78f2c9e9f13163183da639019c6f05", null ],
     [ "sparse_to_dense", "a00267.html#ad88a3cbb485670804344f0ed6a42dfe7", null ],
     [ "unionCast", "a00267.html#ae24d4890d0c81200480cca7b94ffe272", null ],
-    [ "updateSparseBlock", "a00267.html#a342c3092e9739ac50c23e5ecd877b6ca", null ],
+    [ "updateSparseBlock", "a00267.html#a96a1a2743fd6d3badea5a533cf9e2705", null ],
     [ "finiteDifferenceEpsilon", "a00285.html#ga2b8aa11a97dbc8229249db7357581d83", null ],
     [ "finiteDifferenceThreshold", "a00285.html#gaabca7f7ba16e95c606d1bc22b0de8d6b", null ],
     [ "StorageOrder", "a00282.html#gae4e272df17bb4c04ecfaec9370a7f8f5", null ]

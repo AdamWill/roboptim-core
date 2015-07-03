@@ -68,6 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdexcept&gt;</code><br/>
+<code>#include &lt;boost/static_assert.hpp&gt;</code><br/>
 <code>#include &lt;<a class="el" href="a00159.html">roboptim/core/differentiable-function.hh</a>&gt;</code><br/>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="namespaces"></a>
@@ -95,9 +96,9 @@ Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00267.html#ae9526e5e0444381e40fb702db2798ea4">roboptim::copySparseBlock</a> (U &amp;m, const U &amp;b, Function::size_type startRow, Function::size_type startCol, bool compress=false)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a sparse block into a sparse matrix.  <a href="#ae9526e5e0444381e40fb702db2798ea4"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00267.html#a342c3092e9739ac50c23e5ecd877b6ca">roboptim::updateSparseBlock</a> (U &amp;m, const U &amp;b, Function::size_type startRow, Function::size_type startCol)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a sparse block of a sparse matrix.  <a href="#a342c3092e9739ac50c23e5ecd877b6ca"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename M , typename B &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00267.html#a96a1a2743fd6d3badea5a533cf9e2705">roboptim::updateSparseBlock</a> (M &amp;m, const B &amp;b, Function::size_type startRow, Function::size_type startCol)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a sparse block of a sparse matrix.  <a href="#a96a1a2743fd6d3badea5a533cf9e2705"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html#aed8da6ab50bca64e4dacd4463703f60a">roboptim::normalize</a> (double x)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply normalize to a scalar.  <a href="#aed8da6ab50bca64e4dacd4463703f60a"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
