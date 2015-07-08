@@ -80,6 +80,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <span class="preprocessor">#include &lt;iostream&gt;</span>
 
+<span class="preprocessor">#include &lt;boost/type_traits/is_same.hpp&gt;</span>
+
 <span class="preprocessor">#include &lt;<a class="code" href="a00193.html">roboptim/core/io.hh</a>&gt;</span>
 <span class="preprocessor">#include &lt;<a class="code" href="a00171.html">roboptim/core/decorator/finite-difference-gradient.hh</a>&gt;</span>
 <span class="preprocessor">#include &lt;<a class="code" href="a00213.html">roboptim/core/numeric-quadratic-function.hh</a>&gt;</span>
@@ -96,6 +98,9 @@ BOOST_FIXTURE_TEST_SUITE (core, TestSuiteConfiguration)
 
 BOOST_AUTO_TEST_CASE_TEMPLATE (numeric_quadratic_function, T, functionTypes_t)
 {
+  boost::shared_ptr&lt;boost::test_tools::output_test_stream&gt;
+    output = retrievePattern (<span class="stringliteral">&quot;numeric-quadratic-function&quot;</span>);
+
   <span class="keyword">typename</span> <a name="_a4"></a><a class="code" href="a00075.html" title="Build a quadratic function from a matrix and a vector.">GenericNumericQuadraticFunction&lt;T&gt;::matrix_t</a> a (5, 5);
   <span class="keyword">typename</span> <a class="code" href="a00075.html" title="Build a quadratic function from a matrix and a vector.">GenericNumericQuadraticFunction&lt;T&gt;::vector_t</a> b (5);
   <span class="keyword">typename</span> <a class="code" href="a00075.html" title="Build a quadratic function from a matrix and a vector.">GenericNumericQuadraticFunction&lt;T&gt;::vector_t</a> x (5);
@@ -121,9 +126,19 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (numeric_quadratic_function, T, functionTypes_t)
   b[3] = 0.;
   b[4] = 0.;
 
-  <a class="code" href="a00075.html" title="Build a quadratic function from a matrix and a vector.">GenericNumericQuadraticFunction&lt;T&gt;</a> f (a, b);
+  <a class="code" href="a00075.html" title="Build a quadratic function from a matrix and a vector.">GenericNumericQuadraticFunction&lt;T&gt;</a> f (a, b, <span class="stringliteral">&quot;Dummy&quot;</span>);
 
-  std::cout &lt;&lt; f &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
+  (*output) &lt;&lt; f &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
+  (*output) &lt;&lt; <span class="stringliteral">&quot;x = &quot;</span> &lt;&lt; x &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
+  (*output) &lt;&lt; <span class="stringliteral">&quot;f(x) = &quot;</span> &lt;&lt; f (x) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
+  (*output) &lt;&lt; <span class="stringliteral">&quot;J(x) = &quot;</span> &lt;&lt; f.<a name="a7"></a><a class="code" href="a00065.html#a77c47b7abb1a80b79afe4aa3ef058f4c" title="Computes the jacobian.">jacobian</a> (x) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
+  (*output) &lt;&lt; <span class="stringliteral">&quot;G(x) = &quot;</span> &lt;&lt; f.gradient (x, 0) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
+  (*output) &lt;&lt; <span class="stringliteral">&quot;H(x) = &quot;</span> &lt;&lt; f.hessian (x, 0) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
+
+  std::cout &lt;&lt; output-&gt;str () &lt;&lt; std::endl;
+
+  <span class="keywordflow">if</span> (boost::is_same&lt;T, EigenMatrixDense&gt;::value)
+    BOOST_CHECK (output-&gt;match_pattern ());
 
   <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 10; ++i)
     {
@@ -132,7 +147,7 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (numeric_quadratic_function, T, functionTypes_t)
 
       std::cout &lt;&lt; <span class="stringliteral">&quot;x = &quot;</span> &lt;&lt; x &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
       std::cout &lt;&lt; <span class="stringliteral">&quot;f(x) = &quot;</span> &lt;&lt; f (x) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
-      std::cout &lt;&lt; <span class="stringliteral">&quot;J(x) = &quot;</span> &lt;&lt; f.<a name="a7"></a><a class="code" href="a00065.html#a77c47b7abb1a80b79afe4aa3ef058f4c" title="Computes the jacobian.">jacobian</a> (x) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
+      std::cout &lt;&lt; <span class="stringliteral">&quot;J(x) = &quot;</span> &lt;&lt; f.jacobian (x) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
       std::cout &lt;&lt; <span class="stringliteral">&quot;G(x) = &quot;</span> &lt;&lt; f.gradient (x, 0) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
       std::cout &lt;&lt; <span class="stringliteral">&quot;H(x) = &quot;</span> &lt;&lt; f.hessian (x, 0) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
 
