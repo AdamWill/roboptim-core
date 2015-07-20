@@ -3,6 +3,14 @@
 <title>roboptim::GenericFunction&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script src="./MathJax/MathJax.js"></script>
+<!--<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>-->
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -73,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="roboptim::GenericFunction" -->
-<p>Define an abstract mathematical function ( <img class="formulaInl" alt="$C^0$" src="form_21.png"/>).  
+<p>Define an abstract mathematical function ( \(C^0\)).  
  <a href="a00068.html#details">More...</a></p>
 
 <p><code>#include &lt;roboptim/core/function.hh&gt;</code></p>
@@ -206,12 +214,12 @@ Discrete interval</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename T&gt;<br/>
 class roboptim::GenericFunction&lt; T &gt;</h3>
 
-<p>Define an abstract mathematical function ( <img class="formulaInl" alt="$C^0$" src="form_21.png"/>). </p>
+<p>Define an abstract mathematical function ( \(C^0\)). </p>
 <p>A function is an object that can be evaluated for a given point.</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ f : x \rightarrow f(x) \]" src="form_4.png"/>
+\[ f : x \rightarrow f(x) \]
 </p>
-<p> <img class="formulaInl" alt="$x \in \mathbb{R}^n$" src="form_5.png"/>, <img class="formulaInl" alt="$f(x) \in \mathbb{R}^m$" src="form_6.png"/> where <img class="formulaInl" alt="$n$" src="form_7.png"/> is the input size and <img class="formulaInl" alt="$m$" src="form_8.png"/> is the output size.</p>
+<p> \(x \in \mathbb{R}^n\), \(f(x) \in \mathbb{R}^m\) where \(n\) is the input size and \(m\) is the output size.</p>
 <p>Functions are pure immutable objects: evaluating a function twice at a given point <b>must</b> give the same result.</p>
 <p>This function is parametrized by the matrix type used in this function. Currently, dense (which size may be dynamic or static and sparse Eigen matrices can be used) are supported.</p>
 <dl class=""><dt><b>Template Parameters:</b></dt><dd>
@@ -893,7 +901,7 @@ template&lt;typename T&gt; </div>
 <div class="memdoc">
 
 <p>Construct an infinite interval. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>interval representing <img class="formulaInl" alt="$[-\infty, +\infty]$" src="form_23.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>interval representing \([-\infty, +\infty]\) </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00009.html#a4">problem-cc.cc</a>.</dd>
 </dl>
 <p>References <a class="el" href="a00068.html#a050d43e8aff39880ae05a5ba8c4e2705">roboptim::GenericFunction&lt; T &gt;::infinity()</a>.</p>
@@ -935,7 +943,7 @@ template&lt;typename T&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>interval representing <img class="formulaInl" alt="$[l, u]$" src="form_22.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>interval representing \([l, u]\) </dd></dl>
 
 <p>Referenced by <a class="el" href="a00068.html#a7430258775cd70b3ba7bff92f7465825">roboptim::GenericFunction&lt; T &gt;::makeLowerInterval()</a>, and <a class="el" href="a00068.html#a1e404d7da24bf01325c4d917a36107a3">roboptim::GenericFunction&lt; T &gt;::makeUpperInterval()</a>.</p>
 
@@ -965,7 +973,7 @@ template&lt;typename T&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>interval representing <img class="formulaInl" alt="$[l, +\infty]$" src="form_24.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>interval representing \([l, +\infty]\) </dd></dl>
 
 <p>References <a class="el" href="a00068.html#a050d43e8aff39880ae05a5ba8c4e2705">roboptim::GenericFunction&lt; T &gt;::infinity()</a>, and <a class="el" href="a00068.html#a587af71cf143ad546e43c77570056e06">roboptim::GenericFunction&lt; T &gt;::makeInterval()</a>.</p>
 
@@ -995,7 +1003,7 @@ template&lt;typename T&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>interval representing <img class="formulaInl" alt="$[-\infty, u]$" src="form_25.png"/> </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>interval representing \([-\infty, u]\) </dd></dl>
 
 <p>References <a class="el" href="a00068.html#a050d43e8aff39880ae05a5ba8c4e2705">roboptim::GenericFunction&lt; T &gt;::infinity()</a>, and <a class="el" href="a00068.html#a587af71cf143ad546e43c77570056e06">roboptim::GenericFunction&lt; T &gt;::makeInterval()</a>.</p>
 

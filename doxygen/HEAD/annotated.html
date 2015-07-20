@@ -3,6 +3,14 @@
 <title>Class List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script src="./MathJax/MathJax.js"></script>
+<!--<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>-->
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -112,10 +120,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="indexkey"><a class="el" href="a00062.html">roboptim::finiteDifferenceGradientPolicies::FivePointsRule&lt; T &gt;</a></td><td class="indexvalue">Precise finite difference gradient computation </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00063.html">roboptim::FunctionPool&lt; F, FLIST &gt;</a></td><td class="indexvalue">A pool of functions that will be processed together </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00064.html">roboptim::GenericConstantFunction&lt; T &gt;</a></td><td class="indexvalue">Constant function </td></tr>
-  <tr><td class="indexkey"><a class="el" href="a00065.html">roboptim::GenericDifferentiableFunction&lt; T &gt;</a></td><td class="indexvalue">Define an abstract derivable function ( <img class="formulaInl" alt="$C^1$" src="form_3.png"/>) </td></tr>
+  <tr><td class="indexkey"><a class="el" href="a00065.html">roboptim::GenericDifferentiableFunction&lt; T &gt;</a></td><td class="indexvalue">Define an abstract derivable function ( \(C^1\)) </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00066.html">roboptim::GenericDummySolverLastState&lt; F &gt;</a></td><td class="indexvalue">Dummy solver which always fails, but returns the last state of the solver </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00067.html">roboptim::GenericFiniteDifferenceGradient&lt; T, FdgPolicy &gt;</a></td><td class="indexvalue">Compute automatically a gradient with finite differences </td></tr>
-  <tr><td class="indexkey"><a class="el" href="a00068.html">roboptim::GenericFunction&lt; T &gt;</a></td><td class="indexvalue">Define an abstract mathematical function ( <img class="formulaInl" alt="$C^0$" src="form_21.png"/>) </td></tr>
+  <tr><td class="indexkey"><a class="el" href="a00068.html">roboptim::GenericFunction&lt; T &gt;</a></td><td class="indexvalue">Define an abstract mathematical function ( \(C^0\)) </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00069.html">roboptim::GenericFunctionTraits&lt; T &gt;</a></td><td class="indexvalue"><a class="el" href="a00068.html" title="Define an abstract mathematical function ( ).">GenericFunction</a> traits </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00070.html">roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;</a></td><td class="indexvalue">Trait specializing <a class="el" href="a00068.html" title="Define an abstract mathematical function ( ).">GenericFunction</a> for Eigen dense matrices </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00071.html">roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;</a></td><td class="indexvalue">Trait specializing <a class="el" href="a00068.html" title="Define an abstract mathematical function ( ).">GenericFunction</a> for Eigen sparse matrices </td></tr>
@@ -126,7 +134,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="indexkey"><a class="el" href="a00076.html">roboptim::GenericQuadraticFunction&lt; T &gt;</a></td><td class="indexvalue">Define an abstract quadratic function </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00077.html">roboptim::GenericSolver</a></td><td class="indexvalue">Abstract interface satisfied by all solvers </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00078.html">roboptim::GenericSumOfC1Squares&lt; T &gt;</a></td><td class="indexvalue">Generic sum of the squares of differentiable functions </td></tr>
-  <tr><td class="indexkey"><a class="el" href="a00079.html">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</a></td><td class="indexvalue">Define an abstract function which is twice-derivable ( <img class="formulaInl" alt="$C^2$" src="form_40.png"/>) </td></tr>
+  <tr><td class="indexkey"><a class="el" href="a00079.html">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</a></td><td class="indexvalue">Define an abstract function which is twice-derivable ( \(C^2\)) </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00080.html">roboptim::detail::get_descendant&lt; Type1, Type2 &gt;</a></td><td class="indexvalue">Get the descendant among two relatives </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00081.html">roboptim::visualization::Gnuplot</a></td><td class="indexvalue"><a class="el" href="a00081.html" title="Gnuplot script.">Gnuplot</a> script </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00082.html">roboptim::Hasher</a></td><td class="indexvalue">Hash generator for argument vector </td></tr>
@@ -144,11 +152,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr><td class="indexkey"><a class="el" href="a00094.html">roboptim::callback::Multiplexer&lt; S &gt;</a></td><td class="indexvalue">Callback multiplexer </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00095.html">noncopyable</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="a00096.html">roboptim::NoSolution</a></td><td class="indexvalue">Tag a result if no solution has been found </td></tr>
-  <tr><td class="indexkey"><a class="el" href="a00097.html">roboptim::NTimesDerivableFunction&lt; DerivabilityOrder &gt;</a></td><td class="indexvalue">Define a <img class="formulaInl" alt="$\mathbb{R} \rightarrow \mathbb{R}^m$" src="form_26.png"/> function, derivable n times ( <img class="formulaInl" alt="$n \geq 2$" src="form_27.png"/>) </td></tr>
+  <tr><td class="indexkey"><a class="el" href="a00097.html">roboptim::NTimesDerivableFunction&lt; DerivabilityOrder &gt;</a></td><td class="indexvalue">Define a \(\mathbb{R} \rightarrow \mathbb{R}^m\) function, derivable n times ( \(n \geq 2\)) </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00098.html">roboptim::NTimesDerivableFunction&lt; 2 &gt;</a></td><td class="indexvalue">Explicit specialization for the stop case of NTimesDerivable class </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00099.html">roboptim::OptimizationLogger&lt; T &gt;</a></td><td class="indexvalue">Log the optimization process (values, Jacobians, time taken etc.) </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00100.html">roboptim::Parameter</a></td><td class="indexvalue"><a class="el" href="a00124.html" title="Solver for a specific problem class.">Solver</a> parameter type </td></tr>
-  <tr><td class="indexkey"><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td class="indexvalue">Define an abstract parametrized mathematical function ( <img class="formulaInl" alt="$C^0$" src="form_21.png"/>) </td></tr>
+  <tr><td class="indexkey"><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td><td class="indexvalue">Define an abstract parametrized mathematical function ( \(C^0\)) </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00102.html">roboptim::Plus&lt; U, V &gt;</a></td><td class="indexvalue">Sum two RobOptim functions </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00103.html">roboptim::finiteDifferenceGradientPolicies::Policy&lt; T &gt;</a></td><td class="indexvalue">Interface for the finite difference gradient policies </td></tr>
   <tr><td class="indexkey"><a class="el" href="a00104.html">roboptim::Polynomial&lt; T &gt;</a></td><td class="indexvalue"><a class="el" href="a00104.html" title="Polynomial function.">Polynomial</a> function </td></tr>

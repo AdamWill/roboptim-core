@@ -3,6 +3,14 @@
 <title>roboptim::GenericDifferentiableFunction&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script src="./MathJax/MathJax.js"></script>
+<!--<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>-->
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -71,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="roboptim::GenericDifferentiableFunction" --><!-- doxytag: inherits="roboptim::GenericFunction" -->
-<p>Define an abstract derivable function ( <img class="formulaInl" alt="$C^1$" src="form_3.png"/>).  
+<p>Define an abstract derivable function ( \(C^1\)).  
  <a href="a00065.html#details">More...</a></p>
 
 <p><code>#include &lt;roboptim/core/differentiable-function.hh&gt;</code></p>
@@ -145,16 +153,16 @@ Protected Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename T&gt;<br/>
 class roboptim::GenericDifferentiableFunction&lt; T &gt;</h3>
 
-<p>Define an abstract derivable function ( <img class="formulaInl" alt="$C^1$" src="form_3.png"/>). </p>
+<p>Define an abstract derivable function ( \(C^1\)). </p>
 <p>A derivable function which provides a way to compute its gradient/jacobian.</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ f : x \rightarrow f(x) \]" src="form_4.png"/>
+\[ f : x \rightarrow f(x) \]
 </p>
-<p> <img class="formulaInl" alt="$x \in \mathbb{R}^n$" src="form_5.png"/>, <img class="formulaInl" alt="$f(x) \in \mathbb{R}^m$" src="form_6.png"/> where <img class="formulaInl" alt="$n$" src="form_7.png"/> is the input size and <img class="formulaInl" alt="$m$" src="form_8.png"/> is the output size.</p>
+<p> \(x \in \mathbb{R}^n\), \(f(x) \in \mathbb{R}^m\) where \(n\) is the input size and \(m\) is the output size.</p>
 <p>Gradient computation is done through the <a class="el" href="a00065.html#af392bd6266e56fbf8e38c0df16d22224" title="Gradient evaluation.">impl_gradient</a> method that has to implemented by the concrete class inheriting this class.</p>
 <p>Jacobian computation is automatically done by concatenating gradients together, however this naive implementation can be overridden by the concrete class.</p>
-<p>The gradient of a <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}^m$" src="form_9.png"/> function where <img class="formulaInl" alt="$n > 1$" src="form_10.png"/> and <img class="formulaInl" alt="$m > 1$" src="form_11.png"/> is a matrix. As this representation is costly, RobOptim considers these functions as <img class="formulaInl" alt="$m$" src="form_8.png"/> <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_12.png"/> functions. Through that mechanism, gradients are always vectors and jacobian are always matrices. When the gradient or the jacobian has to be computed, one has to precise which of the <img class="formulaInl" alt="$m$" src="form_8.png"/> functions should be considered.</p>
-<p>If <img class="formulaInl" alt="$m = 1$" src="form_13.png"/>, then the function id must always be 0 and can be safely ignored in the gradient/jacobian computation. The class provides a default value for the function id so that these functions do not have to explicitly set the function id. </p>
+<p>The gradient of a \(\mathbb{R}^n \rightarrow \mathbb{R}^m\) function where \(n &gt; 1\) and \(m &gt; 1\) is a matrix. As this representation is costly, RobOptim considers these functions as \(m\) \(\mathbb{R}^n \rightarrow \mathbb{R}\) functions. Through that mechanism, gradients are always vectors and jacobian are always matrices. When the gradient or the jacobian has to be computed, one has to precise which of the \(m\) functions should be considered.</p>
+<p>If \(m = 1\), then the function id must always be 0 and can be safely ignored in the gradient/jacobian computation. The class provides a default value for the function id so that these functions do not have to explicitly set the function id. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="aac13c21f0df1f14ce16286fd81a6643a"></a><!-- doxytag: member="roboptim::GenericDifferentiableFunction::jacobianSize_t" ref="aac13c21f0df1f14ce16286fd81a6643a" args="" -->
 <div class="memitem">

@@ -3,6 +3,14 @@
 <title>Mathematical abstract functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script src="./MathJax/MathJax.js"></script>
+<!--<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>-->
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -69,13 +77,13 @@ Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html">roboptim::DerivableParametrizedFunction&lt; F &gt;</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Parametrized function with parameter derivative available.  <a href="a00046.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html">roboptim::GenericDifferentiableFunction&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract derivable function ( <img class="formulaInl" alt="$C^1$" src="form_3.png"/>).  <a href="a00065.html#details">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract derivable function ( \(C^1\)).  <a href="a00065.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00063.html">roboptim::FunctionPool&lt; F, FLIST &gt;</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A pool of functions that will be processed together.  <a href="a00063.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html">roboptim::GenericFunctionTraits&lt; T &gt;</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00068.html" title="Define an abstract mathematical function ( ).">GenericFunction</a> traits.  <a href="a00069.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html">roboptim::GenericFunction&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract mathematical function ( <img class="formulaInl" alt="$C^0$" src="form_21.png"/>).  <a href="a00068.html#details">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract mathematical function ( \(C^0\)).  <a href="a00068.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html">roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Trait specializing <a class="el" href="a00068.html" title="Define an abstract mathematical function ( ).">GenericFunction</a> for Eigen dense matrices.  <a href="a00070.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html">roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;</a></td></tr>
@@ -83,13 +91,13 @@ Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00073.html">roboptim::GenericLinearFunction&lt; T &gt;</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract linear function.  <a href="a00073.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00101.html">roboptim::ParametrizedFunction&lt; F &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract parametrized mathematical function ( <img class="formulaInl" alt="$C^0$" src="form_21.png"/>).  <a href="a00101.html#details">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract parametrized mathematical function ( \(C^0\)).  <a href="a00101.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html">roboptim::GenericQuadraticFunction&lt; T &gt;</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract quadratic function.  <a href="a00076.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html">roboptim::GenericSumOfC1Squares&lt; T &gt;</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic sum of the squares of differentiable functions.  <a href="a00078.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract function which is twice-derivable ( <img class="formulaInl" alt="$C^2$" src="form_40.png"/>).  <a href="a00079.html#details">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract function which is twice-derivable ( \(C^2\)).  <a href="a00079.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef GenericSumOfC1Squares<br class="typebreak"/>

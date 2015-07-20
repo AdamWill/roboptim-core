@@ -3,6 +3,14 @@
 <title>roboptim::GenericTwiceDifferentiableFunction&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script src="./MathJax/MathJax.js"></script>
+<!--<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>-->
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -71,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="roboptim::GenericTwiceDifferentiableFunction" --><!-- doxytag: inherits="roboptim::GenericDifferentiableFunction" -->
-<p>Define an abstract function which is twice-derivable ( <img class="formulaInl" alt="$C^2$" src="form_40.png"/>).  
+<p>Define an abstract function which is twice-derivable ( \(C^2\)).  
  <a href="a00079.html#details">More...</a></p>
 
 <p><code>#include &lt;roboptim/core/twice-differentiable-function.hh&gt;</code></p>
@@ -131,14 +139,14 @@ Protected Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename T&gt;<br/>
 class roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</h3>
 
-<p>Define an abstract function which is twice-derivable ( <img class="formulaInl" alt="$C^2$" src="form_40.png"/>). </p>
+<p>Define an abstract function which is twice-derivable ( \(C^2\)). </p>
 <p>A twice-derivable function is a derivable function which provides a way to compute its hessian.</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ f : x \rightarrow f(x) \]" src="form_4.png"/>
+\[ f : x \rightarrow f(x) \]
 </p>
-<p> <img class="formulaInl" alt="$x \in \mathbb{R}^n$" src="form_5.png"/>, <img class="formulaInl" alt="$f(x) \in \mathbb{R}^m$" src="form_6.png"/> where <img class="formulaInl" alt="$n$" src="form_7.png"/> is the input size and <img class="formulaInl" alt="$m$" src="form_8.png"/> is the output size.</p>
+<p> \(x \in \mathbb{R}^n\), \(f(x) \in \mathbb{R}^m\) where \(n\) is the input size and \(m\) is the output size.</p>
 <p>Hessian computation is done through the <a class="el" href="a00079.html#af7263e60b22683378ea9027e976fbb29" title="Hessian evaluation.">impl_hessian</a> method that has to implemented by the concrete class inheriting this class.</p>
-<p>The hessian of a <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}^m$" src="form_9.png"/> function where <img class="formulaInl" alt="$n > 1$" src="form_10.png"/> and <img class="formulaInl" alt="$m > 1$" src="form_11.png"/> is a tensor. To avoid this costly representation, the function is split into <img class="formulaInl" alt="$m$" src="form_8.png"/> <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_12.png"/> functions. See <a class="el" href="a00267.html#a1fe6728680de2e1a17e250717269fe22" title="Dense differentiable function.">DifferentiableFunction</a> documentation for more information. </p>
+<p>The hessian of a \(\mathbb{R}^n \rightarrow \mathbb{R}^m\) function where \(n &gt; 1\) and \(m &gt; 1\) is a tensor. To avoid this costly representation, the function is split into \(m\) \(\mathbb{R}^n \rightarrow \mathbb{R}\) functions. See <a class="el" href="a00267.html#a1fe6728680de2e1a17e250717269fe22" title="Dense differentiable function.">DifferentiableFunction</a> documentation for more information. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a8eb36050555e77e94717556bc0bf8d20"></a><!-- doxytag: member="roboptim::GenericTwiceDifferentiableFunction::hessianSize_t" ref="a8eb36050555e77e94717556bc0bf8d20" args="" -->
 <div class="memitem">

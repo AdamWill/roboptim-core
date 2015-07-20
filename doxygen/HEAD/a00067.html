@@ -3,6 +3,14 @@
 <title>roboptim::GenericFiniteDifferenceGradient&lt; T, FdgPolicy &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script src="./MathJax/MathJax.js"></script>
+<!--<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>-->
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -118,9 +126,9 @@ class roboptim::GenericFiniteDifferenceGradient&lt; T, FdgPolicy &gt;</h3>
 <p>This class takes a Function as its input and wraps it into a derivable function.</p>
 <p>The one dimensional formula is: </p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[f'(x)\approx {f(x+\epsilon)-f(x)\over \epsilon}\]" src="form_0.png"/>
+\[f&#39;(x)\approx {f(x+\epsilon)-f(x)\over \epsilon}\]
 </p>
-<p> where <img class="formulaInl" alt="$\epsilon$" src="form_1.png"/> is a constant given when calling the class constructor. </p>
+<p> where \(\epsilon\) is a constant given when calling the class constructor. </p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ade644f357e04020a3fb84207994f745b"></a><!-- doxytag: member="roboptim::GenericFiniteDifferenceGradient::GenericFiniteDifferenceGradient" ref="ade644f357e04020a3fb84207994f745b" args="(const GenericFunction&lt; T &gt; &amp;f, value_type e=finiteDifferenceEpsilon)" -->
 <div class="memitem">

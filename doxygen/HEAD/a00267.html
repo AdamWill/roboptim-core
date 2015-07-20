@@ -3,6 +3,14 @@
 <title>roboptim Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script src="./MathJax/MathJax.js"></script>
+<!--<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>-->
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -106,7 +114,7 @@ Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00050.html">derivativeSize&lt; GenericTwiceDifferentiableFunction&lt; T &gt; &gt;</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html">derivativeSize&lt; NTimesDerivableFunction&lt; N &gt; &gt;</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html">GenericDifferentiableFunction</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract derivable function ( <img class="formulaInl" alt="$C^1$" src="form_3.png"/>).  <a href="a00065.html#details">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract derivable function ( \(C^1\)).  <a href="a00065.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00064.html">GenericConstantFunction</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant function.  <a href="a00064.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00045.html">Cos</a></td></tr>
@@ -122,7 +130,7 @@ Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html">GenericFunctionTraits</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00068.html" title="Define an abstract mathematical function ( ).">GenericFunction</a> traits.  <a href="a00069.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html">GenericFunction</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract mathematical function ( <img class="formulaInl" alt="$C^0$" src="form_21.png"/>).  <a href="a00068.html#details">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract mathematical function ( \(C^0\)).  <a href="a00068.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00070.html">GenericFunctionTraits&lt; EigenMatrixDense &gt;</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Trait specializing <a class="el" href="a00068.html" title="Define an abstract mathematical function ( ).">GenericFunction</a> for Eigen dense matrices.  <a href="a00070.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html">GenericFunctionTraits&lt; EigenMatrixSparse &gt;</a></td></tr>
@@ -140,7 +148,7 @@ Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00098.html">NTimesDerivableFunction&lt; 2 &gt;</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicit specialization for the stop case of NTimesDerivable class.  <a href="a00098.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00097.html">NTimesDerivableFunction</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a <img class="formulaInl" alt="$\mathbb{R} \rightarrow \mathbb{R}^m$" src="form_26.png"/> function, derivable n times ( <img class="formulaInl" alt="$n \geq 2$" src="form_27.png"/>).  <a href="a00097.html#details">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a \(\mathbb{R} \rightarrow \mathbb{R}^m\) function, derivable n times ( \(n \geq 2\)).  <a href="a00097.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00074.html">GenericNumericLinearFunction</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a linear function from a vector and a matrix.  <a href="a00074.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html">GenericNumericQuadraticFunction</a></td></tr>
@@ -172,7 +180,7 @@ Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00099.html">OptimizationLogger</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Log the optimization process (values, Jacobians, time taken etc.).  <a href="a00099.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00101.html">ParametrizedFunction</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract parametrized mathematical function ( <img class="formulaInl" alt="$C^0$" src="form_21.png"/>).  <a href="a00101.html#details">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract parametrized mathematical function ( \(C^0\)).  <a href="a00101.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00066.html">GenericDummySolverLastState</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy solver which always fails, but returns the last state of the solver.  <a href="a00066.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html">DummySolverTd</a></td></tr>
@@ -204,7 +212,7 @@ Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00078.html">GenericSumOfC1Squares</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic sum of the squares of differentiable functions.  <a href="a00078.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html">GenericTwiceDifferentiableFunction</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract function which is twice-derivable ( <img class="formulaInl" alt="$C^2$" src="form_40.png"/>).  <a href="a00079.html#details">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract function which is twice-derivable ( \(C^2\)).  <a href="a00079.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00267.html#a1fe6728680de2e1a17e250717269fe22">DifferentiableFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html#a3b8400e3e4a5bc0372d283a4db8eb0de">DerivableFunction</a></td></tr>

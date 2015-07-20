@@ -3,6 +3,14 @@
 <title>roboptim::ParametrizedFunction&lt; F &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script src="./MathJax/MathJax.js"></script>
+<!--<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>-->
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -71,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="roboptim::ParametrizedFunction" -->
-<p>Define an abstract parametrized mathematical function ( <img class="formulaInl" alt="$C^0$" src="form_21.png"/>).  
+<p>Define an abstract parametrized mathematical function ( \(C^0\)).  
  <a href="a00101.html#details">More...</a></p>
 
 <p><code>#include &lt;roboptim/core/parametrized-function.hh&gt;</code></p>
@@ -126,12 +134,12 @@ Protected Member Functions</h2></td></tr>
 <div class="textblock"><h3>template&lt;typename F&gt;<br/>
 class roboptim::ParametrizedFunction&lt; F &gt;</h3>
 
-<p>Define an abstract parametrized mathematical function ( <img class="formulaInl" alt="$C^0$" src="form_21.png"/>). </p>
+<p>Define an abstract parametrized mathematical function ( \(C^0\)). </p>
 <p>A function is an object that can be evaluated for a given point.</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ f : p \rightarrow g \]" src="form_31.png"/>
+\[ f : p \rightarrow g \]
 </p>
-<p> <img class="formulaInl" alt="$p \in \mathbb{R}^p$" src="form_32.png"/>, <img class="formulaInl" alt="$g \in G$" src="form_33.png"/> where <img class="formulaInl" alt="$p$" src="form_34.png"/> is the input size and <img class="formulaInl" alt="$G = \mathbb{R}^n \in \mathbb{R}^m$" src="form_35.png"/> ( <img class="formulaInl" alt="$n, m \in \mathbb{R}^2$" src="form_36.png"/>).</p>
+<p> \(p \in \mathbb{R}^p\), \(g \in G\) where \(p\) is the input size and \(G = \mathbb{R}^n \in \mathbb{R}^m\) ( \(n, m \in \mathbb{R}^2\)).</p>
 <p>Functions are pure immutable objects: evaluating a function twice at a given point <b>must</b> give the same result.</p>
 <dl class=""><dt><b>Template Parameters:</b></dt><dd>
   <table class="">

@@ -3,6 +3,14 @@
 <title>Optimization problems</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/SVG"],
+});
+</script>
+<script src="./MathJax/MathJax.js"></script>
+<!--<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>-->
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -268,7 +276,7 @@ Starting point (initial guess).</h2></td></tr>
 <p>Optimization problem.</p>
 <p>An optimization problem is defined as:</p>
 <ul>
-<li>a cost function ( <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_12.png"/>)</li>
+<li>a cost function ( \(\mathbb{R}^n \rightarrow \mathbb{R}\))</li>
 <li>a set of intervals and scale factors for arguments.</li>
 </ul>
 <p>The goal of the optimization process is finding a point which minimizes the cost function</p>
@@ -283,8 +291,8 @@ Starting point (initial guess).</h2></td></tr>
 </dl>
 <p>An optimization problem is defined as:</p>
 <ul>
-<li>a cost function ( <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_12.png"/>)</li>
-<li>one or more constraints functions, ( <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}^m$" src="form_9.png"/>) associated with an interval and a scale,</li>
+<li>a cost function ( \(\mathbb{R}^n \rightarrow \mathbb{R}\))</li>
+<li>one or more constraints functions, ( \(\mathbb{R}^n \rightarrow \mathbb{R}^m\)) associated with an interval and a scale,</li>
 <li>a set of intervals and scale factors for arguments.</li>
 </ul>
 <p>The goal of the optimization process is finding a point which minimizes the cost function and which respects the constraints (i.e. the result of some functions is inside of specific interval).</p>
@@ -519,8 +527,8 @@ template&lt;typename F, typename CLIST&gt; </div>
 <div class="memdoc">
 
 <p>Vector of interval vectors. </p>
-<p>This type is used to take into account the fact that constraints can have output values in <img class="formulaInl" alt="$\mathbb{C}^{m}$" src="form_37.png"/>.</p>
-<p>If <img class="formulaInl" alt="$m=1$" src="form_38.png"/>, then the associated interval vector contains only one element of interval_t type. </p>
+<p>This type is used to take into account the fact that constraints can have output values in \(\mathbb{C}^{m}\).</p>
+<p>If \(m=1\), then the associated interval vector contains only one element of interval_t type. </p>
 
 </div>
 </div>
@@ -657,8 +665,8 @@ template&lt;typename F, typename CLIST&gt; </div>
 <div class="memdoc">
 
 <p>Vector of scaling vectors. </p>
-<p>This type is used to take into account the fact that constraints can have output values in <img class="formulaInl" alt="$\mathbb{R}^m$" src="form_39.png"/>.</p>
-<p>If <img class="formulaInl" alt="$m=1$" src="form_38.png"/>, then the associated scaling vector contains only one element of scaling_t type. </p>
+<p>This type is used to take into account the fact that constraints can have output values in \(\mathbb{R}^m\).</p>
+<p>If \(m=1\), then the associated scaling vector contains only one element of scaling_t type. </p>
 
 </div>
 </div>
@@ -833,7 +841,7 @@ template&lt;typename C &gt; </div>
 <div class="memdoc">
 
 <p>Add a constraint to the problem. </p>
-<p>Useful only when <img class="formulaInl" alt="$m=1$" src="form_38.png"/>, use addConstraint (boost::shared_ptr&lt;C&gt; constraint, intervals_t intervals, scaling_t scaling) instead.</p>
+<p>Useful only when \(m=1\), use addConstraint (boost::shared_ptr&lt;C&gt; constraint, intervals_t intervals, scaling_t scaling) instead.</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">constraint</td><td>the constraint that will be added </td></tr>
@@ -1644,7 +1652,7 @@ template&lt;typename F &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<dl class="pre"><dt><b>Precondition:</b></dt><dd>costfunction <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_12.png"/> </dd></dl>
+<dl class="pre"><dt><b>Precondition:</b></dt><dd>costfunction \(\mathbb{R}^n \rightarrow \mathbb{R}\) </dd></dl>
 
 </div>
 </div>
@@ -1708,7 +1716,7 @@ template&lt;typename F , typename CLIST &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-<dl class="pre"><dt><b>Precondition:</b></dt><dd>costfunction <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_12.png"/> </dd></dl>
+<dl class="pre"><dt><b>Precondition:</b></dt><dd>costfunction \(\mathbb{R}^n \rightarrow \mathbb{R}\) </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">cost</td><td>cost function. </td></tr>
